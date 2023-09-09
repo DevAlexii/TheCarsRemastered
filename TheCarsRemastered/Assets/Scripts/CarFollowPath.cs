@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestCarFollowPath : MonoBehaviour
+public class CarFollowPath : MonoBehaviour
 {
     [SerializeField] private Path path;
     [SerializeField] private List<Transform> front_wheels;
@@ -15,7 +15,6 @@ public class TestCarFollowPath : MonoBehaviour
     private int node_index;
     public bool stopCar;
     Action moveCar;
-    [SerializeField]  LayerInfoNodes layerInfo;
 
     private void Start()
     {
@@ -70,16 +69,23 @@ public class TestCarFollowPath : MonoBehaviour
         {
             if (node_index == 1)
             {
+                stopCar = true;
+            }
+            else if (node_index == 2)
+            {
                 target_max_move_speed = 4;
             }
-            else if (node_index == 5)
+            else if (node_index == 6)
             {
                 target_max_move_speed = max_move_speed;
+            }
+            else if (node_index == path.Nodes.Count - 1)
+            {
+                Destroy(this.gameObject);
             }
             node_index++;
         }
     }
-
     void MoveCarToNode()
     {
         if (path != null)
@@ -109,19 +115,13 @@ public class TestCarFollowPath : MonoBehaviour
             }
             CheckNodeDistance();
             transform.Translate(front_wheels[0].forward * move_speed * Time.deltaTime);
-            LayerMask.NameToLayer("ciao");
         }
     }
-}
-
-[Serializable]
-struct LayerInfoNodes
-{
-    [SerializeField] LayerMask startPoint;
-    [SerializeField] LayerMask startBreak;
-    [SerializeField] LayerMask endBreak;
-
-    public int StartPoint => startPoint;
-    public int StartBreak => startBreak;
-    public int EndBreak => endBreak;
+    public void ToogleShouldMove()
+    {
+        if (moveCar != null)
+        {
+            stopCar = stopCar? false : true;
+        }
+    }
 }
