@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CarFollowPath : MonoBehaviour
 {
-    [SerializeField] private Path path;
+    private Path path;
     [SerializeField] private List<Transform> front_wheels;
     [SerializeField] private Transform shell;
     [SerializeField] private float node_reachable_distance;
@@ -18,14 +19,17 @@ public class CarFollowPath : MonoBehaviour
 
     private void Start()
     {
-        moveCar = MoveCarToNode;
         max_move_speed = move_speed;
         target_max_move_speed = max_move_speed;
         move_speed = 0;
     }
+    public void InitilizedPath(Path newPath)
+    {
+        path = newPath;
+        moveCar = MoveCarToNode;
+    }
     void Update()
     {
-        RotateWheelsAndCar();
         moveCar?.Invoke();
     }
     private Vector3 GetNodePosition()
@@ -67,20 +71,21 @@ public class CarFollowPath : MonoBehaviour
         float distance = Vector3.Distance(GetNodePosition(), transform.position);
         if (distance <= node_reachable_distance)
         {
-            if (node_index == 1)
+            if ( path.Nodes[node_index].name.StartsWith("Stop"))
             {
                 stopCar = true;
             }
-            else if (node_index == 2)
+            else if (path.Nodes[node_index].name.StartsWith("StartBrake"))
             {
                 target_max_move_speed = 4;
             }
-            else if (node_index == 6)
+            else if (path.Nodes[node_index].name.StartsWith("EndBrake"))
             {
                 target_max_move_speed = max_move_speed;
             }
-            else if (node_index == path.Nodes.Count - 1)
+            else if (path.Nodes[node_index].name.StartsWith("End"))
             {
+                Car_Spawn_Manager.self.RemoveCar(this.gameObject);
                 Destroy(this.gameObject);
             }
             node_index++;
@@ -91,6 +96,7 @@ public class CarFollowPath : MonoBehaviour
         if (path != null)
         {
             FinalNodeCheck();
+            RotateWheelsAndCar();
             if (stopCar)
             {
                 if (move_speed > 0.05f)

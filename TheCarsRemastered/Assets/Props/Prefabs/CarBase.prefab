@@ -390,8 +390,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0653114, y: 1.1754309, z: 1.6056592}
-  m_Center: {x: -0.0019176006, y: 0.58672076, z: -0.011176705}
+  m_Size: {x: 119.99999, y: 123.28907, z: 166.28284}
+  m_Center: {x: 0, y: 61.366158, z: -0.9916097}
 --- !u!114 &2568028880839431248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cad8ba42469ed84cbca5de2cbb82bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 0}
   front_wheels:
   - {fileID: 2059597782189349592}
   - {fileID: 2936499851936439334}
@@ -452,7 +451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8847208689660030388}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.000000029802322, y: 70.26146, z: -2.96732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
