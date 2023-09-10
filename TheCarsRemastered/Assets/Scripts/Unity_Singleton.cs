@@ -10,7 +10,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
       if(Self == null)
       {
-                Self = (T)FindObjectOfType(typeof(T));
+                Self = (T)FindFirstObjectByType(typeof(T));
 
                 if (Self == null)
                 {

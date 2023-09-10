@@ -1,21 +1,36 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 public class CarFollowPath : MonoBehaviour
 {
-    private Path path;
+    [Header("CarComponent")]
     [SerializeField] private List<Transform> front_wheels;
     [SerializeField] private Transform shell;
-    [SerializeField] private float node_reachable_distance;
+
+    [Header("Movement")]
+    [SerializeField] private float rotation_speed;
     [SerializeField] private float move_speed;
     private float max_move_speed;
     private float target_max_move_speed;
-    [SerializeField] private float rotation_speed;
+
+    [Header("Wait Time")]
+    [SerializeField] private float wait_time;
+    private float wait_timer;
+
+    [Header("PathInfo")]
+    [SerializeField] private float node_reachable_distance;
+    private Path path;
     private int node_index;
-    public bool stopCar;
-    Action moveCar;
+
+    [Header("Internal Var")]
+    private Car_Core owner;
+    private Action On_CarMove;
+    private Action On_Waiting;
+    private bool stop_car;
+    private bool can_be_touched;
 
     private void Start()
     {
@@ -23,14 +38,16 @@ public class CarFollowPath : MonoBehaviour
         target_max_move_speed = max_move_speed;
         move_speed = 0;
     }
-    public void InitilizedPath(Path newPath)
+    public void InitilizedPath(Path newPath, Car_Core Owner)
     {
         path = newPath;
-        moveCar = MoveCarToNode;
+        On_CarMove = MoveCarToNode;
+        owner = Owner;
     }
     void Update()
     {
-        moveCar?.Invoke();
+        On_Waiting?.Invoke();
+        On_CarMove?.Invoke();
     }
     private Vector3 GetNodePosition()
     {
@@ -61,9 +78,9 @@ public class CarFollowPath : MonoBehaviour
             if (path.repeat)
             {
                 node_index = 0;
-                stopCar = false;
+                stop_car = false;
             }
-            else stopCar = true;
+            else stop_car = true;
         }
     }
     private void CheckNodeDistance()
@@ -71,9 +88,12 @@ public class CarFollowPath : MonoBehaviour
         float distance = Vector3.Distance(GetNodePosition(), transform.position);
         if (distance <= node_reachable_distance)
         {
-            if ( path.Nodes[node_index].name.StartsWith("Stop"))
+            if (path.Nodes[node_index].name.StartsWith("Stop"))
             {
-                stopCar = true;
+                stop_car = true;
+                owner.ShowDirectionalArrow();
+                On_Waiting = Waiting;
+                can_be_touched = true;
             }
             else if (path.Nodes[node_index].name.StartsWith("StartBrake"))
             {
@@ -82,6 +102,7 @@ public class CarFollowPath : MonoBehaviour
             else if (path.Nodes[node_index].name.StartsWith("EndBrake"))
             {
                 target_max_move_speed = max_move_speed;
+                owner.HideDirectionalArrow();
             }
             else if (path.Nodes[node_index].name.StartsWith("End"))
             {
@@ -97,7 +118,7 @@ public class CarFollowPath : MonoBehaviour
         {
             FinalNodeCheck();
             RotateWheelsAndCar();
-            if (stopCar)
+            if (stop_car)
             {
                 if (move_speed > 0.05f)
                 {
@@ -125,9 +146,25 @@ public class CarFollowPath : MonoBehaviour
     }
     public void ToogleShouldMove()
     {
-        if (moveCar != null)
+        if (!can_be_touched) return;
+
+        if (On_CarMove != null)
         {
-            stopCar = stopCar? false : true;
+            stop_car = stop_car ? false : true;
+            if (On_Waiting != null)
+            {
+                On_Waiting = null;
+            }
+        }
+    }
+    private void Waiting()
+    {
+        wait_timer += Time.deltaTime;
+        if (wait_timer >= wait_time)
+        {
+            wait_timer = 0;
+            ToogleShouldMove();
+            On_Waiting = null;
         }
     }
 }

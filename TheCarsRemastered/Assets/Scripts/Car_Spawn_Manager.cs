@@ -42,8 +42,17 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
 
         int random_index = Random.Range(0, car_prefabs.Count);
-        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position,Quaternion.identity);
-        car.GetComponent<CarFollowPath>().InitilizedPath(pathRef);
+        int arrow_index = -1;
+        if (randomPoint == Point.Left && random_path == 0)
+        {
+            arrow_index = 0;
+        }
+        else if (randomPoint == Point.Right && random_path == 0)
+        {
+            arrow_index = 1;
+        }
+        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity);
+        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index);
         spawned_car.Add(car);
     }
     public void RemoveCar(GameObject car)
