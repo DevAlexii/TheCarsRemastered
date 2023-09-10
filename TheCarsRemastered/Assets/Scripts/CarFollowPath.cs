@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using UnityEditor;
 using UnityEngine;
 
 public class CarFollowPath : MonoBehaviour
@@ -156,6 +154,10 @@ public class CarFollowPath : MonoBehaviour
                 On_Waiting = null;
             }
         }
+    }
+    public void OnCrash()
+    {
+        Destroy(this);
     }
     private void Waiting()
     {

@@ -3,17 +3,24 @@ using UnityEngine;
 
 public class Car_Core : MonoBehaviour, Car_Interface
 {
+    [Header("Reference")]
     [SerializeField] private CarFollowPath carFollowPathRef;
     [SerializeField] private List<GameObject> directional_arrwos;
+
+    [Header("CollisionForce")]
+    [SerializeField] float impulse_force;
+    [SerializeField] float impulse_radius;
+
+    [Header("Internal Var")]
     private int directional_arrow_index_to_play;
 
     #region Initialized
-        public void OnInitializedCar(Path newPath, int arrow_index)
-        {
-            carFollowPathRef.InitilizedPath(newPath, this);
-            directional_arrow_index_to_play = arrow_index;
-        }
-        #endregion
+    public void OnInitializedCar(Path newPath, int arrow_index)
+    {
+        carFollowPathRef.InitilizedPath(newPath, this);
+        directional_arrow_index_to_play = arrow_index;
+    }
+    #endregion
 
     #region DirectionalArrow
     public void ShowDirectionalArrow()
@@ -36,6 +43,20 @@ public class Car_Core : MonoBehaviour, Car_Interface
     }
     #endregion
 
+    #region Collision
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Car"))
+        {
+            carFollowPathRef.OnCrash();
+            GetComponent<Collider>().isTrigger = false;
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.isKinematic = false;
+            rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
+            HideDirectionalArrow();
+        }
+    }
+    #endregion
 
     public void OnCarClicked()
     {
