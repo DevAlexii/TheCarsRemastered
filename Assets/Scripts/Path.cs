@@ -4,7 +4,6 @@ using UnityEngine;
 public class Path : MonoBehaviour
 {
     public Color lineColor;
-    public bool repeat;
     private List<Transform> nodes;
     public List<Transform> Nodes { get => nodes; }
 

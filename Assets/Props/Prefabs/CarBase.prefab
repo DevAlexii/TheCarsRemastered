@@ -545,9 +545,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2349565232942493289}
   - component: {fileID: 5061425203674133331}
+  - component: {fileID: -6798320538933690758}
   - component: {fileID: 2568028880839431248}
   - component: {fileID: 7518302017274055717}
-  - component: {fileID: 7611377633435722256}
   m_Layer: 3
   m_Name: CarBase
   m_TagString: Untagged
@@ -592,6 +592,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 119.99999, y: 123.28907, z: 166.28284}
   m_Center: {x: 0, y: 61.366158, z: -0.9916097}
+--- !u!54 &-6798320538933690758
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104449171590673071}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0.1
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0.2, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &2568028880839431248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +639,8 @@ MonoBehaviour:
   move_speed: 5
   wait_time: 5
   node_reachable_distance: 0.5
+  max_distance: 2.2
+  min_distance: 1.5
 --- !u!114 &7518302017274055717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,33 +659,6 @@ MonoBehaviour:
   - {fileID: 2021473866594943127}
   impulse_force: 500
   impulse_radius: 5
---- !u!54 &7611377633435722256
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104449171590673071}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &8847208689660030388
 GameObject:
   m_ObjectHideFlags: 0

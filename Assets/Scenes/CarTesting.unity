@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -481,7 +481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &211060777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &453703287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &755134072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,7 +2454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &938832614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +2750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1078168403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,7 +3194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1214797972
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,7 +3404,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1318150378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,7 +3459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1328165285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,7 +3545,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1369927044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,7 +3693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1427098776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,7 +4405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1814435746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,7 +4460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1842931909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,7 +4733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1925719064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,7 +4812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &1980296768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,7 +4984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1 &2127971454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,6 +5073,7 @@ MonoBehaviour:
   timer_to_spawn_car: 5
   car_prefabs:
   - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
+  max_car_in_scene: 10
 --- !u!1 &2135848720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,7 +5122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 0.49063826, g: 0, b: 1, a: 1}
-  repeat: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CarFollowPath : MonoBehaviour
 {
@@ -30,8 +31,17 @@ public class CarFollowPath : MonoBehaviour
     private bool stop_car;
     private bool can_be_touched;
 
+    [Header("Queque")]
+    [SerializeField][Range(1.5f,2.3f)] float max_distance;
+    [SerializeField][Range(1f,1.5f)] float min_distance;
+    private float distance;
+    private Ray queque_ray;
+    private RaycastHit queque_hit;
+
     private void Start()
     {
+        queque_ray = new Ray();
+        distance = Random.Range(min_distance, max_distance);
         max_move_speed = move_speed;
         target_max_move_speed = max_move_speed;
         move_speed = 0;
@@ -69,20 +79,10 @@ public class CarFollowPath : MonoBehaviour
         }
         shell.rotation = Quaternion.Slerp(shell.rotation, targetRotation, Time.deltaTime * rotation_speed);
     }
-    private void FinalNodeCheck()
-    {
-        if (node_index >= path.Nodes.Count)
-        {
-            if (path.repeat)
-            {
-                node_index = 0;
-                stop_car = false;
-            }
-            else stop_car = true;
-        }
-    }
     private void CheckNodeDistance()
     {
+        if (node_index <= 1) CheckQueque();
+
         float distance = Vector3.Distance(GetNodePosition(), transform.position);
         if (distance <= node_reachable_distance)
         {
@@ -114,7 +114,6 @@ public class CarFollowPath : MonoBehaviour
     {
         if (path != null)
         {
-            FinalNodeCheck();
             RotateWheelsAndCar();
             if (stop_car)
             {
@@ -169,4 +168,22 @@ public class CarFollowPath : MonoBehaviour
             On_Waiting = null;
         }
     }
+    private void CheckQueque()
+    {
+        queque_ray.origin = transform.position + shell.forward + Vector3.up * 0.5f;
+        queque_ray.direction = shell.forward;
+
+        if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, distance))
+        {
+            if (queque_hit.transform.gameObject.layer == 3)
+            {
+                stop_car = true;
+            }
+        }
+        else
+        {
+            stop_car = false;
+        }
+    }
+
 }

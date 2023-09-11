@@ -8,6 +8,7 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     [SerializeField] List<Path_Dictionary> paths;
     [SerializeField] private float timer_to_spawn_car;
     [SerializeField] List<GameObject> car_prefabs;
+    [SerializeField] private Int32 max_car_in_scene;    
     private float timer;
     private List<GameObject> spawned_car;
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
@@ -36,6 +37,8 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     }
     void SpawnCar()
     {
+        if (spawned_car.Count > 0 && spawned_car.Count <= max_car_in_scene) return;
+        
         Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
