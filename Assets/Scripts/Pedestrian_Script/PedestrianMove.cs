@@ -15,19 +15,17 @@ public class PedestrianMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
-
     }
 
     void Update()
     {
-
+        PedestriansMoves();
     }
 
     void PedestriansMoves()
     {
-
+        transform.Translate(transform.forward * Time.deltaTime * 2);
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {

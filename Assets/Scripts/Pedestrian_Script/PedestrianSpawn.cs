@@ -19,6 +19,7 @@ public class PedestrianSpawn : MonoBehaviour
 
     List<Transform> spawnPoint;
     public List<GameObject> pedestriansRef;
+
     void Start()
     {
         timer = timeBetweenSpawn;
@@ -37,8 +38,8 @@ public class PedestrianSpawn : MonoBehaviour
         if (timer <= 0 && currentPedestrians <= maxPedestrian)
         {
             int pedeRand = UnityEngine.Random.Range(0, spawnPoint.Count);
-            GameObject pede = Instantiate(pedestrianPrefab, spawnPoint[pedeRand]);
-
+            GameObject pede = Instantiate(pedestrianPrefab, spawnPoint[pedeRand].position, Quaternion.identity);
+            pede.transform.forward = transform.forward;
             pedestriansRef.Add(pede);
 
             currentPedestrians++;
