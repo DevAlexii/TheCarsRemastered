@@ -15,9 +15,9 @@ public class Car_Core : MonoBehaviour, Car_Interface
     private int directional_arrow_index_to_play;
 
     #region Initialized
-    public void OnInitializedCar(Path newPath, int arrow_index)
+    public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false)
     {
-        carFollowPathRef.InitilizedPath(newPath, this);
+        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze);
         directional_arrow_index_to_play = arrow_index;
     }
     #endregion

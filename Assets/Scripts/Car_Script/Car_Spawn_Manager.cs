@@ -8,7 +8,8 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     [SerializeField] List<Path_Dictionary> paths;
     [SerializeField] private float timer_to_spawn_car;
     [SerializeField] List<GameObject> car_prefabs;
-    [SerializeField] private Int32 max_car_in_scene;    
+    [SerializeField] private Int32 max_car_in_scene;
+    [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
     private List<GameObject> spawned_car;
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
@@ -38,7 +39,7 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     void SpawnCar()
     {
         if (spawned_car.Count > 0 && spawned_car.Count >= max_car_in_scene) return;
-        
+
         Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
@@ -46,16 +47,26 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
 
         int random_index = Random.Range(0, car_prefabs.Count);
         int arrow_index = -1;
+        bool isKamikaze = true;
         if (randomPoint == Point.Left && random_path == 0)
         {
             arrow_index = 0;
+            isKamikaze = false;
         }
         else if (randomPoint == Point.Right && random_path == 0)
         {
             arrow_index = 1;
+            isKamikaze = false;
+        }
+        if (isKamikaze)
+        { 
+            if (!CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze)) 
+            { 
+                isKamikaze = false;
+            } 
         }
         GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity);
-        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index);
+        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze);
         spawned_car.Add(car);
     }
     public void RemoveCar(GameObject car)

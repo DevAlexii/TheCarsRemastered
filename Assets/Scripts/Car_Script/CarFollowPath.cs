@@ -30,6 +30,7 @@ public class CarFollowPath : MonoBehaviour
     private Action On_Waiting;
     private bool stop_car;
     private bool can_be_touched;
+    private bool is_kamikaze;
 
     [Header("Queque")]
     [SerializeField][Range(1.5f,2.3f)] float max_distance;
@@ -46,11 +47,12 @@ public class CarFollowPath : MonoBehaviour
         target_max_move_speed = max_move_speed;
         move_speed = 0;
     }
-    public void InitilizedPath(Path newPath, Car_Core Owner)
+    public void InitilizedPath(Path newPath, Car_Core Owner,bool Kamikaze)
     {
         path = newPath;
         On_CarMove = MoveCarToNode;
         owner = Owner;
+        is_kamikaze = Kamikaze;
     }
     void Update()
     {
@@ -86,7 +88,7 @@ public class CarFollowPath : MonoBehaviour
         float distance = Vector3.Distance(GetNodePosition(), transform.position);
         if (distance <= node_reachable_distance)
         {
-            if (path.Nodes[node_index].name.StartsWith("Stop"))
+            if (path.Nodes[node_index].name.StartsWith("Stop") && !is_kamikaze)
             {
                 stop_car = true;
                 owner.ShowDirectionalArrow();
@@ -185,5 +187,4 @@ public class CarFollowPath : MonoBehaviour
             stop_car = false;
         }
     }
-
 }
