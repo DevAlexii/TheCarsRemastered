@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using PlasticPipe.PlasticProtocol.Messages;
 using UnityEngine;
 
 public class PedestrianSpawn : MonoBehaviour
@@ -11,10 +12,13 @@ public class PedestrianSpawn : MonoBehaviour
 
     [Header("Variables")]
     [SerializeField] float timeBetweenSpawn;
-    [SerializeField] Int32 maxPedestrian;
     float timer;
-    List<Transform> spawnPoint;
 
+    [SerializeField] Int32 maxPedestrian;
+    Int32 currentPedestrians;
+
+    List<Transform> spawnPoint;
+    public List<GameObject> pedestriansRef;
     void Start()
     {
         timer = timeBetweenSpawn;
@@ -24,20 +28,23 @@ public class PedestrianSpawn : MonoBehaviour
 
     void Update()
     {
-
+        SpawnPedestrian();
     }
-
 
     void SpawnPedestrian()
     {
         timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (timer <= 0 && currentPedestrians <= maxPedestrian)
         {
-            int pedeRand = UnityEngine.Random.Range(0,spawnPoint.Count);
+            int pedeRand = UnityEngine.Random.Range(0, spawnPoint.Count);
             GameObject pede = Instantiate(pedestrianPrefab, spawnPoint[pedeRand]);
 
+            pedestriansRef.Add(pede);
+
+            currentPedestrians++;
 
             timer = timeBetweenSpawn;
         }
     }
+
 }
