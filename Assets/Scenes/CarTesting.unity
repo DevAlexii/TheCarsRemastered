@@ -2895,9 +2895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db01fc5331a08d84b8a709d9b3c9a0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 0}
+  pedestrianPrefab: {fileID: 55988742358127448, guid: 048c4cfb706000e40bd51af66d574599,
+    type: 3}
   timeBetweenSpawn: 0
   maxPedestrian: 0
+  pedestriansRef: []
 --- !u!1 &1116627055
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,7 +5072,7 @@ MonoBehaviour:
       value:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
-  timer_to_spawn_car: 5
+  timer_to_spawn_car: 1
   car_prefabs:
   - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
   max_car_in_scene: 10

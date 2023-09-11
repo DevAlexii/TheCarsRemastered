@@ -37,7 +37,7 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     }
     void SpawnCar()
     {
-        if (spawned_car.Count > 0 && spawned_car.Count <= max_car_in_scene) return;
+        if (spawned_car.Count > 0 && spawned_car.Count >= max_car_in_scene) return;
         
         Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
