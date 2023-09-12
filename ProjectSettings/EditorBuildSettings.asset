@@ -4,8 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CarTesting.unity
+    guid: e009b6d1ca9668746a016781931f0426
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: 11a7bf011913193478d30d870723c5b7, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e2c5e38c783772742949cda4359a4f85,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: db19da8fd39678f45b47dd0b9bde4a2c, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 35bc9c91670aa8c4098878f24e5226fa, type: 2}
   m_UseUCBPForAssetBundles: 0
