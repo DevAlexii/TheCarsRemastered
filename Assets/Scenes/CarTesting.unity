@@ -6920,7 +6920,7 @@ MonoBehaviour:
       value:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
-  timer_to_spawn_car: 2
+  timer_to_spawn_car: 1
   car_prefabs:
   - {fileID: 1511708710891363274, guid: 0bb0b746177137e4b9d7d41526934874, type: 3}
   - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
@@ -6932,6 +6932,7 @@ MonoBehaviour:
   - {fileID: 2637713564822990630, guid: a7b98f1c0acc0eb4b9e47a533b9722d0, type: 3}
   max_car_in_scene: 10
   percentage_to_be_kamikaze: 20
+  invisibility_time: 10
 --- !u!1 &2132619574
 GameObject:
   m_ObjectHideFlags: 0

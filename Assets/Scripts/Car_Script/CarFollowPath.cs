@@ -106,7 +106,7 @@ public class CarFollowPath : MonoBehaviour
             }
             else if (path.Nodes[node_index].name.StartsWith("End"))
             {
-                Car_Spawn_Manager.self.RemoveCar(this.gameObject);
+                Car_Manager.self.RemoveCar(this.gameObject);
                 Destroy(this.gameObject);
             }
             node_index++;
@@ -177,7 +177,7 @@ public class CarFollowPath : MonoBehaviour
 
         if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, distance))
         {
-            if (queque_hit.transform.gameObject.layer == 3)
+            if (queque_hit.transform.gameObject.layer == 3 || queque_hit.transform.gameObject.layer == 6)
             {
                 stop_car = true;
             }

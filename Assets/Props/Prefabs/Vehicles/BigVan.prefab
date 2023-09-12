@@ -441,6 +441,7 @@ MonoBehaviour:
   - {fileID: 5027375698346355893}
   impulse_force: 500
   impulse_radius: 5
+  invisibleMaterial: {fileID: 2100000, guid: bdf2c99cd26ef734db83fcd39c8e7be1, type: 2}
 --- !u!1 &3828213714350671776
 GameObject:
   m_ObjectHideFlags: 0

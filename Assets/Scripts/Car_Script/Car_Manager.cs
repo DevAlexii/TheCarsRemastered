@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
+public class Car_Manager : Singleton<Car_Manager>
 {
     [SerializeField] List<Path_Dictionary> paths;
     [SerializeField] private float timer_to_spawn_car;
@@ -13,6 +13,12 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
     private float timer;
     private List<GameObject> spawned_car;
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
+
+    [Header("Invisibility")]
+    [SerializeField] private float invisibility_time;
+    private Action On_Invisibility;
+    private float invisibility_timer;
+    private bool invisibility_on;
 
     private void Start()
     {
@@ -35,6 +41,7 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
             SpawnCar();
             timer = 0;
         }
+        On_Invisibility?.Invoke();
     }
     void SpawnCar()
     {
@@ -59,21 +66,50 @@ public class Car_Spawn_Manager : Singleton<Car_Spawn_Manager>
             isKamikaze = false;
         }
         if (isKamikaze)
-        { 
-            if (!CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze)) 
-            { 
+        {
+            if (!CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze))
+            {
                 isKamikaze = false;
-            } 
+            }
         }
         GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity);
-        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze);
+        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
     public void RemoveCar(GameObject car)
     {
         spawned_car.Remove(car);
     }
+
+    #region PowerUp
+    #region Invisilibity
+    void InvisibilityTimer()
+    {
+        invisibility_timer += Time.deltaTime;
+        if (invisibility_timer >= invisibility_time)
+        {
+            invisibility_timer = 0;
+            ToogleInvisibility();
+            invisibility_on = false;
+            On_Invisibility = null;
+        }
+    }
+    public void ToogleInvisibility()
+    {
+        foreach (var car in spawned_car)
+        {
+            if (car.transform.GetChild(0).TryGetComponent(out Car_Interface car_Interface))
+            {
+                car_Interface.EnableInvisiblity();
+            }
+        }
+        invisibility_on = true;
+        On_Invisibility = InvisibilityTimer;
+    }
+    #endregion
+    #endregion
 }
+
 [Serializable]
 struct Path_Dictionary
 {

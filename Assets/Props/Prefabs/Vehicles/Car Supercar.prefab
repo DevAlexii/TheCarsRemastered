@@ -772,3 +772,4 @@ MonoBehaviour:
   - {fileID: 2021473866594943127}
   impulse_force: 500
   impulse_radius: 5
+  invisibleMaterial: {fileID: 2100000, guid: bdf2c99cd26ef734db83fcd39c8e7be1, type: 2}

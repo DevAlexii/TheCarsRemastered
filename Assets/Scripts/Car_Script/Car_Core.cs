@@ -13,12 +13,17 @@ public class Car_Core : MonoBehaviour, Car_Interface
 
     [Header("Internal Var")]
     private int directional_arrow_index_to_play;
+    public Material invisibleMaterial;
+    private Material[] start_materials;
+
 
     #region Initialized
-    public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false)
+    public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
     {
         carFollowPathRef.InitilizedPath(newPath, this, isKamikaze);
         directional_arrow_index_to_play = arrow_index;
+        start_materials = GetComponent<MeshRenderer>().materials;
+        if (has_to_be_invisible) EnableInvisiblity();
     }
     #endregion
 
@@ -62,8 +67,24 @@ public class Car_Core : MonoBehaviour, Car_Interface
     {
         carFollowPathRef.ToogleShouldMove();
     }
+
     public void EnableInvisiblity()
     {
+        int current_layer = transform.gameObject.layer;
+        transform.gameObject.layer = current_layer == 6 ? 3 : 6; //3 = car // 6 == Invisible
 
+        if (transform.gameObject.layer == 6)
+        {
+            Material[] materials_to_change = GetComponent<MeshRenderer>().materials;
+            for (int i = 0; i < materials_to_change.Length; i++)
+            {
+                materials_to_change[i] = invisibleMaterial;
+            }
+            GetComponent<MeshRenderer>().materials = materials_to_change;
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().materials = start_materials;
+        }
     }
 }

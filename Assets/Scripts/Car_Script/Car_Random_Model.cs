@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Car_Random_Model : MonoBehaviour
 {
     [SerializeField] private List<GameObject> models;
-    void Start()
+    void Awake()
     {
         int random_index = Random.Range(0, models.Count);
         GameObject random_model = models[random_index];
