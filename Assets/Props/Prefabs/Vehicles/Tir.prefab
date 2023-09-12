@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 384162805042584520}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.000000029802322, y: 130, z: -2.96732}
+  m_LocalPosition: {x: 0, y: 130, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -720,9 +720,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9219908977578542719}
   - component: {fileID: 7832693174036999215}
-  - component: {fileID: 1717745701255764386}
   m_Layer: 3
-  m_Name: TirBase
+  m_Name: Tir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,24 +765,6 @@ MonoBehaviour:
   node_reachable_distance: 0.5
   max_distance: 2.2
   min_distance: 1.5
---- !u!114 &1717745701255764386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8098404169660802738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15d76fc44d8cc21478b8f31017969d30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carFollowPathRef: {fileID: 7832693174036999215}
-  directional_arrwos:
-  - {fileID: 1868562060153074634}
-  - {fileID: 3857943359317545331}
-  impulse_force: 500
-  impulse_radius: 5
 --- !u!1 &8200236624554295424
 GameObject:
   m_ObjectHideFlags: 0
