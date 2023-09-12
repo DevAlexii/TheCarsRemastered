@@ -8,6 +8,7 @@ public class Car_Ramp_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = GetComponent<Collider>().isTrigger = false;
         rb.AddForce((transform.forward + Vector3.up) * 500, ForceMode.Force);
+        transform.gameObject.layer = 0;
         Destroy(transform.parent.gameObject,5);
     }
     void Update()
