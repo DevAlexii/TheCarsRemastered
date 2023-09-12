@@ -24,6 +24,10 @@ public class Car_Manager : Singleton<Car_Manager>
     [SerializeField] private float shrink_time;
     private Action On_Shrink;
     private float shrink_timer;
+    List<GameObject> car_in_scene = new List<GameObject>();
+    private Vector3 original_scale;
+    private Vector3 target_scale;
+    public bool enabl_shrink;
 
     private void Start()
     {
@@ -48,6 +52,11 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
+        if (enabl_shrink)
+        {
+            enabl_shrink = false;
+            ToogleShrink();
+        }
     }
     void SpawnCar()
     {
@@ -114,13 +123,9 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     #endregion
     #region Shrink
-    List<GameObject> car_in_scene = new List<GameObject>();
-    private Vector3 original_scale;
-    private Vector3 target_scale;
-
     public void ToogleShrink()
     {
-        original_scale = spawned_car[0].transform.localScale;
+        original_scale = Vector3.one * .01f;
         target_scale = original_scale * .5f;
 
         car_in_scene = spawned_car;
@@ -133,18 +138,17 @@ public class Car_Manager : Singleton<Car_Manager>
         {
             shrink_timer = 0;
             On_Shrink = null;
+            return;
         }
-        if (On_Shrink == null) return;
 
         foreach (var car in car_in_scene)
         {
-            car.transform.localScale = Vector3.Lerp(original_scale, target_scale, shrink_timer / shrink_time);
+            car.transform.localScale = Vector3.Slerp(car.transform.localScale, target_scale, shrink_timer / shrink_time);
         }
     }
     #endregion
     #endregion
 }
-
 [Serializable]
 struct Path_Dictionary
 {
