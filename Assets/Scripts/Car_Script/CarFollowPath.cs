@@ -143,9 +143,9 @@ public class CarFollowPath : MonoBehaviour
             transform.Translate(front_wheels[0].forward * move_speed * Time.deltaTime);
         }
     }
-    public void ToogleShouldMove()
+    public bool ToogleShouldMove()
     {
-        if (!can_be_touched) return;
+        if (!can_be_touched) return false;
 
         if (On_CarMove != null)
         {
@@ -155,6 +155,7 @@ public class CarFollowPath : MonoBehaviour
                 On_Waiting = null;
             }
         }
+        return true;
     }
     public void OnCrash()
     {

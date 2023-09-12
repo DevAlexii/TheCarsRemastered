@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -75,8 +76,35 @@ public class Car_Core : MonoBehaviour, Car_Interface
 
     public void OnCarClicked()
     {
-        carFollowPathRef.ToogleShouldMove();
+        if (carFollowPathRef.ToogleShouldMove())
+        {
+            StartCoroutine(CarClickerAnimation());
+        }
     }
+    private IEnumerator CarClickerAnimation()
+    {
+        float timer = 0;
+        float time = .2f;
+        Vector3 start_scale = Vector3.one * 0.01f;
+        Vector3 target_scale = Vector3.one * 0.011f;
+
+        while (timer <= time)
+        {
+            timer += Time.deltaTime;
+
+            transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            yield return null;
+        }
+        float timer2 = 0;
+        while (timer2 <= time)
+        {
+            timer2 += Time.deltaTime;
+            transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+            yield return null;
+        }
+        StopCoroutine(CarClickerAnimation());
+    }
+
     public void EnableInvisiblity()
     {
         int current_layer = transform.gameObject.layer;
