@@ -20,6 +20,11 @@ public class Car_Manager : Singleton<Car_Manager>
     private float invisibility_timer;
     private bool invisibility_on;
 
+    [Header("Shrink")]
+    [SerializeField] private float shrink_time;
+    private Action On_Shrink;
+    private float shrink_timer;
+
     private void Start()
     {
         spawned_car = new List<GameObject>();
@@ -42,6 +47,7 @@ public class Car_Manager : Singleton<Car_Manager>
             timer = 0;
         }
         On_Invisibility?.Invoke();
+        On_Shrink?.Invoke();
     }
     void SpawnCar()
     {
@@ -105,6 +111,35 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         invisibility_on = true;
         On_Invisibility = InvisibilityTimer;
+    }
+    #endregion
+    #region Shrink
+    List<GameObject> car_in_scene = new List<GameObject>();
+    private Vector3 original_scale;
+    private Vector3 target_scale;
+
+    public void ToogleShrink()
+    {
+        original_scale = spawned_car[0].transform.localScale;
+        target_scale = original_scale * .5f;
+
+        car_in_scene = spawned_car;
+        On_Shrink = ShrinkTimer;
+    }
+    void ShrinkTimer()
+    {
+        shrink_timer += Time.deltaTime;
+        if (shrink_timer >= shrink_time)
+        {
+            shrink_timer = 0;
+            On_Shrink = null;
+        }
+        if (On_Shrink == null) return;
+
+        foreach (var car in car_in_scene)
+        {
+            car.transform.localScale = Vector3.Lerp(original_scale, target_scale, shrink_timer / shrink_time);
+        }
     }
     #endregion
     #endregion

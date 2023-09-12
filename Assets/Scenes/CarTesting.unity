@@ -6933,6 +6933,8 @@ MonoBehaviour:
   max_car_in_scene: 10
   percentage_to_be_kamikaze: 20
   invisibility_time: 10
+  shrink_time: 2
+  ciao: 0
 --- !u!1 &2132619574
 GameObject:
   m_ObjectHideFlags: 0
