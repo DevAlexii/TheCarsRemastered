@@ -2982,13 +2982,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865698231}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.12528345, y: -0.83669657, z: 0.21482709, w: -0.487947}
-  m_LocalPosition: {x: -13.24, y: 7.28, z: 7.41}
+  m_LocalRotation: {x: -0.115714096, y: -0.8824314, z: 0.29055533, w: -0.35142958}
+  m_LocalPosition: {x: -12.3, y: 10, z: 10.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 28.8, y: -240.5, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.45, y: -223.43, z: 0}
 --- !u!114 &865698235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6920,7 +6920,7 @@ MonoBehaviour:
       value:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
-  timer_to_spawn_car: 2
+  timer_to_spawn_car: 1.5
   car_prefabs:
   - {fileID: 1511708710891363274, guid: 0bb0b746177137e4b9d7d41526934874, type: 3}
   - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
@@ -6934,7 +6934,6 @@ MonoBehaviour:
   percentage_to_be_kamikaze: 20
   invisibility_time: 10
   shrink_time: 2
-  enabl_shrink: 0
 --- !u!1 &2132619574
 GameObject:
   m_ObjectHideFlags: 0

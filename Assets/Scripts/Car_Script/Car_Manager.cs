@@ -27,7 +27,6 @@ public class Car_Manager : Singleton<Car_Manager>
     List<GameObject> car_in_scene = new List<GameObject>();
     private Vector3 original_scale;
     private Vector3 target_scale;
-    public bool enabl_shrink;
 
     private void Start()
     {
@@ -52,11 +51,6 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
-        if (enabl_shrink)
-        {
-            enabl_shrink = false;
-            ToogleShrink();
-        }
     }
     void SpawnCar()
     {

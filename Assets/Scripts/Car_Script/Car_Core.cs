@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Car_Core : MonoBehaviour, Car_Interface
 {
@@ -15,7 +16,6 @@ public class Car_Core : MonoBehaviour, Car_Interface
     private int directional_arrow_index_to_play;
     public Material invisibleMaterial;
     private Material[] start_materials;
-
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -60,6 +60,16 @@ public class Car_Core : MonoBehaviour, Car_Interface
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
         }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
+        {
+            On_Ramp_Collision();
+        }
+    }
+    void On_Ramp_Collision()
+    {
+        Destroy(transform.parent.GetComponent<CarFollowPath>());
+        gameObject.AddComponent<Car_Ramp_Movement>();
+        Car_Manager.self.RemoveCar(transform.parent.gameObject);
     }
     #endregion
 
@@ -67,7 +77,6 @@ public class Car_Core : MonoBehaviour, Car_Interface
     {
         carFollowPathRef.ToogleShouldMove();
     }
-
     public void EnableInvisiblity()
     {
         int current_layer = transform.gameObject.layer;
