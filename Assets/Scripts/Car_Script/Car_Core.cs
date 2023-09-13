@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Car_Core : MonoBehaviour, Car_Interface
 {
@@ -17,6 +16,8 @@ public class Car_Core : MonoBehaviour, Car_Interface
     private int directional_arrow_index_to_play;
     public Material invisibleMaterial;
     private Material[] start_materials;
+    private bool shrink_on;
+    private bool is_crashed;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -60,6 +61,8 @@ public class Car_Core : MonoBehaviour, Car_Interface
             rb.isKinematic = false;
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
+            is_crashed = true;
+            Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
         {
@@ -74,9 +77,10 @@ public class Car_Core : MonoBehaviour, Car_Interface
     }
     #endregion
 
+    #region CarClicked
     public void OnCarClicked()
     {
-        if (carFollowPathRef.ToogleShouldMove())
+        if (carFollowPathRef.ToogleShouldMove() && !is_crashed)
         {
             StartCoroutine(CarClickerAnimation());
         }
@@ -85,8 +89,8 @@ public class Car_Core : MonoBehaviour, Car_Interface
     {
         float timer = 0;
         float time = .2f;
-        Vector3 start_scale = Vector3.one * 0.01f;
-        Vector3 target_scale = Vector3.one * 0.011f;
+        Vector3 start_scale = shrink_on ? (Vector3.one * 0.01f) * 0.5f : Vector3.one * 0.01f;
+        Vector3 target_scale = start_scale * 1.2f;
 
         while (timer <= time)
         {
@@ -104,7 +108,9 @@ public class Car_Core : MonoBehaviour, Car_Interface
         }
         StopCoroutine(CarClickerAnimation());
     }
+    #endregion
 
+    #region InterfaceImplemented
     public void EnableInvisiblity()
     {
         int current_layer = transform.gameObject.layer;
@@ -124,4 +130,9 @@ public class Car_Core : MonoBehaviour, Car_Interface
             GetComponent<MeshRenderer>().materials = start_materials;
         }
     }
+    public void EnableShrink()
+    {
+        shrink_on = true;
+    }
+    #endregion
 }

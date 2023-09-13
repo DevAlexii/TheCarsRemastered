@@ -12,6 +12,7 @@ public class Car_Manager : Singleton<Car_Manager>
     [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
     private List<GameObject> spawned_car;
+    private List<GameObject> car_crashed;
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
     [Header("Invisibility")]
@@ -31,6 +32,7 @@ public class Car_Manager : Singleton<Car_Manager>
     private void Start()
     {
         spawned_car = new List<GameObject>();
+        car_crashed = new List<GameObject>();
         paths_dictionary = new Dictionary<Direction, Dictionary<Point, List<Path>>>();
         for (int i = 0; i < paths.Count; i++)
         {
@@ -52,6 +54,8 @@ public class Car_Manager : Singleton<Car_Manager>
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
     }
+
+    #region Spawner
     void SpawnCar()
     {
         if (spawned_car.Count > 0 && spawned_car.Count >= max_car_in_scene) return;
@@ -81,14 +85,22 @@ public class Car_Manager : Singleton<Car_Manager>
                 isKamikaze = false;
             }
         }
-        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity);
+        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity,this.transform);
         car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
+    #endregion
+
+    #region UpdateCarList
     public void RemoveCar(GameObject car)
     {
         spawned_car.Remove(car);
     }
+    public void AddCrashedCar(GameObject car)
+    {
+        car_crashed.Add(car);   
+    }
+    #endregion
 
     #region PowerUp
     #region Invisilibity
@@ -123,6 +135,13 @@ public class Car_Manager : Singleton<Car_Manager>
         target_scale = original_scale * .5f;
 
         car_in_scene = spawned_car;
+        foreach (var car in car_in_scene)
+        {
+            if(car.transform.GetChild(0).TryGetComponent(out Car_Interface car_function))
+            {
+                car_function.EnableShrink();
+            }
+        }
         On_Shrink = ShrinkTimer;
     }
     void ShrinkTimer()
@@ -143,6 +162,8 @@ public class Car_Manager : Singleton<Car_Manager>
     #endregion
     #endregion
 }
+
+#region Structs
 [Serializable]
 struct Path_Dictionary
 {
@@ -159,3 +180,4 @@ struct PathStart
     public Point Key => key;
     public List<Path> Value => value;
 }
+#endregion
