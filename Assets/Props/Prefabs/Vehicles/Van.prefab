@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 1196464524007612296}
   - component: {fileID: 4152832833106434412}
   - component: {fileID: 6354350386283044976}
+  - component: {fileID: 1433822454930806281}
   m_Layer: 3
   m_Name: scocca3
   m_TagString: Untagged
@@ -575,6 +576,24 @@ MonoBehaviour:
   impulse_force: 500
   impulse_radius: 5
   invisibleMaterial: {fileID: 2100000, guid: bdf2c99cd26ef734db83fcd39c8e7be1, type: 2}
+--- !u!114 &1433822454930806281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365838535029257374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098f9f7d42b971d4da35ccda9a0c24e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0.011764706, g: 0.06666667, b: 0.16078432, a: 1}
+  outlineWidth: 1.2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5727322769156763104
 GameObject:
   m_ObjectHideFlags: 0
