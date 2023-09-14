@@ -62,6 +62,7 @@ public class Car_Core : MonoBehaviour, Car_Interface
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
             is_crashed = true;
+
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
@@ -80,9 +81,12 @@ public class Car_Core : MonoBehaviour, Car_Interface
     #region CarClicked
     public void OnCarClicked()
     {
-        if (carFollowPathRef.ToogleShouldMove() && !is_crashed)
+        if (!is_crashed)
         {
-            StartCoroutine(CarClickerAnimation());
+            if (carFollowPathRef.ClickedCar())
+            {
+                StartCoroutine(CarClickerAnimation());
+            }
         }
     }
     private IEnumerator CarClickerAnimation()

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 using Random = UnityEngine.Random;
 
 public class CarFollowPath : MonoBehaviour
@@ -38,6 +39,9 @@ public class CarFollowPath : MonoBehaviour
     private float distance;
     private Ray queque_ray;
     private RaycastHit queque_hit;
+
+    [Header("VFX")]
+    [SerializeField] private GameObject smoke_effect;
 
     private void Start()
     {
@@ -92,6 +96,7 @@ public class CarFollowPath : MonoBehaviour
             {
                 stop_car = true;
                 owner.ShowDirectionalArrow();
+                ToogleSmokeEffectOnWait(true);
                 On_Waiting = Waiting;
                 can_be_touched = true;
             }
@@ -143,7 +148,7 @@ public class CarFollowPath : MonoBehaviour
             transform.Translate(front_wheels[0].forward * move_speed * Time.deltaTime);
         }
     }
-    public bool ToogleShouldMove()
+    private bool ToogleShouldMove()
     {
         if (!can_be_touched) return false;
 
@@ -157,17 +162,29 @@ public class CarFollowPath : MonoBehaviour
         }
         return true;
     }
+    public bool ClickedCar()
+    {
+        if (ToogleShouldMove())
+        {
+            ToogleSmokeEffectOnWait();
+            return true;
+        }
+        return false;
+    }
     public void OnCrash()
     {
+        ToogleSmokeEffectOnWait();
         Destroy(this);
     }
     private void Waiting()
     {
         wait_timer += Time.deltaTime;
+        smoke_effect.GetComponent<VisualEffect>().SetFloat("BlendColor", wait_timer / wait_time);
         if (wait_timer >= wait_time)
         {
             wait_timer = 0;
             ToogleShouldMove();
+            ToogleSmokeEffectOnWait();
             On_Waiting = null;
         }
     }
@@ -187,5 +204,9 @@ public class CarFollowPath : MonoBehaviour
         {
             stop_car = false;
         }
+    }
+    private void ToogleSmokeEffectOnWait(bool active = false)
+    {
+        smoke_effect.SetActive(active);
     }
 }
