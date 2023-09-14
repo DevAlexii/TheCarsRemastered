@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -12,9 +11,7 @@ public class Car_Manager : Singleton<Car_Manager>
     [SerializeField] private Int32 max_car_in_scene;
     [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
-
     private List<GameObject> spawned_car;
-
     private List<GameObject> car_crashed;
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
@@ -31,11 +28,6 @@ public class Car_Manager : Singleton<Car_Manager>
     List<GameObject> car_in_scene = new List<GameObject>();
     private Vector3 original_scale;
     private Vector3 target_scale;
-
-    [Header("Slowmo")]
-    private float originalTimeScale;
-
-
 
     private void Start()
     {
@@ -93,7 +85,7 @@ public class Car_Manager : Singleton<Car_Manager>
                 isKamikaze = false;
             }
         }
-        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity,this.transform);
         car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
@@ -106,7 +98,7 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void AddCrashedCar(GameObject car)
     {
-        car_crashed.Add(car);
+        car_crashed.Add(car);   
     }
     #endregion
 
@@ -118,12 +110,12 @@ public class Car_Manager : Singleton<Car_Manager>
         if (invisibility_timer >= invisibility_time)
         {
             invisibility_timer = 0;
-            ToggleInvisibility();
+            ToogleInvisibility();
             invisibility_on = false;
             On_Invisibility = null;
         }
     }
-    public void ToggleInvisibility()
+    public void ToogleInvisibility()
     {
         foreach (var car in spawned_car)
         {
@@ -137,7 +129,7 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     #endregion
     #region Shrink
-    public void ToggleShrink()
+    public void ToogleShrink()
     {
         original_scale = Vector3.one * .01f;
         target_scale = original_scale * .5f;
@@ -145,7 +137,7 @@ public class Car_Manager : Singleton<Car_Manager>
         car_in_scene = spawned_car;
         foreach (var car in car_in_scene)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out Car_Interface car_function))
+            if(car.transform.GetChild(0).TryGetComponent(out Car_Interface car_function))
             {
                 car_function.EnableShrink();
             }
@@ -167,49 +159,8 @@ public class Car_Manager : Singleton<Car_Manager>
             car.transform.localScale = Vector3.Slerp(car.transform.localScale, target_scale, shrink_timer / shrink_time);
         }
     }
-
-
-    #endregion
-    #region Slowmo
-    public void ToggleSlowDownGame(float slowdownDuration)
-    {
-        originalTimeScale = Time.timeScale;
-        Time.timeScale = 0.2f; // Range Slowmo
-        Time.fixedDeltaTime = 0.2f * Time.deltaTime;
-
-        StartCoroutine(ResumeGameAfterDelay(slowdownDuration));
-    }
-
-    private IEnumerator ResumeGameAfterDelay(float delay)
-    {
-        yield return new WaitForSecondsRealtime(delay);
-
-        Time.timeScale = originalTimeScale;
-        Time.fixedDeltaTime = Time.deltaTime;
-    }
-
-    #endregion
-    #region Nuke
-    public void toggleNuke(float explosionForce, float explosionRadius)
-    {
-        foreach (GameObject obj in spawned_car)
-        {
-            obj.GetComponent<Rigidbody>().isKinematic = false;
-            Destroy(obj.GetComponent<CarFollowPath>());
-            obj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce * 10, transform.position, explosionRadius);
-            Destroy(obj, 2);
-
-        }
-        Destroy(gameObject);
-    }
-
-
-
-
-
     #endregion
     #endregion
-
 }
 
 #region Structs
