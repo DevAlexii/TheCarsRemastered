@@ -18,6 +18,8 @@ public class CarFollowPath : MonoBehaviour
 
     [Header("Wait Time")]
     [SerializeField] private float wait_time;
+    [SerializeField] private AnimationCurve angle_curve;
+    private float start_yaw;
     private float wait_timer;
 
     [Header("PathInfo")]
@@ -34,8 +36,8 @@ public class CarFollowPath : MonoBehaviour
     private bool is_kamikaze;
 
     [Header("Queque")]
-    [SerializeField][Range(1.5f,2.3f)] float max_distance;
-    [SerializeField][Range(1f,1.5f)] float min_distance;
+    [SerializeField][Range(1.5f, 2.3f)] float max_distance;
+    [SerializeField][Range(1f, 1.5f)] float min_distance;
     private float distance;
     private Ray queque_ray;
     private RaycastHit queque_hit;
@@ -51,7 +53,7 @@ public class CarFollowPath : MonoBehaviour
         target_max_move_speed = max_move_speed;
         move_speed = 0;
     }
-    public void InitilizedPath(Path newPath, Car_Core Owner,bool Kamikaze)
+    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze)
     {
         path = newPath;
         On_CarMove = MoveCarToNode;
@@ -96,6 +98,7 @@ public class CarFollowPath : MonoBehaviour
             {
                 stop_car = true;
                 owner.ShowDirectionalArrow();
+                start_yaw = shell.eulerAngles.y;
                 ToogleSmokeEffectOnWait(true);
                 On_Waiting = Waiting;
                 can_be_touched = true;
@@ -180,6 +183,7 @@ public class CarFollowPath : MonoBehaviour
     {
         wait_timer += Time.deltaTime;
         smoke_effect.GetComponent<VisualEffect>().SetFloat("BlendColor", wait_timer / wait_time);
+        shell.rotation = Quaternion.Euler(new Vector3(0, start_yaw + angle_curve.Evaluate(wait_timer), 0));
         if (wait_timer >= wait_time)
         {
             wait_timer = 0;
