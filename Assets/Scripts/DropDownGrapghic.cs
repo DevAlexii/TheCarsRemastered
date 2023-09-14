@@ -15,7 +15,7 @@ public class DropDownGrapghic : MonoBehaviour
     }
 
     // Update is called once per frame
-    void ChangeGraphicSettings(int var)
+    public void HandleInputData(int var)
     {
         if (var == 0)
         {
