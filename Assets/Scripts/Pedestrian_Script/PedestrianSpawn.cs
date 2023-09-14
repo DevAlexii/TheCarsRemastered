@@ -6,7 +6,7 @@ using UnityEngine;
 public class PedestrianSpawn : MonoBehaviour
 {
     [SerializeField] GameObject pedestrianPrefab;
-
+    public List<GameObject> pedestriansRef;
 
     [Header("Variables")]
     [SerializeField] float timeBetweenSpawn;
@@ -16,7 +16,6 @@ public class PedestrianSpawn : MonoBehaviour
     Int32 currentPedestrians;
 
     List<Transform> spawnPoint;
-    public List<GameObject> pedestriansRef;
 
     void Start()
     {
@@ -37,7 +36,6 @@ public class PedestrianSpawn : MonoBehaviour
         {
             int pedeRand = UnityEngine.Random.Range(0, spawnPoint.Count);
             GameObject pede = Instantiate(pedestrianPrefab, spawnPoint[pedeRand].position, Quaternion.identity);
-            pede.transform.forward = transform.forward;
             pedestriansRef.Add(pede);
 
             currentPedestrians++;

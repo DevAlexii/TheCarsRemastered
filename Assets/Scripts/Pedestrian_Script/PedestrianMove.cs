@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PedestrianMove : MonoBehaviour
@@ -24,7 +22,7 @@ public class PedestrianMove : MonoBehaviour
 
     void PedestriansMoves()
     {
-        transform.Translate(transform.forward * Time.deltaTime * 2);
+
     }
 
     private void OnCollisionEnter(Collision collision)
