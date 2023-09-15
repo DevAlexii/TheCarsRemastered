@@ -5,62 +5,48 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class Editor_DayTime : MonoBehaviour
 {
+    [Header("DayTime")]
     [SerializeField] Transform day;
     [SerializeField] Vector3 day_offset_rotation;
     private float angle_multiplier = 15f;
     [SerializeField][Range(0f, 23f)] private float time;
 
+    [Header("Lights")]
     [SerializeField] private Light sun, moon, sunset;
-    [SerializeField][Range(0, 23)] private Int32 TimeWhenSunIsOff;
-    [SerializeField][Range(0, 23)] private Int32 TimeWhenMoonIsOff;
-    [SerializeField] private AnimationCurve SunsetIntensity;
-    [SerializeField] private AnimationCurve SunIntensity;
-    [SerializeField] private AnimationCurve MoonIntensity;
     [SerializeField] private GameObject Lampioni;
-    [SerializeField] private AnimationCurve lampioni_intensity;
 
+    [Header("Var")]
     private float angle;
     private Int32 current_time;
 
+
+    [Header("Curve")]
+    [SerializeField] private AnimationCurve sun_curve;
+    [SerializeField] private AnimationCurve moon_curve;
+    [SerializeField] private AnimationCurve SunsetIntensity;
+    [SerializeField] private AnimationCurve lampioni_intensity;
 
     private void Start()
     {
         angle = time * angle_multiplier;
     }
-
     void Update()
     {
-        //    angle += Time.deltaTime /** elapse_day_speed*/;
-        //    if (angle >= 360) angle = 0;
-        //    RotateDay();
-        //    ToogleSunMoon();
-        //    time = (Int32)(angle / angle_multiplier);
-        //    sun.intensity = sunset_intensity_curve.Evaluate(angle);
-
-
         angle = (time * angle_multiplier) - 90;
         current_time = (Int32)((angle + 90) / angle_multiplier);
-        RotateDay();
+        RotateSun();
         ToogleSunMoon();
         ToogleLampioni();
-        sunset.intensity = SunsetIntensity.Evaluate(current_time);
-        sun.intensity = SunIntensity.Evaluate(angle);
-        moon.intensity = MoonIntensity.Evaluate(angle);
     }
-
-    private void RotateDay()
+    private void RotateSun()
     {
         day.eulerAngles = new Vector3(angle, day_offset_rotation.y, day_offset_rotation.z);
     }
     private void ToogleSunMoon()
     {
-        if (current_time >= TimeWhenSunIsOff || current_time < TimeWhenMoonIsOff)
-            sun.enabled = false;
-        else sun.enabled = true;
-
-        if (current_time >= TimeWhenMoonIsOff || current_time < TimeWhenSunIsOff)
-            moon.enabled = false;
-        else moon.enabled = true;
+        sun.intensity = sun_curve.Evaluate(current_time);
+        moon.intensity = moon_curve.Evaluate(current_time);
+        sunset.intensity = SunsetIntensity.Evaluate(current_time);
     }
     private void ToogleLampioni()
     {
