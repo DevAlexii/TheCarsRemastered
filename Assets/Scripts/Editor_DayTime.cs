@@ -37,7 +37,7 @@ public class Editor_DayTime : MonoBehaviour
     {
         if (elapse_day)
         {
-            time += Time.deltaTime;
+            time += Time.deltaTime * elapse_day_speed;
             if (time >= 24f)
             {
                 time = 0;
