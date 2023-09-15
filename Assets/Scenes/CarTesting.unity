@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.38817438, g: 0.5570415, b: 0.9842938, a: 1}
+  m_IndirectSpecularColor: {r: 0.3881227, g: 0.55701053, b: 0.98475546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1924,6 +1924,166 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bef03dc7478ada647b328890a276f699, type: 3}
+--- !u!1 &533918893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533918894}
+  - component: {fileID: 533918895}
+  m_Layer: 0
+  m_Name: DayTimeEditor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533918894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533918893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533918895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533918893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0089eda4f1fbb44e94dde2df17d1b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: {fileID: 329434743174685261}
+  day_offset_rotation: {x: 0, y: 109, z: 166}
+  time: 6.18
+  sun: {fileID: 5618589339540375475}
+  moon: {fileID: 1253867736}
+  sunset: {fileID: 1304838909}
+  TimeWhenSunIsOff: 18
+  TimeWhenMoonIsOff: 6
+  SunsetIntensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 3
+      inSlope: -0.0016468177
+      outSlope: -0.0016468177
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.37821606
+    - serializedVersion: 3
+      time: 40.84627
+      value: 1.6753668
+      inSlope: -0.05822546
+      outSlope: -0.05822546
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 79.26009
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 88.192894
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08346458
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 137.09566
+      value: 2.0667639
+      inSlope: 0.045265175
+      outSlope: 0.045265175
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 180
+      value: 3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 230.1006
+      value: 1.9689212
+      inSlope: -0.048584778
+      outSlope: -0.048584778
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 294.15836
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 297.93564
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 334.90942
+      value: 2.1834419
+      inSlope: 0.0496747
+      outSlope: 0.0496747
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.39072207
+    - serializedVersion: 3
+      time: 360
+      value: 3
+      inSlope: 0.0058660335
+      outSlope: 0.0058660335
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6240148
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Lampioni: {fileID: 943359117}
+  TimeWhenLampioniOn: 20
+  TimeWhenLampioniOff: 4
 --- !u!1 &534279574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,12 +3281,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828578830}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: -0.01, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 219791614908364084}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &839230865
 GameObject:
@@ -3844,7 +4004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943359117}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.5763111, y: -2.9164743, z: -0.8108835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3855,7 +4015,7 @@ Transform:
   - {fileID: 2061314686}
   - {fileID: 629281597}
   - {fileID: 900532112}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 219791614908364084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &950342953
 GameObject:
@@ -4512,161 +4672,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 187564263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1118853742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1118853743}
-  - component: {fileID: 1118853744}
-  m_Layer: 0
-  m_Name: DayCycle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1118853743
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118853742}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6953251, y: 3.0101771, z: 1.5901154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1118853744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118853742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748ed8ecd492ab542a5aefbba7f15bbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  day_origin: {fileID: 329434743174685261}
-  offset_angle: {x: 0, y: 109, z: 166}
-  angle: 51
-  day_time_speed: 10
-  sunset: {fileID: 1304838909}
-  sunset_curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 3
-      inSlope: -0.0016468177
-      outSlope: -0.0016468177
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.37821606
-    - serializedVersion: 3
-      time: 40.84627
-      value: 1.6753668
-      inSlope: -0.05822546
-      outSlope: -0.05822546
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 79.26009
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 88.192894
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.08346458
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 137.09566
-      value: 2.0667639
-      inSlope: 0.045265175
-      outSlope: 0.045265175
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 180
-      value: 3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 230.1006
-      value: 1.9689212
-      inSlope: -0.048584778
-      outSlope: -0.048584778
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 294.15836
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 297.93564
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 334.90942
-      value: 2.1834419
-      inSlope: 0.0496747
-      outSlope: 0.0496747
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.39072207
-    - serializedVersion: 3
-      time: 360
-      value: 3
-      inSlope: 0.0058660335
-      outSlope: 0.0058660335
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.6240148
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  lampioni: {fileID: 943359117}
 --- !u!1 &1122601088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,7 +5427,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253867733}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -5660,7 +5665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1304838907
 Transform:
   m_ObjectHideFlags: 0
@@ -5711,7 +5716,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1.3468392
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9735,6 +9740,8 @@ Transform:
   - {fileID: 3775893718497360707}
   - {fileID: 1304838907}
   - {fileID: 7702962195543426467}
+  - {fileID: 828578834}
+  - {fileID: 943359118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &329434743174685261
@@ -9745,14 +9752,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458900551633196840}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.28399736, y: -0.56294066, z: -0.33768627, w: 0.69886434}
+  m_LocalRotation: {x: 0.77069443, y: -0.13561717, z: 0.49081978, w: 0.3830588}
   m_LocalPosition: {x: -2.173307, y: 1.8669505, z: 1.8010473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1253867734}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 231, y: 109, z: 166}
+  m_LocalEulerAnglesHint: {x: 103.11, y: 116, z: 53}
 --- !u!1 &1458900551633196840
 GameObject:
   m_ObjectHideFlags: 0
@@ -9981,7 +9988,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 1828cf1d3f21d3a4db466e26492292c8, type: 2}
+  sharedProfile: {fileID: 11400000, guid: be8f17ddd325e894daea51dcf86c479d, type: 2}
 --- !u!108 &4983623218049761205
 Light:
   m_ObjectHideFlags: 0
@@ -10182,12 +10189,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1526637497}
   - {fileID: 898959881}
-  - {fileID: 1205920432}
   - {fileID: 7920548446412522379}
   - {fileID: 219791614908364084}
   - {fileID: 508551295}
   - {fileID: 1501779515}
-  - {fileID: 828578834}
   - {fileID: 329434743174685261}
-  - {fileID: 1118853743}
-  - {fileID: 943359118}
+  - {fileID: 533918894}
+  - {fileID: 1205920432}
