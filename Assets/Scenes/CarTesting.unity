@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.38827237, g: 0.55713254, b: 0.9847284, a: 1}
+  m_IndirectSpecularColor: {r: 0.388241, g: 0.55710834, b: 0.98473763, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1970,7 +1970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 329434743174685261}
   day_offset_rotation: {x: 0, y: 109, z: 166}
-  time: 1.7
+  time: 0
+  elapse_day: 0
+  elapse_day_speed: 1
   sun: {fileID: 5618589339540375475}
   moon: {fileID: 1253867736}
   sunset: {fileID: 1304838909}

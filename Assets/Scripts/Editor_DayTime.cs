@@ -1,8 +1,6 @@
 using System;
-using System.Net.Sockets;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class Editor_DayTime : MonoBehaviour
 {
     [Header("DayTime")]
@@ -10,9 +8,14 @@ public class Editor_DayTime : MonoBehaviour
     [SerializeField] Vector3 day_offset_rotation;
     private float angle_multiplier = 15f;
     [SerializeField][Range(0f, 23f)] private float time;
+    [SerializeField] private bool elapse_day;
+    [SerializeField] private float elapse_day_speed;
+
 
     [Header("Lights")]
-    [SerializeField] private Light sun, moon, sunset;
+    [SerializeField] private Light sun;
+    [SerializeField] private Light moon;
+    [SerializeField] private Light sunset;
     [SerializeField] private GameObject Lampioni;
 
     [Header("Var")]
@@ -28,10 +31,18 @@ public class Editor_DayTime : MonoBehaviour
 
     private void Start()
     {
-        angle = time * angle_multiplier;
+        angle = (time * angle_multiplier) - 90;
     }
     void Update()
     {
+        if (elapse_day)
+        {
+            time += Time.deltaTime;
+            if (time >= 24f)
+            {
+                time = 0;
+            }
+        }
         angle = (time * angle_multiplier) - 90;
         current_time = (Int32)((angle + 90) / angle_multiplier);
         RotateSun();
