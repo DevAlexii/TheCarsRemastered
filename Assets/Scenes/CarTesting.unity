@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.38821718, g: 0.557076, b: 0.9847398, a: 1}
+  m_IndirectSpecularColor: {r: 0.38827237, g: 0.55713254, b: 0.9847284, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1251,7 +1251,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -1296,7 +1296,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.0355e-41, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.7715612e-36}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 329434743174685261}
   day_offset_rotation: {x: 0, y: 109, z: 166}
-  time: 23
+  time: 1.7
   sun: {fileID: 5618589339540375475}
   moon: {fileID: 1253867736}
   sunset: {fileID: 1304838909}
@@ -1988,16 +1988,16 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 6
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 6.439087
+      value: 0.35567248
+      inSlope: 0.17736636
+      outSlope: 0.17736636
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.17629941
-      outWeight: 0.33333334
+      outWeight: 0.4900714
     - serializedVersion: 3
-      time: 8
+      time: 11.073601
       value: 4
       inSlope: 0
       outSlope: 0
@@ -2040,7 +2040,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 4
+      value: 0.16490865
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2049,7 +2049,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 6
-      value: 4
+      value: 0.16490865
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2076,7 +2076,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 19
-      value: 4
+      value: 0.16490865
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2085,7 +2085,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 23.99
-      value: 4
+      value: 0.16490865
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2108,7 +2108,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 6
+      time: 3.9515815
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2116,6 +2116,24 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5.2895064
+      value: 0.72061396
+      inSlope: 0.95151436
+      outSlope: 0.95151436
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6.0654716
+      value: 1.755158
+      inSlope: 1.3839656
+      outSlope: 1.3839656
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.16604412
     - serializedVersion: 3
       time: 8
       value: 3
@@ -2126,7 +2144,16 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 10
+      time: 9.1557865
+      value: 0.3094533
+      inSlope: -0.9012936
+      outSlope: -0.9012936
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.525098
+    - serializedVersion: 3
+      time: 10.269374
       value: 0
       inSlope: -0.0037242095
       outSlope: -0.0037242095
@@ -2135,7 +2162,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.079565614
     - serializedVersion: 3
-      time: 18
+      time: 12.100342
       value: 0
       inSlope: 0.00051371986
       outSlope: 0.00051371986
@@ -2144,7 +2171,16 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 19
+      time: 15.151569
+      value: 0.44836926
+      inSlope: 0.48767275
+      outSlope: 0.48767275
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3738728
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 17.911617
       value: 3
       inSlope: 0.0011155871
       outSlope: 0.0011155871
@@ -2153,7 +2189,16 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 20
+      time: 20.239225
+      value: 0.7686337
+      inSlope: -0.96961147
+      outSlope: -0.96961147
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.20988601
+    - serializedVersion: 3
+      time: 22.514729
       value: 0
       inSlope: 0.0007291508
       outSlope: 0.0007291508
@@ -2186,7 +2231,16 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 5
+      time: 5.85262
+      value: 59.775238
+      inSlope: 0.04182189
+      outSlope: -17.740559
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.39924532
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5.942893
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2195,7 +2249,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 19.198326
+      time: 17.063835
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2204,7 +2258,7 @@ MonoBehaviour:
       inWeight: 0.063085645
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 22
+      time: 19.365936
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2212,6 +2266,15 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 19.763262
+      value: 60
+      inSlope: 19.429039
+      outSlope: -0.049851608
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.81955194
     - serializedVersion: 3
       time: 23.99
       value: 60
@@ -2554,7 +2617,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -2599,7 +2662,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 6.29261e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -3883,7 +3946,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -3928,7 +3991,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 6.1e-43, z: 0, w: -3330960}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -4597,7 +4660,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -4642,7 +4705,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.11111111, y: -1, z: 3e-45, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.0455382e-37}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5572,7 +5635,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Intensity: 0.16490865
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5856,7 +5919,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.00013466732
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9288,7 +9351,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -9333,7 +9396,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 2.4244776e-38, z: 1.1377e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9468,7 +9531,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 30.226135
+  m_Intensity: 59.97663
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -9513,7 +9576,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.7e-43, z: 1.435e-42, w: 1.57e-43}
+  m_BoundingSphereOverride: {x: 0, y: 3.67444e-40, z: 2.7113904e-20, w: 1.010293e-39}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9892,7 +9955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458900551633196840}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4357625, y: -0.51766735, z: -0.42958772, w: 0.59798497}
+  m_LocalRotation: {x: 0.6456242, y: 0.39147127, z: 0.5403989, w: -0.37133366}
   m_LocalPosition: {x: -2.173307, y: 1.8669505, z: 1.8010473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
