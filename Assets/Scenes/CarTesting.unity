@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.388241, g: 0.55710834, b: 0.98473763, a: 1}
+  m_IndirectSpecularColor: {r: 0.38827237, g: 0.55713254, b: 0.9847284, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1970,9 +1970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 329434743174685261}
   day_offset_rotation: {x: 0, y: 109, z: 166}
-  time: 0
-  elapse_day: 0
-  elapse_day_speed: 1
+  time: 8
+  elapse_day: 1
+  elapse_day_speed: 0.09
   sun: {fileID: 5618589339540375475}
   moon: {fileID: 1253867736}
   sunset: {fileID: 1304838909}
@@ -1990,8 +1990,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 6.439087
-      value: 0.35567248
+      time: 5.041992
+      value: 0.39122546
       inSlope: 0.17736636
       outSlope: 0.17736636
       tangentMode: 0
@@ -1999,7 +1999,7 @@ MonoBehaviour:
       inWeight: 0.17629941
       outWeight: 0.4900714
     - serializedVersion: 3
-      time: 11.073601
+      time: 9.995842
       value: 4
       inSlope: 0
       outSlope: 0
@@ -2119,8 +2119,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 5.2895064
-      value: 0.72061396
+      time: 5.9919677
+      value: 0.68802714
       inSlope: 0.95151436
       outSlope: 0.95151436
       tangentMode: 0
@@ -2128,17 +2128,17 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 6.0654716
-      value: 1.755158
-      inSlope: 1.3839656
-      outSlope: 1.3839656
-      tangentMode: 0
+      time: 7.54336
+      value: 3.5560143
+      inSlope: 0.20037891
+      outSlope: 0.23930216
+      tangentMode: 1
       weightedMode: 0
       inWeight: 1
-      outWeight: 0.16604412
+      outWeight: 0.5290635
     - serializedVersion: 3
-      time: 8
-      value: 3
+      time: 8.458378
+      value: 3.6882071
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2183,7 +2183,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 17.911617
-      value: 3
+      value: 3.5686998
       inSlope: 0.0011155871
       outSlope: 0.0011155871
       tangentMode: 0
@@ -5586,7 +5586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1253867734
 Transform:
   m_ObjectHideFlags: 0
@@ -5964,7 +5964,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 2028
+  m_ColorTemperature: 1992
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -10192,7 +10192,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.6
   sharedProfile: {fileID: 11400000, guid: be8f17ddd325e894daea51dcf86c479d, type: 2}
 --- !u!108 &4983623218049761205
 Light:
@@ -10205,8 +10205,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6827218, b: 0.3160377, a: 1}
-  m_Intensity: 1.5
+  m_Color: {r: 1, g: 0.7562622, b: 0.4764151, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10277,7 +10277,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.6
+    m_Strength: 0.2
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
