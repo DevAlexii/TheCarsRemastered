@@ -14,6 +14,8 @@ public class Editor_DayTime : MonoBehaviour
     [SerializeField][Range(0, 23)] private Int32 TimeWhenSunIsOff;
     [SerializeField][Range(0, 23)] private Int32 TimeWhenMoonIsOff;
     [SerializeField] private AnimationCurve SunsetIntensity;
+    [SerializeField] private AnimationCurve SunIntensity;
+    [SerializeField] private AnimationCurve MoonIntensity;
     [SerializeField] private GameObject Lampioni;
     [SerializeField] private AnimationCurve lampioni_intensity;
 
@@ -42,6 +44,8 @@ public class Editor_DayTime : MonoBehaviour
         ToogleSunMoon();
         ToogleLampioni();
         sunset.intensity = SunsetIntensity.Evaluate(current_time);
+        sun.intensity = SunIntensity.Evaluate(angle);
+        moon.intensity = MoonIntensity.Evaluate(angle);
     }
 
     private void RotateDay()
