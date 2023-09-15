@@ -36,7 +36,7 @@ public class Editor_DayTime : MonoBehaviour
         //    sun.intensity = sunset_intensity_curve.Evaluate(angle);
 
 
-        angle = time * angle_multiplier;
+        angle = (time * angle_multiplier) - 90;
         current_time = (Int32)(angle / angle_multiplier);
         RotateDay();
         ToogleSunMoon();
