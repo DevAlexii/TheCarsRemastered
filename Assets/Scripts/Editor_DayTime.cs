@@ -37,7 +37,7 @@ public class Editor_DayTime : MonoBehaviour
 
 
         angle = (time * angle_multiplier) - 90;
-        current_time = (Int32)(angle / angle_multiplier);
+        current_time = (Int32)((angle + 90) / angle_multiplier);
         RotateDay();
         ToogleSunMoon();
         ToogleLampioni();
