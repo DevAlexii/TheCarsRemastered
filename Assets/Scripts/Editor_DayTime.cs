@@ -7,7 +7,7 @@ public class Editor_DayTime : MonoBehaviour
 {
     [SerializeField] Transform day;
     [SerializeField] Vector3 day_offset_rotation;
-    private float angle_multiplier = 7.5f;
+    private float angle_multiplier = 15f;
     [SerializeField][Range(0f, 23f)] private float time;
 
     [SerializeField] private Light sun, moon, sunset;

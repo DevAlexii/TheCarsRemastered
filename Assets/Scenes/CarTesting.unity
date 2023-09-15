@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.3881227, g: 0.55701053, b: 0.98475546, a: 1}
+  m_IndirectSpecularColor: {r: 0.3881384, g: 0.5570256, b: 0.98475254, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1251,7 +1251,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 329434743174685261}
   day_offset_rotation: {x: 0, y: 109, z: 166}
-  time: 6.18
+  time: 23
   sun: {fileID: 5618589339540375475}
   moon: {fileID: 1253867736}
   sunset: {fileID: 1304838909}
@@ -2082,8 +2082,30 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   Lampioni: {fileID: 943359117}
-  TimeWhenLampioniOn: 20
-  TimeWhenLampioniOff: 4
+  lampioni_intensity:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &534279574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,7 +2436,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -3743,7 +3765,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -4457,7 +4479,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -5716,7 +5738,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.3468392
+  m_Intensity: 2.5352342
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9148,7 +9170,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -9328,7 +9350,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.8840774, b: 0.4493592, a: 1}
-  m_Intensity: 80
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 112.97435
   m_InnerSpotAngle: 51.188847
@@ -9752,7 +9774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458900551633196840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.77069443, y: -0.13561717, z: 0.49081978, w: 0.3830588}
+  m_LocalRotation: {x: 0.12346724, y: -0.56865144, z: -0.061306555, w: 0.81094575}
   m_LocalPosition: {x: -2.173307, y: 1.8669505, z: 1.8010473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10058,7 +10080,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458900551633196840}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
