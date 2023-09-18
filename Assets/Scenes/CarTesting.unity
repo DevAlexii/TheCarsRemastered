@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.38819528, g: 0.5570361, b: 0.9842844, a: 1}
+  m_IndirectSpecularColor: {r: 0.3881141, g: 0.55702275, b: 0.98475397, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1184,6 +1184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  heartToSpawn: {fileID: 5358395963110323522, guid: 973af9c842ddece4996b916f09033618,
+    type: 3}
+  scoreToSpawnObject: 50
+  numberSprites: []
 --- !u!4 &324460975
 Transform:
   m_ObjectHideFlags: 0
