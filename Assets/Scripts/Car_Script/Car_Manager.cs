@@ -61,6 +61,7 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
+        
     }
 
     #region Spawner

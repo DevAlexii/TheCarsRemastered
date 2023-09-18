@@ -74,8 +74,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12698c3fc4acb13419c39fc3ae82ffc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 0
-  explosionRadius: 0
+  powerUpType: 5
+  explosionForce: 3.87
+  explosionRadius: 1.92
+  nukePrefab: {fileID: 1687198654167717482}
+  heightNuke: 9
 --- !u!65 &5137689505169725897
 BoxCollider:
   m_ObjectHideFlags: 0

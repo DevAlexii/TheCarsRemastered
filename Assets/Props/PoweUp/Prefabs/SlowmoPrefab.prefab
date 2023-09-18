@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fc7342da305ec419c6b2ebc6a9771c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUpType: 3
   slowdownDuration: 8
 --- !u!65 &569520124527823739
 BoxCollider:
