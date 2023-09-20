@@ -32,10 +32,6 @@ public class Car_Manager : Singleton<Car_Manager>
     private Vector3 original_scale;
     private Vector3 target_scale;
 
-    [Header("Slowmo")]
-    private float originalTimeScale;
-
-
 
     private void Start()
     {
@@ -127,9 +123,9 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         foreach (var car in spawned_car)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out I_Interface car_Interface))
+            if (car.transform.GetChild(0).TryGetComponent(out Car_Core car_function))
             {
-                car_Interface.EnableInvisiblity();
+                car_function.EnableInvisiblity();
             }
         }
         invisibility_on = true;
@@ -145,7 +141,7 @@ public class Car_Manager : Singleton<Car_Manager>
         car_in_scene = spawned_car;
         foreach (var car in car_in_scene)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out I_Interface car_function))
+            if (car.transform.GetChild(0).TryGetComponent(out Car_Core car_function))
             {
                 car_function.EnableShrink();
             }
@@ -173,9 +169,8 @@ public class Car_Manager : Singleton<Car_Manager>
     #region Slowmo
     public void ToggleSlowDownGame(float slowdownDuration)
     {
-        originalTimeScale = Time.timeScale;
-        Time.timeScale = 0.2f; // Range Slowmo
-        Time.fixedDeltaTime = 0.2f * Time.deltaTime;
+        Time.timeScale = 0.2f;
+        Time.fixedDeltaTime = Time.timeScale * Time.deltaTime;
 
         StartCoroutine(ResumeGameAfterDelay(slowdownDuration));
     }
@@ -184,7 +179,7 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        Time.timeScale = originalTimeScale;
+        Time.timeScale = 1;
         Time.fixedDeltaTime = Time.deltaTime;
     }
 
@@ -199,16 +194,10 @@ public class Car_Manager : Singleton<Car_Manager>
             obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * 10, transform.position, explosionRadius);
             Destroy(obj, 2);
         }
-        Destroy(gameObject);
+        spawned_car.Clear();
     }
-
-
-
-
-
     #endregion
     #endregion
-
 }
 
 #region Structs

@@ -79,7 +79,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     #endregion
 
     #region CarClicked
-    public void OnCarClicked()
+    public void OnClicked()
     {
         if (!is_crashed)
         {

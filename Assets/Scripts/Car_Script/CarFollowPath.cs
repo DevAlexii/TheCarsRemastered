@@ -115,6 +115,7 @@ public class CarFollowPath : MonoBehaviour
             else if (path.Nodes[node_index].name.StartsWith("End"))
             {
                 Car_Manager.self.RemoveCar(this.gameObject);
+                GameManager.self.UpdateScore(1);
                 Destroy(this.gameObject);
             }
             node_index++;

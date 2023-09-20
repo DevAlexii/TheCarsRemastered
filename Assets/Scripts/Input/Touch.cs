@@ -15,7 +15,7 @@ public class Touch : MonoBehaviour
                 {
                     if (hit.transform.TryGetComponent(out I_Interface clickedCar))
                     {
-                        clickedCar.OnCarClicked();
+                        clickedCar.OnClicked();
                     }
                 }
             }

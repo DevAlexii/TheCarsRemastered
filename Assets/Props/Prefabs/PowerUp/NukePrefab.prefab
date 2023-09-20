@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3619191584758574184}
-  - component: {fileID: 2279980434605442743}
-  - component: {fileID: 583080114478531124}
+  - component: {fileID: 4197157778191225313}
   - component: {fileID: 5137689505169725897}
+  - component: {fileID: 6593738277798794916}
   m_Layer: 0
   m_Name: NukePrefab
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 4413872463224070322}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!54 &2279980434605442743
+--- !u!54 &4197157778191225313
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,20 +62,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &583080114478531124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687198654167717482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12698c3fc4acb13419c39fc3ae82ffc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionForce: 0
-  explosionRadius: 0
 --- !u!65 &5137689505169725897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97,6 +83,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6593738277798794916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687198654167717482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723b6c8f8c19e38499c6971fff0547ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force_explosion: 50
+  radius_explosion: 10
 --- !u!1001 &4236621590691055449
 PrefabInstance:
   m_ObjectHideFlags: 0
