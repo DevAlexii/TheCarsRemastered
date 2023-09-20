@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5618589339540375475}
-  m_IndirectSpecularColor: {r: 0.000017503004, g: 0.0000000286552, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017502987, g: 0.0000000286552, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4749,7 +4749,7 @@ MonoBehaviour:
   - {fileID: 122460795134903790, guid: 1fd82750e8a3bcc40af3f821db5b6ce9, type: 3}
   powerUP_Health: {fileID: 5622442911276258968, guid: 6d21fb2550c5fd8458fd0dd74ac9e80e,
     type: 3}
-  spawn_timer: 5
+  spawn_timer: 10
   spawn_points:
   - {fileID: 1512754104}
   - {fileID: 1009960508}
@@ -5039,74 +5039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1318150379}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1184769009
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5323534357795632865, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_Name
-      value: RampPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082320196383336142, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66, type: 3}
 --- !u!1 &1205920429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10319,4 +10251,3 @@ SceneRoots:
   - {fileID: 329434743174685261}
   - {fileID: 533918894}
   - {fileID: 1205920432}
-  - {fileID: 1184769009}
