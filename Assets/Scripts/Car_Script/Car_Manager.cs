@@ -127,7 +127,7 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         foreach (var car in spawned_car)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out Car_Interface car_Interface))
+            if (car.transform.GetChild(0).TryGetComponent(out I_Interface car_Interface))
             {
                 car_Interface.EnableInvisiblity();
             }
@@ -145,7 +145,7 @@ public class Car_Manager : Singleton<Car_Manager>
         car_in_scene = spawned_car;
         foreach (var car in car_in_scene)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out Car_Interface car_function))
+            if (car.transform.GetChild(0).TryGetComponent(out I_Interface car_function))
             {
                 car_function.EnableShrink();
             }

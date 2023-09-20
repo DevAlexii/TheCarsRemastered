@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car_Core : MonoBehaviour, Car_Interface
+public class Car_Core : MonoBehaviour, I_Interface
 {
     [Header("Reference")]
     [SerializeField] private CarFollowPath carFollowPathRef;
