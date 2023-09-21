@@ -4618,11 +4618,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db01fc5331a08d84b8a709d9b3c9a0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 1974776221865625051, guid: af278e44a18f26c4ea0f45f8d269b4f6,
-    type: 3}
-  pedestriansRef: []
   timeBetweenSpawn: 3
   maxPedestrian: 10
+  spawnPoint:
+  - {fileID: 476626272}
+  - {fileID: 581396190}
+  - {fileID: 1498419735}
+  - {fileID: 1635224802}
+  - {fileID: 755134073}
+  - {fileID: 1486119699}
+  - {fileID: 292891989}
+  - {fileID: 453703288}
+  pedestriansRef:
+  - {fileID: 1974776221865625051, guid: af278e44a18f26c4ea0f45f8d269b4f6, type: 3}
+  - {fileID: 2534683586781305331, guid: 9e49df5a568000f409e7b0d13756c4b4, type: 3}
+  - {fileID: 7149548858063488449, guid: f0824d590a1e52545b6d19132af72375, type: 3}
+  - {fileID: 690737689634274578, guid: 3d017888ae1e2074fb72c34eebdcbb8b, type: 3}
 --- !u!1 &1110838254
 GameObject:
   m_ObjectHideFlags: 0

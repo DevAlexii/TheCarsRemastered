@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using NUnit.Framework;
 using UnityEngine;
 
 public class PedestrianSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject pedestrianPrefab;
-    public List<GameObject> pedestriansRef;
 
     [Header("Variables")]
     [SerializeField] float timeBetweenSpawn;
@@ -15,13 +14,12 @@ public class PedestrianSpawn : MonoBehaviour
     [SerializeField] Int32 maxPedestrian;
     Int32 currentPedestrians;
 
-    List<Transform> spawnPoint;
+    [SerializeField] List<Transform> spawnPoint;
+    [SerializeField] public List<GameObject> pedestriansRef;
 
     void Start()
     {
         timer = timeBetweenSpawn;
-        spawnPoint = new List<Transform>();
-        spawnPoint = GetComponentsInChildren<Transform>().ToList();
     }
 
     void Update()
@@ -35,7 +33,8 @@ public class PedestrianSpawn : MonoBehaviour
         if (timer <= 0 && currentPedestrians <= maxPedestrian)
         {
             int pedeRand = UnityEngine.Random.Range(0, spawnPoint.Count);
-            GameObject pede = Instantiate(pedestrianPrefab, spawnPoint[pedeRand].position, Quaternion.identity);
+            int randomPrefab = UnityEngine.Random.Range(0, pedestriansRef.Count);
+            GameObject pede = Instantiate(pedestriansRef[randomPrefab], spawnPoint[pedeRand].position, Quaternion.identity);
             pedestriansRef.Add(pede);
 
             currentPedestrians++;

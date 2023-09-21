@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 5262534709089507593}
   - component: {fileID: 6990446924623992734}
   - component: {fileID: 7554585667313017441}
+  - component: {fileID: 4315733550315694687}
   m_Layer: 0
   m_Name: body3
   m_TagString: Untagged
@@ -289,3 +290,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4315733550315694687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798935064066462581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0bb0d495686de4aa89a44f03731df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat:
+  - {fileID: 2100000, guid: 0c31acf81e3561c48bc14821b3c4d580, type: 2}
+  - {fileID: 2100000, guid: af6b70c464423634895cb722781a3bfd, type: 2}
+  - {fileID: 2100000, guid: 7024c51edfb320a4f8689a4218e3ed07, type: 2}
+  - {fileID: 2100000, guid: f2e585b8b7512c34785aa41cefcb3828, type: 2}
+  - {fileID: 2100000, guid: 7c97de5718e8e2247be9d9fd797629be, type: 2}
