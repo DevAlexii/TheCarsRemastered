@@ -1,13 +1,9 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 
-[ExecuteInEditMode]
 public class DayNightTest01 : MonoBehaviour
 {
-    public bool enable_time;
-
     [Header("Day_Varaiables")]
-    [Range(0f,1f)] public float time;
+    [Range(0f, 1f)] public float time;
     public float dayLenght;
     public float startday;
     private float timeRate;
@@ -40,13 +36,10 @@ public class DayNightTest01 : MonoBehaviour
 
     void Update()
     {
-        if (enable_time)
+        time += timeRate * Time.deltaTime;
+        if (time >= 1f)
         {
-            time += timeRate * Time.deltaTime;
-            if (time >= 1f)
-            {
-                time = 0f;
-            }
+            time = 0f;
         }
         SetLighting();
         SetSunAmbientintensity();
@@ -67,11 +60,11 @@ public class DayNightTest01 : MonoBehaviour
     }
     void ToogleLamps()
     {
-        if (time >= turnOn|| time < turnOff && !lamps.activeSelf)
+        if (time >= turnOn || time < turnOff && !lamps.activeSelf)
         {
             lamps.SetActive(true);
         }
-        else if(time > turnOff && time < turnOn && lamps.activeSelf)
+        else if (time > turnOff && time < turnOn && lamps.activeSelf)
         {
             lamps.SetActive(false);
         }
