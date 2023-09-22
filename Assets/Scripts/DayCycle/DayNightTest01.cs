@@ -9,7 +9,6 @@ public class DayNightTest01 : MonoBehaviour
     [Range(0f,1f)] public float time;
     public float dayLenght;
     public float startday;
-    public Vector3 noon;
     private float timeRate;
 
     [Header("Sun")]
@@ -17,11 +16,12 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] AnimationCurve sunIntensity;
     public Gradient sunGradient;
 
-    [Header("Moon")]
-    [SerializeField] Light moon;
-    [SerializeField] AnimationCurve moonintesnity;
-    public Gradient moonGradient;
+    [Header("AmbientLight")]
+    [SerializeField] Light ambient;
+    [SerializeField] AnimationCurve ambientIntensity;
+    public Gradient ambientGradient;
 
+    [Header("RenderingSettings")]
     [SerializeField] AnimationCurve intensity_multiplier;
     [SerializeField] AnimationCurve reflexion_multiplier;
 
@@ -43,42 +43,19 @@ public class DayNightTest01 : MonoBehaviour
             }
         }
         SetLighting();
-        SetSunMoonintensity();
-        SetSunMoonActive();
+        SetSunAmbientintensity();
     }
     void SetLighting()
     {
         RenderSettings.ambientIntensity = intensity_multiplier.Evaluate(time);
         RenderSettings.reflectionIntensity = reflexion_multiplier.Evaluate(time);
     }
-    void SetSunMoonintensity()
+    void SetSunAmbientintensity()
     {
         sun.intensity = sunIntensity.Evaluate(time);
-        moon.intensity = moonintesnity.Evaluate(time);
-
         sun.color = sunGradient.Evaluate(time);
-        moon.color = moonGradient.Evaluate(time);
-    }
-    void SetSunMoonActive()
-    {
-        if (sun.intensity == 0 && sun.gameObject.activeInHierarchy)
-        {
-            sun.gameObject.SetActive(false);
 
-        }
-        else if (sun.intensity > 0 && !sun.gameObject.activeInHierarchy)
-        {
-            sun.gameObject.SetActive(true);
-
-        }
-        if (moon.intensity == 0 && moon.gameObject.activeInHierarchy)
-        {
-            moon.gameObject.SetActive(false);
-
-        }
-        else if (moon.intensity > 0 && !moon.gameObject.activeInHierarchy)
-        {
-            moon.gameObject.SetActive(true);
-        }
+        ambient.intensity = ambientIntensity.Evaluate(time);
+        ambient.color = ambientGradient.Evaluate(time);
     }
 }
