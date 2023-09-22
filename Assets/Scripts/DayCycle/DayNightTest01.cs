@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [ExecuteInEditMode]
 public class DayNightTest01 : MonoBehaviour
@@ -20,6 +21,11 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] Light ambient;
     [SerializeField] AnimationCurve ambientIntensity;
     public Gradient ambientGradient;
+
+    [Header("Lamps")]
+    [SerializeField] GameObject lamps;
+    [Range(0f, 1f)][SerializeField] float turnOff;
+    [Range(0f, 1f)][SerializeField] float turnOn;
 
     [Header("RenderingSettings")]
     [SerializeField] AnimationCurve intensity_multiplier;
@@ -44,6 +50,7 @@ public class DayNightTest01 : MonoBehaviour
         }
         SetLighting();
         SetSunAmbientintensity();
+        ToogleLamps();
     }
     void SetLighting()
     {
@@ -57,5 +64,16 @@ public class DayNightTest01 : MonoBehaviour
 
         ambient.intensity = ambientIntensity.Evaluate(time);
         ambient.color = ambientGradient.Evaluate(time);
+    }
+    void ToogleLamps()
+    {
+        if (time >= turnOn|| time < turnOff && !lamps.activeSelf)
+        {
+            lamps.SetActive(true);
+        }
+        else if(time > turnOff && time < turnOn && lamps.activeSelf)
+        {
+            lamps.SetActive(false);
+        }
     }
 }
