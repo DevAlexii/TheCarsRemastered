@@ -17,4 +17,6 @@ public class GameManager : Singleton<GameManager>
             PowerUpManager.self.SpawnHealth();
         }
     }
+    //Difficulty
+    public int difficulty = 50;
 }
