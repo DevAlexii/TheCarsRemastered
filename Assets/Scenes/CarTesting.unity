@@ -96,7 +96,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 0fc66796832986c4c87e1cd44b36eefe,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: b9fadd49aa800df43974b46bbc710428,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: aeb7e5e4cb2cf044facf9a4313289abd,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -444,6 +444,8 @@ MonoBehaviour:
   volumeHigh: {fileID: 0}
   volumeLow: {fileID: 0}
   global: {fileID: 0}
+  lightSettingsLow: {fileID: 0}
+  lightSettingsHigh: {fileID: 0}
 --- !u!1 &155105794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,8 +2625,12 @@ MonoBehaviour:
   overrideRenderPipelineAsset: {fileID: 11400000, guid: 547b82aa25b3282439254b7a65d76617,
     type: 2}
   volumeHigh: {fileID: 11400000, guid: be8f17ddd325e894daea51dcf86c479d, type: 2}
-  volumeLow: {fileID: 11400000, guid: 1828cf1d3f21d3a4db466e26492292c8, type: 2}
+  volumeLow: {fileID: 11400000, guid: 4e980b9e5febc6f4fa3f48f09ef1241d, type: 2}
   global: {fileID: 4009799013483771469}
+  lightSettingsLow: {fileID: 4890085278179872738, guid: aeb7e5e4cb2cf044facf9a4313289abd,
+    type: 2}
+  lightSettingsHigh: {fileID: 4890085278179872738, guid: b9fadd49aa800df43974b46bbc710428,
+    type: 2}
 --- !u!1 &748742234
 GameObject:
   m_ObjectHideFlags: 0
@@ -10442,7 +10448,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: be8f17ddd325e894daea51dcf86c479d, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 4e980b9e5febc6f4fa3f48f09ef1241d, type: 2}
 --- !u!108 &5618589339540375475
 Light:
   m_ObjectHideFlags: 0
