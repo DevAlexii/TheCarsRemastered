@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2688329052753453684
 Transform:
   m_ObjectHideFlags: 0
@@ -14634,6 +14634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4391872091198646165}
+  - component: {fileID: 3950594538472907933}
   m_Layer: 0
   m_Name: Rainfx
   m_TagString: Untagged
@@ -14657,3 +14658,16 @@ Transform:
   - {fileID: 2688329052753453684}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3950594538472907933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7432271455557743814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c29ed159f8460f4d9734112f254fdac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RainEffect: {fileID: 1468928185907975529}

@@ -15,10 +15,6 @@ public class DropDownGrapghic : MonoBehaviour
     [Header("VolumeInSceneRef")]
     [SerializeField] Volume global;
 
-    [Header("LightSettings")]
-    [SerializeField] LightingSettings lightSettingsLow;
-    [SerializeField] LightingSettings lightSettingsHigh;
-
 
     public void HandleInputData(int var)
     {
@@ -28,16 +24,12 @@ public class DropDownGrapghic : MonoBehaviour
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
 
             global.profile = volumeLow;
-
-            Lightmapping.lightingSettings = lightSettingsLow;
         }
         if (var == 1)
         {
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
-
-            Lightmapping.lightingSettings = lightSettingsHigh;
         }
     }
 }

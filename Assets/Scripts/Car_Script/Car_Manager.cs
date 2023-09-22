@@ -190,8 +190,8 @@ public class Car_Manager : Singleton<Car_Manager>
         foreach (GameObject obj in spawned_car)
         {
             obj.GetComponentInChildren<Rigidbody>().isKinematic = false;
-            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * 10, transform.position, explosionRadius);
             obj.GetComponentInChildren<Collider>().isTrigger = false;
+            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.deltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
         }
