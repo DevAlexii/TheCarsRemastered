@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using Codice.CM.Client.Differences.Graphic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class DayNightTest01 : MonoBehaviour
 {
+    public bool enable_time;
+
     [Header("Day_Varaiables")]
-    public float time;
+    [Range(0f,1f)] public float time;
     public float dayLenght;
     public float startday;
     public Vector3 noon;
@@ -34,10 +34,13 @@ public class DayNightTest01 : MonoBehaviour
 
     void Update()
     {
-        time += timeRate * Time.deltaTime;
-        if (time >= 1f)
+        if (enable_time)
         {
-            time = 0f;
+            time += timeRate * Time.deltaTime;
+            if (time >= 1f)
+            {
+                time = 0f;
+            }
         }
         SetLighting();
         SetSunMoonintensity();
