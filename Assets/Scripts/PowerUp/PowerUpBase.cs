@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUpBase : MonoBehaviour, I_Interface
 {
-    [SerializeField] private GameObject effect;
+    [SerializeField] protected GameObject effect;
 
     private void Start()
     {
