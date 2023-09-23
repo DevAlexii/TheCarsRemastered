@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DayNightTest01 : MonoBehaviour
@@ -26,6 +27,8 @@ public class DayNightTest01 : MonoBehaviour
     [Header("RenderingSettings")]
     [SerializeField] AnimationCurve intensity_multiplier;
     [SerializeField] AnimationCurve reflexion_multiplier;
+
+
 
     void Start()
     {
