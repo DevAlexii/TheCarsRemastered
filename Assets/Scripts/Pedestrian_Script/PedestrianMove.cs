@@ -57,6 +57,7 @@ public class PedestrianMove : MonoBehaviour
             if (path_index + 1 == path.Nodes.Count)
             {
                 PedestrianSpawn.self.pedestrians_spawned.Remove(gameObject);
+                PedestrianSpawn.self.currentPedestrians--;
                 Destroy(gameObject);
                 return;
             }
@@ -79,6 +80,7 @@ public class PedestrianMove : MonoBehaviour
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
+            PedestrianSpawn.self.currentPedestrians--;
             rb.isKinematic = false;
             rb.AddForce(collider.gameObject.transform.forward * 300f + Vector3.up * 4);
             GetComponent<Collider>().isTrigger = false;

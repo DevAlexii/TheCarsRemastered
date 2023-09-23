@@ -9,7 +9,7 @@ public class PedestrianSpawn : Singleton<PedestrianSpawn>
     float timer;
 
     [SerializeField] Int32 maxPedestrian;
-    Int32 currentPedestrians;
+    public Int32 currentPedestrians;
 
     [SerializeField] List<PathInfo> paths_Info;
     [SerializeField] public List<GameObject> pedestriansPrefab;

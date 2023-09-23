@@ -7,6 +7,6 @@ public class NukeFunction : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Car_Manager.self.toggleNuke(force_explosion, radius_explosion);
-        Destroy(gameObject);
+        Destroy(gameObject, 0.01f);
     }
 }
