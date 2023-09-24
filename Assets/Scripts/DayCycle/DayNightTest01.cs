@@ -23,6 +23,9 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] GameObject lamps;
     [Range(0f, 1f)][SerializeField] float turnOff;
     [Range(0f, 1f)][SerializeField] float turnOn;
+    [SerializeField] List<GameObject> lampsList;
+    [SerializeField] Material luci2Material;
+    private Material originalMaterial;
 
     [Header("RenderingSettings")]
     [SerializeField] AnimationCurve intensity_multiplier;
@@ -33,8 +36,23 @@ public class DayNightTest01 : MonoBehaviour
     void Start()
     {
         timeRate = 1f / dayLenght;
-
         time = startday;
+
+        if (lampsList.Count > 0)
+        {
+            foreach (GameObject lamp in lampsList)
+            {
+                Renderer lampRenderer = lamp.GetComponent<Renderer>();
+                if (lampRenderer != null)
+                {
+
+                    if (lampRenderer.materials.Length >= 2)
+                    {
+                        originalMaterial = lampRenderer.materials[1]; 
+                    }
+                }
+            }
+        }
     }
 
     void Update()
@@ -66,10 +84,44 @@ public class DayNightTest01 : MonoBehaviour
         if (time >= turnOn || time < turnOff && !lamps.activeSelf)
         {
             lamps.SetActive(true);
+
+            if (lampsList.Count > 0)
+            {
+                foreach (GameObject lamp in lampsList)
+                {
+                    Renderer lampRenderer = lamp.GetComponent<Renderer>();
+                    if (lampRenderer != null)
+                    {
+                        if (lampRenderer.materials.Length >= 2)
+                        {
+                            Material[] materials = lampRenderer.materials;
+                            materials[1] = luci2Material;
+                            lampRenderer.materials = materials;
+                        }
+                    }
+                }
+            }
         }
         else if (time > turnOff && time < turnOn && lamps.activeSelf)
         {
             lamps.SetActive(false);
+
+            if (lampsList.Count > 0)
+            {
+                foreach (GameObject lamp in lampsList)
+                {
+                    Renderer lampRenderer = lamp.GetComponent<Renderer>();
+                    if (lampRenderer != null)
+                    {
+                        if (lampRenderer.materials.Length >= 2)
+                        {
+                            Material[] materials = lampRenderer.materials;
+                            materials[1] = originalMaterial; 
+                            lampRenderer.materials = materials;
+                        }
+                    }
+                }
+            }
         }
     }
 }
