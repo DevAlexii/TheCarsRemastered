@@ -92,9 +92,9 @@ public class Car_Core : MonoBehaviour, I_Interface
     private IEnumerator CarClickerAnimation()
     {
         float timer = 0;
-        float time = .2f;
+        float time = .1f;
         Vector3 start_scale = shrink_on ? (Vector3.one * 0.01f) * 0.5f : Vector3.one * 0.01f;
-        Vector3 target_scale = start_scale * 1.2f;
+        Vector3 target_scale = start_scale * 1.4f;
 
         while (timer <= time)
         {

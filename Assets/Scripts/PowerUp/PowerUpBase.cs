@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PowerUpBase : MonoBehaviour, I_Interface

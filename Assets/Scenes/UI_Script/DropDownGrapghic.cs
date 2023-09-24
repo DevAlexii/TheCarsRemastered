@@ -15,7 +15,28 @@ public class DropDownGrapghic : MonoBehaviour
     [Header("VolumeInSceneRef")]
     [SerializeField] Volume global;
 
+    private void Start()
+    {
+        StartGraphicSet();
+    }
 
+    private void StartGraphicSet()
+    {
+        if (SystemInfo.graphicsMemorySize > 6000)
+        {
+            GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
+            QualitySettings.renderPipeline = overrideRenderPipelineAsset;
+            //global.profile = volumeHigh;
+            Debug.Log("Graphic set to High");
+        }
+        else
+        {
+            GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
+            QualitySettings.renderPipeline = defaultRenderPipelineAsset;
+            //global.profile = volumeLow;
+            Debug.Log("Graphic set to Low");
+        }
+    }
     public void HandleInputData(int var)
     {
         if (var == 0)
@@ -31,7 +52,6 @@ public class DropDownGrapghic : MonoBehaviour
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
             AudioCallback.self.PlayAudioSource(1f);
-
         }
     }
 }
