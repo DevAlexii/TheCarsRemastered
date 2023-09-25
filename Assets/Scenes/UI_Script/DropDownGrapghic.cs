@@ -26,14 +26,14 @@ public class DropDownGrapghic : MonoBehaviour
         {
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
-            //global.profile = volumeHigh;
+            global.profile = volumeHigh;
             Debug.Log("Graphic set to High");
         }
         else
         {
             GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
-            //global.profile = volumeLow;
+            global.profile = volumeLow;
             Debug.Log("Graphic set to Low");
         }
     }

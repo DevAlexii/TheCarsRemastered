@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dffbe3879a70144a84d871fb4e4d41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 500
+  explosionForce: 700
   explosionRadius: 40
   afterCollisionDeadTimer: 3
   arrow: {fileID: 8601126718339240283}
@@ -402,12 +402,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bb0d495686de4aa89a44f03731df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat:
+  hairMaterial:
+  - {fileID: -7901723420657980334, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
+  - {fileID: 2100000, guid: 4716251e66ea5844c8d9dbd711323e28, type: 2}
+  - {fileID: 2100000, guid: 7c97de5718e8e2247be9d9fd797629be, type: 2}
+  - {fileID: -5506082081026578385, guid: 94e015477c805fe44b5f5af516c40da3, type: 3}
+  - {fileID: -4672586797357684177, guid: 310d6b16a7af8704ba3ad51e8a19b71a, type: 3}
+  shirtMaterial:
+  - {fileID: 6117713354280273176, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
+  - {fileID: 2100000, guid: d8430796e3b02404483adf34ac0dd401, type: 2}
+  - {fileID: 2100000, guid: 88c9769218ac214468928647b321aedc, type: 2}
+  - {fileID: 2100000, guid: 0c31acf81e3561c48bc14821b3c4d580, type: 2}
   - {fileID: 2100000, guid: 4f9027862a6e50b4aa6667c1859e8c4e, type: 2}
-  - {fileID: -7430301508525020422, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
-  - {fileID: -3021392251634653891, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
-  - {fileID: 4879502649908629676, guid: 8922e6c20f46d7b48815479d3776349c, type: 3}
-  - {fileID: -3257163794922225428, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
+  meshBraccia:
+  - {fileID: 5175263134008507581}
+  - {fileID: 4929721271020254842}
 --- !u!1 &6515530140389919940
 GameObject:
   m_ObjectHideFlags: 0

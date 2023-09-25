@@ -167,20 +167,20 @@ public class Car_Manager : Singleton<Car_Manager>
 
     #endregion
     #region Slowmo
+
+    float porcodio;
     public void ToggleSlowDownGame(float slowdownDuration)
     {
-        Time.timeScale = 0.2f;
-        Time.fixedDeltaTime = Time.timeScale * Time.deltaTime;
+        CustomLibrary.SetGlobalTimeDilation(0.3f);
 
         StartCoroutine(ResumeGameAfterDelay(slowdownDuration));
     }
-
     private IEnumerator ResumeGameAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        Time.timeScale = 1;
-        Time.fixedDeltaTime = Time.deltaTime;
+        CustomLibrary.SetGlobalTimeDilation(1f);
+        StopCoroutine(ResumeGameAfterDelay(delay));
     }
 
     #endregion
@@ -191,7 +191,7 @@ public class Car_Manager : Singleton<Car_Manager>
         {
             obj.GetComponentInChildren<Rigidbody>().isKinematic = false;
             obj.GetComponentInChildren<Collider>().isTrigger = false;
-            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.deltaTime, transform.position, explosionRadius);
+            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
         }

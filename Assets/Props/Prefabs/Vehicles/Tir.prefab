@@ -759,8 +759,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7230478181341711614}
   m_Father: {fileID: 0}
@@ -784,6 +784,12 @@ MonoBehaviour:
   rotation_speed: 6.5
   move_speed: 5
   wait_time: 5
+  angle_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   node_reachable_distance: 0.5
   max_distance: 2.2
   min_distance: 1.5

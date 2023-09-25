@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Pedestrian_Color : MonoBehaviour
 {
-    [SerializeField] List<Material> mat;
+    [SerializeField] List<Material> hairMaterial;
+    [SerializeField] List<Material> shirtMaterial;
+
+    [SerializeField] List<MeshRenderer> meshBraccia;
     private void Awake()
     {
         ChangeColor();
@@ -13,11 +16,24 @@ public class Pedestrian_Color : MonoBehaviour
     void ChangeColor()
     {
         Material[] materials = GetComponent<MeshRenderer>().materials;
-        foreach (var material in materials)
+        for (int i = 0; i < materials.Length; i++)
         {
-            int col = Random.Range(0, mat.Count);
-            material.shader = mat[col].shader;
-            GetComponent<MeshRenderer>().material = material;
+            if (materials[i].name.StartsWith("capelli"))
+            {
+                int col = Random.Range(0, hairMaterial.Count);
+                materials[i] = hairMaterial[col];
+            }
+            if (materials[i].name.StartsWith("maglietta"))
+            {
+                int col = Random.Range(0, shirtMaterial.Count);
+                materials[i].shader = shirtMaterial[col].shader;
+                for (int j = 0; j < meshBraccia.Count; j++)
+                {
+                    meshBraccia[j].materials[1] = shirtMaterial[col];
+                }
+            }
         }
+        GetComponent<MeshRenderer>().sharedMaterials = materials;
+
     }
 }
