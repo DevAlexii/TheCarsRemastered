@@ -1,39 +1,40 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Pedestrian_Color : MonoBehaviour
 {
-    [SerializeField] List<Material> hairMaterial;
-    [SerializeField] List<Material> shirtMaterial;
+    [SerializeField] private List<MeshRenderer> arms;
 
-    [SerializeField] List<MeshRenderer> meshBraccia;
-    private void Awake()
+    private void Start()
     {
-        ChangeColor();
-    }
+        Dictionary<bodyPart, List<Material>> pool_colors = Color_Manager.self.bodies_colors;
+        List<Material> materials = GetComponent<MeshRenderer>().sharedMaterials.ToList();
+        int random_index = 0;
 
-    void ChangeColor()
-    {
-        Material[] materials = GetComponent<MeshRenderer>().materials;
-        for (int i = 0; i < materials.Length; i++)
+        for (int i = 0; i < materials.Count; i++)
         {
-            if (materials[i].name.StartsWith("capelli"))
+            switch (materials[i].name)
             {
-                int col = Random.Range(0, hairMaterial.Count);
-                materials[i] = hairMaterial[col];
-            }
-            if (materials[i].name.StartsWith("maglietta"))
-            {
-                int col = Random.Range(0, shirtMaterial.Count);
-                materials[i].shader = shirtMaterial[col].shader;
-                for (int j = 0; j < meshBraccia.Count; j++)
-                {
-                    meshBraccia[j].materials[1] = shirtMaterial[col];
-                }
+                case "maglietta":
+                    random_index = Random.Range(0, pool_colors[bodyPart.shirt].Count);
+                    materials[i] = pool_colors[bodyPart.shirt][random_index];
+                    List<Material> arm = arms[0].sharedMaterials.ToList();
+                    arm[1] = pool_colors[bodyPart.shirt][random_index];
+                    arms[0].sharedMaterials = arm.ToArray();
+                    arms[1].sharedMaterials = arm.ToArray();
+                    break;
+                case "capelli":
+                    random_index = Random.Range(0, pool_colors[bodyPart.hair].Count);
+                    materials[i] = pool_colors[bodyPart.hair][random_index];
+                    break;
+                case "pelle":
+                    random_index = Random.Range(0, pool_colors[bodyPart.skin].Count);
+                    materials[i] = pool_colors[bodyPart.skin][random_index];
+                    break;
             }
         }
-        GetComponent<MeshRenderer>().sharedMaterials = materials;
-
+        GetComponent<MeshRenderer>().sharedMaterials = materials.ToArray();
+        Destroy(this);
     }
 }
