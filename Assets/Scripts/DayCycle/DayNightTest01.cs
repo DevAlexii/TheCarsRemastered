@@ -19,6 +19,10 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] AnimationCurve ambientIntensity;
     public Gradient ambientGradient;
 
+    [Header("RenderingSettings")]
+    [SerializeField] AnimationCurve intensity_multiplier;
+    [SerializeField] AnimationCurve reflexion_multiplier;
+
     [Header("Lamps")]
     [SerializeField] GameObject lamps;
     [Range(0f, 1f)][SerializeField] float turnOff;
@@ -27,10 +31,10 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] Material luci2Material;
     private Material originalMaterial;
 
-    [Header("RenderingSettings")]
-    [SerializeField] AnimationCurve intensity_multiplier;
-    [SerializeField] AnimationCurve reflexion_multiplier;
-
+    [Header("EmissiveCity")]
+    [SerializeField] List<GameObject> glassObj;
+    [SerializeField] Material vetri2;
+    private bool lightsAreOn = false;
 
 
     void Start()
@@ -48,7 +52,7 @@ public class DayNightTest01 : MonoBehaviour
 
                     if (lampRenderer.materials.Length >= 2)
                     {
-                        originalMaterial = lampRenderer.materials[1]; 
+                        originalMaterial = lampRenderer.materials[1];
                     }
                 }
             }
@@ -65,6 +69,7 @@ public class DayNightTest01 : MonoBehaviour
         SetLighting();
         SetSunAmbientintensity();
         ToogleLamps();
+        ToggleGlassObj();
     }
     void SetLighting()
     {
@@ -116,12 +121,46 @@ public class DayNightTest01 : MonoBehaviour
                         if (lampRenderer.materials.Length >= 2)
                         {
                             Material[] materials = lampRenderer.materials;
-                            materials[1] = originalMaterial; 
+                            materials[1] = originalMaterial;
                             lampRenderer.materials = materials;
                         }
                     }
                 }
             }
         }
+    }
+
+    void ToggleGlassObj()
+    {
+        if (time >= turnOn || time < turnOff)
+        {
+            if (!lightsAreOn)
+            {
+                lightsAreOn = true;
+                if (glassObj.Count > 0)
+                {
+                    foreach (GameObject obj in glassObj)
+                    {
+                        obj.SetActive(true);
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (lightsAreOn)
+            {
+                lightsAreOn = false;
+                if (glassObj.Count > 0)
+                {
+                    foreach (GameObject obj in glassObj)
+                    {
+                        obj.SetActive(false);
+                    }
+                }
+            }
+        }
+
+
     }
 }
