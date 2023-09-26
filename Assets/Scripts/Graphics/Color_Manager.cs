@@ -11,10 +11,10 @@ public class Color_Manager : Singleton<Color_Manager>
 
     [Header("Pedestrian")]
     [SerializeField] List<PoolColors> colors;
-    public Dictionary<bodyPart, List<Material>> bodies_colors { get; private set; }
+    public Dictionary<bodyPart, List<Shader_Color>> bodies_colors { get; private set; }
     private void Start()
     {
-        bodies_colors = new Dictionary<bodyPart, List<Material>>();
+        bodies_colors = new Dictionary<bodyPart, List<Shader_Color>>();
         for (int i = 0; i < colors.Count; i++)
         {
             bodies_colors[colors[i].key] = colors[i].values;
@@ -32,5 +32,5 @@ public struct Shader_Color
 public struct PoolColors
 {
     public bodyPart key;
-    public List<Material> values;
+    public List<Shader_Color> values;
 }
