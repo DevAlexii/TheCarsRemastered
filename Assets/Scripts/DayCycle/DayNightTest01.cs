@@ -33,7 +33,6 @@ public class DayNightTest01 : MonoBehaviour
 
     [Header("EmissiveCity")]
     [SerializeField] List<GameObject> glassObj;
-    [SerializeField] Material vetri2;
     private bool lightsAreOn = false;
 
 
