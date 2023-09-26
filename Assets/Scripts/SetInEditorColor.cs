@@ -29,8 +29,8 @@ public class SetInEditorColor : MonoBehaviour
             {
                 case "maglietta":
                     random_index = Random.Range(0, bodies_colors[bodyPart.shirt].Count);
-                    materials[i].SetColor("_top_color", bodies_colors[bodyPart.hair][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", bodies_colors[bodyPart.hair][random_index].bottom_color);
+                    materials[i].SetColor("_top_color", bodies_colors[bodyPart.shirt][random_index].top_color);
+                    materials[i].SetColor("_bottom_color", bodies_colors[bodyPart.shirt][random_index].bottom_color);
                     break;
                 case "capelli":
                     random_index = Random.Range(0, bodies_colors[bodyPart.hair].Count);
@@ -39,8 +39,8 @@ public class SetInEditorColor : MonoBehaviour
                     break;
                 case "pelle":
                     random_index = Random.Range(0, bodies_colors[bodyPart.skin].Count);
-                    materials[i].SetColor("_top_color", bodies_colors[bodyPart.hair][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", bodies_colors[bodyPart.hair][random_index].bottom_color);
+                    materials[i].SetColor("_top_color", bodies_colors[bodyPart.skin][random_index].top_color);
+                    materials[i].SetColor("_bottom_color", bodies_colors[bodyPart.skin][random_index].bottom_color);
                     break;
             }
         }

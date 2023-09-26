@@ -18,11 +18,11 @@ public class Pedestrian_Color : MonoBehaviour
             {
                 case "maglietta":
                     random_index = Random.Range(0, pool_colors[bodyPart.shirt].Count);
-                    materials[i].SetColor("_top_color", pool_colors[bodyPart.hair][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.hair][random_index].bottom_color);
+                    materials[i].SetColor("_top_color", pool_colors[bodyPart.shirt][random_index].top_color);
+                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.shirt][random_index].bottom_color);
                     List<Material> arm = arms[0].sharedMaterials.ToList();
-                    arm[1].SetColor("_top_color", pool_colors[bodyPart.hair][random_index].top_color);
-                    arm[1].SetColor("_bottom_color", pool_colors[bodyPart.hair][random_index].bottom_color);
+                    arm[1].SetColor("_top_color", pool_colors[bodyPart.shirt][random_index].top_color);
+                    arm[1].SetColor("_bottom_color", pool_colors[bodyPart.shirt][random_index].bottom_color);
                     arms[0].sharedMaterials = arm.ToArray();
                     arms[1].sharedMaterials = arm.ToArray();
                     break;
@@ -33,8 +33,8 @@ public class Pedestrian_Color : MonoBehaviour
                     break;
                 case "pelle":
                     random_index = Random.Range(0, pool_colors[bodyPart.skin].Count);
-                    materials[i].SetColor("_top_color", pool_colors[bodyPart.hair][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.hair][random_index].bottom_color);
+                    materials[i].SetColor("_top_color", pool_colors[bodyPart.skin][random_index].top_color);
+                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.skin][random_index].bottom_color);
                     break;
             }
         }
