@@ -11,7 +11,6 @@ public class GameManager : Singleton<GameManager>
     public Transform[] digitTransforms;
     public SpriteRenderer scoreRenderer;
 
-    private bool scoreOverNine = false;
     //Life
     [Header("Life")]
     [SerializeField] private Int32 n_life;
