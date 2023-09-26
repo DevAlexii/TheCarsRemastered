@@ -114,8 +114,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (n_life > 0)
         {
-            n_life--;
-            Invoke(nameof(EnableHook), 0.3f);
+            Invoke(nameof(EnableHook), 0.5f);
         }
         else
         {
@@ -125,7 +124,10 @@ public class GameManager : Singleton<GameManager>
     private void EnableHook()
     {
         if (!hook_component.enabled)
+        {
             hook_component.enabled = true;
+            n_life--;
+        }
     }
     public void E_GameOver()
     {

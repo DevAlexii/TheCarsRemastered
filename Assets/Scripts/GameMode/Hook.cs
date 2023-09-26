@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hook : Singleton<Hook>
 {
-    public List<GameObject> crashed_car;
+    private List<GameObject> crashed_car;
     [HideInInspector] public int seleceted_car;
     private Action binded_event;
     private float timer;
@@ -14,6 +14,7 @@ public class Hook : Singleton<Hook>
     private void OnEnable()
     {
         binded_event = CountDown;
+        crashed_car = new List<GameObject>();
         crashed_car = Car_Manager.self.car_crashed;
         seleceted_car = 0;
         CustomLibrary.SetGlobalTimeDilation(0.01f);
@@ -21,16 +22,18 @@ public class Hook : Singleton<Hook>
     private void OnDisable()
     {
         binded_event = null;
-        crashed_car.Clear();
+        if (crashed_car.Count > 0)
+        {
+            crashed_car.Clear();
+        }
+        hooks.Clear();
         Car_Manager.self.car_crashed.Clear();
         CustomLibrary.SetGlobalTimeDilation(1);
     }
-
     private void Update()
     {
         binded_event?.Invoke();
     }
-
     private void CountDown()
     {
         timer += Time.unscaledDeltaTime;
@@ -43,7 +46,6 @@ public class Hook : Singleton<Hook>
         }
         CheckCarSelection();
     }
-
     List<GameObject> hooks = new List<GameObject>();
     private void CheckCarSelection()
     {
@@ -62,8 +64,8 @@ public class Hook : Singleton<Hook>
     {
         for (int i = 0; i < hooks.Count; i++)
         {
-            hooks[i].transform.position = Vector3.Lerp(hooks[i].transform.position, crashed_car[i].transform.position, Time.unscaledDeltaTime * 5f);
-            if (Vector3.Distance(hooks[i].transform.position, crashed_car[i].transform.position) < 1f)
+            hooks[i].transform.position = Vector3.Lerp(hooks[i].transform.position, crashed_car[i].transform.GetChild(0).transform.position, Time.unscaledDeltaTime * 3f);
+            if (Vector3.Distance(hooks[i].transform.position, crashed_car[i].transform.GetChild(0).transform.position) <= .5f)
             {
                 for (int j = 0; j < hooks.Count; j++)
                 {
@@ -81,10 +83,9 @@ public class Hook : Singleton<Hook>
             hooks[i].transform.position = Vector3.Lerp(hooks[i].transform.position, new Vector3(hooks[i].transform.position.x, 15, hooks[i].transform.position.z), Time.unscaledDeltaTime * 5f);
             if (hooks[i].transform.position.y >= 10)
             {
-                for (int j = crashed_car.Count - 1; j > 0; j--)
+                foreach (GameObject hook in hooks)
                 {
-                    Destroy(crashed_car[j]);
-                    crashed_car.RemoveAt(j);
+                    Destroy(hook);
                 }
                 enabled = false;
             }
