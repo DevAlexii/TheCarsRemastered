@@ -18,6 +18,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private Material[] start_materials;
     private bool shrink_on;
     private bool is_crashed;
+    private bool selected;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -64,6 +65,8 @@ public class Car_Core : MonoBehaviour, I_Interface
             is_crashed = true;
 
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
+
+            GameManager.self.E_OnCarCrash();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
         {
@@ -86,6 +89,14 @@ public class Car_Core : MonoBehaviour, I_Interface
             if (carFollowPathRef.ClickedCar())
             {
                 StartCoroutine(CarClickerAnimation());
+            }
+        }
+        else
+        {
+            if (!selected && Hook.self.enabled)
+            {
+                selected = true;
+                Hook.self.seleceted_car++;
             }
         }
     }

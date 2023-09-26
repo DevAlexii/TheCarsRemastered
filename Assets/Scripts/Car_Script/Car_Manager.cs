@@ -15,7 +15,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
     private List<GameObject> spawned_car;
 
-    private List<GameObject> car_crashed;
+    public List<GameObject> car_crashed { get; private set; }
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
     [Header("Invisibility")]
@@ -102,7 +102,10 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void AddCrashedCar(GameObject car)
     {
-        car_crashed.Add(car);
+        if (!car_crashed.Contains(car))
+        {
+            car_crashed.Add(car);
+        }
     }
     #endregion
 

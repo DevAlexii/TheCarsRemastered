@@ -5286,7 +5286,7 @@ MonoBehaviour:
   - {fileID: 122460795134903790, guid: 1fd82750e8a3bcc40af3f821db5b6ce9, type: 3}
   powerUP_Health: {fileID: 5622442911276258968, guid: 6d21fb2550c5fd8458fd0dd74ac9e80e,
     type: 3}
-  spawn_timer: 1
+  spawn_timer: 5
   spawn_points:
   - {fileID: 1512754104}
   - {fileID: 448455335}
@@ -7148,6 +7148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470568841}
   - component: {fileID: 1470568842}
+  - component: {fileID: 1470568843}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7182,7 +7183,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a21eeceefcd0b347a36c0c342d3d181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  n_life: 2
   difficulty: 50
+  hook_component: {fileID: 1470568843}
+--- !u!114 &1470568843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470568840}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d39d70b1a71de94fb1586ea27531435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seleceted_car: 0
+  max_time: 5
+  hook_prefab: {fileID: 5293389431255754701, guid: b83277f98d2776c4596996b7ff64c2fb,
+    type: 3}
 --- !u!1 &1477481938
 GameObject:
   m_ObjectHideFlags: 0
