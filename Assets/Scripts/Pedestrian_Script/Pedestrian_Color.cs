@@ -9,36 +9,45 @@ public class Pedestrian_Color : MonoBehaviour
     private void Start()
     {
         Dictionary<bodyPart, List<Shader_Color>> pool_colors = Color_Manager.self.bodies_colors;
-        List<Material> materials = GetComponent<MeshRenderer>().sharedMaterials.ToList();
+        Material[] materials = GetComponent<MeshRenderer>().materials;
         int random_index = 0;
+        Shader_Color color = new Shader_Color();
 
-        for (int i = 0; i < materials.Count; i++)
+        foreach (var material in materials)
         {
-            switch (materials[i].name)
+            if (material.name.StartsWith("maglietta"))
             {
-                case "maglietta":
-                    random_index = Random.Range(0, pool_colors[bodyPart.shirt].Count);
-                    materials[i].SetColor("_top_color", pool_colors[bodyPart.shirt][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.shirt][random_index].bottom_color);
-                    List<Material> arm = arms[0].sharedMaterials.ToList();
-                    arm[1].SetColor("_top_color", pool_colors[bodyPart.shirt][random_index].top_color);
-                    arm[1].SetColor("_bottom_color", pool_colors[bodyPart.shirt][random_index].bottom_color);
-                    arms[0].sharedMaterials = arm.ToArray();
-                    arms[1].sharedMaterials = arm.ToArray();
-                    break;
-                case "capelli":
-                    random_index = Random.Range(0, pool_colors[bodyPart.hair].Count);
-                    materials[i].SetColor("_top_color", pool_colors[bodyPart.hair][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.hair][random_index].bottom_color);
-                    break;
-                case "pelle":
-                    random_index = Random.Range(0, pool_colors[bodyPart.skin].Count);
-                    materials[i].SetColor("_top_color", pool_colors[bodyPart.skin][random_index].top_color);
-                    materials[i].SetColor("_bottom_color", pool_colors[bodyPart.skin][random_index].bottom_color);
-                    break;
+                random_index = Random.Range(0, pool_colors[bodyPart.shirt].Count);
+                color = pool_colors[bodyPart.shirt][random_index];
+                material.SetColor("_top_color", color.top_color);
+                material.SetColor("_bottom_color", color.bottom_color);
+                Material[] arm = arms[0].materials;
+                arm[1].SetColor("_top_color", color.top_color);
+                arm[1].SetColor("_bottom_color", color.bottom_color);
+                arms[0].sharedMaterials = arm;
+                arms[1].sharedMaterials = arm;
+            }
+            if (material.name.StartsWith("capelli"))
+            {
+                random_index = Random.Range(0, pool_colors[bodyPart.hair].Count);
+                color = pool_colors[bodyPart.hair][random_index];
+                material.SetColor("_top_color", color.top_color);
+                material.SetColor("_bottom_color", color.bottom_color);
+            }
+            if (material.name.StartsWith("pelle"))
+            {
+                random_index = Random.Range(0, pool_colors[bodyPart.skin].Count);
+                color = pool_colors[bodyPart.skin][random_index];
+                material.SetColor("_top_color", color.top_color);
+                material.SetColor("_bottom_color", color.bottom_color);
+                Material[] arm = arms[0].materials;
+                arm[0].SetColor("_top_color", color.top_color);
+                arm[0].SetColor("_bottom_color", color.bottom_color);
+                arms[0].sharedMaterials = arm;
+                arms[1].sharedMaterials = arm;
             }
         }
-        GetComponent<MeshRenderer>().sharedMaterials = materials.ToArray();
+        GetComponent<MeshRenderer>().sharedMaterials = materials;
         Destroy(this);
     }
 }
