@@ -98,6 +98,7 @@ public class Car_Core : MonoBehaviour, I_Interface
                 selected = true;
                 Hook.self.seleceted_car++;
             }
+            StartCoroutine(CarClickerAnimation());
         }
     }
     private IEnumerator CarClickerAnimation()
@@ -109,7 +110,7 @@ public class Car_Core : MonoBehaviour, I_Interface
 
         while (timer <= time)
         {
-            timer += Time.deltaTime;
+            timer += Time.unscaledDeltaTime;
 
             transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
             yield return null;
@@ -117,7 +118,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         float timer2 = 0;
         while (timer2 <= time)
         {
-            timer2 += Time.deltaTime;
+            timer2 += Time.unscaledDeltaTime;
             transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
             yield return null;
         }

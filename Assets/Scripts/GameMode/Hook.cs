@@ -29,6 +29,7 @@ public class Hook : Singleton<Hook>
         hooks.Clear();
         Car_Manager.self.car_crashed.Clear();
         CustomLibrary.SetGlobalTimeDilation(1);
+        GameManager.self.doOnce = false;
     }
     private void Update()
     {
@@ -56,6 +57,7 @@ public class Hook : Singleton<Hook>
                 GameObject hook = Instantiate(hook_prefab, crashed_car[i].transform.position + Vector3.up * 10, Quaternion.identity, transform);
                 hooks.Add(hook);
             }
+            timer = 0;
             binded_event -= CountDown;
             binded_event = HookGrabDownAnimation;
         }

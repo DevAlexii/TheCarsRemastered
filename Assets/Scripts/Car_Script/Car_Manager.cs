@@ -104,6 +104,8 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         if (!car_crashed.Contains(car))
         {
+            spawned_car.Remove(car);
+            car_in_scene.Remove(car);
             car_crashed.Add(car);
         }
     }
@@ -124,6 +126,7 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void ToggleInvisibility()
     {
+        if (spawned_car.Count <= 0) return;
         foreach (var car in spawned_car)
         {
             if (car.transform.GetChild(0).TryGetComponent(out Car_Core car_function))
@@ -192,6 +195,7 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         foreach (GameObject obj in spawned_car)
         {
+            obj.GetComponentInChildren<Collider>().excludeLayers = LayerMask.NameToLayer("Car");
             obj.GetComponentInChildren<Rigidbody>().isKinematic = false;
             obj.GetComponentInChildren<Collider>().isTrigger = false;
             obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);

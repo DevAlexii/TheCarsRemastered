@@ -14,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     //Life
     [Header("Life")]
     [SerializeField] private Int32 n_life;
+    public bool doOnce;
     public void UpdateLife(Int32 amount) { n_life += amount; }
     [Header("Score")]
     private Int32 score;
@@ -112,13 +113,17 @@ public class GameManager : Singleton<GameManager>
 
     public void E_OnCarCrash()
     {
-        if (n_life > 0)
+        if (!doOnce)
         {
-            Invoke(nameof(EnableHook), 0.5f);
-        }
-        else
-        {
-            Invoke(nameof(E_GameOver), 0.3f);
+            doOnce = true;
+            if (n_life > 0)
+            {
+                Invoke(nameof(EnableHook), .5f);
+            }
+            else
+            {
+                Invoke(nameof(E_GameOver), 0.3f);
+            } 
         }
     }
     private void EnableHook()
@@ -133,10 +138,12 @@ public class GameManager : Singleton<GameManager>
     {
         //ToDo
         CustomLibrary.SetGlobalTimeDilation(1);
+        doOnce = false;
 
 
-        //ForDebugCall
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+//ForDebugCall
+SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
