@@ -911,7 +911,7 @@ Transform:
   m_GameObject: {fileID: 276161756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11.6}
+  m_LocalPosition: {x: 0, y: 0, z: -37.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7198,6 +7198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d39d70b1a71de94fb1586ea27531435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashed_car: []
   seleceted_car: 0
   max_time: 5
   hook_prefab: {fileID: 5293389431255754701, guid: b83277f98d2776c4596996b7ff64c2fb,
@@ -11166,7 +11167,7 @@ MonoBehaviour:
       value:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
-  timer_to_spawn_car: 1
+  timer_to_spawn_car: 1.5
   car_prefabs:
   - {fileID: 1511708710891363274, guid: 0bb0b746177137e4b9d7d41526934874, type: 3}
   - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
