@@ -36,8 +36,7 @@ public class GameManager : Singleton<GameManager>
     {
         score += amount;
 
-
-        if (score % 50 == 0)
+        if (score % 50 == 0 && score != 0)
         {
             PowerUpManager.self.SpawnHealth();
         }
@@ -48,7 +47,7 @@ public class GameManager : Singleton<GameManager>
 
     private void UpdateNumberSprite()
     {
-        string scoreString = score.ToString(); 
+        string scoreString = score.ToString();
 
         Vector3[] digitPositions;
 
@@ -94,9 +93,9 @@ public class GameManager : Singleton<GameManager>
             {
                 if (i < scoreString.Length)
                 {
-                    int digit = int.Parse(scoreString[i].ToString()); 
-                    digitRenderer.sprite = numberSprites[digit]; 
-                    digitRenderer.enabled = true; 
+                    int digit = int.Parse(scoreString[i].ToString());
+                    digitRenderer.sprite = numberSprites[digit];
+                    digitRenderer.enabled = true;
 
                     digitTransforms[i].localPosition = digitPositions[i];
                 }
