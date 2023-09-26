@@ -35,11 +35,12 @@ public class Car_Random_Model : MonoBehaviour
     void RandomColor()
     {
         Material[] materials = scocca.GetComponent<MeshRenderer>().materials;
+        Shader_Color color = Color_Manager.self.GetRandomShaderColor;
+
         foreach (var material in materials)
         {
             if (material.name.StartsWith("shader"))
             {
-                Shader_Color color = Color_Manager.self.GetRandomShaderColor;
                 material.SetColor("_top_color", color.top_color);
                 material.SetColor("_bottom_color", color.bottom_color);
             }
