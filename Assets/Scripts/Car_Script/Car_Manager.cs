@@ -14,7 +14,6 @@ public class Car_Manager : Singleton<Car_Manager>
     private float timer;
 
     private List<GameObject> spawned_car;
-
     public List<GameObject> car_crashed { get; private set; }
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
@@ -32,6 +31,12 @@ public class Car_Manager : Singleton<Car_Manager>
     private Vector3 original_scale;
     private Vector3 target_scale;
 
+    [Header("Combo")]
+    [SerializeField] private GameObject combo25Prefab;
+
+    [SerializeField] public int comboCount = 0;
+    public int ComboCount => comboCount;
+    private GameObject lastComboCarSpawned;
 
     private void Start()
     {
@@ -55,6 +60,8 @@ public class Car_Manager : Singleton<Car_Manager>
             SpawnCar();
             timer = 0;
         }
+
+        HandleComboSpawn();
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
     }
@@ -93,6 +100,29 @@ public class Car_Manager : Singleton<Car_Manager>
         car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
+
+    public void HandleComboSpawn()
+    {
+        if (comboCount % 25 == 0 && comboCount != 0)
+        {
+            if (lastComboCarSpawned == null)
+            {
+                int comboType = comboCount / 25;
+                
+                Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
+                Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
+                int random_path = Random.Range(0, 2);
+                Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
+
+                GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, false, invisibility_on);
+                spawned_car.Add(comboCar);
+                lastComboCarSpawned = comboCar;
+                comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
+            }
+        }
+    }
+
     #endregion
 
     #region UpdateCarList

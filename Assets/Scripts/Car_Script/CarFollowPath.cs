@@ -41,6 +41,7 @@ public class CarFollowPath : MonoBehaviour
     private float distance;
     private Ray queque_ray;
     private RaycastHit queque_hit;
+    private bool pickCombo = true;
 
     [Header("VFX")]
     [SerializeField] private GameObject smoke_effect;
@@ -115,8 +116,11 @@ public class CarFollowPath : MonoBehaviour
             else if (path.Nodes[node_index].name.StartsWith("End"))
             {
                 Car_Manager.self.RemoveCar(this.gameObject);
-                GameManager.self.UpdateScore(1);
                 Destroy(this.gameObject);
+            }
+            else if (path.Nodes[node_index].name.StartsWith("GivePoint"))
+            {
+                GameManager.self.UpdateScore(1);
             }
             node_index++;
         }
@@ -168,9 +172,8 @@ public class CarFollowPath : MonoBehaviour
     }
     public bool ClickedCar()
     {
-        if (ToogleShouldMove())
+        if (ComboCounter())
         {
-            ToogleSmokeEffectOnWait();
             return true;
         }
         return false;
@@ -190,9 +193,28 @@ public class CarFollowPath : MonoBehaviour
             wait_timer = 0;
             ToogleShouldMove();
             ToogleSmokeEffectOnWait();
+            pickCombo = false;
+            Car_Manager.self.comboCount = 0;
             On_Waiting = null;
         }
     }
+
+    public bool ComboCounter()
+    {
+        if (ToogleShouldMove())
+        {
+            ToogleSmokeEffectOnWait();
+            if (pickCombo)
+            {
+                Car_Manager.self.comboCount++;
+                pickCombo = false;
+            }
+            return true;
+        }
+
+        return false;
+    }
+
     private void CheckQueque()
     {
         queque_ray.origin = transform.position + shell.forward + Vector3.up * 0.5f;
