@@ -18,6 +18,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private Material[] start_materials;
     private bool shrink_on;
     private bool is_crashed;
+    private bool selected;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -64,6 +65,8 @@ public class Car_Core : MonoBehaviour, I_Interface
             is_crashed = true;
 
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
+
+            GameManager.self.E_OnCarCrash();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
         {
@@ -88,13 +91,21 @@ public class Car_Core : MonoBehaviour, I_Interface
                 StartCoroutine(CarClickerAnimation());
             }
         }
+        else
+        {
+            if (!selected && Hook.self.enabled)
+            {
+                selected = true;
+                Hook.self.seleceted_car++;
+            }
+        }
     }
     private IEnumerator CarClickerAnimation()
     {
         float timer = 0;
-        float time = .2f;
+        float time = .1f;
         Vector3 start_scale = shrink_on ? (Vector3.one * 0.01f) * 0.5f : Vector3.one * 0.01f;
-        Vector3 target_scale = start_scale * 1.2f;
+        Vector3 target_scale = start_scale * 1.4f;
 
         while (timer <= time)
         {

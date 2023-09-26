@@ -26,7 +26,7 @@ public class PedestrianMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         rotation_speed = Random.Range(6, 11);
-        reachable_point_distance = Random.Range(0.1f, 1.1f);
+        reachable_point_distance = Random.Range(0.5f, 1.1f);
     }
     public void Initilized(PathInfo pathInfo)
     {
@@ -41,7 +41,6 @@ public class PedestrianMove : MonoBehaviour
     void PedestriansMoves()
     {
         if (path == null) return;
-
         Vector3 relativeVector = transform.InverseTransformPoint(path.Nodes[path_index].position);
         Quaternion targetRotation = Quaternion.LookRotation(relativeVector, Vector3.up);
         arrow.rotation = Quaternion.Slerp(arrow.rotation, targetRotation, Time.deltaTime * rotation_speed);
@@ -57,6 +56,7 @@ public class PedestrianMove : MonoBehaviour
             if (path_index + 1 == path.Nodes.Count)
             {
                 PedestrianSpawn.self.pedestrians_spawned.Remove(gameObject);
+                PedestrianSpawn.self.currentPedestrians--;
                 Destroy(gameObject);
                 return;
             }
@@ -79,6 +79,7 @@ public class PedestrianMove : MonoBehaviour
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
+            PedestrianSpawn.self.currentPedestrians--;
             rb.isKinematic = false;
             rb.AddForce(collider.gameObject.transform.forward * 300f + Vector3.up * 4);
             GetComponent<Collider>().isTrigger = false;

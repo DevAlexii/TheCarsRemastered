@@ -15,7 +15,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
     private List<GameObject> spawned_car;
 
-    private List<GameObject> car_crashed;
+    public List<GameObject> car_crashed { get; private set; }
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
     [Header("Invisibility")]
@@ -102,7 +102,10 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void AddCrashedCar(GameObject car)
     {
-        car_crashed.Add(car);
+        if (!car_crashed.Contains(car))
+        {
+            car_crashed.Add(car);
+        }
     }
     #endregion
 
@@ -167,20 +170,20 @@ public class Car_Manager : Singleton<Car_Manager>
 
     #endregion
     #region Slowmo
+
+    float porcodio;
     public void ToggleSlowDownGame(float slowdownDuration)
     {
-        Time.timeScale = 0.2f;
-        Time.fixedDeltaTime = Time.timeScale * Time.deltaTime;
+        CustomLibrary.SetGlobalTimeDilation(0.3f);
 
         StartCoroutine(ResumeGameAfterDelay(slowdownDuration));
     }
-
     private IEnumerator ResumeGameAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        Time.timeScale = 1;
-        Time.fixedDeltaTime = Time.deltaTime;
+        CustomLibrary.SetGlobalTimeDilation(1f);
+        StopCoroutine(ResumeGameAfterDelay(delay));
     }
 
     #endregion
@@ -190,8 +193,8 @@ public class Car_Manager : Singleton<Car_Manager>
         foreach (GameObject obj in spawned_car)
         {
             obj.GetComponentInChildren<Rigidbody>().isKinematic = false;
-            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * 10, transform.position, explosionRadius);
             obj.GetComponentInChildren<Collider>().isTrigger = false;
+            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
         }

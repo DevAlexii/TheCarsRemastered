@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dffbe3879a70144a84d871fb4e4d41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 500
+  explosionForce: 700
   explosionRadius: 40
   afterCollisionDeadTimer: 3
   arrow: {fileID: 8601126718339240283}
@@ -402,12 +402,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bb0d495686de4aa89a44f03731df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat:
-  - {fileID: 2100000, guid: 4f9027862a6e50b4aa6667c1859e8c4e, type: 2}
-  - {fileID: -7430301508525020422, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
-  - {fileID: -3021392251634653891, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
-  - {fileID: 4879502649908629676, guid: 8922e6c20f46d7b48815479d3776349c, type: 3}
-  - {fileID: -3257163794922225428, guid: b362cca64d7b1234eb6b30f3a6cf31fb, type: 3}
+  colors:
+  - key: 0
+    values:
+    - {fileID: 2100000, guid: c7ea170ac62a45043b454923dbc754e0, type: 2}
+    - {fileID: 2100000, guid: 95ab7f847ed745949a8d5fa1286fd676, type: 2}
+  - key: 1
+    values:
+    - {fileID: 2100000, guid: 6d1850f6fa8c76f45b4753f339b375f0, type: 2}
+    - {fileID: 2100000, guid: e5008d1e7a4d2e94bab2adbac594efe0, type: 2}
+  - key: 2
+    values:
+    - {fileID: 2100000, guid: db03167673c54f846b3607cae70518cc, type: 2}
+    - {fileID: 2100000, guid: fc258cd6b4999e54eacb6f25344e1a73, type: 2}
+  arms:
+  - {fileID: 5175263134008507581}
+  - {fileID: 4929721271020254842}
 --- !u!1 &6515530140389919940
 GameObject:
   m_ObjectHideFlags: 0
