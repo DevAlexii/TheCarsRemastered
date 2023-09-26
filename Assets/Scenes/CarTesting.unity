@@ -1231,16 +1231,16 @@ MonoBehaviour:
   colors:
   - key: 0
     values:
-    - top_color: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 0}
-      bottom_color: {r: 1, g: 0.1273585, b: 0.1273585, a: 0}
+    - top_color: {r: 0.4811321, g: 0.1268686, b: 0.070354216, a: 0}
+      bottom_color: {r: 0.122641504, g: 0.09262589, b: 0.08966714, a: 0}
   - key: 1
     values:
-    - top_color: {r: 0.5, g: 0.4551887, b: 0.4551887, a: 0}
-      bottom_color: {r: 1, g: 0.11792451, b: 0.11792451, a: 0}
+    - top_color: {r: 0.574, g: 0.3388675, b: 0.30428916, a: 0}
+      bottom_color: {r: 0.32599998, g: 0.19421275, b: 0.17340425, a: 0}
   - key: 2
     values:
-    - top_color: {r: 0.49056602, g: 0.18280526, b: 0.18280526, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
+    - top_color: {r: 0.10208259, g: 0.6981132, b: 0.20726442, a: 0}
+      bottom_color: {r: 0.14618191, g: 0.4245283, b: 0.19066234, a: 0}
 --- !u!1 &372891203
 GameObject:
   m_ObjectHideFlags: 0
@@ -8167,7 +8167,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d94117af77aa58842b482eebf40553a0, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2433017264133965, guid: 15eeaad24f9b48c4e8598ef189588c79, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15eeaad24f9b48c4e8598ef189588c79, type: 3}
@@ -9458,29 +9459,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car_shader_colors:
-  - top_color: {r: 0, g: 0, b: 1, a: 1}
-    bottom_color: {r: 0, g: 0, b: 0.3679245, a: 1}
-  - top_color: {r: 1, g: 0, b: 0.0743804, a: 1}
-    bottom_color: {r: 0.5283019, g: 0, b: 0, a: 1}
+  - top_color: {r: 0.4509804, g: 0, b: 0, a: 0}
+    bottom_color: {r: 0.7647059, g: 0.10980392, b: 0, a: 0}
+  - top_color: {r: 0, g: 0.4509804, b: 0.07058824, a: 1}
+    bottom_color: {r: 0, g: 0.7647059, b: 0.18431373, a: 1}
+  - top_color: {r: 0, g: 0.4117647, b: 0.4509804, a: 1}
+    bottom_color: {r: 0, g: 0.6, b: 0.7647059, a: 1}
+  - top_color: {r: 0.6784314, g: 0.29411766, b: 0, a: 1}
+    bottom_color: {r: 0.7647059, g: 0.29411766, b: 0, a: 1}
   colors:
   - key: 0
     values:
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
+    - top_color: {r: 1, g: 0.73091227, b: 0.12549019, a: 0}
+      bottom_color: {r: 1, g: 0.22314051, b: 0, a: 0}
+    - top_color: {r: 0.4811321, g: 0.1268686, b: 0.070354216, a: 0}
+      bottom_color: {r: 0.122641504, g: 0.09262589, b: 0.08966714, a: 0}
   - key: 1
     values:
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
+    - top_color: {r: 1, g: 0.5215407, b: 0.5208259, a: 0}
+      bottom_color: {r: 0.986, g: 0.34545398, b: 0.24563903, a: 0}
+    - top_color: {r: 0.574, g: 0.3388675, b: 0.30428916, a: 0}
+      bottom_color: {r: 0.32599998, g: 0.19421275, b: 0.17340425, a: 0}
   - key: 2
     values:
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
-    - top_color: {r: 0, g: 0, b: 0, a: 0}
-      bottom_color: {r: 0, g: 0, b: 0, a: 0}
+    - top_color: {r: 0, g: 0.8982549, b: 1, a: 0}
+      bottom_color: {r: 0, g: 0.28711918, b: 0.6037736, a: 0}
+    - top_color: {r: 0.10208259, g: 0.6981132, b: 0.20726442, a: 0}
+      bottom_color: {r: 0.14618191, g: 0.4245283, b: 0.19066234, a: 0}
 --- !u!1 &1682800715
 GameObject:
   m_ObjectHideFlags: 0
