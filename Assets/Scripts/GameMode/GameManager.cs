@@ -13,7 +13,6 @@ public class GameManager : Singleton<GameManager>
 
     private bool scoreOverNine = false;
     //Life
-    private Int32 n_life;
     [Header("Life")]
     [SerializeField] private Int32 n_life;
     public void UpdateLife(Int32 amount) { n_life += amount; }
