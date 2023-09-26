@@ -304,6 +304,12 @@ MonoBehaviour:
   rotation_speed: 6.5
   move_speed: 5
   wait_time: 5
+  angle_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   node_reachable_distance: 0.5
   max_distance: 2.2
   min_distance: 1.5
@@ -532,8 +538,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 119.99999, y: 135.928, z: 166.28284}
-  m_Center: {x: 0, y: 0, z: -0.9916127}
+  m_Size: {x: 119.99999, y: 139.75706, z: 166.28284}
+  m_Center: {x: 0, y: -1.9145399, z: -0.9916127}
 --- !u!54 &4152832833106434412
 Rigidbody:
   m_ObjectHideFlags: 0
