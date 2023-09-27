@@ -52,14 +52,12 @@ public class Car_Core : MonoBehaviour, I_Interface
     #endregion
 
     #region Collision
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
             carFollowPathRef.OnCrash();
-            GetComponent<Collider>().isTrigger = false;
             Rigidbody rb = GetComponent<Rigidbody>();
-            rb.isKinematic = false;
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
             is_crashed = true;
@@ -105,7 +103,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     {
         float timer = 0;
         float time = .1f;
-        Vector3 start_scale = shrink_on ? (Vector3.one * 0.01f) * 0.5f : Vector3.one * 0.01f;
+        Vector3 start_scale = shrink_on ? Vector3.one * 0.5f : Vector3.one;
         Vector3 target_scale = start_scale * 1.4f;
 
         while (timer <= time)

@@ -217,9 +217,8 @@ public class CarFollowPath : MonoBehaviour
 
     private void CheckQueque()
     {
-        queque_ray.origin = transform.position + shell.forward + Vector3.up * 0.5f;
+        queque_ray.origin = transform.position + shell.forward;
         queque_ray.direction = shell.forward;
-
         if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, distance))
         {
             if (queque_hit.transform.gameObject.layer == 3 || queque_hit.transform.gameObject.layer == 6)

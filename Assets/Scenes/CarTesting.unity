@@ -7664,6 +7664,7 @@ MonoBehaviour:
   - {fileID: 1530732656}
   scoreRenderer: {fileID: 1651857182}
   n_life: 2
+  doOnce: 0
   difficulty: 50
   hook_component: {fileID: 1470568843}
 --- !u!114 &1470568843
@@ -7678,7 +7679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d39d70b1a71de94fb1586ea27531435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crashed_car: []
   seleceted_car: 0
   max_time: 5
   hook_prefab: {fileID: 5293389431255754701, guid: b83277f98d2776c4596996b7ff64c2fb,
@@ -11875,7 +11875,7 @@ Transform:
   m_GameObject: {fileID: 2127971454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

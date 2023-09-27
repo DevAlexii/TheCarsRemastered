@@ -108,7 +108,7 @@ public class Car_Manager : Singleton<Car_Manager>
             if (lastComboCarSpawned == null)
             {
                 int comboType = comboCount / 25;
-                
+
                 Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
                 Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
                 int random_path = Random.Range(0, 2);
@@ -171,7 +171,7 @@ public class Car_Manager : Singleton<Car_Manager>
     #region Shrink
     public void ToggleShrink()
     {
-        original_scale = Vector3.one * .01f;
+        original_scale = Vector3.one;
         target_scale = original_scale * .5f;
 
         car_in_scene = spawned_car;
@@ -226,8 +226,6 @@ public class Car_Manager : Singleton<Car_Manager>
         foreach (GameObject obj in spawned_car)
         {
             obj.GetComponentInChildren<Collider>().excludeLayers = LayerMask.NameToLayer("Car");
-            obj.GetComponentInChildren<Rigidbody>().isKinematic = false;
-            obj.GetComponentInChildren<Collider>().isTrigger = false;
             obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
