@@ -3470,6 +3470,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1814435747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &793030714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793030715}
+  - component: {fileID: 793030716}
+  m_Layer: 0
+  m_Name: GameInstance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793030715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793030714}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2329524, y: 5.828066, z: 11.636052}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &793030716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793030714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7014c3a0f0cd7634c8c9b0cedb0b8ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pool_cars_editor:
+  - id_key: 0
+    car_prefab_value: {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090,
+      type: 3}
+  - id_key: 1
+    car_prefab_value: {fileID: 7104449171590673071, guid: b883345d9c0449a44a777cef4965a579,
+      type: 3}
+  - id_key: 2
+    car_prefab_value: {fileID: 7104449171590673071, guid: af62f26a8bf935746bdf1b92c601b3a8,
+      type: 3}
+  default_pool_car_editor:
+  - id_key: 0
+    car_prefab_value: {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090,
+      type: 3}
 --- !u!1 &808763561
 GameObject:
   m_ObjectHideFlags: 0
@@ -11936,15 +11994,7 @@ MonoBehaviour:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
   timer_to_spawn_car: 1.5
-  car_prefabs:
-  - {fileID: 1511708710891363274, guid: 0bb0b746177137e4b9d7d41526934874, type: 3}
-  - {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090, type: 3}
-  - {fileID: 7104449171590673071, guid: b883345d9c0449a44a777cef4965a579, type: 3}
-  - {fileID: 7104449171590673071, guid: 9e4bff5b729558e45a72c049f5aac6c7, type: 3}
-  - {fileID: 7104449171590673071, guid: af62f26a8bf935746bdf1b92c601b3a8, type: 3}
-  - {fileID: 7104449171590673071, guid: 791b731b4f4f56d4ab7ecd885be9c1a4, type: 3}
-  - {fileID: 8098404169660802738, guid: 2c8c0555d9feedd4aa46b400d74a18e1, type: 3}
-  - {fileID: 2637713564822990630, guid: a7b98f1c0acc0eb4b9e47a533b9722d0, type: 3}
+  car_prefabs: []
   max_car_in_scene: 20
   percentage_to_be_kamikaze: 20
   invisibility_time: 5
@@ -12234,3 +12284,4 @@ SceneRoots:
   - {fileID: 886387804}
   - {fileID: 1358507367}
   - {fileID: 1794881633}
+  - {fileID: 793030715}

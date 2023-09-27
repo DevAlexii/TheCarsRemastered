@@ -8,7 +8,7 @@ public class Car_Manager : Singleton<Car_Manager>
 {
     [SerializeField] List<Path_Dictionary> paths;
     [SerializeField] private float timer_to_spawn_car;
-    [SerializeField] List<GameObject> car_prefabs;
+    public List<GameObject> car_prefabs;
     [SerializeField] private Int32 max_car_in_scene;
     [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
@@ -51,6 +51,7 @@ public class Car_Manager : Singleton<Car_Manager>
                 paths_dictionary[paths[i].Key][paths[i].Value[j].Key] = paths[i].Value[j].Value;
             }
         }
+        car_prefabs = SaveSystemWithPlayerPref.self.owner_pool_car;
     }
     void Update()
     {

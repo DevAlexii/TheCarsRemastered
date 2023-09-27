@@ -35,7 +35,13 @@ public class Touch : MonoBehaviour
             }
         }
 #endif
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SaveSystemWithPlayerPref.self.SaveCarId(2);
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SaveSystemWithPlayerPref.self.DeleteAll();
+        }
     }
 }
-
-
