@@ -73,6 +73,7 @@ public class SaveSystemWithPlayerPref : Singleton<SaveSystemWithPlayerPref>
     public void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
+        Load();
     }
 
     [Serializable]
