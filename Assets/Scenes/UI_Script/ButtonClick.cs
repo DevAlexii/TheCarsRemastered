@@ -8,23 +8,20 @@ public class ButtonClick : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject panelToActivate;
     [SerializeField] bool deactivateParent;
 
+    [SerializeField] Animator animator_;
+    [SerializeField] string menuToShow;
+    [SerializeField] string menuToHide;
+    [SerializeField] bool noNeedToHideMenu;
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (deactivateParent)
+        if (noNeedToHideMenu)
         {
-            transform.parent.gameObject.SetActive(false);
-            panelToActivate.SetActive(true);
+            animator_.SetTrigger(menuToHide);
+        }
+        animator_.SetTrigger(menuToShow);
 
-            float randomPitch = Random.Range(0.7f, 1.1f);
-            AudioCallback.self.PlayAudioSource(randomPitch);
-        }
-        else
-        {
-            panelToActivate.SetActive(true);
-            gameObject.SetActive(false);
-            float randomPitch = Random.Range(0.7f, 1.1f);
-            AudioCallback.self.PlayAudioSource(randomPitch);
-        }
+        float randomPitch = Random.Range(0.7f, 1.1f);
+        AudioCallback.self.PlayAudioSource(randomPitch);
     }
 
 }
