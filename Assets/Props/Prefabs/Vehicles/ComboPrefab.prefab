@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream:Assets/Props/Prefabs/Vehicles/ComboPrefab.prefab
+--- !u!1 &147702312858962321
+=======
 --- !u!1 &59851539446732729
+>>>>>>> Stashed changes:Assets/Props/Prefabs/Vehicles/ComboPrefab25.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,6 +12,16 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream:Assets/Props/Prefabs/Vehicles/ComboPrefab.prefab
+  - component: {fileID: 203163779652617994}
+  - component: {fileID: 8246958025750471103}
+  - component: {fileID: 6843141927486699088}
+  - component: {fileID: 285570088404776419}
+  - component: {fileID: 2038658339477406322}
+  - component: {fileID: 1604762436839250603}
+  m_Layer: 0
+  m_Name: TopCar
+=======
   - component: {fileID: 2424054706714411876}
   - component: {fileID: 4086932637638110564}
   - component: {fileID: 2955605825161073969}
@@ -521,6 +535,7 @@ GameObject:
   - component: {fileID: 5915308538668599144}
   m_Layer: 3
   m_Name: FR3
+>>>>>>> Stashed changes:Assets/Props/Prefabs/Vehicles/ComboPrefab25.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
