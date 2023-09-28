@@ -98,7 +98,7 @@ public class Car_Manager : Singleton<Car_Manager>
             }
         }
         GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
+        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
 
@@ -160,7 +160,7 @@ public class Car_Manager : Singleton<Car_Manager>
         if (spawned_car.Count <= 0) return;
         foreach (var car in spawned_car)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out Car_Core car_function))
+            if (car.transform.TryGetComponent(out Car_Core car_function))
             {
                 car_function.EnableInvisiblity();
             }
@@ -178,7 +178,7 @@ public class Car_Manager : Singleton<Car_Manager>
         car_in_scene = spawned_car;
         foreach (var car in car_in_scene)
         {
-            if (car.transform.GetChild(0).TryGetComponent(out Car_Core car_function))
+            if (car.transform.TryGetComponent(out Car_Core car_function))
             {
                 car_function.EnableShrink();
             }
@@ -197,7 +197,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
         foreach (var car in car_in_scene)
         {
-            car.transform.localScale = Vector3.Slerp(car.transform.localScale, target_scale, shrink_timer / shrink_time);
+            car.transform.GetChild(0).localScale = Vector3.Slerp(car.transform.GetChild(0).localScale, target_scale, shrink_timer / shrink_time);
         }
     }
 
@@ -226,8 +226,8 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         foreach (GameObject obj in spawned_car)
         {
-            obj.GetComponentInChildren<Collider>().excludeLayers = LayerMask.NameToLayer("Car");
-            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
+            obj.layer = 6;
+            obj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
         }

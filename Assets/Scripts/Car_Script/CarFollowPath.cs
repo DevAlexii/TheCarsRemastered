@@ -82,6 +82,7 @@ public class CarFollowPath : MonoBehaviour
         if (node_index == path.Nodes.Count) return;
         Vector3 relativeVector = transform.InverseTransformPoint(GetNodePosition());
         Quaternion targetRotation = Quaternion.LookRotation(relativeVector, Vector3.up);
+        targetRotation.eulerAngles = targetRotation.eulerAngles.y * Vector3.up;
         foreach (Transform wheel in front_wheels)
         {
             wheel.rotation = Quaternion.Slerp(wheel.rotation, targetRotation, Time.deltaTime * rotation_speed * 2);

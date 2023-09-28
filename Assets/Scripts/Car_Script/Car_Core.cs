@@ -25,7 +25,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     {
         carFollowPathRef.InitilizedPath(newPath, this, isKamikaze);
         directional_arrow_index_to_play = arrow_index;
-        start_materials = GetComponent<MeshRenderer>().materials;
+        start_materials = GetComponentInChildren<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
     }
     #endregion
@@ -61,21 +61,22 @@ public class Car_Core : MonoBehaviour, I_Interface
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
             is_crashed = true;
-
-            Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
-
+            Car_Manager.self.AddCrashedCar(transform.gameObject);
             GameManager.self.E_OnCarCrash();
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ramp"))
         {
             On_Ramp_Collision();
         }
     }
     void On_Ramp_Collision()
     {
-        Destroy(transform.parent.GetComponent<CarFollowPath>());
+        Destroy(transform.GetComponent<CarFollowPath>());
         gameObject.AddComponent<Car_Ramp_Movement>();
-        Car_Manager.self.RemoveCar(transform.parent.gameObject);
+        Car_Manager.self.RemoveCar(transform.gameObject);
     }
     #endregion
 
@@ -110,14 +111,14 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             timer += Time.unscaledDeltaTime;
 
-            transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            transform.GetChild(0).localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
             yield return null;
         }
         float timer2 = 0;
         while (timer2 <= time)
         {
             timer2 += Time.unscaledDeltaTime;
-            transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+            transform.GetChild(0).localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
             yield return null;
         }
         StopCoroutine(CarClickerAnimation());
@@ -132,16 +133,16 @@ public class Car_Core : MonoBehaviour, I_Interface
 
         if (transform.gameObject.layer == 6)
         {
-            Material[] materials_to_change = GetComponent<MeshRenderer>().materials;
+            Material[] materials_to_change = GetComponentInChildren<MeshRenderer>().materials;
             for (int i = 0; i < materials_to_change.Length; i++)
             {
                 materials_to_change[i] = invisibleMaterial;
             }
-            GetComponent<MeshRenderer>().materials = materials_to_change;
+            GetComponentInChildren<MeshRenderer>().materials = materials_to_change;
         }
         else
         {
-            GetComponent<MeshRenderer>().materials = start_materials;
+            GetComponentInChildren<MeshRenderer>().materials = start_materials;
         }
     }
     public void EnableShrink()
