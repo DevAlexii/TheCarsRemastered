@@ -60,6 +60,7 @@ public class CarFollowPath : MonoBehaviour
         On_CarMove = MoveCarToNode;
         owner = Owner;
         is_kamikaze = Kamikaze;
+        if (!is_kamikaze) { ToogleCollision(false); }
     }
     void Update()
     {
@@ -98,6 +99,7 @@ public class CarFollowPath : MonoBehaviour
         {
             if (path.Nodes[node_index].name.StartsWith("Stop") && !is_kamikaze)
             {
+                ToogleCollision(true);
                 stop_car = true;
                 owner.ShowDirectionalArrow();
                 start_yaw = shell.eulerAngles.y;
@@ -121,6 +123,7 @@ public class CarFollowPath : MonoBehaviour
             }
             else if (path.Nodes[node_index].name.StartsWith("GivePoint"))
             {
+                ToogleCollision();
                 GameManager.self.UpdateScore(1);
             }
             node_index++;
@@ -235,5 +238,19 @@ public class CarFollowPath : MonoBehaviour
     private void ToogleSmokeEffectOnWait(bool active = false)
     {
         smoke_effect.SetActive(active);
+    }
+    private void ToogleCollision(bool hasCollision = false)
+    {
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (!hasCollision)
+        {
+            rb.excludeLayers += 3;
+            rb.excludeLayers += 6;
+        }
+        else
+        {
+            rb.excludeLayers -= 3;
+            rb.excludeLayers -= 6;
+        }
     }
 }
