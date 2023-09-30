@@ -11,7 +11,6 @@ public class GameManager : Singleton<GameManager>
     public Transform[] digitTransforms;
     public SpriteRenderer scoreRenderer;
 
-    //Life
     [Header("Life")]
     [SerializeField] private Int32 n_life;
     public bool doOnce;
@@ -19,6 +18,17 @@ public class GameManager : Singleton<GameManager>
     [Header("Score")]
     private Int32 score;
     public Int32 Score => score;
+
+    [Header("Invisibile")]
+    [SerializeField] private Material InvisibilityMaterial;
+    public Material GetInvisibilityMaterial => InvisibilityMaterial;
+    [SerializeField] private Color Invisibility_Outline_Color;
+    public Color Get_Invisibility_Outline_Color => Invisibility_Outline_Color;
+    [SerializeField] private Color Start_Outline_Color;
+    public Color Get_Start_Outline_Color => Start_Outline_Color;
+    public LayerMask layer_to_exclude;
+    public LayerMask layer_to_exclude_default;
+
 
     private void Start()
     {
@@ -123,7 +133,7 @@ public class GameManager : Singleton<GameManager>
             else
             {
                 Invoke(nameof(E_GameOver), 0.3f);
-            } 
+            }
         }
     }
     private void EnableHook()
@@ -142,8 +152,8 @@ public class GameManager : Singleton<GameManager>
 
 
 
-//ForDebugCall
-SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //ForDebugCall
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 

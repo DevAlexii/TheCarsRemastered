@@ -244,13 +244,11 @@ public class CarFollowPath : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         if (!hasCollision)
         {
-            rb.excludeLayers += 3;
-            rb.excludeLayers += 6;
+            rb.excludeLayers = GameManager.self.layer_to_exclude;
         }
         else
         {
-            rb.excludeLayers -= 3;
-            rb.excludeLayers -= 6;
+            rb.excludeLayers = GameManager.self.layer_to_exclude_default;
         }
     }
 }
