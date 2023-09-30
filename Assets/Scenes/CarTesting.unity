@@ -1907,9 +1907,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30565b54bf358cd498b33940acacae06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 453654763}
+  audioClips:
+  - {fileID: 8300000, guid: 59be61d0278b7414bb275cf629a13267, type: 3}
+  - {fileID: 8300000, guid: 7b41f342f27b8674dae64e31d9135c7c, type: 3}
+  - {fileID: 8300000, guid: 59be61d0278b7414bb275cf629a13267, type: 3}
+  - {fileID: 8300000, guid: 59be61d0278b7414bb275cf629a13267, type: 3}
+  - {fileID: 8300000, guid: a0d7654cf5a1267479c25adc702ce69d, type: 3}
+  audioTypes: 0000000002000000030000000400000005000000
+  audioSource: {fileID: 453654763}
+  sliderAudio: {fileID: 460054294}
   audioMixer: {fileID: 24100000, guid: a716baf3afdf56a4abd51755d21e1932, type: 2}
-  musicSlider: {fileID: 460054294}
 --- !u!1 &460054292
 GameObject:
   m_ObjectHideFlags: 0

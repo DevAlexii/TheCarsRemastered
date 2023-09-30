@@ -57,6 +57,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         if (other.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
             carFollowPathRef.OnCrash();
+            AudioCallBack.self.PlayAudio(AudioType.Crash, 1f);
             Rigidbody rb = GetComponent<Rigidbody>();
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();

@@ -21,7 +21,7 @@ public class ButtonClick : MonoBehaviour, IPointerClickHandler
         animator_.SetTrigger(menuToShow);
 
         float randomPitch = Random.Range(0.7f, 1.1f);
-        AudioCallback.self.PlayAudioSource(randomPitch);
+        AudioCallBack.self.PlayAudio(AudioType.Button, randomPitch);
     }
 
 }

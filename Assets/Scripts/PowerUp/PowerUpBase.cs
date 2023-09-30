@@ -11,7 +11,7 @@ public class PowerUpBase : MonoBehaviour, I_Interface
     }
     public virtual void OnClicked()
     {
-        AudioCallback.self.PlayAudioSource(0.5f);
+        AudioCallBack.self.PlayAudio(AudioType.Coin,0.8f);
         Destroy(this.gameObject);
     }
 }

@@ -43,7 +43,6 @@ public class DropDownGrapghic : MonoBehaviour
         {
             GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
-            AudioCallback.self.PlayAudioSource(1f);
             global.profile = volumeLow;
         }
         if (var == 1)
@@ -51,7 +50,7 @@ public class DropDownGrapghic : MonoBehaviour
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
-            AudioCallback.self.PlayAudioSource(1f);
         }
+        AudioCallBack.self.PlayAudio(AudioType.Coin, 1f);
     }
 }
