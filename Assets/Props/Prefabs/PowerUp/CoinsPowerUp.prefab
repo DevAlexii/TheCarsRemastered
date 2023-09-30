@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4301518237954769680}
   - component: {fileID: 6234409777100436788}
-  - component: {fileID: 7804444559584294380}
   - component: {fileID: 1220744502969812385}
   m_Layer: 0
   m_Name: CoinsPowerUp
@@ -56,24 +55,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7804444559584294380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3125381150521189789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098f9f7d42b971d4da35ccda9a0c24e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 1.2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &1220744502969812385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +126,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1a8fc6a73957284488ea38eb9a842cc1,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e5f3142089cb4247843bba71972974e, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 1a8fc6a73957284488ea38eb9a842cc1,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ee407606da28dd4dbf58e6df97979a0, type: 2}
     - target: {fileID: 919132149155446097, guid: 1a8fc6a73957284488ea38eb9a842cc1,
         type: 3}
       propertyPath: m_Name
@@ -158,6 +149,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562750295577052242}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a8fc6a73957284488ea38eb9a842cc1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 131375237977677504}
   m_SourcePrefab: {fileID: 100100000, guid: 1a8fc6a73957284488ea38eb9a842cc1, type: 3}
 --- !u!1 &2608329614739683866 stripped
 GameObject:
@@ -187,6 +182,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &131375237977677504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2608329614739683866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098f9f7d42b971d4da35ccda9a0c24e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 0.49244177, b: 0, a: 1}
+  outlineWidth: 1.2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &3420894428166938784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a8fc6a73957284488ea38eb9a842cc1,
