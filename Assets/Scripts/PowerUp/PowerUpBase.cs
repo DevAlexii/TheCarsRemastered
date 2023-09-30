@@ -11,7 +11,6 @@ public class PowerUpBase : MonoBehaviour, I_Interface
     {
         time = SizeAnimationEditor.self.Time;
         size_curve = SizeAnimationEditor.self.Size_curve;
-        Destroy(this.gameObject, 3f);
     }
     public virtual void OnClicked()
     {

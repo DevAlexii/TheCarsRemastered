@@ -3,7 +3,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class SizeAnimationEditor : Singleton<SizeAnimationEditor>
 {
-    public float Timer;
+    [Range(0, 20)] public float Timer;
     public AnimationCurve Size_curve;
     public float Time;
 

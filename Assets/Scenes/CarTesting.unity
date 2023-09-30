@@ -10683,6 +10683,7 @@ GameObject:
   - component: {fileID: 1813402564}
   - component: {fileID: 1813402563}
   - component: {fileID: 1813402565}
+  - component: {fileID: 1813402566}
   m_Layer: 0
   m_Name: SizeAnimationRef
   m_TagString: Untagged
@@ -10700,7 +10701,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.21, z: 0}
-  m_LocalScale: {x: 0.73875564, y: 0.73875564, z: 0.73875564}
+  m_LocalScale: {x: 0.04959488, y: 0.04959488, z: 0.04959488}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 762659127}
@@ -10767,7 +10768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76eadd7a860aa814babe10c9fbab85d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 2.1
+  Timer: 0
   Size_curve:
     serializedVersion: 2
     m_Curve:
@@ -10811,6 +10812,18 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   Time: 5
+--- !u!114 &1813402566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813402560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee7d6e039152c147994b264e761ccec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1814435746
 GameObject:
   m_ObjectHideFlags: 0
