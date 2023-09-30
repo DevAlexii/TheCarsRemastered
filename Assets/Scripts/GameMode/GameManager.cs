@@ -52,7 +52,7 @@ public class GameManager : Singleton<GameManager>
 
         Vector3[] digitPositions;
 
-        switch (scoreString.Length)//non ti arrabiare ale
+        switch (scoreString.Length)
         {
             case 1:
                 digitPositions = new Vector3[] { new Vector3(-6.8f, 0.6f, 6.7f) };

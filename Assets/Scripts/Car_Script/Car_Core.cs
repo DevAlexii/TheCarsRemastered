@@ -19,6 +19,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private bool shrink_on;
     private bool is_crashed;
     private bool selected;
+    private bool isKamikaze;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -27,6 +28,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         directional_arrow_index_to_play = arrow_index;
         start_materials = GetComponentInChildren<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
+        this.isKamikaze = isKamikaze;
     }
     #endregion
 
@@ -94,11 +96,16 @@ public class Car_Core : MonoBehaviour, I_Interface
         else
         {
             if (!selected && Hook.self.enabled)
-            {
+            { 
                 selected = true;
                 Hook.self.seleceted_car++;
             }
             StartCoroutine(CarClickerAnimation());
+        }
+
+        if (isKamikaze)
+        {
+            Car_Manager.self.DropCoin(transform.position);
         }
     }
     private IEnumerator CarClickerAnimation()

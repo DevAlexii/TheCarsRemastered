@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18002036, g: 0.22539532, b: 0.3067572, a: 1}
+  m_IndirectSpecularColor: {r: 0.18002054, g: 0.22539575, b: 0.30675787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5863,6 +5863,7 @@ MonoBehaviour:
   - {fileID: 3865702131316947037, guid: 6cd67f97a105ff74187d30cfa1cb8896, type: 3}
   - {fileID: 5519234870774585199, guid: 36cbe13e6e4ed314082e09dbab644595, type: 3}
   - {fileID: 122460795134903790, guid: 1fd82750e8a3bcc40af3f821db5b6ce9, type: 3}
+  - {fileID: 3125381150521189789, guid: d61168d817af9af4e85ada70719f40e1, type: 3}
   powerUP_Health: {fileID: 5622442911276258968, guid: 6d21fb2550c5fd8458fd0dd74ac9e80e,
     type: 3}
   spawn_timer: 2
@@ -12433,12 +12434,15 @@ MonoBehaviour:
   timer_to_spawn_car: 1.5
   car_prefabs: []
   max_car_in_scene: 20
-  percentage_to_be_kamikaze: 20
+  percentage_to_be_kamikaze: 100
   invisibility_time: 5
   shrink_time: 2
+  coinPrefab: {fileID: 3125381150521189789, guid: a32449a4c60aaf04a8b2990dd220154a,
+    type: 3}
   combo25Prefab: {fileID: 7104449171590673071, guid: f89b2d76bb1e4bb41a6c7fdb4e9c9766,
     type: 3}
   comboCount: 0
+  coinsAmount: 0
 --- !u!1 &2135848720
 GameObject:
   m_ObjectHideFlags: 0

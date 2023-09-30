@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -31,13 +32,14 @@ public class Car_Manager : Singleton<Car_Manager>
     private Vector3 original_scale;
     private Vector3 target_scale;
 
+    [Header("Coins")]
+    [SerializeField] private GameObject coinPrefab;
+
     [Header("Combo")]
     [SerializeField] private GameObject combo25Prefab;
-
     [SerializeField] public int comboCount = 0;
     public int ComboCount => comboCount;
     private GameObject lastComboCarSpawned;
-
     private void Start()
     {
         spawned_car = new List<GameObject>();
@@ -76,11 +78,12 @@ public class Car_Manager : Singleton<Car_Manager>
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
+        bool isKamikaze = true;
 
         int random_index = Random.Range(0, car_prefabs.Count);
         int arrow_index = -1;
-        bool isKamikaze = true;
-        if (randomPoint == Point.Left && random_path == 0)
+
+        if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto
         {
             arrow_index = 0;
             isKamikaze = false;
@@ -100,6 +103,7 @@ public class Car_Manager : Singleton<Car_Manager>
         GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity, this.transform);
         car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
         spawned_car.Add(car);
+
     }
 
     public void HandleComboSpawn()
@@ -205,7 +209,7 @@ public class Car_Manager : Singleton<Car_Manager>
     #endregion
     #region Slowmo
 
-    float porcodio;
+
     public void ToggleSlowDownGame(float slowdownDuration)
     {
         CustomLibrary.SetGlobalTimeDilation(0.3f);
@@ -232,6 +236,23 @@ public class Car_Manager : Singleton<Car_Manager>
             Destroy(obj, 2);
         }
         spawned_car.Clear();
+    }
+    #endregion
+    #region Coins
+    public int coinsAmount = 0;
+    public void IncrementCoins()
+    {
+        coinsAmount++;
+    }
+
+    public void DropCoin(Vector3 position)
+    {
+        if (coinPrefab != null)
+        {
+            GameObject coins = Instantiate(coinPrefab, position, Quaternion.identity);
+            coins.GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+            IncrementCoins();
+        }
     }
     #endregion
     #endregion

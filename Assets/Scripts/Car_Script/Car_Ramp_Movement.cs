@@ -6,9 +6,9 @@ public class Car_Ramp_Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce((transform.GetChild(0).forward + Vector3.up) * 11000 * Time.deltaTime, ForceMode.Force);
+        rb.AddForce((transform.GetChild(0).forward + Vector3.up) * 24500 * Time.deltaTime, ForceMode.Force);
         transform.gameObject.layer = 0;
-        Destroy(transform.gameObject, 5);
+        Destroy(transform.gameObject, 7);
         GameManager.self.UpdateScore(1);
     }
     void Update()
