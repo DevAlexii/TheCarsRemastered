@@ -7,6 +7,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     [Header("Reference")]
     [SerializeField] private CarFollowPath carFollowPathRef;
     [SerializeField] private List<GameObject> directional_arrwos;
+    [SerializeField] private List<GameObject> wheels;
 
     [Header("CollisionForce")]
     [SerializeField] float impulse_force;
@@ -14,8 +15,8 @@ public class Car_Core : MonoBehaviour, I_Interface
 
     [Header("Internal Var")]
     private int directional_arrow_index_to_play;
-    public Material invisibleMaterial;
     private Material[] start_materials;
+    private Material[] wheel_start_Materials;
     private bool shrink_on;
     private bool is_crashed;
     private bool selected;
@@ -27,6 +28,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         carFollowPathRef.InitilizedPath(newPath, this, isKamikaze);
         directional_arrow_index_to_play = arrow_index;
         start_materials = GetComponentInChildren<MeshRenderer>().materials;
+        wheel_start_Materials = wheels[0].GetComponent<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
         this.isKamikaze = isKamikaze;
     }
@@ -96,7 +98,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         else
         {
             if (!selected && Hook.self.enabled)
-            { 
+            {
                 selected = true;
                 Hook.self.seleceted_car++;
             }
@@ -139,18 +141,40 @@ public class Car_Core : MonoBehaviour, I_Interface
         int current_layer = transform.gameObject.layer;
         transform.gameObject.layer = current_layer == 6 ? 3 : 6; //3 = car // 6 == Invisible
 
+
         if (transform.gameObject.layer == 6)
         {
+            //MaterialiScocca
             Material[] materials_to_change = GetComponentInChildren<MeshRenderer>().materials;
             for (int i = 0; i < materials_to_change.Length; i++)
             {
-                materials_to_change[i] = invisibleMaterial;
+                materials_to_change[i] = GameManager.self.GetInvisibilityMaterial;
             }
             GetComponentInChildren<MeshRenderer>().materials = materials_to_change;
+            GetComponentInChildren<Outline>().OutlineColor = GameManager.self.Get_Invisibility_Outline_Color;
+            GetComponent<Rigidbody>().excludeLayers = GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude;
+            //MaterialiRuote
+            Material[] wheel_materials_to_change = wheels[0].GetComponent<MeshRenderer>().materials;
+            for (int i = 0; i < wheel_materials_to_change.Length; i++)
+            {
+                wheel_materials_to_change[i] = GameManager.self.GetInvisibilityMaterial;
+            }
+            foreach (var wheel in wheels)
+            {
+                wheel.GetComponent<MeshRenderer>().materials = wheel_materials_to_change;
+            }
         }
         else
         {
+            //MaterialiScocca
             GetComponentInChildren<MeshRenderer>().materials = start_materials;
+            GetComponentInChildren<Outline>().OutlineColor = GameManager.self.Get_Start_Outline_Color;
+            GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude_default;
+            //MaterialiRuote
+            foreach (var wheel in wheels)
+            {
+                wheel.GetComponent<MeshRenderer>().materials = wheel_start_Materials;
+            }
         }
     }
     public void EnableShrink()
