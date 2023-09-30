@@ -12661,6 +12661,8 @@ MonoBehaviour:
   percentage_to_be_kamikaze: 100
   invisibility_time: 5
   shrink_time: 2
+  shrinkVFX: {fileID: 7131401307255788800, guid: 93e358432cf6ccf43a3c81853d4e392f,
+    type: 3}
   coinPrefab: {fileID: 3125381150521189789, guid: a32449a4c60aaf04a8b2990dd220154a,
     type: 3}
   combo25Prefab: {fileID: 7104449171590673071, guid: f89b2d76bb1e4bb41a6c7fdb4e9c9766,

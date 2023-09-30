@@ -31,6 +31,7 @@ public class Car_Manager : Singleton<Car_Manager>
     List<GameObject> car_in_scene = new List<GameObject>();
     private Vector3 original_scale;
     private Vector3 target_scale;
+    public GameObject shrinkVFX;
 
     [Header("Coins")]
     [SerializeField] private GameObject coinPrefab;
@@ -185,9 +186,19 @@ public class Car_Manager : Singleton<Car_Manager>
             if (car.transform.TryGetComponent(out Car_Core car_function))
             {
                 car_function.EnableShrink();
+                Vector3 effectPosition = car.transform.position - new Vector3(0f, 1.5f, 0f); 
+                GameObject effect = Instantiate(shrinkVFX, effectPosition, Quaternion.identity);
+                effect.transform.parent = car.transform; 
+                Destroy(effect, 1.5f);
             }
         }
         On_Shrink = ShrinkTimer;
+    }
+
+    private void InstantiateEffect(Vector3 position)
+    {
+        GameObject effect = Instantiate(shrinkVFX, position, Quaternion.identity);
+        Destroy(effect, 1.5f);
     }
     void ShrinkTimer()
     {
