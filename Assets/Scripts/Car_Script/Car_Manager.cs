@@ -33,6 +33,8 @@ public class Car_Manager : Singleton<Car_Manager>
     private Vector3 original_scale;
     private Vector3 target_scale;
     public GameObject shrinkVFX;
+    public GameObject nukeVFX;
+
 
     [Header("Coins")]
     [SerializeField] private GameObject coinPrefab;
@@ -40,6 +42,10 @@ public class Car_Manager : Singleton<Car_Manager>
     [Header("Combo")]
     [SerializeField] private GameObject combo25Prefab;
     [SerializeField] public int comboCount = 0;
+
+    [Header("Camera")]
+    public CameraShake cameraShake;
+
     public int ComboCount => comboCount;
     private GameObject lastComboCarSpawned;
     private void Start()
@@ -241,6 +247,9 @@ public class Car_Manager : Singleton<Car_Manager>
             obj.layer = 6;
             obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
+            GameObject effect = Instantiate(nukeVFX, new Vector3(0, 1, 0), Quaternion.identity);
+            cameraShake.StartShake();
+            Destroy(effect, 1f);
             Destroy(obj, 2);
         }
         spawned_car.Clear();

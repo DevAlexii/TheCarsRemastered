@@ -6,7 +6,7 @@ public class PowerUp_Health : PowerUpBase
     {
         GameManager.self.UpdateLife(1);
         GameObject effect = Instantiate(this.effect, transform.position, Quaternion.identity);
-        Destroy(effect, 1.5f);
+        Destroy(effect, 1f);
         base.OnClicked();
     }
 }
