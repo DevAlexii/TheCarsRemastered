@@ -15,7 +15,7 @@ public class Car_Manager : Singleton<Car_Manager>
     [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
 
-    private List<GameObject> spawned_car;
+    public List<GameObject> spawned_car;
     public List<GameObject> car_crashed { get; private set; }
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;
 
@@ -104,7 +104,7 @@ public class Car_Manager : Singleton<Car_Manager>
         var data = CarInfos[(CarType)random_index][Random.Range(0, CarInfos[(CarType)random_index].Count)];
 
         GameObject car = Instantiate(car_prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
+        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
         spawned_car.Add(car);
     }
 
@@ -121,7 +121,7 @@ public class Car_Manager : Singleton<Car_Manager>
                 int random_path = Random.Range(0, 2);
                 Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
                 GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0],false, invisibility_on);
+                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on);
                 spawned_car.Add(comboCar);
                 lastComboCarSpawned = comboCar;
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
@@ -140,10 +140,10 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         if (!car_crashed.Contains(car))
         {
-            spawned_car.Remove(car);
-            car_in_scene.Remove(car);
             car_crashed.Add(car);
         }
+        spawned_car.Remove(car);
+        car_in_scene.Remove(car);
     }
     #endregion
 
@@ -165,10 +165,7 @@ public class Car_Manager : Singleton<Car_Manager>
         if (spawned_car.Count <= 0) return;
         foreach (var car in spawned_car)
         {
-            if (car.transform.TryGetComponent(out Car_Core car_function))
-            {
-                car_function.EnableInvisiblity();
-            }
+            car.GetComponentInChildren<Car_Core>().EnableInvisiblity();
         }
         invisibility_on = true;
         On_Invisibility = InvisibilityTimer;
@@ -242,7 +239,7 @@ public class Car_Manager : Singleton<Car_Manager>
         foreach (GameObject obj in spawned_car)
         {
             obj.layer = 6;
-            obj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
+            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
             Destroy(obj.GetComponent<CarFollowPath>());
             Destroy(obj, 2);
         }

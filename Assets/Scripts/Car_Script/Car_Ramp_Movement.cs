@@ -5,16 +5,15 @@ public class Car_Ramp_Movement : MonoBehaviour
     Rigidbody rb;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.AddForce((transform.GetChild(0).forward + Vector3.up) * 24500 * Time.deltaTime, ForceMode.Force);
-        rb.excludeLayers += 3;
-        rb.excludeLayers += 6;
+        rb = GetComponentInChildren<Rigidbody>();
+        rb.AddForce((transform.GetChild(0).forward + Vector3.up) * 20000 * Time.deltaTime, ForceMode.Force);
+        rb.excludeLayers = GameManager.self.layer_to_exclude;
         transform.gameObject.layer = 0;
-        Destroy(transform.gameObject, 7);
+        Destroy(gameObject, 7);
         GameManager.self.UpdateScore(1);
     }
     void Update()
     {
-        transform.Translate(transform.GetChild(0).forward * 5 * Time.deltaTime);
+        transform.Translate(transform.GetChild(0).forward * 10 * Time.deltaTime);
     }
 }

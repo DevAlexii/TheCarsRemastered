@@ -12485,7 +12485,7 @@ Transform:
   m_GameObject: {fileID: 2127971454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12550,6 +12550,7 @@ MonoBehaviour:
     type: 3}
   max_car_in_scene: 20
   percentage_to_be_kamikaze: 100
+  spawned_car: []
   invisibility_time: 5
   shrink_time: 2
   shrinkVFX: {fileID: 7131401307255788800, guid: 93e358432cf6ccf43a3c81853d4e392f,

@@ -249,7 +249,7 @@ public class CarFollowPath : MonoBehaviour
     }
     private void ToogleCollision(bool hasCollision = false)
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
+        Rigidbody rb = GetComponentInChildren<Rigidbody>();
         if (!hasCollision)
         {
             rb.excludeLayers = GameManager.self.layer_to_exclude;

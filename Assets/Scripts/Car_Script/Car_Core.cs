@@ -91,7 +91,7 @@ public class Car_Core : MonoBehaviour, I_Interface
             rb.AddExplosionForce(impulse_force, other.transform.position, impulse_radius);
             HideDirectionalArrow();
             is_crashed = true;
-            Car_Manager.self.AddCrashedCar(transform.gameObject);
+            Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
             GameManager.self.E_OnCarCrash();
         }
     }
@@ -104,12 +104,11 @@ public class Car_Core : MonoBehaviour, I_Interface
     }
     void On_Ramp_Collision()
     {
-        Destroy(transform.GetComponent<CarFollowPath>());
-        gameObject.AddComponent<Car_Ramp_Movement>();
-        Car_Manager.self.RemoveCar(transform.gameObject);
+        Destroy(transform.parent.GetComponent<CarFollowPath>());
+        transform.parent.gameObject.AddComponent<Car_Ramp_Movement>();
+        Car_Manager.self.RemoveCar(transform.parent.gameObject);
     }
     #endregion
-
     #region CarClicked
     public void OnClicked()
     {
@@ -146,14 +145,14 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             timer += Time.unscaledDeltaTime;
 
-            transform.GetChild(0).localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
             yield return null;
         }
         float timer2 = 0;
         while (timer2 <= time)
         {
             timer2 += Time.unscaledDeltaTime;
-            transform.GetChild(0).localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+            transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
             yield return null;
         }
         StopCoroutine(CarClickerAnimation());
