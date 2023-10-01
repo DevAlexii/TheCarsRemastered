@@ -55,7 +55,6 @@ public class Car_Manager : Singleton<Car_Manager>
                 paths_dictionary[paths[i].Key][paths[i].Value[j].Key] = paths[i].Value[j].Value;
             }
         }
-        print(CarInfosRef.self.DefaultCarInfoData.Keys.Count);
         CarInfos = CarInfosRef.self.DefaultCarInfoData;
     }
     void Update()

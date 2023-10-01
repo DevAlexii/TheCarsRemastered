@@ -37,8 +37,9 @@ public class Car_Core : MonoBehaviour, I_Interface
     }
     private void RandomModel(CarInfo data)
     {
-        int random_index = Random.Range(0, data.meshes.Count);
-        scocca.GetComponent<MeshFilter>().sharedMesh = data.meshes[random_index];
+        int random_index = Random.Range(0, data.CarRef.Count);
+        scocca.GetComponent<MeshFilter>().sharedMesh = data.CarRef[random_index].transform.GetChild(4).GetComponent<MeshFilter>().sharedMesh;
+        scocca.GetComponent<MeshRenderer>().sharedMaterials = data.CarRef[random_index].transform.GetChild(4).GetComponent<MeshRenderer>().sharedMaterials;
         scocca.GetComponent<Outline>().enabled = true;
     }
     void RandomColor()

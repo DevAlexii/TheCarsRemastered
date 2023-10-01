@@ -12653,7 +12653,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bfeb47f0a9dee4f8d6d79be585c0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllListCarDataInfo: []
+  AllListCarDataInfo:
+  - key: 0
+    value: []
   DefaultListCarDataInfo:
   - key: 0
     value:

@@ -21,19 +21,19 @@ public class Touch : MonoBehaviour
             }
         }
 #endif
-        //#if UNITY_EDITOR_WIN
-        //        if (Input.GetMouseButtonUp(0))
-        //        {
-        //            RaycastHit hit;
-        //            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //            if (Physics.Raycast(ray, out hit, 100f))
-        //            {
-        //                if (hit.transform.TryGetComponent(out I_Interface clickedCar))
-        //                {
-        //                    clickedCar.OnClicked();
-        //                }
-        //            }
-        //        }
-        //#endif
+#if UNITY_EDITOR_WIN
+        if (Input.GetMouseButtonUp(0))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 100f))
+            {
+                if (hit.transform.TryGetComponent(out I_Interface clickedCar))
+                {
+                    clickedCar.OnClicked();
+                }
+            }
+        }
+#endif
     }
 }

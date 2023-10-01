@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95334dfdf0552374c80ae73df4c17029, type: 3}
   m_Name: CityCar
   m_EditorClassIdentifier: 
-  meshes:
-  - {fileID: 5541338958478362856, guid: 0786133fe2d8c394d9ed089cfe527a8c, type: 3}
+  CarRef:
+  - {fileID: 3798803618458162480, guid: 0786133fe2d8c394d9ed089cfe527a8c, type: 3}
   MaxSpeed: 7
   MaxBreakForce: 4
   MaxRotationSpeed: 10
