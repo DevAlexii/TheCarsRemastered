@@ -546,7 +546,6 @@ GameObject:
   - component: {fileID: 2349565232942493289}
   - component: {fileID: 1253310582304768289}
   - component: {fileID: 9122930520997779073}
-  - component: {fileID: 5714803492139695569}
   - component: {fileID: 2568028880839431248}
   - component: {fileID: 8678254755849107254}
   m_Layer: 3
@@ -620,24 +619,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5714803492139695569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104449171590673071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  scocca: {fileID: 8847208689660030388}
 --- !u!114 &2568028880839431248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,8 +635,6 @@ MonoBehaviour:
   - {fileID: 2059597782189349592}
   - {fileID: 2936499851936439334}
   shell: {fileID: 9009155857858658419}
-  rotation_speed: 6.5
-  move_speed: 5
   wait_time: 5
   angle_curve:
     serializedVersion: 2
@@ -664,8 +643,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   node_reachable_distance: 0.5
-  max_distance: 2.2
-  min_distance: 1.5
   smoke_effect: {fileID: 4151759490695590474}
 --- !u!114 &8678254755849107254
 MonoBehaviour:
@@ -688,6 +665,7 @@ MonoBehaviour:
   - {fileID: 5467671652882535881}
   - {fileID: 5412613117831817529}
   - {fileID: 1702288553342651595}
+  scocca: {fileID: 8847208689660030388}
   impulse_force: 500
   impulse_radius: 5
 --- !u!1 &8847208689660030388

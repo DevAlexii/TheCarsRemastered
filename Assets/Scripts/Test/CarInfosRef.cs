@@ -1,29 +1,33 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class CarInfosRef : Singleton<CarInfosRef>
 {
-    public enum CarType { BaseCar, Tir, Van }
-    [Serializable]
-    public struct CarDataInfo
-    {
-        public CarType key;
-        public List<CarInfo> value;
-    }
-    [SerializeField] private List<CarDataInfo> ListCarDataInfo;
-    public Dictionary<CarType, List<CarInfo>> CarInfoData { get; private set; }
+    [SerializeField] private List<CarDataInfo> AllListCarDataInfo;
+    public Dictionary<CarType, List<CarInfo>> AllCarInfoData;
 
-    private void Start()
+    [SerializeField] private List<CarDataInfo> DefaultListCarDataInfo;
+    public Dictionary<CarType, List<CarInfo>> DefaultCarInfoData;
+
+    private void Awake()
     {
-        CarInfoData = new Dictionary<CarType, List<CarInfo>>();
-        foreach (var data in ListCarDataInfo)
+        GenerateDictionary(out AllCarInfoData, AllListCarDataInfo);
+        GenerateDictionary(out DefaultCarInfoData, DefaultListCarDataInfo);
+    }
+    private void GenerateDictionary(out Dictionary<CarType, List<CarInfo>> toGenerate, List<CarDataInfo> listRef)
+    {
+        toGenerate = new Dictionary<CarType, List<CarInfo>>();
+        foreach (var data in listRef)
         {
-            CarInfoData[data.key] = new List<CarInfo>();
-            CarInfoData[data.key] = data.value;
+            toGenerate[data.key] = new List<CarInfo>();
+            toGenerate[data.key] = data.value;
         }
     }
+}
+[Serializable]
+public struct CarDataInfo
+{
+    public CarType key;
+    public List<CarInfo> value;
 }

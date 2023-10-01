@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 6843141927486699088}
   - component: {fileID: 285570088404776419}
   - component: {fileID: 2038658339477406322}
-  - component: {fileID: 1604762436839250603}
   m_Layer: 0
   m_Name: TopCar
   m_TagString: Untagged
@@ -229,28 +228,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &1604762436839250603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147702312858962321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 147702312858962321}
 --- !u!1 &282391626234011305
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +241,6 @@ GameObject:
   - component: {fileID: 3769461949750625460}
   - component: {fileID: 1456925507860947537}
   - component: {fileID: 777347554983271922}
-  - component: {fileID: 5005634431330526315}
   m_Layer: 0
   m_Name: TopCar (4)
   m_TagString: Untagged
@@ -396,28 +372,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &5005634431330526315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282391626234011305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 282391626234011305}
 --- !u!1 &470257229279982772
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +637,6 @@ GameObject:
   - component: {fileID: 2153385061381851926}
   - component: {fileID: 8910271631261227155}
   - component: {fileID: 441332800550408950}
-  - component: {fileID: 4813943021896041254}
   m_Layer: 0
   m_Name: TopCar (5)
   m_TagString: Untagged
@@ -815,28 +768,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &4813943021896041254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232547163581426804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 1232547163581426804}
 --- !u!1 &1474653854875942951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1116,6 @@ GameObject:
   - component: {fileID: 7079134821787259810}
   - component: {fileID: 3452893345147644551}
   - component: {fileID: 1685475782618543430}
-  - component: {fileID: 2466901012348561012}
   m_Layer: 0
   m_Name: TopCar (2)
   m_TagString: Untagged
@@ -1317,28 +1247,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &2466901012348561012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2159693980748311543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 2159693980748311543}
 --- !u!1 &2386380681393525196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2801,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2349565232942493289}
   - component: {fileID: 2568028880839431248}
-  - component: {fileID: 5714803492139695569}
   - component: {fileID: 6288083586274362485}
   - component: {fileID: 1386043802407149129}
   - component: {fileID: 1010888311603637716}
@@ -2944,8 +2851,6 @@ MonoBehaviour:
   - {fileID: 2059597782189349592}
   - {fileID: 2936499851936439334}
   shell: {fileID: 9009155857858658419}
-  rotation_speed: 6.5
-  move_speed: 5
   wait_time: 5
   angle_curve:
     serializedVersion: 2
@@ -2954,30 +2859,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   node_reachable_distance: 0.5
-  max_distance: 2.2
-  min_distance: 1.5
   smoke_effect: {fileID: 4151759490695590474}
---- !u!114 &5714803492139695569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104449171590673071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 1
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  scocca: {fileID: 8847208689660030388}
 --- !u!114 &6288083586274362485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3058,9 +2940,14 @@ MonoBehaviour:
   directional_arrwos:
   - {fileID: 6965755676247211361}
   - {fileID: 2021473866594943127}
+  wheels:
+  - {fileID: 6631607999139764978}
+  - {fileID: 5467671652882535881}
+  - {fileID: 5412613117831817529}
+  - {fileID: 1702288553342651595}
+  scocca: {fileID: 8847208689660030388}
   impulse_force: 500
   impulse_radius: 5
-  invisibleMaterial: {fileID: 2100000, guid: bdf2c99cd26ef734db83fcd39c8e7be1, type: 2}
 --- !u!1 &7134580683717755846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,7 +3045,6 @@ GameObject:
   - component: {fileID: 8671894418913157272}
   - component: {fileID: 5137450470100422186}
   - component: {fileID: 1083514802390261153}
-  - component: {fileID: 4689699987168469468}
   m_Layer: 0
   m_Name: TopCar (6)
   m_TagString: Untagged
@@ -3290,28 +3176,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &4689699987168469468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7144233471431367929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 7144233471431367929}
 --- !u!1 &7194034786055428408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3577,7 +3441,6 @@ GameObject:
   - component: {fileID: 7192832252922168148}
   - component: {fileID: 5540235517290231931}
   - component: {fileID: 1090427050848233395}
-  - component: {fileID: 4685755811289308078}
   m_Layer: 0
   m_Name: TopCar (3)
   m_TagString: Untagged
@@ -3709,28 +3572,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &4685755811289308078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8091031642794420158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 8091031642794420158}
 --- !u!1 &8097816189809096275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3753,6 @@ GameObject:
   - component: {fileID: 7212755492487288775}
   - component: {fileID: 1850780734951922959}
   - component: {fileID: 7322616548338239087}
-  - component: {fileID: 5588850082977080145}
   m_Layer: 0
   m_Name: TopCar (1)
   m_TagString: Untagged
@@ -4044,28 +3884,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &5588850082977080145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8229670620057664460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 0
-  models:
-  - {fileID: 3236811952616020374, guid: 8ab4652f0853a6a4cb8656f7d3eeae83, type: 3}
-  - {fileID: 7151574127260817044, guid: 04f65d1bc7d529a4ab60038955bca3de, type: 3}
-  - {fileID: 5836172059008110478, guid: deddaee50c01bf741816a6183cc806aa, type: 3}
-  - {fileID: 5811399174001007230, guid: cdb0eac019caa664a8229f0bc66464c0, type: 3}
-  - {fileID: 5550157224229550166, guid: 3963ad1d532fb0243af58ac17f0fed94, type: 3}
-  - {fileID: 2354672947168964232, guid: 77475885a08438d40b4555085110a94f, type: 3}
-  - {fileID: 1435470029941030051, guid: bc53d808677839041be16b24ae19d755, type: 3}
-  scocca: {fileID: 8229670620057664460}
 --- !u!1 &8847208689660030388
 GameObject:
   m_ObjectHideFlags: 0

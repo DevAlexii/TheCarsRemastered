@@ -670,7 +670,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9219908977578542719}
   - component: {fileID: 7832693174036999215}
-  - component: {fileID: 7396470671839332383}
   - component: {fileID: 1550633949729911827}
   - component: {fileID: 6695309648479829114}
   - component: {fileID: 5704318154115411169}
@@ -713,8 +712,6 @@ MonoBehaviour:
   - {fileID: 2737721924693220252}
   - {fileID: 7040939702269820616}
   shell: {fileID: 7230478181341711614}
-  rotation_speed: 6.5
-  move_speed: 5
   wait_time: 5
   angle_curve:
     serializedVersion: 2
@@ -723,24 +720,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   node_reachable_distance: 0.5
-  max_distance: 2.2
-  min_distance: 1.5
   smoke_effect: {fileID: 1816273874020834123}
---- !u!114 &7396470671839332383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8098404169660802738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3438a889097d5bd44b068ed99f8dc365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enable_only_random_color: 1
-  models: []
-  scocca: {fileID: 384162805042584520}
 --- !u!65 &1550633949729911827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -805,9 +785,16 @@ MonoBehaviour:
   directional_arrwos:
   - {fileID: 1868562060153074634}
   - {fileID: 3857943359317545331}
+  wheels:
+  - {fileID: 8200236624554295424}
+  - {fileID: 1960408310899387806}
+  - {fileID: 9141520912440506674}
+  - {fileID: 5488286251038498478}
+  - {fileID: 5431309509076760819}
+  - {fileID: 2724693804435130011}
+  scocca: {fileID: 384162805042584520}
   impulse_force: 500
   impulse_radius: 5
-  invisibleMaterial: {fileID: 2100000, guid: bdf2c99cd26ef734db83fcd39c8e7be1, type: 2}
 --- !u!1 &8200236624554295424
 GameObject:
   m_ObjectHideFlags: 0

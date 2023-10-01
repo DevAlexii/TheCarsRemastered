@@ -8,6 +8,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     [SerializeField] private CarFollowPath carFollowPathRef;
     [SerializeField] private List<GameObject> directional_arrwos;
     [SerializeField] private List<GameObject> wheels;
+    [SerializeField] private GameObject scocca;
 
     [Header("CollisionForce")]
     [SerializeField] float impulse_force;
@@ -23,14 +24,37 @@ public class Car_Core : MonoBehaviour, I_Interface
     private bool isKamikaze;
 
     #region Initialized
-    public void OnInitializedCar(Path newPath, int arrow_index, bool isKamikaze = false, bool has_to_be_invisible = false)
+    public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false)
     {
-        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze);
+        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data);
         directional_arrow_index_to_play = arrow_index;
         start_materials = GetComponentInChildren<MeshRenderer>().materials;
         wheel_start_Materials = wheels[0].GetComponent<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
         this.isKamikaze = isKamikaze;
+        RandomModel(data);
+        RandomColor();
+    }
+    private void RandomModel(CarInfo data)
+    {
+        int random_index = Random.Range(0, data.meshes.Count);
+        scocca.GetComponent<MeshFilter>().sharedMesh = data.meshes[random_index];
+        scocca.GetComponent<Outline>().enabled = true;
+    }
+    void RandomColor()
+    {
+        Material[] materials = scocca.GetComponent<MeshRenderer>().materials;
+        Shader_Color color = Color_Manager.self.GetRandomShaderColor;
+
+        foreach (var material in materials)
+        {
+            if (material.name.StartsWith("shader"))
+            {
+                material.SetColor("_top_color", color.top_color);
+                material.SetColor("_bottom_color", color.bottom_color);
+            }
+        }
+        scocca.GetComponent<MeshRenderer>().materials = materials;
     }
     #endregion
 

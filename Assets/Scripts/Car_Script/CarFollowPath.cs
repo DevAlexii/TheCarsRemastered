@@ -11,9 +11,10 @@ public class CarFollowPath : MonoBehaviour
     [SerializeField] private Transform shell;
 
     [Header("Movement")]
-    [SerializeField] private float rotation_speed;
-    [SerializeField] private float move_speed;
+    private float rotation_speed;
     private float max_move_speed;
+    private float max_brake_speed;
+    private float move_speed;
     private float target_max_move_speed;
 
     [Header("Wait Time")]
@@ -36,9 +37,7 @@ public class CarFollowPath : MonoBehaviour
     private bool is_kamikaze;
 
     [Header("Queque")]
-    [SerializeField][Range(1.5f, 2.3f)] float max_distance;
-    [SerializeField][Range(1f, 1.5f)] float min_distance;
-    private float distance;
+    private float queque_distance;
     private Ray queque_ray;
     private RaycastHit queque_hit;
     private bool pickCombo = true;
@@ -46,22 +45,31 @@ public class CarFollowPath : MonoBehaviour
     [Header("VFX")]
     [SerializeField] private GameObject smoke_effect;
 
-    private void Start()
+    #region Initialize
+    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data)
     {
-        queque_ray = new Ray();
-        distance = Random.Range(min_distance, max_distance);
-        max_move_speed = move_speed;
-        target_max_move_speed = max_move_speed;
-        move_speed = 0;
-    }
-    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze)
-    {
-        path = newPath;
-        On_CarMove = MoveCarToNode;
-        owner = Owner;
-        is_kamikaze = Kamikaze;
+        owner = Owner;//SetReference
+        queque_ray = new Ray();//GenerateQuequeRay
+        queque_distance = data.QuequeRange;//maxDistanceForQuequeRay
+        MovementVarSetup(data);//SetupMovement
+        path = newPath; //SetUpPath
+        is_kamikaze = Kamikaze; //IsKamikaze?
         if (!is_kamikaze) { ToogleCollision(false); }
+        On_CarMove = MoveCarToNode;
     }
+
+    private void MovementVarSetup(CarInfo data)
+    {
+        max_move_speed = data.MaxSpeed;
+        max_brake_speed = data.MaxBreakForce;
+        rotation_speed = data.MaxRotationSpeed;
+        target_max_move_speed = max_move_speed;
+    }
+
+
+
+
+    #endregion
     void Update()
     {
         On_Waiting?.Invoke();
@@ -109,7 +117,7 @@ public class CarFollowPath : MonoBehaviour
             }
             else if (path.Nodes[node_index].name.StartsWith("StartBrake"))
             {
-                target_max_move_speed = 4;
+                target_max_move_speed = max_brake_speed;
             }
             else if (path.Nodes[node_index].name.StartsWith("EndBrake"))
             {
@@ -223,7 +231,7 @@ public class CarFollowPath : MonoBehaviour
     {
         queque_ray.origin = transform.position + shell.forward;
         queque_ray.direction = shell.forward;
-        if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, distance))
+        if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, queque_distance))
         {
             if (queque_hit.transform.gameObject.layer == 3 || queque_hit.transform.gameObject.layer == 6)
             {

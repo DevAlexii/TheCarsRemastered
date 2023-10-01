@@ -9,7 +9,8 @@ public class Car_Manager : Singleton<Car_Manager>
 {
     [SerializeField] List<Path_Dictionary> paths;
     [SerializeField] private float timer_to_spawn_car;
-    public List<GameObject> car_prefabs;
+    public GameObject car_prefab;
+    public Dictionary<CarType, List<CarInfo>> CarInfos;
     [SerializeField] private Int32 max_car_in_scene;
     [SerializeField] private Int32 percentage_to_be_kamikaze;
     private float timer;
@@ -54,7 +55,8 @@ public class Car_Manager : Singleton<Car_Manager>
                 paths_dictionary[paths[i].Key][paths[i].Value[j].Key] = paths[i].Value[j].Value;
             }
         }
-        car_prefabs = SaveSystemWithPlayerPref.self.owner_pool_car;
+        print(CarInfosRef.self.DefaultCarInfoData.Keys.Count);
+        CarInfos = CarInfosRef.self.DefaultCarInfoData;
     }
     void Update()
     {
@@ -81,9 +83,7 @@ public class Car_Manager : Singleton<Car_Manager>
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
         bool isKamikaze = true;
 
-        int random_index = Random.Range(0, car_prefabs.Count);
         int arrow_index = -1;
-
         if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto
         {
             arrow_index = 0;
@@ -101,10 +101,12 @@ public class Car_Manager : Singleton<Car_Manager>
                 isKamikaze = false;
             }
         }
-        GameObject car = Instantiate(car_prefabs[random_index], pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index, isKamikaze, invisibility_on);
-        spawned_car.Add(car);
+        int random_index = Random.Range(0, CarInfos.Keys.Count);
+        var data = CarInfos[(CarType)random_index][Random.Range(0, CarInfos[(CarType)random_index].Count)];
 
+        GameObject car = Instantiate(car_prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+        car.GetComponent<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
+        spawned_car.Add(car);
     }
 
     public void HandleComboSpawn()
@@ -119,9 +121,8 @@ public class Car_Manager : Singleton<Car_Manager>
                 Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
                 int random_path = Random.Range(0, 2);
                 Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
-
                 GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, false, invisibility_on);
+                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0],false, invisibility_on);
                 spawned_car.Add(comboCar);
                 lastComboCarSpawned = comboCar;
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
@@ -186,9 +187,9 @@ public class Car_Manager : Singleton<Car_Manager>
             if (car.transform.TryGetComponent(out Car_Core car_function))
             {
                 car_function.EnableShrink();
-                Vector3 effectPosition = car.transform.position - new Vector3(0f, 1.5f, 0f); 
+                Vector3 effectPosition = car.transform.position - new Vector3(0f, 1.5f, 0f);
                 GameObject effect = Instantiate(shrinkVFX, effectPosition, Quaternion.identity);
-                effect.transform.parent = car.transform; 
+                effect.transform.parent = car.transform;
                 Destroy(effect, 1.5f);
             }
         }
