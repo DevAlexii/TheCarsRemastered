@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8082320196383336142}
+  - component: {fileID: 4201966544134140980}
   m_Layer: 0
   m_Name: RampPrefab
   m_TagString: Untagged
@@ -32,6 +33,53 @@ Transform:
   - {fileID: 4588917692220622187}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4201966544134140980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5323534357795632865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8b701c314356e41a55a09b5cb016b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxbounceTime: 0.6
+  bounceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00047302246
+      value: 10
+      inSlope: -10
+      outSlope: -1.0541091
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.082357585
+    - serializedVersion: 3
+      time: 0.10470891
+      value: 9.637953
+      inSlope: -9.766473
+      outSlope: -8.643872
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.48506895
+      outWeight: 0.13723041
+    - serializedVersion: 3
+      time: 0.49975586
+      value: 0
+      inSlope: -46.32294
+      outSlope: -46.32294
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.013940096
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  lifetime: 5
 --- !u!1001 &4045821459580166784
 PrefabInstance:
   m_ObjectHideFlags: 0

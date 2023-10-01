@@ -49,12 +49,13 @@ MonoBehaviour:
   effect: {fileID: 0}
   ramp_prefab: {fileID: 5323534357795632865, guid: ce8bdc1d1b84bbd41a47c8a5444d7d66,
     type: 3}
+  MaxbounceTime: 1
   bounceCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
+      time: 0.0016447367
+      value: 0.54671276
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -62,8 +63,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
+      time: 0.023190951
+      value: 0.46946204
+      inSlope: 2.4447522
+      outSlope: 2.4447522
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
-      value: 1
+      value: 10
       inSlope: 0
       outSlope: 0
       tangentMode: 0

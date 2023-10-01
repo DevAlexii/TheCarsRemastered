@@ -186,14 +186,11 @@ public class Car_Manager : Singleton<Car_Manager>
         car_in_scene = spawned_car;
         foreach (var car in car_in_scene)
         {
-            if (car.transform.TryGetComponent(out Car_Core car_function))
-            {
-                car_function.EnableShrink();
-                Vector3 effectPosition = car.transform.position - new Vector3(0f, 1.5f, 0f);
-                GameObject effect = Instantiate(shrinkVFX, effectPosition, Quaternion.identity);
-                effect.transform.parent = car.transform;
-                Destroy(effect, 1.5f);
-            }
+            car.GetComponentInChildren<Car_Core>().EnableShrink();
+            Vector3 effectPosition = car.transform.position - new Vector3(0f, .8f, 0f);
+            GameObject effect = Instantiate(shrinkVFX, effectPosition, Quaternion.identity);
+            effect.transform.parent = car.transform;
+            Destroy(effect, 1.5f);
         }
         On_Shrink = ShrinkTimer;
     }

@@ -17,7 +17,7 @@ public class PowerUpBase : MonoBehaviour, I_Interface
         AudioCallBack.self.PlayAudio(AudioType.Coin,0.8f);
         Destroy(this.gameObject);
     }
-    private void Update()
+    public virtual void Update()
     {
         timer += Time.deltaTime;
         if (timer > time) { Destroy(this.gameObject); }

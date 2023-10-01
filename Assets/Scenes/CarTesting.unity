@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18002036, g: 0.22539532, b: 0.3067572, a: 1}
+  m_IndirectSpecularColor: {r: 0.18002054, g: 0.22539575, b: 0.30675787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9018,74 +9018,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 748742235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1910125057
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3125381150521189789, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_Name
-      value: CoinsPowerUp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.4851478
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.87870216
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301518237954769680, guid: d61168d817af9af4e85ada70719f40e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d61168d817af9af4e85ada70719f40e1, type: 3}
 --- !u!1 &1919492966
 GameObject:
   m_ObjectHideFlags: 0
@@ -9979,6 +9911,7 @@ MonoBehaviour:
     type: 3}
   max_car_in_scene: 20
   percentage_to_be_kamikaze: 20
+  spawned_car: []
   invisibility_time: 5
   shrink_time: 2
   shrinkVFX: {fileID: 7131401307255788800, guid: 93e358432cf6ccf43a3c81853d4e392f,
@@ -10324,6 +10257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b8e04ac5cc5bf45b14f24fdf78207a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeDuration: 0
   shakeMagnitude: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -10340,4 +10274,3 @@ SceneRoots:
   - {fileID: 1358507367}
   - {fileID: 1794881633}
   - {fileID: 762659127}
-  - {fileID: 1910125057}
