@@ -15,7 +15,6 @@ public class AudioCallBack : Singleton<AudioCallBack>
     private Dictionary<AudioType, AudioClip> audioClipDictionary = new Dictionary<AudioType, AudioClip>();
 
 
-    [SerializeField] Slider sliderAudio;
     [SerializeField] AudioMixer audioMixer;
     private void Start()
     {
@@ -27,8 +26,6 @@ public class AudioCallBack : Singleton<AudioCallBack>
         {
             audioClipDictionary[audioTypes[i]] = audioClips[i];
         }
-        sliderAudio.onValueChanged.AddListener(SetVolumeBySlider);
-
     }
     public void PlayAudio(AudioType audioType, float pitch)
     {
@@ -43,10 +40,6 @@ public class AudioCallBack : Singleton<AudioCallBack>
         {
             Debug.LogWarning("AudioType not found " + audioType);
         }
-    }
-    void SetVolumeBySlider(float value)
-    {
-        audioMixer.SetFloat("GeneralVolume", Mathf.Log10(value) * 20f);
     }
 
     //Se vogliamo mettere audio ambientali crows ecc usiamo questo

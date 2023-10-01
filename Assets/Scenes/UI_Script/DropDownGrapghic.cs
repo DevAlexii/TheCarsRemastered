@@ -22,7 +22,7 @@ public class DropDownGrapghic : MonoBehaviour
 
     private void StartGraphicSet()
     {
-        if (SystemInfo.graphicsMemorySize > 6000)
+        if (SystemInfo.graphicsMemorySize > 8000)
         {
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
@@ -36,21 +36,5 @@ public class DropDownGrapghic : MonoBehaviour
             global.profile = volumeLow;
             Debug.Log("Graphic set to Low");
         }
-    }
-    public void HandleInputData(int var)
-    {
-        if (var == 0)
-        {
-            GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
-            QualitySettings.renderPipeline = defaultRenderPipelineAsset;
-            global.profile = volumeLow;
-        }
-        if (var == 1)
-        {
-            GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
-            QualitySettings.renderPipeline = overrideRenderPipelineAsset;
-            global.profile = volumeHigh;
-        }
-        AudioCallBack.self.PlayAudio(AudioType.Coin, 1f);
     }
 }
