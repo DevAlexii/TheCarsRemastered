@@ -128,7 +128,7 @@ public class GameManager : Singleton<GameManager>
             doOnce = true;
             if (n_life > 0)
             {
-                Invoke(nameof(EnableHook), .5f);
+                Invoke(nameof(EnableHook), 1f);
             }
             else
             {
