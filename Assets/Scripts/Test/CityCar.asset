@@ -17,4 +17,4 @@ MonoBehaviour:
   MaxSpeed: 7
   MaxBreakForce: 4
   MaxRotationSpeed: 10
-  QuequeRange: 1.5
+  QuequeRange: 2

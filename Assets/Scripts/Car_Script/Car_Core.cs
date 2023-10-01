@@ -104,6 +104,12 @@ public class Car_Core : MonoBehaviour, I_Interface
     }
     void On_Ramp_Collision()
     {
+        carFollowPathRef.ToogleSmokeEffectOnWait(false);
+        foreach (var arrow in directional_arrwos)
+        {
+            Destroy(arrow);
+        }
+        directional_arrwos.Clear();  
         Destroy(transform.parent.GetComponent<CarFollowPath>());
         transform.parent.gameObject.AddComponent<Car_Ramp_Movement>();
         Car_Manager.self.RemoveCar(transform.parent.gameObject);
@@ -145,14 +151,29 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             timer += Time.unscaledDeltaTime;
 
-            transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            if (is_crashed)
+            {
+                transform.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            }
+            else
+            {
+                transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+            }
             yield return null;
         }
         float timer2 = 0;
         while (timer2 <= time)
         {
             timer2 += Time.unscaledDeltaTime;
-            transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+
+            if (is_crashed)
+            {
+                transform.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+            }
+            else
+            {
+                transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+            }
             yield return null;
         }
         StopCoroutine(CarClickerAnimation());

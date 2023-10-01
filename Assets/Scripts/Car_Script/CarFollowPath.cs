@@ -54,7 +54,7 @@ public class CarFollowPath : MonoBehaviour
         MovementVarSetup(data);//SetupMovement
         path = newPath; //SetUpPath
         is_kamikaze = Kamikaze; //IsKamikaze?
-        if (!is_kamikaze) { ToogleCollision(false); }
+        if (!is_kamikaze) { can_be_touched = true; }
         On_CarMove = MoveCarToNode;
     }
 
@@ -65,10 +65,6 @@ public class CarFollowPath : MonoBehaviour
         rotation_speed = data.MaxRotationSpeed;
         target_max_move_speed = max_move_speed;
     }
-
-
-
-
     #endregion
     void Update()
     {
@@ -107,13 +103,13 @@ public class CarFollowPath : MonoBehaviour
         {
             if (path.Nodes[node_index].name.StartsWith("Stop") && !is_kamikaze)
             {
-                ToogleCollision(true);
+                //ToogleCollision(true);
                 stop_car = true;
                 owner.ShowDirectionalArrow();
                 start_yaw = shell.eulerAngles.y;
                 ToogleSmokeEffectOnWait(true);
                 On_Waiting = Waiting;
-                can_be_touched = true;
+                //can_be_touched = true;
             }
             else if (path.Nodes[node_index].name.StartsWith("StartBrake"))
             {
@@ -210,7 +206,6 @@ public class CarFollowPath : MonoBehaviour
             On_Waiting = null;
         }
     }
-
     public bool ComboCounter()
     {
         if (ToogleShouldMove())
@@ -226,7 +221,6 @@ public class CarFollowPath : MonoBehaviour
 
         return false;
     }
-
     private void CheckQueque()
     {
         queque_ray.origin = transform.position + shell.forward + Vector3.up * 0.2f;
@@ -243,7 +237,7 @@ public class CarFollowPath : MonoBehaviour
             stop_car = false;
         }
     }
-    private void ToogleSmokeEffectOnWait(bool active = false)
+    public void ToogleSmokeEffectOnWait(bool active = false)
     {
         smoke_effect.SetActive(active);
     }
