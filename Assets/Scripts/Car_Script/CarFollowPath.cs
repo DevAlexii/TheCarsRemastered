@@ -46,8 +46,6 @@ public class CarFollowPath : MonoBehaviour
 
     [Header("ColorOutline")]
     public Color color;
-    public Color originalcolor;
-
     private Outline outlineScript;
 
     #region Initialize
@@ -181,6 +179,7 @@ public class CarFollowPath : MonoBehaviour
                 On_Waiting = null;
                 StopCoroutine(ToogleWaitSize());
                 StopCoroutine(ResetScale(0f));
+                startWaitSize = false;
             }
         }
         return true;
@@ -214,7 +213,7 @@ public class CarFollowPath : MonoBehaviour
 
             Outline outlineScript = GetComponentInChildren<Outline>();
 
-            outlineScript.OutlineColor = Color.Lerp(originalcolor, Color.red, transitionProgress);
+            outlineScript.OutlineColor = Color.Lerp(GameManager.self.Get_Start_Outline_Color, Color.red, transitionProgress);
             outlineScript.OutlineWidth = widthTransition;
         }
         if (wait_timer >= wait_time)
@@ -226,7 +225,7 @@ public class CarFollowPath : MonoBehaviour
             On_Waiting = null;
             transform.localScale = originalScale;
             Outline outlineScript = GetComponentInChildren<Outline>();
-            outlineScript.OutlineColor = originalcolor;
+            outlineScript.OutlineColor = GameManager.self.Get_Start_Outline_Color;
             outlineScript.OutlineWidth = 1.2f;
             startWaitSize = false;
         }
