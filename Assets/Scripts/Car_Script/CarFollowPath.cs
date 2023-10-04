@@ -42,6 +42,17 @@ public class CarFollowPath : MonoBehaviour
     private RaycastHit queque_hit;
     private bool pickCombo = true;
 
+    [Header("Scale Multiplier")]
+    [SerializeField] float scaleMultiplier = 10f;
+    private Transform carTransform;
+    private Vector3 originalScale;
+
+    [Header("ColorOutline")]
+    public Color color;
+    public Color originalcolor;
+
+    private Outline outlineScript;
+
     [Header("VFX")]
     [SerializeField] private GameObject smoke_effect;
 
@@ -56,6 +67,9 @@ public class CarFollowPath : MonoBehaviour
         is_kamikaze = Kamikaze; //IsKamikaze?
         if (!is_kamikaze) { can_be_touched = true; }
         On_CarMove = MoveCarToNode;
+        carTransform = transform;
+        originalScale = transform.localScale;
+        outlineScript = GetComponentInChildren<Outline>();
     }
 
     private void MovementVarSetup(CarInfo data)
@@ -195,7 +209,25 @@ public class CarFollowPath : MonoBehaviour
     {
         wait_timer += Time.deltaTime;
         smoke_effect.GetComponent<VisualEffect>().SetFloat("BlendColor", wait_timer / wait_time);
-        shell.rotation = Quaternion.Euler(new Vector3(0, start_yaw + angle_curve.Evaluate(wait_timer), 0));
+
+        if (wait_timer > (wait_time - 2f) && wait_timer < wait_time)
+        {
+            float scaleValue = Mathf.Lerp(1f, 1.5f, Mathf.PingPong(wait_timer * scaleMultiplier, 1f));
+            Vector3 modifiedScale = new Vector3(originalScale.x * scaleValue, originalScale.y, originalScale.z * scaleValue);
+            transform.localScale = modifiedScale;
+
+            shell.rotation = Quaternion.Euler(new Vector3(0, start_yaw + angle_curve.Evaluate(wait_timer), 0));
+
+            float transitionProgress = Mathf.InverseLerp(wait_time - 2f, wait_time, wait_timer);
+
+            float widthTransition = Mathf.SmoothStep(1.2f, 3f, transitionProgress);
+
+            Outline outlineScript = GetComponentInChildren<Outline>();
+
+            outlineScript.OutlineColor = Color.Lerp(originalcolor, Color.red, transitionProgress);
+            outlineScript.OutlineWidth = widthTransition;
+        }
+
         if (wait_timer >= wait_time)
         {
             wait_timer = 0;
@@ -204,6 +236,11 @@ public class CarFollowPath : MonoBehaviour
             pickCombo = false;
             Car_Manager.self.comboCount = 0;
             On_Waiting = null;
+            transform.localScale = originalScale;
+
+            Outline outlineScript = GetComponentInChildren<Outline>();
+            outlineScript.OutlineColor = originalcolor;
+            outlineScript.OutlineWidth = 1.2f;
         }
     }
     public bool ComboCounter()

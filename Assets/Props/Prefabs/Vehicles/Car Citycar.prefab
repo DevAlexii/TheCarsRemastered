@@ -592,6 +592,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   node_reachable_distance: 0.5
+  scaleMultiplier: 1.5
+  color: {r: 1, g: 0, b: 0, a: 0}
+  originalcolor: {r: 0, g: 0, b: 0, a: 0}
   smoke_effect: {fileID: 4151759490695590474}
 --- !u!1 &8847208689660030388
 GameObject:
@@ -756,6 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f9f7d42b971d4da35ccda9a0c24e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
   outlineMode: 1
   outlineColor: {r: 0.15686275, g: 0.27058825, b: 0.4, a: 1}
   outlineWidth: 1.2
