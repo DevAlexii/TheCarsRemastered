@@ -18,7 +18,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private int directional_arrow_index_to_play;
     private Material[] start_materials;
     private Material[] wheel_start_Materials;
-    private bool shrink_on;
+    public bool shrink_on;
     private bool is_crashed;
     private bool selected;
     private bool isKamikaze;
@@ -104,7 +104,6 @@ public class Car_Core : MonoBehaviour, I_Interface
     }
     void On_Ramp_Collision()
     {
-        carFollowPathRef.ToogleSmokeEffectOnWait(false);
         foreach (var arrow in directional_arrwos)
         {
             Destroy(arrow);

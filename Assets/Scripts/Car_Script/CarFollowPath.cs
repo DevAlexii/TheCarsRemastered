@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
@@ -19,8 +20,6 @@ public class CarFollowPath : MonoBehaviour
 
     [Header("Wait Time")]
     [SerializeField] private float wait_time;
-    [SerializeField] private AnimationCurve angle_curve;
-    private float start_yaw;
     private float wait_timer;
 
     [Header("PathInfo")]
@@ -43,8 +42,6 @@ public class CarFollowPath : MonoBehaviour
     private bool pickCombo = true;
 
     [Header("Scale Multiplier")]
-    [SerializeField] float scaleMultiplier = 10f;
-    private Transform carTransform;
     private Vector3 originalScale;
 
     [Header("ColorOutline")]
@@ -52,9 +49,6 @@ public class CarFollowPath : MonoBehaviour
     public Color originalcolor;
 
     private Outline outlineScript;
-
-    [Header("VFX")]
-    [SerializeField] private GameObject smoke_effect;
 
     #region Initialize
     public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data)
@@ -67,7 +61,6 @@ public class CarFollowPath : MonoBehaviour
         is_kamikaze = Kamikaze; //IsKamikaze?
         if (!is_kamikaze) { can_be_touched = true; }
         On_CarMove = MoveCarToNode;
-        carTransform = transform;
         originalScale = transform.localScale;
         outlineScript = GetComponentInChildren<Outline>();
     }
@@ -120,8 +113,6 @@ public class CarFollowPath : MonoBehaviour
                 //ToogleCollision(true);
                 stop_car = true;
                 owner.ShowDirectionalArrow();
-                start_yaw = shell.eulerAngles.y;
-                ToogleSmokeEffectOnWait(true);
                 On_Waiting = Waiting;
                 //can_be_touched = true;
             }
@@ -188,6 +179,8 @@ public class CarFollowPath : MonoBehaviour
             if (On_Waiting != null)
             {
                 On_Waiting = null;
+                StopCoroutine(ToogleWaitSize());
+                StopCoroutine(ResetScale(0f));
             }
         }
         return true;
@@ -202,22 +195,19 @@ public class CarFollowPath : MonoBehaviour
     }
     public void OnCrash()
     {
-        ToogleSmokeEffectOnWait();
         Destroy(this);
     }
+    bool startWaitSize;
     private void Waiting()
     {
         wait_timer += Time.deltaTime;
-        smoke_effect.GetComponent<VisualEffect>().SetFloat("BlendColor", wait_timer / wait_time);
 
-        if (wait_timer > (wait_time - 2f) && wait_timer < wait_time)
+        if (wait_timer > wait_time - 2f)
         {
-            float scaleValue = Mathf.Lerp(1f, 1.5f, Mathf.PingPong(wait_timer * scaleMultiplier, 1f));
-            Vector3 modifiedScale = new Vector3(originalScale.x * scaleValue, originalScale.y, originalScale.z * scaleValue);
-            transform.localScale = modifiedScale;
-
-            shell.rotation = Quaternion.Euler(new Vector3(0, start_yaw + angle_curve.Evaluate(wait_timer), 0));
-
+            if (!startWaitSize)
+            {
+                StartCoroutine(ToogleWaitSize());
+            }
             float transitionProgress = Mathf.InverseLerp(wait_time - 2f, wait_time, wait_timer);
 
             float widthTransition = Mathf.SmoothStep(1.2f, 3f, transitionProgress);
@@ -227,27 +217,68 @@ public class CarFollowPath : MonoBehaviour
             outlineScript.OutlineColor = Color.Lerp(originalcolor, Color.red, transitionProgress);
             outlineScript.OutlineWidth = widthTransition;
         }
-
         if (wait_timer >= wait_time)
         {
             wait_timer = 0;
             ToogleShouldMove();
-            ToogleSmokeEffectOnWait();
             pickCombo = false;
             Car_Manager.self.comboCount = 0;
             On_Waiting = null;
             transform.localScale = originalScale;
-
             Outline outlineScript = GetComponentInChildren<Outline>();
             outlineScript.OutlineColor = originalcolor;
             outlineScript.OutlineWidth = 1.2f;
+            startWaitSize = false;
         }
+    }
+    IEnumerator ToogleWaitSize()
+    {
+        startWaitSize = true;
+        float startScale = GetComponentInChildren<Car_Core>().shrink_on ? 0.5f : 1;
+
+        float maxScale = startScale * 1.1f;
+        float minScale = startScale * 0.9f;
+        float targetScale = maxScale;
+        float scaleValue = startScale;
+
+        while (startWaitSize)
+        {
+            scaleValue = Mathf.Lerp(scaleValue, targetScale, Time.deltaTime * 10);
+            if (scaleValue > maxScale - 0.01f && targetScale == maxScale)
+            {
+                scaleValue = maxScale;
+                targetScale = minScale;
+            }
+            else if (scaleValue < minScale + 0.01f && targetScale == minScale)
+            {
+                scaleValue = minScale;
+                targetScale = maxScale;
+            }
+            transform.localScale = new Vector3(originalScale.x * scaleValue, originalScale.y, originalScale.z * scaleValue);
+            yield return null;
+        }
+        StopCoroutine(ToogleWaitSize());
+        StartCoroutine(ResetScale(scaleValue));
+        yield return null;
+    }
+    IEnumerator ResetScale(float lastScale)
+    {
+        float startScale = GetComponentInChildren<Car_Core>().shrink_on ? 0.5f : 1;
+        float newscaleValue = lastScale;
+        while (newscaleValue > startScale + 0.01f)
+        {
+            newscaleValue = Mathf.Lerp(newscaleValue, startScale, Time.deltaTime * 10);
+            transform.localScale = new Vector3(originalScale.x * newscaleValue, originalScale.y, originalScale.z * newscaleValue);
+            yield return null;
+        }
+        transform.localScale = originalScale;
+        StopCoroutine(ResetScale(0f));
+        yield break;
     }
     public bool ComboCounter()
     {
         if (ToogleShouldMove())
         {
-            ToogleSmokeEffectOnWait();
             if (pickCombo)
             {
                 Car_Manager.self.comboCount++;
@@ -273,10 +304,6 @@ public class CarFollowPath : MonoBehaviour
         {
             stop_car = false;
         }
-    }
-    public void ToogleSmokeEffectOnWait(bool active = false)
-    {
-        smoke_effect.SetActive(active);
     }
     private void ToogleCollision(bool hasCollision = false)
     {
