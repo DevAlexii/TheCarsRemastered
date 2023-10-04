@@ -80,6 +80,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   lifetime: 5
+  effect: {fileID: 358637981425055526, guid: e987c9d444b4bb3448e8a6405fa4944e, type: 3}
 --- !u!1001 &4045821459580166784
 PrefabInstance:
   m_ObjectHideFlags: 0

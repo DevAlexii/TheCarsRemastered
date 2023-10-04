@@ -242,7 +242,9 @@ public class Car_Manager : Singleton<Car_Manager>
         foreach (GameObject obj in spawned_car)
         {
             obj.layer = 6;
-            obj.GetComponentInChildren<Rigidbody>().AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
+            Rigidbody rb = obj.GetComponent<Rigidbody>();
+            rb.AddExplosionForce(explosionForce * Time.unscaledDeltaTime, transform.position, explosionRadius);
+            rb.excludeLayers = GameManager.self.layer_to_exclude;
             Destroy(obj.GetComponent<CarFollowPath>());
             GameObject effect = Instantiate(nukeVFX, new Vector3(0, 1, 0), Quaternion.identity);
             cameraShake.StartShake();

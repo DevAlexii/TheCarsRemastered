@@ -180,6 +180,9 @@ public class CarFollowPath : MonoBehaviour
                 StopCoroutine(ToogleWaitSize());
                 StopCoroutine(ResetScale(0f));
                 startWaitSize = false;
+                Outline outlineScript = GetComponentInChildren<Outline>();
+                outlineScript.OutlineColor = GameManager.self.Get_Start_Outline_Color;
+                outlineScript.OutlineWidth = 1.2f;
             }
         }
         return true;

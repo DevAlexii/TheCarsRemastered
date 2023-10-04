@@ -28,8 +28,9 @@ public class CameraShake : MonoBehaviour
         }
     }
 
-    public void StartShake()
+    public void StartShake(float shakeMagnitude = 0.1f)
     {
+        this.shakeMagnitude = shakeMagnitude;
         if (shakeDuration <= 0)
         {
             originalPosition = transform.localPosition;
