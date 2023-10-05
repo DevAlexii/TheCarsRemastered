@@ -99,7 +99,7 @@ public class Car_Manager : Singleton<Car_Manager>
         CarInfo data = null;
         if (isKamikaze)
         {
-            isKamikaze = !CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
+            isKamikaze = CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
         }
         if (isKamikaze)
         {
