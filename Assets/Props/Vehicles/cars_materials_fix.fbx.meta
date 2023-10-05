@@ -3,7 +3,107 @@ guid: 44d16e271abd6e54c87b50ad892264e2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_skin06
+    second: {fileID: 2100000, guid: d8f6df07a8ce0aa409093599edbf7ffc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blueSiren_skin012
+    second: {fileID: 2100000, guid: 5a8e351a311b1e84998fdcfa6064f238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_skin015
+    second: {fileID: 2100000, guid: 69892caea4e9dba41b06f675a16cae41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerchioni_skin19
+    second: {fileID: 2100000, guid: 4fdbef31eb4c7724d8cc8bae38cd130a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fari_skin011
+    second: {fileID: 2100000, guid: 9943e5ad57a654944964350f5ac5704c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: frecce_skin03
+    second: {fileID: 2100000, guid: 17483d7d861f3c9419dbaef1c3a712a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: freni_skin04
+    second: {fileID: 2100000, guid: b2fd9732f82e2be49b9cc3d82bc88c3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gomma_skin18
+    second: {fileID: 2100000, guid: bab5ad59ca4754c4491537eb9b2976fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey_skin09
+    second: {fileID: 2100000, guid: 801a0449ba0a90e4b9cb01b9ebacdce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parafango_skin08
+    second: {fileID: 2100000, guid: 8e9cfa82ede0b6b42a2292c2c648c60f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: redSiren_skin014
+    second: {fileID: 2100000, guid: 3bd4d7b2cd669a344b2f513ba8e60202, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_skin010
+    second: {fileID: 2100000, guid: 02bcd2142d63ce54090271a6704a426a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scarico_skin02
+    second: {fileID: 2100000, guid: 40226d2ee1de05742a7064ce26f49b78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scocca_skin00
+    second: {fileID: 2100000, guid: a5676161c374e044a863aa7440a243cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: targa_skin05
+    second: {fileID: 2100000, guid: 67c5da81557ba9f4299980fee8677cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: telaio_skin07
+    second: {fileID: 2100000, guid: ed5b388beb98bb34895617b313b47c31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vetri_skin01
+    second: {fileID: 2100000, guid: d0d0ba6c60133064b867fe33aeab3ed0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whiteSiren_skin013
+    second: {fileID: 2100000, guid: 858534e02e8416a449157be2e3e1f0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_skin016
+    second: {fileID: 2100000, guid: d7d3b9967ef0c2d4eb063686d5303709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yellow_skin017
+    second: {fileID: 2100000, guid: 75cd45f5cbf445e4aafdfb53c4b30447, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
