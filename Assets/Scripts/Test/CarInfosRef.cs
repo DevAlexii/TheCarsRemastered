@@ -9,6 +9,8 @@ public class CarInfosRef : Singleton<CarInfosRef>
 
     [SerializeField] private List<CarDataInfo> DefaultListCarDataInfo;
     public Dictionary<CarType, List<CarInfo>> DefaultCarInfoData;
+    [SerializeField] private CarInfo KamikazeInfo;
+    public CarInfo GetKamikazeInfo => KamikazeInfo;
 
     private void Awake()
     {

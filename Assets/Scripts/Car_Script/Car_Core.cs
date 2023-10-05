@@ -15,6 +15,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     [SerializeField] float impulse_radius;
 
     [Header("Internal Var")]
+    public bool ChangeColor = true;
     private int directional_arrow_index_to_play;
     private Material[] start_materials;
     private Material[] wheel_start_Materials;
@@ -38,35 +39,48 @@ public class Car_Core : MonoBehaviour, I_Interface
     private void RandomModel(CarInfo data)
     {
         int random_index = Random.Range(0, data.CarRef.Count);
-        scocca.GetComponent<MeshFilter>().sharedMesh = data.CarRef[random_index].transform.GetChild(4).GetComponent<MeshFilter>().sharedMesh;
-        scocca.GetComponent<MeshRenderer>().sharedMaterials = data.CarRef[random_index].transform.GetChild(4).GetComponent<MeshRenderer>().sharedMaterials;
-        scocca.GetComponent<Outline>().enabled = true;
+        for (int i = 0; i < data.CarRef[random_index].transform.childCount; i++)
+        {
+            if (data.CarRef[random_index].transform.GetChild(i).name.StartsWith("scocca"))
+            {
+                scocca.GetComponent<MeshFilter>().sharedMesh = data.CarRef[random_index].transform.GetChild(i).GetComponent<MeshFilter>().sharedMesh;
+                scocca.GetComponent<MeshRenderer>().sharedMaterials = data.CarRef[random_index].transform.GetChild(i).GetComponent<MeshRenderer>().sharedMaterials;
+                scocca.GetComponent<Outline>().enabled = true;
+                return;
+            }
+        }
     }
     void RandomColor()
     {
-        Material[] materials = scocca.GetComponent<MeshRenderer>().materials;
-        Shader_Color color = Color_Manager.self.GetRandomShaderColor;
-
-        foreach (var material in materials)
+        if (ChangeColor)
         {
-            if (material.name.StartsWith("shader"))
+            Material[] materials = scocca.GetComponent<MeshRenderer>().materials;
+            Shader_Color color = Color_Manager.self.GetRandomShaderColor;
+
+            foreach (var material in materials)
             {
-                material.SetColor("_top_color", color.top_color);
-                material.SetColor("_bottom_color", color.bottom_color);
+                if (material.name.StartsWith("shader"))
+                {
+                    material.SetColor("_top_color", color.top_color);
+                    material.SetColor("_bottom_color", color.bottom_color);
+                }
             }
+            scocca.GetComponent<MeshRenderer>().materials = materials;
         }
-        scocca.GetComponent<MeshRenderer>().materials = materials;
     }
     #endregion
 
     #region DirectionalArrow
     public void ShowDirectionalArrow()
     {
-        if (directional_arrow_index_to_play >= 0)
+        if (directional_arrwos.Count > 0)
         {
-            GameObject directional_arrow = directional_arrwos[directional_arrow_index_to_play];
-            directional_arrow.SetActive(true);
-            directional_arrow.AddComponent<Directional_Arrow_Animation>();
+            if (directional_arrow_index_to_play >= 0)
+            {
+                GameObject directional_arrow = directional_arrwos[directional_arrow_index_to_play];
+                directional_arrow.SetActive(true);
+                directional_arrow.AddComponent<Directional_Arrow_Animation>();
+            }
         }
     }
     public void HideDirectionalArrow()
@@ -79,7 +93,6 @@ public class Car_Core : MonoBehaviour, I_Interface
         directional_arrwos.Clear();
     }
     #endregion
-
     #region Collision
     private void OnCollisionEnter(Collision other)
     {
@@ -108,7 +121,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             Destroy(arrow);
         }
-        directional_arrwos.Clear();  
+        directional_arrwos.Clear();
         Destroy(transform.parent.GetComponent<CarFollowPath>());
         transform.parent.gameObject.AddComponent<Car_Ramp_Movement>();
         Car_Manager.self.RemoveCar(transform.parent.gameObject);
@@ -178,7 +191,6 @@ public class Car_Core : MonoBehaviour, I_Interface
         StopCoroutine(CarClickerAnimation());
     }
     #endregion
-
     #region InterfaceImplemented
     public void EnableInvisiblity()
     {

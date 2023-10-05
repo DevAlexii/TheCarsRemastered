@@ -9917,8 +9917,6 @@ MonoBehaviour:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
   timer_to_spawn_car: 1.5
-  car_prefab: {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090,
-    type: 3}
   max_car_in_scene: 20
   percentage_to_be_kamikaze: 20
   spawned_car: []
@@ -10029,11 +10027,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllListCarDataInfo:
   - key: 0
-    value: []
+    value:
+    - {fileID: 11400000, guid: 034fe991b20f3604fbc3d1b50bc53e1c, type: 2}
+    - {fileID: 11400000, guid: a4b71c462ae76a4498084c9fcc18720e, type: 2}
+    - {fileID: 11400000, guid: d8153ad881aa10f46b9ce2d08469a518, type: 2}
+  - key: 2
+    value:
+    - {fileID: 11400000, guid: e281463f4088a5d47a01df8f0fcb6992, type: 2}
+  - key: 1
+    value:
+    - {fileID: 11400000, guid: c0a9adb4ff6f5554092832145288565f, type: 2}
+  - key: 3
+    value:
+    - {fileID: 11400000, guid: 6031658eddac11a408e28eee7c14a8fd, type: 2}
   DefaultListCarDataInfo:
   - key: 0
     value:
     - {fileID: 11400000, guid: 034fe991b20f3604fbc3d1b50bc53e1c, type: 2}
+    - {fileID: 11400000, guid: a4b71c462ae76a4498084c9fcc18720e, type: 2}
+    - {fileID: 11400000, guid: d8153ad881aa10f46b9ce2d08469a518, type: 2}
+  - key: 2
+    value:
+    - {fileID: 11400000, guid: e281463f4088a5d47a01df8f0fcb6992, type: 2}
+  - key: 1
+    value:
+    - {fileID: 11400000, guid: c0a9adb4ff6f5554092832145288565f, type: 2}
+  - key: 3
+    value:
+    - {fileID: 11400000, guid: 6031658eddac11a408e28eee7c14a8fd, type: 2}
+  KamikazeInfo: {fileID: 11400000, guid: 3b82bf60cf72c6841acb9bff1c86988f, type: 2}
 --- !u!4 &219791614908364084
 Transform:
   m_ObjectHideFlags: 0

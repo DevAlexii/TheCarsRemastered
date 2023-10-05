@@ -19,7 +19,7 @@ public class Directional_Arrow_Animation : MonoBehaviour
                 timer = timer <= min_timer ? min_timer : max_timer;
             }
             sinValue = Mathf.Sin(timer);
-            transform.localScale = Vector3.one * sinValue * 2;
+            transform.localScale = (Vector3.one * 0.01f) * sinValue * 2;
         }
     }
 }
