@@ -9,6 +9,7 @@ public class RampPrefabFunciont : MonoBehaviour
     [SerializeField] private float lifetime;
     [SerializeField] private GameObject effect;
 
+
     void Update()
     {
         if (!bounceFinish)
@@ -17,8 +18,8 @@ public class RampPrefabFunciont : MonoBehaviour
             if (bounceTimer >= MaxbounceTime)
             {
                 bounceFinish = true;
-                Camera.main.GetComponent<CameraShake>().StartShake(0.20f);
-                Instantiate(effect, transform.position, Quaternion.identity);
+                Camera.main.GetComponent<CameraShake>().StartShake(0.50f);
+                effect.SetActive(true);
                 Destroy(effect, 1f);
                 Destroy(this.gameObject, lifetime);
             }

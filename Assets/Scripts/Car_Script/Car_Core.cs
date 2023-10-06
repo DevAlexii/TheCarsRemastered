@@ -29,12 +29,13 @@ public class Car_Core : MonoBehaviour, I_Interface
     {
         carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data);
         directional_arrow_index_to_play = arrow_index;
-        start_materials = GetComponentInChildren<MeshRenderer>().materials;
         wheel_start_Materials = wheels[0].GetComponent<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
         this.isKamikaze = isKamikaze;
         RandomModel(data);
         RandomColor();
+        start_materials = GetComponent<MeshRenderer>().materials;
+
     }
     private void RandomModel(CarInfo data)
     {
@@ -163,14 +164,8 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             timer += Time.unscaledDeltaTime;
 
-            if (is_crashed)
-            {
-                transform.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
-            }
-            else
-            {
-                transform.parent.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
-            }
+            transform.localScale = Vector3.Lerp(start_scale, target_scale, timer / time);
+
             yield return null;
         }
         float timer2 = 0;
@@ -178,14 +173,8 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             timer2 += Time.unscaledDeltaTime;
 
-            if (is_crashed)
-            {
-                transform.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
-            }
-            else
-            {
-                transform.parent.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
-            }
+            transform.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
+
             yield return null;
         }
         StopCoroutine(CarClickerAnimation());
@@ -206,9 +195,9 @@ public class Car_Core : MonoBehaviour, I_Interface
             {
                 materials_to_change[i] = GameManager.self.GetInvisibilityMaterial;
             }
-            GetComponentInChildren<MeshRenderer>().materials = materials_to_change;
-            GetComponentInChildren<Outline>().OutlineColor = GameManager.self.Get_Invisibility_Outline_Color;
+            GetComponent<MeshRenderer>().materials = materials_to_change;
             GetComponent<Rigidbody>().excludeLayers = GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude;
+            GetComponent<Outline>().OutlineColor = GameManager.self.Get_Invisibility_Outline_Color;
             //MaterialiRuote
             Material[] wheel_materials_to_change = wheels[0].GetComponent<MeshRenderer>().materials;
             for (int i = 0; i < wheel_materials_to_change.Length; i++)
@@ -223,9 +212,10 @@ public class Car_Core : MonoBehaviour, I_Interface
         else
         {
             //MaterialiScocca
-            GetComponentInChildren<MeshRenderer>().materials = start_materials;
-            GetComponentInChildren<Outline>().OutlineColor = GameManager.self.Get_Start_Outline_Color;
+            GetComponent<MeshRenderer>().materials = start_materials;
             GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude_default;
+            GetComponent<Outline>().OutlineColor = GameManager.self.Get_Start_Outline_Color;
+
             //MaterialiRuote
             foreach (var wheel in wheels)
             {

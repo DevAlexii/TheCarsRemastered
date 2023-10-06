@@ -36,4 +36,6 @@ public class PowerUp_Ramp : PowerUpBase
             transform.position = new Vector3(transform.position.x, y, transform.position.z);
         }
     }
+
+   
 }
