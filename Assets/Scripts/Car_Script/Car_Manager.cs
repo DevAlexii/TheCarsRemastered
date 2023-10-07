@@ -32,7 +32,7 @@ public class Car_Manager : Singleton<Car_Manager>
     private Vector3 target_scale;
     public GameObject shrinkVFX;
     public GameObject nukeVFX;
-
+    private bool isComboCar = false;
 
     [Header("Coins")]
     [SerializeField] private GameObject coinPrefab;
@@ -86,16 +86,24 @@ public class Car_Manager : Singleton<Car_Manager>
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
         bool isKamikaze = true;
         int arrow_index = -1;
-        if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto
+        if (isComboCar)
         {
-            arrow_index = 0;
             isKamikaze = false;
         }
-        else if (randomPoint == Point.Right && random_path == 0)
+        else
         {
-            arrow_index = 1;
-            isKamikaze = false;
+            if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto
+            {
+                arrow_index = 0;
+                isKamikaze = false;
+            }
+            else if (randomPoint == Point.Right && random_path == 0)
+            {
+                arrow_index = 1;
+                isKamikaze = false;
+            }
         }
+        
         CarInfo data = null;
         if (isKamikaze)
         {
@@ -134,7 +142,12 @@ public class Car_Manager : Singleton<Car_Manager>
                 spawned_car.Add(comboCar);
                 lastComboCarSpawned = comboCar;
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
+                isComboCar = true;
             }
+        }
+        else
+        {
+            isComboCar= false;
         }
     }
 
