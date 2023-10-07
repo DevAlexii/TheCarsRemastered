@@ -108,7 +108,6 @@ public class Car_Core : MonoBehaviour, I_Interface
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
             GameManager.self.E_OnCarCrash();
             StartCoroutine(ToogleWaitSize());
-            print("Call");
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -201,6 +200,7 @@ public class Car_Core : MonoBehaviour, I_Interface
             GetComponent<MeshRenderer>().materials = materials_to_change;
             GetComponent<Rigidbody>().excludeLayers = GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude;
             GetComponent<Outline>().OutlineColor = GameManager.self.Get_Invisibility_Outline_Color;
+            GetComponent<Outline>().ActiveOutline();
             //MaterialiRuote
             Material[] wheel_materials_to_change = wheels[0].GetComponent<MeshRenderer>().materials;
             for (int i = 0; i < wheel_materials_to_change.Length; i++)
@@ -218,7 +218,7 @@ public class Car_Core : MonoBehaviour, I_Interface
             GetComponent<MeshRenderer>().materials = start_materials;
             GetComponent<Rigidbody>().excludeLayers = GameManager.self.layer_to_exclude_default;
             GetComponent<Outline>().OutlineColor = GameManager.self.Get_Start_Outline_Color;
-
+            GetComponent<Outline>().ActiveOutline();
             //MaterialiRuote
             foreach (var wheel in wheels)
             {
