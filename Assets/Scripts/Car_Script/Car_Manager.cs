@@ -70,7 +70,6 @@ public class Car_Manager : Singleton<Car_Manager>
             timer = 0;
         }
 
-        HandleComboSpawn();
         On_Invisibility?.Invoke();
         On_Shrink?.Invoke();
     }
@@ -86,13 +85,14 @@ public class Car_Manager : Singleton<Car_Manager>
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
         bool isKamikaze = true;
         int arrow_index = -1;
+       
         if (isComboCar)
         {
             isKamikaze = false;
         }
         else
         {
-            if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto
+            if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto 
             {
                 arrow_index = 0;
                 isKamikaze = false;
@@ -119,9 +119,17 @@ public class Car_Manager : Singleton<Car_Manager>
             int random_value = Random.Range(0, CarInfos[(CarType)random_key].Count);
             data = CarInfos[(CarType)random_key][random_value];
         }
-        GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
-        spawned_car.Add(car);
+        if (!isComboCar)
+        {
+            GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
+            spawned_car.Add(car); 
+        }
+        else
+        {
+            HandleComboSpawn();
+            isComboCar = false;
+        }
     }
     public void HandleComboSpawn()
     {
@@ -140,13 +148,9 @@ public class Car_Manager : Singleton<Car_Manager>
                 spawned_car.Add(comboCar);
                 lastComboCarSpawned = comboCar;
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
-                isComboCar = true;
             }
         }
-        else
-        {
-            isComboCar= false;
-        }
+       
     }
 
     #endregion
