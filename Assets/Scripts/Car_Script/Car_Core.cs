@@ -107,6 +107,8 @@ public class Car_Core : MonoBehaviour, I_Interface
             is_crashed = true;
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
             GameManager.self.E_OnCarCrash();
+            StartCoroutine(ToogleWaitSize());
+            print("Call");
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -144,8 +146,9 @@ public class Car_Core : MonoBehaviour, I_Interface
             {
                 selected = true;
                 Hook.self.seleceted_car++;
+                startWaitSize = false;
+                StartCoroutine(CarClickerAnimation());
             }
-            StartCoroutine(CarClickerAnimation());
         }
 
         if (isKamikaze)
@@ -228,4 +231,41 @@ public class Car_Core : MonoBehaviour, I_Interface
         shrink_on = true;
     }
     #endregion
+    bool startWaitSize = true;
+    IEnumerator ToogleWaitSize()
+    {
+        yield return new WaitForSeconds(1f);
+        Outline outlineScript = GetComponentInChildren<Outline>();
+        float startScale = shrink_on ? 0.5f : 1;
+        float maxScale = startScale * 1.1f;
+        float minScale = startScale * 0.9f;
+        float targetScale = maxScale;
+        float scaleValue = startScale;
+
+        while (startWaitSize)
+        {
+            scaleValue = Mathf.Lerp(scaleValue, targetScale, Time.unscaledDeltaTime * 10);
+            if (scaleValue > maxScale - 0.01f && targetScale == maxScale)
+            {
+                scaleValue = maxScale;
+                targetScale = minScale;
+            }
+            else if (scaleValue < minScale + 0.01f && targetScale == minScale)
+            {
+                scaleValue = minScale;
+                targetScale = maxScale;
+            }
+            transform.localScale = new Vector3(startScale * scaleValue, startScale, startScale * scaleValue);
+
+            if (outlineScript.OutlineWidth < 2.9f)
+            {
+                float widthTransition = Mathf.Lerp(outlineScript.OutlineWidth, 3f, Time.unscaledDeltaTime * 10);
+                outlineScript.OutlineColor = Color.Lerp(outlineScript.OutlineColor, GameManager.self.GetCrashedColor, Time.unscaledDeltaTime * 10);
+                outlineScript.OutlineWidth = widthTransition;
+            }
+            yield return null;
+        }
+        StopCoroutine(ToogleWaitSize());
+        yield return null;
+    }
 }

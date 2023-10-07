@@ -117,8 +117,6 @@ public class Car_Manager : Singleton<Car_Manager>
         {
             int random_key = Random.Range(0, CarInfos.Keys.Count);
             int random_value = Random.Range(0, CarInfos[(CarType)random_key].Count);
-            print("Count = " + CarInfos[(CarType)random_key].Count);
-            print("random = " + random_value);
             data = CarInfos[(CarType)random_key][random_value];
         }
         GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);

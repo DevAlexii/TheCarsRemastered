@@ -216,7 +216,7 @@ public class CarFollowPath : MonoBehaviour
 
             Outline outlineScript = GetComponentInChildren<Outline>();
 
-            outlineScript.OutlineColor = Color.Lerp(GameManager.self.Get_Start_Outline_Color, Color.red, transitionProgress);
+            outlineScript.OutlineColor = Color.Lerp(GameManager.self.Get_Start_Outline_Color, GameManager.self.GetWaitingColor, transitionProgress);
             outlineScript.OutlineWidth = widthTransition;
         }
         if (wait_timer >= wait_time)

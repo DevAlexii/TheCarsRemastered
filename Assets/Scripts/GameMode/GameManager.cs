@@ -22,13 +22,19 @@ public class GameManager : Singleton<GameManager>
     [Header("Invisibile")]
     [SerializeField] private Material InvisibilityMaterial;
     public Material GetInvisibilityMaterial => InvisibilityMaterial;
-    [SerializeField] private Color Invisibility_Outline_Color;
-    public Color Get_Invisibility_Outline_Color => Invisibility_Outline_Color;
-    [SerializeField] private Color Start_Outline_Color;
+
     public Color Get_Start_Outline_Color => Start_Outline_Color;
     public LayerMask layer_to_exclude;
     public LayerMask layer_to_exclude_default;
 
+    [Header("OutlineColors")]
+    [SerializeField] private Color Invisibility_Outline_Color;
+    public Color Get_Invisibility_Outline_Color => Invisibility_Outline_Color;
+    [SerializeField] private Color Start_Outline_Color;
+    [SerializeField] private Color crashed_color;
+    public Color GetCrashedColor => crashed_color;
+    [SerializeField] private Color WaitingColor;
+    public Color GetWaitingColor => WaitingColor;
 
     private void Start()
     {

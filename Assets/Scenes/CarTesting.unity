@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18002036, g: 0.22539532, b: 0.3067572, a: 1}
+  m_IndirectSpecularColor: {r: 0.18002054, g: 0.22539575, b: 0.30675787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6713,14 +6713,16 @@ MonoBehaviour:
   doOnce: 0
   InvisibilityMaterial: {fileID: 2100000, guid: 158115c2535b5bb4583abf7e47ae0f33,
     type: 2}
-  Invisibility_Outline_Color: {r: 1, g: 0, b: 0, a: 1}
-  Start_Outline_Color: {r: 0.15686275, g: 0.27058825, b: 0.4, a: 1}
   layer_to_exclude:
     serializedVersion: 2
     m_Bits: 72
   layer_to_exclude_default:
     serializedVersion: 2
     m_Bits: 0
+  Invisibility_Outline_Color: {r: 1, g: 0, b: 0, a: 1}
+  Start_Outline_Color: {r: 0.15686275, g: 0.27058825, b: 0.4, a: 1}
+  crashed_color: {r: 0, g: 1, b: 0.06951809, a: 1}
+  WaitingColor: {r: 1, g: 0, b: 0, a: 1}
   difficulty: 50
   hook_component: {fileID: 1470568843}
 --- !u!114 &1470568843
