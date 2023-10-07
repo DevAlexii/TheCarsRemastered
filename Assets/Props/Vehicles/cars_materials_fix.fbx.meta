@@ -88,7 +88,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: vetri_skin01
-    second: {fileID: 2100000, guid: d0d0ba6c60133064b867fe33aeab3ed0, type: 2}
+    second: {fileID: 2100000, guid: 4add788457b8a544f846b8140d3bc655, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

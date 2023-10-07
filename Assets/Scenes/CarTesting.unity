@@ -6711,7 +6711,7 @@ MonoBehaviour:
   scoreRenderer: {fileID: 1651857182}
   n_life: 2
   doOnce: 0
-  InvisibilityMaterial: {fileID: 2100000, guid: 158115c2535b5bb4583abf7e47ae0f33,
+  InvisibilityMaterial: {fileID: 2100000, guid: 14e7f34d2c6f56e47a2c2db725205f6d,
     type: 2}
   layer_to_exclude:
     serializedVersion: 2
@@ -6719,7 +6719,7 @@ MonoBehaviour:
   layer_to_exclude_default:
     serializedVersion: 2
     m_Bits: 0
-  Invisibility_Outline_Color: {r: 1, g: 0, b: 0, a: 1}
+  Invisibility_Outline_Color: {r: 0, g: 1, b: 0.9700117, a: 1}
   Start_Outline_Color: {r: 0.15686275, g: 0.27058825, b: 0.4, a: 1}
   crashed_color: {r: 0, g: 1, b: 0.06951809, a: 1}
   WaitingColor: {r: 1, g: 0, b: 0, a: 1}
@@ -6991,6 +6991,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[5]'
       value: 
       objectReference: {fileID: 2100000, guid: 4f9027862a6e50b4aa6667c1859e8c4e, type: 2}
+    - target: {fileID: 2758853377326794043, guid: 15eeaad24f9b48c4e8598ef189588c79,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[5]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c97de5718e8e2247be9d9fd797629be, type: 2}
     - target: {fileID: 2928915457670944296, guid: 15eeaad24f9b48c4e8598ef189588c79,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -10376,7 +10381,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 746cb346489443a4caf5216a7d20e979, type: 2}
-  - {fileID: 2100000, guid: d0d0ba6c60133064b867fe33aeab3ed0, type: 2}
+  - {fileID: 2100000, guid: 4add788457b8a544f846b8140d3bc655, type: 2}
   - {fileID: 2100000, guid: 40226d2ee1de05742a7064ce26f49b78, type: 2}
   - {fileID: 2100000, guid: 17483d7d861f3c9419dbaef1c3a712a0, type: 2}
   - {fileID: 2100000, guid: b2fd9732f82e2be49b9cc3d82bc88c3e, type: 2}

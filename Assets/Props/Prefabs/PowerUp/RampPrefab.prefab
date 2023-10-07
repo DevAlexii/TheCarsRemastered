@@ -140,6 +140,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b9c0555e764be664ba729ee14c203dfe,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 44074b697fed5a84d89c907adcf9126a, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b9c0555e764be664ba729ee14c203dfe,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 70fceb2bbf027e14c81ee8eb165bb0c9, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b9c0555e764be664ba729ee14c203dfe,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 44074b697fed5a84d89c907adcf9126a, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b9c0555e764be664ba729ee14c203dfe,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c58b1476f6d63a549bfbf2722fed0570, type: 2}
     - target: {fileID: 919132149155446097, guid: b9c0555e764be664ba729ee14c203dfe,
         type: 3}
       propertyPath: m_Name
@@ -203,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 0.011764706, g: 0.06666667, b: 0.16078432, a: 1}
+  outlineColor: {r: 1, g: 0.49244177, b: 0, a: 1}
   outlineWidth: 1.2
   precomputeOutline: 0
   bakeKeys: []
