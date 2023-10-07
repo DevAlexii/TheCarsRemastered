@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 
@@ -20,6 +18,7 @@ public class ButtonClickgraphic : ButtonClickParent
     [SerializeField] Volume global;
 
     bool clickedFirst_Graphic = true;
+
     public override void OnPointerClick(PointerEventData eventData)
     {
         if (clickedFirst_Graphic)
@@ -27,12 +26,15 @@ public class ButtonClickgraphic : ButtonClickParent
             GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
             global.profile = volumeLow;
+            transform.GetComponent<Image>().sprite = newImage;
+
         }
         else
         {
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
+            transform.GetComponent<Image>().sprite = baseImage;
         }
         base.OnPointerClick(eventData);
         clickedFirst_Graphic = !clickedFirst_Graphic;
