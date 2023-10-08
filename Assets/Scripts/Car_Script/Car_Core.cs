@@ -248,7 +248,6 @@ public class Car_Core : MonoBehaviour, I_Interface
 
         while (startWaitSize)
         {
-            print("ciaoooo");
             scaleValue = Mathf.Lerp(scaleValue, targetScale, Time.unscaledDeltaTime * 10);
             if (scaleValue > maxScale - 0.01f && targetScale == maxScale)
             {
