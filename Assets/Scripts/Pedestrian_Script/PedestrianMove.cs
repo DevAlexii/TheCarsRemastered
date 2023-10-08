@@ -8,7 +8,7 @@ public class PedestrianMove : MonoBehaviour
     [Header("Explosion Variables")]
     [SerializeField] float explosionForce;
     [SerializeField] float explosionRadius;
-    [SerializeField] float afterCollisionDeadTimer;
+    private float afterCollisionDeadTimer;
 
     [Header("Path")]
     [SerializeField] private Transform arrow;
@@ -20,6 +20,9 @@ public class PedestrianMove : MonoBehaviour
     private float rotation_speed;
     private bool has_crossed;
     private int cross_index;
+
+    private float timer;
+    private AnimationCurve size_curve;
 
     void Start()
     {
@@ -37,6 +40,21 @@ public class PedestrianMove : MonoBehaviour
     void Update()
     {
         PedestriansMoves();
+
+        if (afterCollisionDeadTimer != 0)
+        {
+            timer += Time.deltaTime;
+            if (timer > 1)
+            {
+                transform.localScale = Vector3.one * size_curve.Evaluate(timer);
+               
+            }
+
+            if (timer > afterCollisionDeadTimer)
+            {
+                Destroy(this.gameObject, afterCollisionDeadTimer);
+            }
+        }
     }
     void PedestriansMoves()
     {
@@ -84,8 +102,9 @@ public class PedestrianMove : MonoBehaviour
             rb.AddForce(collider.gameObject.transform.forward * 300f + Vector3.up * 4);
             rb.excludeLayers = GameManager.self.layer_to_exclude;
             GetComponent<Collider>().isTrigger = false;
-            Destroy(this);
-            Destroy(gameObject, afterCollisionDeadTimer);
+            path = null;
+            size_curve = SizeAnimationEditor.self.Size_curve;
+            afterCollisionDeadTimer = SizeAnimationEditor.self.Time;
         }
     }
 }
