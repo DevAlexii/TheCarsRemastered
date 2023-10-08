@@ -91,6 +91,10 @@ public class CarFollowPath : MonoBehaviour
     {
         if (node_index == path.Nodes.Count) return;
         Vector3 relativeVector = transform.InverseTransformPoint(GetNodePosition());
+        if (relativeVector == Vector3.zero)
+        {
+            return;
+        }
         Quaternion targetRotation = Quaternion.LookRotation(relativeVector, Vector3.up);
         targetRotation.eulerAngles = targetRotation.eulerAngles.y * Vector3.up;
         foreach (Transform wheel in front_wheels)

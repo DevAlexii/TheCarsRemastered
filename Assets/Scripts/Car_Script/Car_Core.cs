@@ -107,7 +107,6 @@ public class Car_Core : MonoBehaviour, I_Interface
             is_crashed = true;
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
             GameManager.self.E_OnCarCrash();
-            StartCoroutine(ToogleWaitSize());
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -232,9 +231,14 @@ public class Car_Core : MonoBehaviour, I_Interface
     }
     #endregion
     bool startWaitSize = true;
+
+    public void ChangeColorGreen()
+    {
+        StartCoroutine(ToogleWaitSize());
+    }
     IEnumerator ToogleWaitSize()
     {
-        yield return new WaitForSeconds(1f);
+        //yield return new WaitForSeconds(1f);
         Outline outlineScript = GetComponentInChildren<Outline>();
         float startScale = shrink_on ? 0.5f : 1;
         float maxScale = startScale * 1.1f;
@@ -244,6 +248,7 @@ public class Car_Core : MonoBehaviour, I_Interface
 
         while (startWaitSize)
         {
+            print("ciaoooo");
             scaleValue = Mathf.Lerp(scaleValue, targetScale, Time.unscaledDeltaTime * 10);
             if (scaleValue > maxScale - 0.01f && targetScale == maxScale)
             {

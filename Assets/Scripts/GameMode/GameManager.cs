@@ -146,6 +146,11 @@ public class GameManager : Singleton<GameManager>
     {
         if (!hook_component.enabled)
         {
+            foreach (var car in Car_Manager.self.car_crashed)
+            {
+                car.GetComponentInChildren<Car_Core>().ChangeColorGreen();
+            }
+
             hook_component.enabled = true;
             n_life--;
         }
