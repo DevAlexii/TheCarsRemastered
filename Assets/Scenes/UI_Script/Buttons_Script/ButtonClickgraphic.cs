@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
+using TMPro;
 
 public class ButtonClickgraphic : ButtonClickParent
 {
@@ -17,8 +18,21 @@ public class ButtonClickgraphic : ButtonClickParent
     [Header("VolumeInSceneRef")]
     [SerializeField] Volume global;
 
+    public TextMeshProUGUI graphic_TXT;
+
     bool clickedFirst_Graphic = true;
 
+    private void Start()
+    {
+        if (SystemInfo.systemMemorySize > 8000)
+        {
+            graphic_TXT.text = "HIGH";
+        }
+        else
+        {
+            graphic_TXT.text = " LOW";
+        }
+    }
     public override void OnPointerClick(PointerEventData eventData)
     {
         if (clickedFirst_Graphic)
@@ -26,15 +40,14 @@ public class ButtonClickgraphic : ButtonClickParent
             GraphicsSettings.defaultRenderPipeline = defaultRenderPipelineAsset;
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
             global.profile = volumeLow;
-            transform.GetComponent<Image>().sprite = newImage;
-
+            graphic_TXT.text = " LOW";
         }
         else
         {
             GraphicsSettings.defaultRenderPipeline = overrideRenderPipelineAsset;
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
-            transform.GetComponent<Image>().sprite = baseImage;
+            graphic_TXT.text = "HIGH";
         }
         base.OnPointerClick(eventData);
         clickedFirst_Graphic = !clickedFirst_Graphic;
