@@ -23,6 +23,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private bool is_crashed;
     private bool selected;
     private bool isKamikaze;
+    private bool isInsideTrigger = false;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false)
@@ -107,6 +108,8 @@ public class Car_Core : MonoBehaviour, I_Interface
             is_crashed = true;
             Car_Manager.self.AddCrashedCar(transform.parent.gameObject);
             GameManager.self.E_OnCarCrash();
+
+            CheckAndDestroyIfCrashed();
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -115,7 +118,31 @@ public class Car_Core : MonoBehaviour, I_Interface
         {
             On_Ramp_Collision();
         }
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("CrashTrigger"))
+        {
+            isInsideTrigger = true;
+        }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("CrashTrigger"))
+        {
+            isInsideTrigger = false;
+            CheckAndDestroyIfCrashed();
+        }
+    }
+
+    private void CheckAndDestroyIfCrashed()
+    {
+        if (is_crashed && !isInsideTrigger)
+        {
+            Car_Manager.self.RemoveCarFromLists(transform.parent.gameObject);
+            Destroy(transform.parent.gameObject);
+        }
+    }
+
     void On_Ramp_Collision()
     {
         foreach (var arrow in directional_arrwos)

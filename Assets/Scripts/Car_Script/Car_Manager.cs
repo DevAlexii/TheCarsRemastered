@@ -168,6 +168,13 @@ public class Car_Manager : Singleton<Car_Manager>
         spawned_car.Remove(car);
         car_in_scene.Remove(car);
     }
+
+    public void RemoveCarFromLists(GameObject car)
+    {
+        spawned_car.Remove(car);
+        car_in_scene.Remove(car);
+        car_crashed.Remove(car);  
+    }
     #endregion
     #region PowerUp
     #region Invisilibity
