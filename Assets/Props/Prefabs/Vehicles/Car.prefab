@@ -695,7 +695,7 @@ MonoBehaviour:
   - {fileID: 1782898647900243280}
   - {fileID: 6310642160384630986}
   shell: {fileID: 3232057046550487627}
-  wait_time: 5
+  wait_time: 10
   node_reachable_distance: 0.5
   queque_layer:
     serializedVersion: 2

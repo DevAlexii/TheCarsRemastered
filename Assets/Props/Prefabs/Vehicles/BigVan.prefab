@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 2353175668373771619}
   - {fileID: 5455790225175344786}
   shell: {fileID: 5480875028942606785}
-  wait_time: 5
+  wait_time: 10
   node_reachable_distance: 0.5
   queque_layer:
     serializedVersion: 2

@@ -217,7 +217,6 @@ MonoBehaviour:
   - {fileID: 2262261050226532017}
   - {fileID: 6565422463264596811}
   shell: {fileID: 7038254641954730031}
-  wait_time: 5
   node_reachable_distance: 0.5
   queque_layer:
     serializedVersion: 2
@@ -728,7 +727,7 @@ Transform:
   m_GameObject: {fileID: 8397560747004801921}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.373, y: 0.266, z: 0.637}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -741,7 +740,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8397560747004801921}
-  m_Mesh: {fileID: -4975054700068408295, guid: 316193e319eba9f4bab1913855490dde, type: 3}
+  m_Mesh: {fileID: -953017080839990730, guid: 316193e319eba9f4bab1913855490dde, type: 3}
 --- !u!23 &5214166690034487465
 MeshRenderer:
   m_ObjectHideFlags: 0

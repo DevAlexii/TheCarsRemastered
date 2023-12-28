@@ -4928,7 +4928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db01fc5331a08d84b8a709d9b3c9a0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawn: 1
+  timeBetweenSpawn: 8
   maxPedestrian: 20
   currentPedestrians: 0
   paths_Info:
@@ -5008,7 +5008,7 @@ MonoBehaviour:
   - {fileID: 3125381150521189789, guid: d61168d817af9af4e85ada70719f40e1, type: 3}
   powerUP_Health: {fileID: 5622442911276258968, guid: 6d21fb2550c5fd8458fd0dd74ac9e80e,
     type: 3}
-  spawn_timer: 2
+  spawn_timer: 15
   spawn_points:
   - {fileID: 1512754104}
   - {fileID: 448455335}
@@ -10154,11 +10154,80 @@ MonoBehaviour:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
   timer_to_spawn_car: 1
-  max_car_in_scene: 1000
-  percentage_to_be_kamikaze: 20
+  max_car_in_scene: 20
+  percentage_to_be_kamikaze: 0
   timer_curve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: -0
+      value: 1.0010402
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.5394784
+      value: 1.0647762
+      inSlope: 0.13004376
+      outSlope: 0.13004376
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4.3296986
+      value: 2.072162
+      inSlope: 0.97435606
+      outSlope: 1.284708
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.17622428
+      outWeight: 0.23747762
+    - serializedVersion: 3
+      time: 5
+      value: 5
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  car_wait_timer_curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 4
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.6464306
+      value: 5.4658256
+      inSlope: 2.477139
+      outSlope: 2.477139
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5
+      value: 15
+      inSlope: 2.035237
+      outSlope: 2.035237
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4219269
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
