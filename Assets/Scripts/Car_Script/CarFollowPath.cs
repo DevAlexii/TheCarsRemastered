@@ -192,6 +192,7 @@ public class CarFollowPath : MonoBehaviour
             }
             else
             {
+                wait_timer = 0;
                 On_Waiting = Waiting;
             }
         }
