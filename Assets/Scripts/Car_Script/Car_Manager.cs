@@ -92,47 +92,47 @@ public class Car_Manager : Singleton<Car_Manager>
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
-        bool isKamikaze = true;
+        //bool isKamikaze = true;
         int arrow_index = -1;
-       
-        if (isComboCar)
+
+        //if (isComboCar)
+        //{
+        //    isKamikaze = false;
+        //}
+        //else
+        //{
+        if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto 
         {
-            isKamikaze = false;
+            arrow_index = 0;
+            //isKamikaze = false;
         }
-        else
+        else if (randomPoint == Point.Right && random_path == 0)
         {
-            if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto 
-            {
-                arrow_index = 0;
-                isKamikaze = false;
-            }
-            else if (randomPoint == Point.Right && random_path == 0)
-            {
-                arrow_index = 1;
-                isKamikaze = false;
-            }
+            arrow_index = 1;
+            //isKamikaze = false;
         }
-        
+        //}
+
         CarInfo data = null;
-        if (isKamikaze)
-        {
-            isKamikaze = CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
-        }
-        if (isKamikaze)
-        {
-            data = CarInfosRef.self.GetKamikazeInfo;
-        }
-        else
-        {
-            int random_key = Random.Range(0, CarInfos.Keys.Count);
-            int random_value = Random.Range(0, CarInfos[(CarType)random_key].Count);
-            data = CarInfos[(CarType)random_key][random_value];
-        }
+        //if (isKamikaze)
+        //{
+        //    isKamikaze = CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
+        //}
+        //if (isKamikaze)
+        //{
+        //    data = CarInfosRef.self.GetKamikazeInfo;
+        //}
+        //else
+        //{
+        int random_key = Random.Range(0, CarInfos.Keys.Count);
+        int random_value = Random.Range(0, CarInfos[(CarType)random_key].Count);
+        data = CarInfos[(CarType)random_key][random_value];
+        //}
         if (!isComboCar)
         {
             GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on);
-            spawned_car.Add(car); 
+            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, false /*isKamikaze*/, invisibility_on);
+            spawned_car.Add(car);
         }
         else
         {
@@ -159,7 +159,7 @@ public class Car_Manager : Singleton<Car_Manager>
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
             }
         }
-       
+
     }
 
     #endregion
@@ -182,7 +182,7 @@ public class Car_Manager : Singleton<Car_Manager>
     {
         spawned_car.Remove(car);
         car_in_scene.Remove(car);
-        car_crashed.Remove(car);  
+        car_crashed.Remove(car);
     }
     #endregion
     #region PowerUp

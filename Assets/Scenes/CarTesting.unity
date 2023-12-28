@@ -10153,9 +10153,15 @@ MonoBehaviour:
       value:
       - {fileID: 1318150380}
       - {fileID: 1209747632}
-  timer_to_spawn_car: 1.5
-  max_car_in_scene: 20
+  timer_to_spawn_car: 1
+  max_car_in_scene: 1000
   percentage_to_be_kamikaze: 20
+  timer_curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   spawned_car: []
   invisibility_time: 5
   shrink_time: 2
