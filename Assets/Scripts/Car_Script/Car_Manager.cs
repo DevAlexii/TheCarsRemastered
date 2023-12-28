@@ -11,7 +11,7 @@ public class Car_Manager : Singleton<Car_Manager>
     public Dictionary<CarType, List<CarInfo>> CarInfos;
     [SerializeField] private Int32 max_car_in_scene;
     [SerializeField] private Int32 percentage_to_be_kamikaze;
-    private float timer;
+    private float timer = float.MaxValue;
 
     public List<GameObject> spawned_car;
     public List<GameObject> car_crashed { get; private set; }
@@ -61,13 +61,16 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         CarInfos = CarInfosRef.self.DefaultCarInfoData;
     }
+    int start_count = 5;
     void Update()
     {
+        start_count = Mathf.Clamp(comboCount, 0, 5);
         timer += Time.deltaTime;
-        if (timer >= timer_to_spawn_car)
+        if (timer >= timer_to_spawn_car + start_count)
         {
             SpawnCar();
             timer = 0;
+            start_count--;
         }
 
         On_Invisibility?.Invoke();
