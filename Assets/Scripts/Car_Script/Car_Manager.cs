@@ -64,13 +64,13 @@ public class Car_Manager : Singleton<Car_Manager>
     int start_count = 5;
     void Update()
     {
-        start_count = Mathf.Clamp(comboCount, 0, 5);
         timer += Time.deltaTime;
         if (timer >= timer_to_spawn_car + start_count)
         {
             SpawnCar();
             timer = 0;
             start_count--;
+            if (start_count < 0) { start_count = 0; }
         }
 
         On_Invisibility?.Invoke();
