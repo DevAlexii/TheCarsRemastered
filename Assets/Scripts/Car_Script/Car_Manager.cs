@@ -61,7 +61,7 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         CarInfos = CarInfosRef.self.DefaultCarInfoData;
     }
-    int start_count = 5;
+    float start_count = 5;
     void Update()
     {
         timer += Time.deltaTime;
@@ -69,7 +69,7 @@ public class Car_Manager : Singleton<Car_Manager>
         {
             SpawnCar();
             timer = 0;
-            start_count--;
+            start_count -= 0.1f;
             if (start_count < 0) { start_count = 0; }
         }
 
