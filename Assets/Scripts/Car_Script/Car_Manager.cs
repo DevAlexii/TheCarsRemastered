@@ -15,6 +15,8 @@ public class Car_Manager : Singleton<Car_Manager>
     float start_count = 5;
     [SerializeField]
     private AnimationCurve timer_curve;
+    [SerializeField]
+    private AnimationCurve car_wait_timer_curve;
 
 
     public List<GameObject> spawned_car;
@@ -131,7 +133,7 @@ public class Car_Manager : Singleton<Car_Manager>
         if (!isComboCar)
         {
             GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, false /*isKamikaze*/, invisibility_on);
+            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, false /*isKamikaze*/, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
             spawned_car.Add(car);
         }
         else
@@ -153,7 +155,7 @@ public class Car_Manager : Singleton<Car_Manager>
                 int random_path = Random.Range(0, 2);
                 Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
                 GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on);
+                comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
                 spawned_car.Add(comboCar);
                 lastComboCarSpawned = comboCar;
                 comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);

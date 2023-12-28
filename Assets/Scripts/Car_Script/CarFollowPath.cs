@@ -19,7 +19,7 @@ public class CarFollowPath : MonoBehaviour
     private float target_max_move_speed;
 
     [Header("Wait Time")]
-    [SerializeField] private float wait_time;
+    private float wait_time;
     private float wait_timer;
 
     [Header("PathInfo")]
@@ -50,7 +50,7 @@ public class CarFollowPath : MonoBehaviour
     private Outline outlineScript;
 
     #region Initialize
-    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data)
+    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data, float wait_time = 0)
     {
         owner = Owner;//SetReference
         queque_ray = new Ray();//GenerateQuequeRay
@@ -62,6 +62,7 @@ public class CarFollowPath : MonoBehaviour
         On_CarMove = MoveCarToNode;
         originalScale = transform.localScale;
         outlineScript = GetComponentInChildren<Outline>();
+        this.wait_time = wait_time;
     }
 
     private void MovementVarSetup(CarInfo data)
@@ -188,6 +189,10 @@ public class CarFollowPath : MonoBehaviour
                 Outline outlineScript = GetComponentInChildren<Outline>();
                 outlineScript.OutlineColor = GameManager.self.Get_Start_Outline_Color;
                 outlineScript.OutlineWidth = 1.2f;
+            }
+            else
+            {
+                On_Waiting = Waiting;
             }
         }
         return true;
