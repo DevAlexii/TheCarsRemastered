@@ -40,6 +40,7 @@ public class CarFollowPath : MonoBehaviour
     private Ray queque_ray;
     private RaycastHit queque_hit;
     private bool pickCombo = true;
+    [SerializeField] private LayerMask queque_layer;
 
     [Header("Scale Multiplier")]
     private Vector3 originalScale;
@@ -299,12 +300,10 @@ public class CarFollowPath : MonoBehaviour
     {
         queque_ray.origin = transform.position + shell.forward + Vector3.up * 0.2f;
         queque_ray.direction = shell.forward;
-        if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, queque_distance))
+        if (Physics.Raycast(queque_ray.origin, queque_ray.direction, out queque_hit, queque_distance, queque_layer))
         {
-            if (queque_hit.transform.gameObject.layer == 3 || queque_hit.transform.gameObject.layer == 6)
-            {
-                stop_car = true;
-            }
+            stop_car = true;
+
         }
         else
         {

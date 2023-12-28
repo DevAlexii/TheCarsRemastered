@@ -51,6 +51,9 @@ MonoBehaviour:
   shell: {fileID: 5480875028942606785}
   wait_time: 5
   node_reachable_distance: 0.5
+  queque_layer:
+    serializedVersion: 2
+    m_Bits: 72
   color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2519613058253111189
 GameObject:
