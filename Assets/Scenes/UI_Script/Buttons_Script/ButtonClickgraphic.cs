@@ -22,6 +22,8 @@ public class ButtonClickgraphic : ButtonClickParent
 
     bool clickedFirst_Graphic = true;
 
+    [SerializeField] private DayNightTest01 day_night;
+
     private void Start()
     {
         if (SystemInfo.systemMemorySize > 8000)
@@ -31,6 +33,7 @@ public class ButtonClickgraphic : ButtonClickParent
         else
         {
             graphic_TXT.text = " LOW";
+            day_night.time_cycle_activate = false;
         }
     }
     public override void OnPointerClick(PointerEventData eventData)
@@ -41,6 +44,7 @@ public class ButtonClickgraphic : ButtonClickParent
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
             global.profile = volumeLow;
             graphic_TXT.text = " LOW";
+            day_night.time_cycle_activate = false;
         }
         else
         {
@@ -48,6 +52,7 @@ public class ButtonClickgraphic : ButtonClickParent
             QualitySettings.renderPipeline = overrideRenderPipelineAsset;
             global.profile = volumeHigh;
             graphic_TXT.text = "HIGH";
+            day_night.time_cycle_activate = true;
         }
         base.OnPointerClick(eventData);
         clickedFirst_Graphic = !clickedFirst_Graphic;

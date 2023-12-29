@@ -35,6 +35,8 @@ public class DayNightTest01 : MonoBehaviour
     [SerializeField] List<GameObject> glassObj;
     private bool lightsAreOn = false;
 
+    public bool time_cycle_activate = true;
+    private bool do_once = false;
 
     void Start()
     {
@@ -60,15 +62,31 @@ public class DayNightTest01 : MonoBehaviour
 
     void Update()
     {
-        time += timeRate * Time.deltaTime;
-        if (time >= 1f)
+        if (time_cycle_activate)
         {
-            time = 0f;
+            time += timeRate * UnityEngine.Time.deltaTime;
+            if (time >= 1f)
+            {
+                time = 0f;
+            }
+            SetLighting();
+            SetSunAmbientintensity();
+            ToogleLamps();
+            ToggleGlassObj();
+            do_once = false;
         }
-        SetLighting();
-        SetSunAmbientintensity();
-        ToogleLamps();
-        ToggleGlassObj();
+        else
+        {
+            if (!do_once)
+            {
+                do_once = true;
+                time = 0.4f;
+                SetLighting();
+                SetSunAmbientintensity();
+                ToogleLamps();
+                ToggleGlassObj();
+            }
+        }
     }
     void SetLighting()
     {

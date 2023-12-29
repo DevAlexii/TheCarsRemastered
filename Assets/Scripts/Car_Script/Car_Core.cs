@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Car_Core : MonoBehaviour, I_Interface
 {
@@ -28,7 +29,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false, float wait_time = 0)
     {
-        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data,wait_time);
+        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data, wait_time);
         directional_arrow_index_to_play = arrow_index;
         wheel_start_Materials = wheels[0].GetComponent<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();
@@ -139,7 +140,10 @@ public class Car_Core : MonoBehaviour, I_Interface
         if (is_crashed && !isInsideTrigger)
         {
             Car_Manager.self.RemoveCarFromLists(transform.parent.gameObject);
-            Destroy(transform.parent.gameObject);
+            if (transform.parent.gameObject != null)
+            {
+                Destroy(transform.parent.gameObject);
+            }
         }
     }
 
