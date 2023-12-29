@@ -1,5 +1,6 @@
 using Codice.Client.Common;
 using Codice.Client.Common.GameUI;
+using Codice.CM.WorkspaceServer.DataStore.Configuration;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,7 +39,7 @@ public class DayNightTest01 : MonoBehaviour
     private bool lightsAreOn = false;
 
     public bool time_cycle_activate = true;
-    private bool do_once = true;
+    private bool do_once = false;
 
     void Start()
     {
