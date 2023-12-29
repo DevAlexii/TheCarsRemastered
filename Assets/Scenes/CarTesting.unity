@@ -5930,7 +5930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  dayLenght: 10
+  dayLenght: 100
   startday: 0.1
   sun: {fileID: 769566337}
   sunIntensity:
@@ -10161,7 +10161,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: -0
-      value: 1.0010402
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10169,8 +10169,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1.5394784
-      value: 1.0647762
+      time: 1.6519519
+      value: 0.11683756
       inSlope: 0.13004376
       outSlope: 0.13004376
       tangentMode: 1
@@ -10178,13 +10178,13 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 4.3296986
-      value: 2.072162
-      inSlope: 0.97435606
+      time: 4.3279586
+      value: 1.1768627
+      inSlope: 1.0941188
       outSlope: 1.284708
       tangentMode: 1
       weightedMode: 0
-      inWeight: 0.17622428
+      inWeight: 0.21038143
       outWeight: 0.23747762
     - serializedVersion: 3
       time: 5
