@@ -3233,6 +3233,7 @@ MonoBehaviour:
   volumeLow: {fileID: 11400000, guid: 4e980b9e5febc6f4fa3f48f09ef1241d, type: 2}
   global: {fileID: 4009799013483771469}
   graphic_TXT: {fileID: 42145676}
+  day_night: {fileID: 1358507366}
 --- !u!1 &859246374
 GameObject:
   m_ObjectHideFlags: 0
@@ -6157,6 +6158,7 @@ MonoBehaviour:
   luci2Material: {fileID: 2100000, guid: 5018741ad91248a47930cb9968f644c7, type: 2}
   glassObj:
   - {fileID: 1724504103}
+  time_cycle_activate: 1
 --- !u!4 &1358507367
 Transform:
   m_ObjectHideFlags: 0
