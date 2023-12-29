@@ -17,6 +17,8 @@ public class Car_Manager : Singleton<Car_Manager>
     private AnimationCurve timer_curve;
     [SerializeField]
     private AnimationCurve car_wait_timer_curve;
+    [SerializeField]
+    private int combo_num = 25;
 
 
     public List<GameObject> spawned_car;
@@ -144,11 +146,11 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void HandleComboSpawn()
     {
-        if (comboCount % 25 == 0 && comboCount != 0)
+        if (comboCount % combo_num == 0 && comboCount != 0)
         {
             if (lastComboCarSpawned == null)
             {
-                int comboType = comboCount / 25;
+                int comboType = comboCount / combo_num;
 
                 Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
                 Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
