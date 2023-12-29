@@ -9,7 +9,7 @@ public class PowerUpManager : Singleton<PowerUpManager>
 
     [Header("Spawn Timer")]
     [SerializeField] private int spawn_timer;
-    private float timer;
+    public float timer;
 
     [Header("SpawnPoint")]
     [SerializeField] private List<Transform> spawn_points;
