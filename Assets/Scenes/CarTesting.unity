@@ -5010,6 +5010,7 @@ MonoBehaviour:
   powerUP_Health: {fileID: 5622442911276258968, guid: 6d21fb2550c5fd8458fd0dd74ac9e80e,
     type: 3}
   spawn_timer: 15
+  timer: 0
   spawn_points:
   - {fileID: 1512754104}
   - {fileID: 448455335}
@@ -10243,7 +10244,8 @@ MonoBehaviour:
     type: 3}
   combo25Prefab: {fileID: 7104449171590673071, guid: f89b2d76bb1e4bb41a6c7fdb4e9c9766,
     type: 3}
-  comboCount: 23
+  comboCount: 0
+  combo_num: 5
   cameraShake: {fileID: 7920548446412522380}
   coinsAmount: 0
 --- !u!1 &2135848720
