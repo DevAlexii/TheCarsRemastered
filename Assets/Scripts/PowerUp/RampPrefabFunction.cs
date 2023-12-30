@@ -20,11 +20,11 @@ public class RampPrefabFunciont : MonoBehaviour
             if (bounceTimer >= MaxbounceTime)
             {
                 bounceFinish = true;
-                Camera.main.GetComponent<CameraShake>().StartShake(0.50f);
-                effect.SetActive(true);
+                Camera.main.GetComponent<CameraShake>().StartShake(0.1f);
+                //effect.SetActive(true);
                 lifetime = SizeAnimationEditor.self.Time;
                 size_curve = SizeAnimationEditor.self.Size_curve;
-                Destroy(effect, 1f);
+                //Destroy(effect, 1f);
                 Destroy(this.gameObject, lifetime);
             }
             float y = bounceCurve.Evaluate(bounceTimer);
