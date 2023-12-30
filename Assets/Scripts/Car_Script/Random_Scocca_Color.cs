@@ -6,8 +6,7 @@ public class Random_Scocca_Color : MonoBehaviour
 {
     void Start()
     {
-        GameObject scocca = GetComponent<GameObject>();
-        Material[] materials = scocca.GetComponent<MeshRenderer>().materials;
+        Material[] materials = this.gameObject.GetComponent<MeshRenderer>().materials;
         Shader_Color color = Color_Manager.self.GetRandomShaderColor;
 
         foreach (var material in materials)
@@ -18,6 +17,6 @@ public class Random_Scocca_Color : MonoBehaviour
                 material.SetColor("_bottom_color", color.bottom_color);
             }
         }
-        scocca.GetComponent<MeshRenderer>().materials = materials;
+        this.gameObject.GetComponent<MeshRenderer>().materials = materials;
     }
 }
