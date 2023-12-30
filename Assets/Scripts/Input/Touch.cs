@@ -13,7 +13,7 @@ public class Touch : MonoBehaviour
             {
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-                if (Physics.Raycast(ray, out hit, 100f,layer)
+                if (Physics.Raycast(ray, out hit, 100f,layer))
                 {
                     if (hit.transform.TryGetComponent(out I_Interface clickedCar))
                     {
