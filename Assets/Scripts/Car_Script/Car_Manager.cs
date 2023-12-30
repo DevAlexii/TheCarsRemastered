@@ -87,6 +87,13 @@ public class Car_Manager : Singleton<Car_Manager>
     }
 
     #region Spawner
+    [Header("Spawn Percentage")]
+    public int percentage_tir;
+    public int percentage_special;
+    public int percentage_big_van;
+    public int percentage_van;
+
+
     void SpawnCar()
     {
         if (spawned_car.Count > 0 && spawned_car.Count >= max_car_in_scene) return;
@@ -127,9 +134,29 @@ public class Car_Manager : Singleton<Car_Manager>
         //}
         //else
         //{
-        int random_key = Random.Range(0, CarInfos.Keys.Count);
-        int random_value = Random.Range(0, CarInfos[(CarType)random_key].Count);
-        data = CarInfos[(CarType)random_key][random_value];
+        CarType random_key = CarType.BaseCar;
+        int random_car_type = Random.Range(0,100);
+
+        if (random_car_type <= percentage_tir)
+        {
+            random_key = CarType.Tir;
+        }
+        else if (random_car_type <= percentage_special)
+        {
+            random_key = CarType.Special;
+        }
+        else if(random_car_type <= percentage_big_van)
+        {
+            random_key = CarType.BigVan;
+        }
+        else if (random_car_type <= percentage_van)
+        {
+            random_key = CarType.Van;
+        }
+
+        int random_value = Random.Range(0, CarInfos[random_key].Count);
+
+        data = CarInfos[random_key][random_value];
         //}
         if (comboCount > 0 && comboCount % combo_num == 0)
         {
@@ -290,7 +317,7 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     #endregion
     #region Coins
-    public int coinsAmount = 0;
+    [HideInInspector]public int coinsAmount = 0;
     public void IncrementCoins()
     {
         coinsAmount++;

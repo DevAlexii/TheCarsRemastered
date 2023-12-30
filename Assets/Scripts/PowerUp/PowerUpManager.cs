@@ -20,7 +20,7 @@ public class PowerUpManager : Singleton<PowerUpManager>
         timer += Time.deltaTime;
         if (timer >= spawn_timer)
         {
-            timer = 0;
+            timer = Random.Range(-5,5);
             SpawnPowerUp();
         }
     }

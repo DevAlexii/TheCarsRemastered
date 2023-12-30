@@ -10247,6 +10247,10 @@ MonoBehaviour:
   comboCount: 0
   combo_num: 5
   cameraShake: {fileID: 7920548446412522380}
+  percentage_tir: 0
+  percentage_special: 0
+  percentage_big_van: 0
+  percentage_van: 0
   coinsAmount: 0
 --- !u!1 &2135848720
 GameObject:
@@ -10371,6 +10375,9 @@ MonoBehaviour:
   - key: 3
     value:
     - {fileID: 11400000, guid: 6031658eddac11a408e28eee7c14a8fd, type: 2}
+  - key: 5
+    value:
+    - {fileID: 11400000, guid: a0d15d531c1f8af4bb11dbb52fe60e53, type: 2}
   KamikazeInfo: {fileID: 11400000, guid: 3b82bf60cf72c6841acb9bff1c86988f, type: 2}
 --- !u!33 &71266903126481105
 MeshFilter:
