@@ -144,7 +144,10 @@ public class CarFollowPath : MonoBehaviour
             {
                 ToogleCollision();
                 GameManager.self.UpdateScore(amount_score);
-                Car_Manager.self.Increment_score_count(false);
+                if (amount_score > 1)
+                {
+                    Car_Manager.self.Increment_score_count(false);
+                }
             }
             node_index++;
         }

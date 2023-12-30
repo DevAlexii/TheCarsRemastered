@@ -49,7 +49,7 @@ public class Car_Manager : Singleton<Car_Manager>
     [HideInInspector] public int comboCount = 0;
     [SerializeField]
     private int combo_num;
-    private bool spawn_combo;
+    [SerializeField] private bool spawn_combo;
 
     [Header("Camera")]
     public CameraShake cameraShake;
@@ -97,11 +97,28 @@ public class Car_Manager : Singleton<Car_Manager>
     public int percentage_van;
 
 
+    private Direction last_spawn_direction = Direction.Last;
     void SpawnCar()
     {
         if (spawned_car.Count > 0 && spawned_car.Count >= max_car_in_scene) return;
 
         Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
+        if (last_spawn_direction != randomDirection)
+        {
+            last_spawn_direction = randomDirection;
+        }
+        else
+        {
+            if (randomDirection == 0)
+            {
+                randomDirection = Direction.Last - 1;
+            }
+            else
+            {
+                randomDirection -= 1;
+            }
+        }
+
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
@@ -137,29 +154,7 @@ public class Car_Manager : Singleton<Car_Manager>
         //}
         //else
         //{
-        CarType random_key = CarType.BaseCar;
-        int random_car_type = Random.Range(0, 100);
 
-        if (random_car_type <= percentage_tir)
-        {
-            random_key = CarType.Tir;
-        }
-        else if (random_car_type <= percentage_special)
-        {
-            random_key = CarType.Special;
-        }
-        else if (random_car_type <= percentage_big_van)
-        {
-            random_key = CarType.BigVan;
-        }
-        else if (random_car_type <= percentage_van)
-        {
-            random_key = CarType.Van;
-        }
-
-        int random_value = Random.Range(0, CarInfos[random_key].Count);
-
-        data = CarInfos[random_key][random_value];
         //}
         if (comboCount > 0 && spawn_combo)
         {
@@ -167,6 +162,29 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         else
         {
+            CarType random_key = CarType.BaseCar;
+            int random_car_type = Random.Range(0, 100);
+
+            if (random_car_type <= percentage_tir)
+            {
+                random_key = CarType.Tir;
+            }
+            else if (random_car_type <= percentage_special)
+            {
+                random_key = CarType.Special;
+            }
+            else if (random_car_type <= percentage_big_van)
+            {
+                random_key = CarType.BigVan;
+            }
+            else if (random_car_type <= percentage_van)
+            {
+                random_key = CarType.Van;
+            }
+
+            int random_value = Random.Range(0, CarInfos[random_key].Count);
+
+            data = CarInfos[random_key][random_value];
 
             GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
             car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, false /*isKamikaze*/, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
@@ -175,8 +193,8 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void HandleComboSpawn()
     {
-        if (lastComboCarSpawned == null)
-        {
+        //if (lastComboCarSpawned == null)
+        //{
             int comboType = comboCount / combo_num;
 
             Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
@@ -188,8 +206,8 @@ public class Car_Manager : Singleton<Car_Manager>
             spawned_car.Add(comboCar);
             lastComboCarSpawned = comboCar;
             comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
-        }
-        spawn_combo = false;
+            spawn_combo = false;
+        //}
     }
     public void Increment_score_count(bool increment = true)
     {
@@ -203,12 +221,12 @@ public class Car_Manager : Singleton<Car_Manager>
         }
         else
         {
-            if (comboCount > 0)
+            if (comboCount > combo_num)
             {
                 spawn_combo = true;
             }
         }
-        
+
     }
 
     #endregion
