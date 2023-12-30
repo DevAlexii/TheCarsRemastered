@@ -1,3 +1,5 @@
+using Codice.Client.BaseCommands.WkStatus.Printers;
+using Codice.Client.Commands;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,9 +46,10 @@ public class Car_Manager : Singleton<Car_Manager>
 
     [Header("Combo")]
     [SerializeField] private GameObject combo25Prefab;
-    [HideInInspector]public int comboCount = 0;
+    [HideInInspector] public int comboCount = 0;
     [SerializeField]
     private int combo_num;
+    private bool spawn_combo;
 
     [Header("Camera")]
     public CameraShake cameraShake;
@@ -135,7 +138,7 @@ public class Car_Manager : Singleton<Car_Manager>
         //else
         //{
         CarType random_key = CarType.BaseCar;
-        int random_car_type = Random.Range(0,100);
+        int random_car_type = Random.Range(0, 100);
 
         if (random_car_type <= percentage_tir)
         {
@@ -145,7 +148,7 @@ public class Car_Manager : Singleton<Car_Manager>
         {
             random_key = CarType.Special;
         }
-        else if(random_car_type <= percentage_big_van)
+        else if (random_car_type <= percentage_big_van)
         {
             random_key = CarType.BigVan;
         }
@@ -158,7 +161,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
         data = CarInfos[random_key][random_value];
         //}
-        if (comboCount > 0 && comboCount % combo_num == 0)
+        if (comboCount > 0 && spawn_combo)
         {
             HandleComboSpawn();
         }
@@ -172,8 +175,6 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     public void HandleComboSpawn()
     {
-        //if (comboCount % combo_num == 0 && comboCount != 0)
-        //{
         if (lastComboCarSpawned == null)
         {
             int comboType = comboCount / combo_num;
@@ -187,9 +188,27 @@ public class Car_Manager : Singleton<Car_Manager>
             spawned_car.Add(comboCar);
             lastComboCarSpawned = comboCar;
             comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
-            
         }
-        //}
+        spawn_combo = false;
+    }
+    public void Increment_score_count(bool increment = true)
+    {
+        if (increment)
+        {
+            comboCount++;
+            if (comboCount % combo_num == 0 && !spawn_combo)
+            {
+                spawn_combo = true;
+            }
+        }
+        else
+        {
+            if (comboCount > 0)
+            {
+                spawn_combo = true;
+            }
+        }
+        
     }
 
     #endregion
@@ -317,7 +336,7 @@ public class Car_Manager : Singleton<Car_Manager>
     }
     #endregion
     #region Coins
-    [HideInInspector]public int coinsAmount = 0;
+    [HideInInspector] public int coinsAmount = 0;
     public void IncrementCoins()
     {
         coinsAmount++;

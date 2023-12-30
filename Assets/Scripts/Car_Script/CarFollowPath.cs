@@ -135,7 +135,7 @@ public class CarFollowPath : MonoBehaviour
             else if (path.Nodes[node_index].name.StartsWith("End"))
             {
                 Car_Manager.self.RemoveCar(this.gameObject);
-                if (this.gameObject != null && this.gameObject.GetComponent<MeshRenderer>() != null)
+                if (this.gameObject != null)
                 {
                     Destroy(this.gameObject);
                 }
@@ -144,6 +144,7 @@ public class CarFollowPath : MonoBehaviour
             {
                 ToogleCollision();
                 GameManager.self.UpdateScore(amount_score);
+                Car_Manager.self.Increment_score_count(false);
             }
             node_index++;
         }
@@ -303,7 +304,7 @@ public class CarFollowPath : MonoBehaviour
         {
             if (pickCombo)
             {
-                Car_Manager.self.comboCount++;
+                Car_Manager.self.Increment_score_count();
                 pickCombo = false;
             }
             return true;
