@@ -28,9 +28,9 @@ public class Car_Core : MonoBehaviour, I_Interface
     public GameObject collision_effect;
 
     #region Initialized
-    public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false, float wait_time = 0)
+    public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false, float wait_time = 0, int score = 1)
     {
-        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data, wait_time);
+        carFollowPathRef.InitilizedPath(newPath, this, isKamikaze, data, wait_time, score);
         directional_arrow_index_to_play = arrow_index;
         wheel_start_Materials = wheels[0].GetComponent<MeshRenderer>().materials;
         if (has_to_be_invisible) EnableInvisiblity();

@@ -156,10 +156,11 @@ public class Car_Manager : Singleton<Car_Manager>
             int random_path = Random.Range(0, 2);
             Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
             GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
+            comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on, car_wait_timer_curve.Evaluate(start_count), comboType + 1);
             spawned_car.Add(comboCar);
             lastComboCarSpawned = comboCar;
             comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
+            
         }
         //}
     }

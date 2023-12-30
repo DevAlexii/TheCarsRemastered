@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.VFX;
 using Random = UnityEngine.Random;
 
@@ -34,6 +35,7 @@ public class CarFollowPath : MonoBehaviour
     private bool stop_car;
     private bool can_be_touched;
     private bool is_kamikaze;
+    private int amount_score;
 
     [Header("Queque")]
     private float queque_distance;
@@ -50,7 +52,7 @@ public class CarFollowPath : MonoBehaviour
     private Outline outlineScript;
 
     #region Initialize
-    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data, float wait_time = 0)
+    public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data, float wait_time = 0, int score = 1)
     {
         owner = Owner;//SetReference
         queque_ray = new Ray();//GenerateQuequeRay
@@ -63,6 +65,7 @@ public class CarFollowPath : MonoBehaviour
         originalScale = transform.localScale;
         outlineScript = GetComponentInChildren<Outline>();
         this.wait_time = wait_time;
+        amount_score = score;
     }
 
     private void MovementVarSetup(CarInfo data)
@@ -140,7 +143,7 @@ public class CarFollowPath : MonoBehaviour
             else if (path.Nodes[node_index].name.StartsWith("GivePoint"))
             {
                 ToogleCollision();
-                GameManager.self.UpdateScore(1);
+                GameManager.self.UpdateScore(amount_score);
             }
             node_index++;
         }
