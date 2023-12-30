@@ -10249,9 +10249,9 @@ MonoBehaviour:
   spawn_combo: 0
   cameraShake: {fileID: 7920548446412522380}
   percentage_tir: 5
-  percentage_special: 20
+  percentage_special: 25
   percentage_big_van: 30
-  percentage_van: 40
+  percentage_van: 50
   coinsAmount: 0
 --- !u!1 &2135848720
 GameObject:

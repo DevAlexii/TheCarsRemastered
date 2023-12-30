@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.VFX;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class CarFollowPath : MonoBehaviour
 {
@@ -301,6 +300,7 @@ public class CarFollowPath : MonoBehaviour
         StopCoroutine(ResetScale(0f));
         yield break;
     }
+    [SerializeField] private TMP_Text combo_txt;
     public bool ComboCounter()
     {
         if (ToogleShouldMove())
@@ -309,11 +309,21 @@ public class CarFollowPath : MonoBehaviour
             {
                 Car_Manager.self.Increment_score_count();
                 pickCombo = false;
+                if (combo_txt)
+                {
+                    combo_txt.gameObject.SetActive(true);
+                    combo_txt.text = "x" + Car_Manager.self.comboCount + " combo";
+                    Invoke(nameof(ResetComboTxt), 1.5f);
+                }
             }
             return true;
         }
 
         return false;
+    }
+    private void ResetComboTxt()
+    {
+        combo_txt.gameObject.SetActive(false);
     }
     private void CheckQueque()
     {

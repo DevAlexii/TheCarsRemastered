@@ -1,5 +1,3 @@
-using Codice.Client.BaseCommands.WkStatus.Printers;
-using Codice.Client.Commands;
 using System;
 using System.Collections;
 using System.Collections.Generic;
