@@ -10245,7 +10245,8 @@ MonoBehaviour:
   combo25Prefab: {fileID: 7104449171590673071, guid: f89b2d76bb1e4bb41a6c7fdb4e9c9766,
     type: 3}
   comboCount: 0
-  combo_num: 1
+  combo_num: 5
+  spawn_combo: 0
   cameraShake: {fileID: 7920548446412522380}
   percentage_tir: 5
   percentage_special: 20
