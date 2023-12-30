@@ -30,6 +30,10 @@ public class Touch : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100f, layer))
             {
+                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Default") && GameManager.self.doOnce)
+                {
+                    return;
+                }
                 if (hit.transform.TryGetComponent(out I_Interface clickedCar))
                 {
                     clickedCar.OnClicked();
