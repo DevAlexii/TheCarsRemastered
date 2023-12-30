@@ -8,6 +8,7 @@ public class CarComboSetup : MonoBehaviour
     
     public void ActivateCars(int index)
     {
+        index = Mathf.Clamp(index,0, cars.Count);
         for (int i = 0; i < index; i++)
         {
             cars[i].SetActive(true);
