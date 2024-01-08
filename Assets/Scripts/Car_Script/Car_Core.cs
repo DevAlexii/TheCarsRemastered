@@ -10,11 +10,11 @@ public class Car_Core : MonoBehaviour, I_Interface
     [SerializeField] private List<GameObject> directional_arrwos;
     [SerializeField] private List<GameObject> wheels;
     [SerializeField] private GameObject scocca;
-
+    [Space]
     [Header("CollisionForce")]
     [SerializeField] float impulse_force;
     [SerializeField] float impulse_radius;
-
+    [Space]
     [Header("Internal Var")]
     public bool ChangeColor = true;
     private int directional_arrow_index_to_play;
@@ -26,6 +26,7 @@ public class Car_Core : MonoBehaviour, I_Interface
     private bool isKamikaze;
     private bool isInsideTrigger = false;
     public GameObject collision_effect;
+    [SerializeField] private Animation carAnimation;
 
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false, float wait_time = 0, int score = 1)
@@ -213,6 +214,10 @@ public class Car_Core : MonoBehaviour, I_Interface
             transform.localScale = Vector3.Lerp(target_scale, start_scale, timer2 / time);
 
             yield return null;
+        }
+        if (carAnimation != null)
+        {
+            carAnimation.Play();
         }
         StopCoroutine(CarClickerAnimation());
     }
