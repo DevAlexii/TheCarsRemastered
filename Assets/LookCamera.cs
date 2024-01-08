@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LookCamera : MonoBehaviour
 {
-
     void Update()
     {
         this.transform.rotation = Quaternion.LookRotation(Camera.main.transform.position, -Vector3.up);
