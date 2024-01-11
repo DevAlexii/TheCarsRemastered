@@ -345,7 +345,7 @@ public class Car_Manager : Singleton<Car_Manager>
             Destroy(obj.GetComponent<CarFollowPath>());
             GameObject effect = Instantiate(nukeVFX, new Vector3(0, 1, 0), Quaternion.identity);
             cameraShake.StartShake();
-            Destroy(effect, 1f);
+            Destroy(effect, 3f);
             Destroy(obj, 2);
         }
         spawned_car.Clear();
