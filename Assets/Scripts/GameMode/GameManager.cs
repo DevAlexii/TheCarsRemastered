@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-
     public int scoreToSpawnObject = 50;
     public Sprite[] numberSprites;
 
@@ -36,6 +35,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Color WaitingColor;
     public Color GetWaitingColor => WaitingColor;
 
+    [SerializeField] private AudioClip clip; 
+
     private void Start()
     {
         for (int i = 0; i < digitTransforms.Length; i++)
@@ -46,13 +47,13 @@ public class GameManager : Singleton<GameManager>
                 digitRenderer.enabled = (i == 0);
             }
         }
-
-        UpdateScore(0);
+        AudioCallBack.self.PlayMusic(AudioType.Crowd,1f);
+        UpdateNumberSprite();
     }
     public void UpdateScore(Int32 amount)
     {
         score += amount;
-
+        AudioSource.PlayClipAtPoint(clip,Camera.main.transform.position,0.3f);
         if (score % 50 == 0 && score != 0)
         {
             PowerUpManager.self.SpawnHealth();

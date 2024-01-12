@@ -49,7 +49,6 @@ public class CarFollowPath : MonoBehaviour
     [Header("ColorOutline")]
     public Color color;
     private Outline outlineScript;
-
     #region Initialize
     public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data, float wait_time = 0, int score = 1)
     {
