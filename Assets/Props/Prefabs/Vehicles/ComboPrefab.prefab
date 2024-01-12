@@ -3018,6 +3018,8 @@ MonoBehaviour:
   ChangeColor: 1
   shrink_on: 0
   collision_effect: {fileID: 67986472050160416}
+  carAnimation: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &5950046246915766734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,6 +3864,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 72
   color: {r: 0, g: 0, b: 0, a: 0}
+  combo_txt: {fileID: 0}
 --- !u!114 &6288083586274362485
 MonoBehaviour:
   m_ObjectHideFlags: 0
