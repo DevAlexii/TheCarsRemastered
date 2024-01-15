@@ -1,6 +1,8 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -48,7 +50,9 @@ public class GameManager : Singleton<GameManager>
             }
         }
         AudioCallBack.self.PlayMusic(AudioType.Crowd,1f);
+
         UpdateNumberSprite();
+        txt_GameOver.gameObject.SetActive(false);   
     }
     public void UpdateScore(Int32 amount)
     {
@@ -156,17 +160,22 @@ public class GameManager : Singleton<GameManager>
             n_life--;
         }
     }
+
+    public TextMeshProUGUI txt_GameOver;
+
     public void E_GameOver()
     {
         //ToDo
-        CustomLibrary.SetGlobalTimeDilation(1);
+        CustomLibrary.SetGlobalTimeDilation(1f);
         doOnce = false;
-
-
-
-        //ForDebugCall
+        txt_GameOver.gameObject.SetActive(true);
+        Invoke(nameof(ReloadLevel), 2f);
+    }
+    public void ReloadLevel()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
 }
 
 
