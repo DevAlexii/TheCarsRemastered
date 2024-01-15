@@ -1849,7 +1849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &526527192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3310,7 +3310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &886387804
 Transform:
   m_ObjectHideFlags: 0
@@ -4018,6 +4018,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rainfx
       objectReference: {fileID: 0}
+    - target: {fileID: 7432271455557743814, guid: bef03dc7478ada647b328890a276f699,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4040,7 +4045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1043183141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4608,7 +4613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086633671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6254,7 +6259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1408048649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7336,6 +7341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: map1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439598304126503545, guid: 15eeaad24f9b48c4e8598ef189588c79,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3599561620481645953, guid: 15eeaad24f9b48c4e8598ef189588c79,
         type: 3}
@@ -8662,8 +8672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 200}
+  m_AnchoredPosition: {x: 26, y: 54}
+  m_SizeDelta: {x: 619.14, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1622711241
 MonoBehaviour:
@@ -8715,10 +8725,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.8
-  m_fontSizeBase: 36
+  m_fontSize: 149.3
+  m_fontSizeBase: 149.3
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -10188,7 +10198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1921532805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11484,7 +11494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2003472222215505909
 GameObject:
   m_ObjectHideFlags: 0

@@ -57,7 +57,7 @@ public class GameManager : Singleton<GameManager>
     public void UpdateScore(Int32 amount)
     {
         score += amount;
-        AudioSource.PlayClipAtPoint(clip,Camera.main.transform.position,0.3f);
+        AudioSource.PlayClipAtPoint(clip,Camera.main.transform.position,0.1f);
         if (score % 50 == 0 && score != 0)
         {
             PowerUpManager.self.SpawnHealth();
