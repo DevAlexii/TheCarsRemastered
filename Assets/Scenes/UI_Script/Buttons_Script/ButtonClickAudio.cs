@@ -3,7 +3,6 @@ using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
 public class ButtonClickAudio : ButtonClickParent
 {
     [SerializeField] AudioMixer audioMixed_;

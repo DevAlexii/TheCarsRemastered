@@ -1642,7 +1642,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 59be61d0278b7414bb275cf629a13267, type: 3}
   - {fileID: 8300000, guid: a0d7654cf5a1267479c25adc702ce69d, type: 3}
   - {fileID: 8300000, guid: 20a9abf579552c2479a9902e04b74f43, type: 3}
-  audioTypes: 000000000200000003000000040000000500000006000000
+  - {fileID: 8300000, guid: 90522a80d46daf8419dccb43dbb7f7b0, type: 3}
+  audioTypes: 00000000020000000300000004000000050000000600000007000000
   SFX_audioSource: {fileID: 1769023652}
   Music_audioSource: {fileID: 2123901210}
   audioMixer: {fileID: 24100000, guid: a716baf3afdf56a4abd51755d21e1932, type: 2}
@@ -3310,7 +3311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &886387804
 Transform:
   m_ObjectHideFlags: 0
@@ -3680,7 +3681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &943359118
 Transform:
   m_ObjectHideFlags: 0
@@ -4021,7 +4022,7 @@ PrefabInstance:
     - target: {fileID: 7432271455557743814, guid: bef03dc7478ada647b328890a276f699,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4613,7 +4614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1086633671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6777,7 +6778,6 @@ MonoBehaviour:
   Start_Outline_Color: {r: 0.15686275, g: 0.27058825, b: 0.4, a: 1}
   crashed_color: {r: 0, g: 1, b: 0.06951809, a: 1}
   WaitingColor: {r: 1, g: 0, b: 0, a: 1}
-  clip: {fileID: 8300000, guid: 20a9abf579552c2479a9902e04b74f43, type: 3}
   difficulty: 50
   hook_component: {fileID: 1470568843}
   txt_GameOver: {fileID: 1622711241}
@@ -7017,6 +7017,12 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 145931412821809267, guid: 15eeaad24f9b48c4e8598ef189588c79,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[4]'
+      value: 
+      objectReference: {fileID: -4603717263377653345, guid: b362cca64d7b1234eb6b30f3a6cf31fb,
+        type: 3}
     - target: {fileID: 173065439802265914, guid: 15eeaad24f9b48c4e8598ef189588c79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7487,6 +7493,12 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 4929440857394619100, guid: 15eeaad24f9b48c4e8598ef189588c79,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[4]'
+      value: 
+      objectReference: {fileID: -4603717263377653345, guid: b362cca64d7b1234eb6b30f3a6cf31fb,
+        type: 3}
     - target: {fileID: 4949978217133386469, guid: 15eeaad24f9b48c4e8598ef189588c79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9344,10 +9356,11 @@ AudioSource:
   m_GameObject: {fileID: 1769023650}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: a716baf3afdf56a4abd51755d21e1932,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.683
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10198,7 +10211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1921532805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11494,7 +11507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2003472222215505909
 GameObject:
   m_ObjectHideFlags: 0

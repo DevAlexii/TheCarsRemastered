@@ -10,13 +10,14 @@ public class AudioCallBack : Singleton<AudioCallBack>
     [SerializeField] public List<AudioClip> audioClips;
     [SerializeField] public List<AudioType> audioTypes;
 
-    [SerializeField] private AudioSource SFX_audioSource;
-    [SerializeField] private AudioSource Music_audioSource;
+    [SerializeField] public AudioSource SFX_audioSource;
+    [SerializeField] public AudioSource Music_audioSource;
     private Dictionary<AudioType, AudioClip> audioClipDictionary = new Dictionary<AudioType, AudioClip>();
 
-    [SerializeField] AudioMixer audioMixer;
+    [SerializeField] public  AudioMixer audioMixer;
     private void Start()
     {
+        PlayAudio(AudioType.Crowd, 1f);
         if (audioClips.Count != audioTypes.Count)
         {
             return;
@@ -54,9 +55,6 @@ public class AudioCallBack : Singleton<AudioCallBack>
             Debug.LogWarning("AudioType not found " + audioType);
         }
     }
-
-
-
     //Se vogliamo mettere audio ambientali crows ecc usiamo questo
     private float elapsedTime = 0.0f;
     public void AmbientVolume(float startVolume,float targetVolume,float duration)

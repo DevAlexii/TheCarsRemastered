@@ -28,9 +28,6 @@ public class Car_Core : MonoBehaviour, I_Interface
     public GameObject collision_effect;
     [SerializeField] private Animation carAnimation;
 
-    public AudioClip clip;
-
-
     #region Initialized
     public void OnInitializedCar(Path newPath, int arrow_index, CarInfo data, bool isKamikaze = false, bool has_to_be_invisible = false, float wait_time = 0, int score = 1)
     {
@@ -221,7 +218,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         if (carAnimation != null)
         {
             carAnimation.Play();
-            AudioSource.PlayClipAtPoint(clip,Camera.main.transform.position,0.5f);
+            AudioCallBack.self.PlayAudio(AudioType.PopCar,1f);
         }
         StopCoroutine(CarClickerAnimation());
     }

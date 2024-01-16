@@ -37,8 +37,6 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Color WaitingColor;
     public Color GetWaitingColor => WaitingColor;
 
-    [SerializeField] private AudioClip clip; 
-
     private void Start()
     {
         for (int i = 0; i < digitTransforms.Length; i++)
@@ -49,15 +47,13 @@ public class GameManager : Singleton<GameManager>
                 digitRenderer.enabled = (i == 0);
             }
         }
-        AudioCallBack.self.PlayMusic(AudioType.Crowd,1f);
-
         UpdateNumberSprite();
         txt_GameOver.gameObject.SetActive(false);   
     }
     public void UpdateScore(Int32 amount)
     {
         score += amount;
-        AudioSource.PlayClipAtPoint(clip,Camera.main.transform.position,0.1f);
+        AudioCallBack.self.PlayAudio(AudioType.Score,1f);
         if (score % 50 == 0 && score != 0)
         {
             PowerUpManager.self.SpawnHealth();
