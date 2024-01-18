@@ -44,7 +44,7 @@ public class ButtonClickgraphic : ButtonClickParent
             QualitySettings.renderPipeline = defaultRenderPipelineAsset;
             global.profile = volumeLow;
             graphic_TXT.text = " LOW";
-            day_night.time_cycle_activate = false;
+            //day_night.time_cycle_activate = false;
         }
         else
         {
