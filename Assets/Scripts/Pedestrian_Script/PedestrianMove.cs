@@ -97,14 +97,20 @@ public class PedestrianMove : MonoBehaviour
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
-            PedestrianSpawn.self.currentPedestrians--;
-            rb.isKinematic = false;
             rb.AddForce(collider.gameObject.transform.forward * 300f + Vector3.up * 4);
-            rb.excludeLayers = GameManager.self.layer_to_exclude;
-            GetComponent<Collider>().isTrigger = false;
-            path = null;
-            size_curve = SizeAnimationEditor.self.Size_curve;
-            afterCollisionDeadTimer = SizeAnimationEditor.self.Time;
+            OnDead();
         }
+    }
+
+    void OnDead()
+    {
+        PedestrianSpawn.self.currentPedestrians--;
+        rb.isKinematic = false;
+        rb.excludeLayers = GameManager.self.layer_to_exclude;
+        GetComponent<Collider>().isTrigger = false;
+        path = null;
+        GetComponentInChildren<Animation>().Stop();
+        size_curve = SizeAnimationEditor.self.Size_curve;
+        afterCollisionDeadTimer = SizeAnimationEditor.self.Time;
     }
 }
