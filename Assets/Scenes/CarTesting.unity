@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18002036, g: 0.22539532, b: 0.3067572, a: 1}
+  m_IndirectSpecularColor: {r: 0.18002054, g: 0.22539575, b: 0.30675787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -798,6 +798,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 187564263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &238086888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3439598304126503545, guid: 15eeaad24f9b48c4e8598ef189588c79,
+    type: 3}
+  m_PrefabInstance: {fileID: 1526637497}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &238086890
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238086888}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91825bf1f5458aa4cb53fc6ff3a391c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &247098639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1671,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a0d7654cf5a1267479c25adc702ce69d, type: 3}
   - {fileID: 8300000, guid: 20a9abf579552c2479a9902e04b74f43, type: 3}
   - {fileID: 8300000, guid: 90522a80d46daf8419dccb43dbb7f7b0, type: 3}
-  audioTypes: 00000000020000000300000004000000050000000600000007000000
+  - {fileID: 8300000, guid: db9557305bec46a42a693f5b55107c18, type: 3}
+  audioClip: []
+  audioTypes: 0000000002000000030000000400000005000000060000000700000008000000
   SFX_audioSource: {fileID: 1769023652}
   Music_audioSource: {fileID: 2123901210}
   audioMixer: {fileID: 24100000, guid: a716baf3afdf56a4abd51755d21e1932, type: 2}
@@ -7847,7 +7877,11 @@ PrefabInstance:
         type: 3}
       insertIndex: 135
       addedObject: {fileID: 7792539378717982963}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3439598304126503545, guid: 15eeaad24f9b48c4e8598ef189588c79,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238086890}
   m_SourcePrefab: {fileID: 100100000, guid: 15eeaad24f9b48c4e8598ef189588c79, type: 3}
 --- !u!1 &1530732655
 GameObject:
@@ -11112,7 +11146,7 @@ MonoBehaviour:
       - {fileID: 1209747632}
   timer_to_spawn_car: 1
   max_car_in_scene: 20
-  percentage_to_be_kamikaze: 0
+  percentage_to_be_kamikaze: 10
   timer_curve:
     serializedVersion: 2
     m_Curve:

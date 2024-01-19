@@ -120,43 +120,38 @@ public class Car_Manager : Singleton<Car_Manager>
         Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
         int random_path = Random.Range(0, 2);
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
-        //bool isKamikaze = true;
+        bool isKamikaze = true;
         int arrow_index = -1;
 
-        //if (isComboCar)
-        //{
-        //    isKamikaze = false;
-        //}
-        //else
-        //{
-        if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto 
+
+
+        if (spawn_combo)
         {
-            arrow_index = 0;
-            //isKamikaze = false;
+            isKamikaze = false;
         }
-        else if (randomPoint == Point.Right && random_path == 0)
+        else
         {
-            arrow_index = 1;
-            //isKamikaze = false;
+            if (randomPoint == Point.Left && random_path == 0)// 0 = per non andare dritto 
+            {
+                arrow_index = 0;
+                isKamikaze = false;
+            }
+            else if (randomPoint == Point.Right && random_path == 0)
+            {
+                arrow_index = 1;
+                isKamikaze = false;
+            }
         }
-        //}
+
 
         CarInfo data = null;
-        //if (isKamikaze)
-        //{
-        //    isKamikaze = CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
-        //}
-        //if (isKamikaze)
-        //{
-        //    data = CarInfosRef.self.GetKamikazeInfo;
-        //}
-        //else
-        //{
-
-        //}
-        if (comboCount > 0 && spawn_combo)
+        if (isKamikaze)
         {
-            HandleComboSpawn();
+            isKamikaze = CustomLibrary.RandomBoolInPercentage(percentage_to_be_kamikaze);
+        }
+        if (isKamikaze)
+        {
+            data = CarInfosRef.self.GetKamikazeInfo;
         }
         else
         {
@@ -184,27 +179,42 @@ public class Car_Manager : Singleton<Car_Manager>
 
             data = CarInfos[random_key][random_value];
 
-            GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, false /*isKamikaze*/, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
-            spawned_car.Add(car);
         }
+
+        if (comboCount > 0 && spawn_combo)
+        {
+            HandleComboSpawn();
+        }
+        else
+        {
+            GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
+            spawned_car.Add(car);
+            if (isKamikaze)
+            {
+                AudioCallBack.self.PlayAudio(AudioType.ToothMeme, 1f);
+            }
+        }
+
+
+
     }
     public void HandleComboSpawn()
     {
         //if (lastComboCarSpawned == null)
         //{
-            int comboType = comboCount / combo_num;
+        int comboType = comboCount / combo_num;
 
-            Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
-            Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
-            int random_path = Random.Range(0, 2);
-            Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
-            GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on, car_wait_timer_curve.Evaluate(start_count), comboType + 1);
-            spawned_car.Add(comboCar);
-            lastComboCarSpawned = comboCar;
-            comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
-            spawn_combo = false;
+        Direction randomDirection = (Direction)Random.Range(0, (int)Direction.Last);
+        Point randomPoint = (Point)Random.Range(0, (int)Point.Last);
+        int random_path = Random.Range(0, 2);
+        Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
+        GameObject comboCar = Instantiate(combo25Prefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
+        comboCar.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, -1, CarInfos[CarType.BaseCar][0], false, invisibility_on, car_wait_timer_curve.Evaluate(start_count), comboType + 1);
+        spawned_car.Add(comboCar);
+        lastComboCarSpawned = comboCar;
+        comboCar.GetComponent<CarComboSetup>().ActivateCars(comboType);
+        spawn_combo = false;
         //}
     }
     public void Increment_score_count(bool increment = true)
