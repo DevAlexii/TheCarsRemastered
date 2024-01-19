@@ -1671,9 +1671,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a0d7654cf5a1267479c25adc702ce69d, type: 3}
   - {fileID: 8300000, guid: 20a9abf579552c2479a9902e04b74f43, type: 3}
   - {fileID: 8300000, guid: 90522a80d46daf8419dccb43dbb7f7b0, type: 3}
+  - {fileID: 0}
   - {fileID: 8300000, guid: db9557305bec46a42a693f5b55107c18, type: 3}
-  audioClip: []
-  audioTypes: 0000000002000000030000000400000005000000060000000700000008000000
+  - {fileID: 8300000, guid: 3f010acb3b31c904dbbb9f47ae934342, type: 3}
+  audioTypes: 0000000002000000030000000400000005000000060000000700000008000000090000000a000000
   SFX_audioSource: {fileID: 1769023652}
   Music_audioSource: {fileID: 2123901210}
   audioMixer: {fileID: 24100000, guid: a716baf3afdf56a4abd51755d21e1932, type: 2}
@@ -11146,7 +11147,7 @@ MonoBehaviour:
       - {fileID: 1209747632}
   timer_to_spawn_car: 1
   max_car_in_scene: 20
-  percentage_to_be_kamikaze: 10
+  percentage_to_be_kamikaze: 100
   timer_curve:
     serializedVersion: 2
     m_Curve:

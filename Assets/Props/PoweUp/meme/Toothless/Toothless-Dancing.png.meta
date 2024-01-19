@@ -1,0 +1,3560 @@
+fileFormatVersion: 2
+guid: f25197ed3051ebc448e7b8c8471392f3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Toothless-Dancing_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2e0016d884c0545b6f87116f2040e2
+      internalID: 1289665291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cdd51f8097e6141a93f4feaf058933
+      internalID: 1162330985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_2
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cdd5c15fde3b94fa63db5406a79431
+      internalID: 1424849745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_3
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb78dd7fe5c868243806c8b15754da74
+      internalID: 1072470954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_4
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a02531c05579d844a890171bc29d320
+      internalID: -1637725688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39690250f4cb9ac4c993adaabc001bb5
+      internalID: -342953409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_6
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 7560
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571c28878f03ef348ab3f4d43f6f7aed
+      internalID: 114622794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad71af7c6abdad4aae3d4e9f4f01bf4
+      internalID: -985524887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_8
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23754647da437964888025e1b8222346
+      internalID: 958540380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_9
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115f31cb43042a4dabaabb970ae3ed4
+      internalID: -1377914372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_10
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5338f40c176ccd54b93cf3d43aa36fac
+      internalID: -1976033732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_11
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9f412e0d750c1478229725e339012d
+      internalID: -1629816998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa82c5c5ceb4664db5441ccfb5bf513
+      internalID: -1148739566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_13
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 7200
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e4c634aa48ab4418700e33d529405d
+      internalID: 252704853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f793b5fa9bec37648916d389cfd70721
+      internalID: -1969972626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_15
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c99f68ed102e449bb80fec4fcbcb10
+      internalID: 635052396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_16
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55aef007613612469a6d99b96edf3e4
+      internalID: 971482489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_17
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403cab5c77f8b5a4697d533bf5b88897
+      internalID: 609543778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_18
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69eca6f48b57b9f47a309efb8d9c3548
+      internalID: -1305306387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8376c40e9a36e2b478920ae846112b4d
+      internalID: 1770922262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_20
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 6840
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2455b6ac33f1d469e82414de92928e
+      internalID: 548095561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725b279782f9dcf40abed8b01ff3ab83
+      internalID: -804982950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_22
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f3451fc57ab2a41bac382510c2bf16
+      internalID: -1167016840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_23
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638fa3184c13b6342a1138f755158ce2
+      internalID: 1075147781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_24
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2157a0aa3a1457d4a874ca90beec0ff7
+      internalID: -131928104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_25
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963938f4b52841643a6753be769b4f72
+      internalID: -1538102922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33efb558c05982f42836855f55bd1ee3
+      internalID: 580610412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_27
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 6480
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4856f049259ab4bb2ca9a211c4887a
+      internalID: -250212248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_28
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a369eb8ad1d9f3f4f97ef5e089a81c1d
+      internalID: 1256849044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_29
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa248807e7f1b994aba3a01154e4720a
+      internalID: 561084834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_30
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f90708aca130c8489e845b85094d3e9
+      internalID: -530139772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_31
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710a9bf3a29419a4eb5208c07f22b1b3
+      internalID: -298706336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_32
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af50c112aa62a54698e2383513c97c8
+      internalID: 521795671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a310a92cb8d586c45b47393e8504ad4e
+      internalID: 1569967752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_34
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 6120
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebef1d8cae01d74faed85da1f0b6ddf
+      internalID: 1638445503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a4968e93221ce429372fa63d67a3a9
+      internalID: 1719510857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_36
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce5890d7702f3c4eb0810dc02e45e6e
+      internalID: 1945016165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_37
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5833645fa6e9f4d91436e1595151f6
+      internalID: 941245972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_38
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c53a159c5cd814f8ca389312d3dc88
+      internalID: -171456033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_39
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36da042159cd7e64e999fc1a668bb497
+      internalID: -1916529790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652a8aa6f8ad2db44a2c263f60ac02ca
+      internalID: 294999011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_41
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 5760
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52fb118565988a47af164cbc196ad21
+      internalID: -1689291524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_42
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0ea53fadeb5b34dbe3fa3c8f26943b
+      internalID: 212407153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_43
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01e4c29cd8a6374bb5b54d621c27b27
+      internalID: 39945486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_44
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf7a5d48e463ba4bb6730736791f8b1
+      internalID: 1984560291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_45
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bb7725bda252f45b0b099d398bf2dc
+      internalID: -1460693224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_46
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b852b7cc05189604a9346ab3594130db
+      internalID: 1017339552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675a2633cabcce94eadf4ae95720a9c7
+      internalID: 2044438721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_48
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 5400
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59311eca2017f1e4db029e322950abfc
+      internalID: 1547492560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_49
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e208156a22c33340a528e8a7fb6b2fa
+      internalID: 979848878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_50
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7ea60655479154f8834acd4c231760
+      internalID: 51159235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_51
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fad614119e55604d9fd7c6e14df4f18
+      internalID: -485151294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_52
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1ab2735407f234585201eed401e144
+      internalID: 732104127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_53
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc11b30fe02de647bef09a6fd3cb0ee
+      internalID: 405012368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_54
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d1e5ccdd883b44fb9aaacdd2ec6b36
+      internalID: -1578498557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_55
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 5040
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc21ecb9817ef14fb158a5259189e85
+      internalID: 1919648045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_56
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271824c4b038cdd4badc79896aee1314
+      internalID: 2058534408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_57
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f80d2eeaa96264e8a5f8493711b9d6
+      internalID: -2046879417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_58
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f5acef952238b47af9443b78787ca2
+      internalID: 341806177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_59
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52464f92a034c3469352383789d3b8d
+      internalID: -1347660503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_60
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2c471289f91ac41abffb7c191afda2
+      internalID: -824664575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_61
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fe659bf81556c468eb6bf76d651719
+      internalID: 982077806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_62
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 4680
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb54c4b861e4025438fc9f4a61fa8741
+      internalID: 881049483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_63
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96763ab3cfab2f45b963eca73bae258
+      internalID: -391838465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_64
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09119b92d8f6b0e47ae88372792fce38
+      internalID: 420259601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_65
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6525d2ec3f2dd14782d6a0104ed98ba
+      internalID: -1620633424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_66
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84cc995a5cae1e459412903b31b703f
+      internalID: -1883816497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_67
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816b3ea431abe604198ab16e98906533
+      internalID: -108885329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_68
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30207c8ccfc7ee4fbc56c81996775a4
+      internalID: 932903840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_69
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 4320
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ed55e0c39807b45a607b3d5a7565a9
+      internalID: -1940781510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_70
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc29bf9c9c9ea4d45bb46b113b29e527
+      internalID: -1653862878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_71
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b51ede3b58c9e34dbcdcc50dfacc37d
+      internalID: 584898576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_72
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b77d165de2b9446ae9b38991bf369e
+      internalID: 175835129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_73
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01dbb777a8583f4eab6d116133107c0
+      internalID: -2106254113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_74
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7b9c2b5af934b4e99e05d2d0d0866d
+      internalID: 260484335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_75
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c816a0545e97f3748b1c110c041baf51
+      internalID: 2084693561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_76
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 3960
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9d382a3442ec245880b6b95f478263
+      internalID: 1162272669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_77
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7275ea9383bfcb04485eb0da16cc9f5f
+      internalID: -1676321818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_78
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eb177e289c6934aa732ab1f495b18a
+      internalID: 1604678076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_79
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c78fceb36e227343a48d6c7b48be74e
+      internalID: -1454175049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_80
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ebe6df3937c0478596b531aebe332
+      internalID: 1192505030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_81
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98df659692e0d240bf28996ad7cc829
+      internalID: -1910611429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_82
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa64f09063a41764097a41f2a092b336
+      internalID: 33299214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_83
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 3600
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2ccc854f68ca342b3385385b19c018
+      internalID: 1910794243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_84
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c74dcdfea21244d855e94080ffaee0
+      internalID: -1387895154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_85
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c873e7f4139c342a73e0573a9f332c
+      internalID: -529911202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_86
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1718c9db3d55c6847a53443336cc57ef
+      internalID: -1911413474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_87
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07071c81b0150541891062c7bf4c812
+      internalID: 968904056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_88
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8158bc2cc9b97c64897cb4cbc188fb1f
+      internalID: -447806400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_89
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad63f69c6104ec1429c2314c3ab2e732
+      internalID: 1326569677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_90
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 3240
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c496eec2c2a25544592fbdbb60b30c8f
+      internalID: 1928812263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_91
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b846e8657e403e40af21468990ec7c7
+      internalID: 410487255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e077e056c8dab3c4b8f64b0147de0685
+      internalID: 1903012305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_93
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f8422ab2d37d04f84f6afc3da034d5
+      internalID: -1466844994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_94
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65c95c8777d26d41890e19b85723ae6
+      internalID: -1013538194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_95
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042f005c4e55fc5448c634b4fde89669
+      internalID: -1405126065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_96
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eff5a3c2295fc240a7c1f79fd612083
+      internalID: -2100157928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_97
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 2880
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bff1f7e3fded1418aa64e960936e48
+      internalID: 2117089416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_98
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a704a605a6b261a4fa272cc6f0cae164
+      internalID: -118227612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_99
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652787cca72903f4d9952f245d7cc7c8
+      internalID: -1694023200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_100
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd265451aab6504cbaecae6ecec7899
+      internalID: -1660964150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_101
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de124470a90f7d45aa925ae86abf0f4
+      internalID: -1006518448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_102
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eef682ec2d292f409138e03de08e357
+      internalID: -1118945169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_103
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcadfe9ce65e11945a8073d2c8116462
+      internalID: -63157276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_104
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 2520
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50aa7a3b844649240b6c0684c4c775f5
+      internalID: 1293716685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_105
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624a5700573656f49afbbda2a7f7fa33
+      internalID: 1617359876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_106
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c50e588ba43c642a95e2f637327391
+      internalID: -1517603146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_107
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c228216538b2d74893f66aae9cd2120
+      internalID: -449124955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_108
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c485bb4fdedad4a847fa18d313ff19
+      internalID: 2102169579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_109
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e547f51b2c4efb143954a5f8be3cbd89
+      internalID: -584600816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_110
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a972c4b3dfa43d4f8584415d36e2448
+      internalID: 1294943085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_111
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 2160
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c1b6e910b079b45b918f42647fa5d0
+      internalID: 1698676264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_112
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dffe92824c631447b7f381b368020ec
+      internalID: -1515263241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_113
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f414ba4b15a6af1499bb1427ec9a4c6c
+      internalID: -238966311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_114
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2ec62ea1b027046997a43b8ebc8a17
+      internalID: 1018913469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_115
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d78f0a081fcd44d9b524332d02bc21
+      internalID: 1295476580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_116
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e22b899eec204d93f7391a6125d3d
+      internalID: 2108155620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_117
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a27fda904c143446affb9ddbb0625c4
+      internalID: -496656833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_118
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1800
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41b7391b41796a409137a2b270967a5
+      internalID: 1474642515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_119
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba223dcfc1e36c46946bd47425fc17e
+      internalID: -2103822572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_120
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b000811ac529b0549bc759d695549cbf
+      internalID: -1625820689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_121
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440d597048bab9f448b78c97a794edf2
+      internalID: 1788506462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_122
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6486c55ec9c824fbc61da81f868ec7
+      internalID: -874302621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_123
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59cb70ef728c4e4eb6ea85b1c824d0e
+      internalID: 1916328414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_124
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9442b8c45cba4184b8e240f2129d6547
+      internalID: -518083362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_125
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1440
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b911e097ef9584999948fc6dba564b
+      internalID: -857621905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_126
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc2eb16685caae4c8bfc7e24a75b0c8
+      internalID: 1334767411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_127
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2676fce76eb1323418a0dbd10e2bd743
+      internalID: -1510186135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_128
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ae9454665e09e408fa3b208b11343a
+      internalID: 1750858835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_129
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9690da480ffc60440920924c4d72c0ad
+      internalID: 1270819689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_130
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d560dcbacee8514e86fe0a57dd4dbc7
+      internalID: -241393922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_131
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82417bb2aa6de794c95d778ffc28b02f
+      internalID: -318103135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_132
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1080
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71721513971fc3498d5a849ad7a07d0
+      internalID: -640895381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_133
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792cc03f33d8b6b4399273cdac58f846
+      internalID: -1307515419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_134
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f879d9b6c2374479424b0bcc250cb3
+      internalID: 697294122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_135
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ff3d67d0ca68044b61810aaa0d0da3
+      internalID: 1856181212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_136
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919843398720e38468a0ded5ad60c8ca
+      internalID: -33632183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_137
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab98d8837a53c74bb3f3dbfe5be5d8e
+      internalID: -1805474042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_138
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0225e4f19f2529741845bf65042f4cdd
+      internalID: 1183418868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_139
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 720
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05428509af689a34db9bdcbaf8a55455
+      internalID: -1039398180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_140
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8bbf0a0e115c8429a09107d950100e
+      internalID: 481172715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_141
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0b09cba70c56440a61a53c3e875b2c
+      internalID: 552147290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_142
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1651cf25043634c853ad5d1bd3a3a7
+      internalID: -498744703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_143
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d70a5138766814093d728dd5c2b5ae
+      internalID: -141902984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_144
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2aea18132f6eb4ab88e3e348ceb685
+      internalID: 1465898395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_145
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a380f28291f0b748a49acb924fe9cb1
+      internalID: -1473359897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_146
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 360
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90a6c311af70b74182a3b71a3e78de5
+      internalID: 726250738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_147
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91492390f641264fa4b87516faf6ea0
+      internalID: 2056405905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_148
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55a1284f58f0554c81cbe73e9f201fc
+      internalID: 2142229442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_149
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 9, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e60f5988d061a4e989b426403a4e50
+      internalID: 532884996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_150
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ac796f66eac6e44a3592cc1b0b9710
+      internalID: -1343545545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_151
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a731476727e5cb4d91971ecfa3b9ab3
+      internalID: -823534559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_152
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82dc1f5ba8028949974ce27dbd8e5fe
+      internalID: 1429145248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toothless-Dancing_153
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 0
+        width: 638.5714
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09692abeb10e6d041a142668878297dd
+      internalID: -995949202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Toothless-Dancing_0: 1289665291
+      Toothless-Dancing_1: 1162330985
+      Toothless-Dancing_10: -1976033732
+      Toothless-Dancing_100: -1660964150
+      Toothless-Dancing_101: -1006518448
+      Toothless-Dancing_102: -1118945169
+      Toothless-Dancing_103: -63157276
+      Toothless-Dancing_104: 1293716685
+      Toothless-Dancing_105: 1617359876
+      Toothless-Dancing_106: -1517603146
+      Toothless-Dancing_107: -449124955
+      Toothless-Dancing_108: 2102169579
+      Toothless-Dancing_109: -584600816
+      Toothless-Dancing_11: -1629816998
+      Toothless-Dancing_110: 1294943085
+      Toothless-Dancing_111: 1698676264
+      Toothless-Dancing_112: -1515263241
+      Toothless-Dancing_113: -238966311
+      Toothless-Dancing_114: 1018913469
+      Toothless-Dancing_115: 1295476580
+      Toothless-Dancing_116: 2108155620
+      Toothless-Dancing_117: -496656833
+      Toothless-Dancing_118: 1474642515
+      Toothless-Dancing_119: -2103822572
+      Toothless-Dancing_12: -1148739566
+      Toothless-Dancing_120: -1625820689
+      Toothless-Dancing_121: 1788506462
+      Toothless-Dancing_122: -874302621
+      Toothless-Dancing_123: 1916328414
+      Toothless-Dancing_124: -518083362
+      Toothless-Dancing_125: -857621905
+      Toothless-Dancing_126: 1334767411
+      Toothless-Dancing_127: -1510186135
+      Toothless-Dancing_128: 1750858835
+      Toothless-Dancing_129: 1270819689
+      Toothless-Dancing_13: 252704853
+      Toothless-Dancing_130: -241393922
+      Toothless-Dancing_131: -318103135
+      Toothless-Dancing_132: -640895381
+      Toothless-Dancing_133: -1307515419
+      Toothless-Dancing_134: 697294122
+      Toothless-Dancing_135: 1856181212
+      Toothless-Dancing_136: -33632183
+      Toothless-Dancing_137: -1805474042
+      Toothless-Dancing_138: 1183418868
+      Toothless-Dancing_139: -1039398180
+      Toothless-Dancing_14: -1969972626
+      Toothless-Dancing_140: 481172715
+      Toothless-Dancing_141: 552147290
+      Toothless-Dancing_142: -498744703
+      Toothless-Dancing_143: -141902984
+      Toothless-Dancing_144: 1465898395
+      Toothless-Dancing_145: -1473359897
+      Toothless-Dancing_146: 726250738
+      Toothless-Dancing_147: 2056405905
+      Toothless-Dancing_148: 2142229442
+      Toothless-Dancing_149: 532884996
+      Toothless-Dancing_15: 635052396
+      Toothless-Dancing_150: -1343545545
+      Toothless-Dancing_151: -823534559
+      Toothless-Dancing_152: 1429145248
+      Toothless-Dancing_153: -995949202
+      Toothless-Dancing_16: 971482489
+      Toothless-Dancing_17: 609543778
+      Toothless-Dancing_18: -1305306387
+      Toothless-Dancing_19: 1770922262
+      Toothless-Dancing_2: 1424849745
+      Toothless-Dancing_20: 548095561
+      Toothless-Dancing_21: -804982950
+      Toothless-Dancing_22: -1167016840
+      Toothless-Dancing_23: 1075147781
+      Toothless-Dancing_24: -131928104
+      Toothless-Dancing_25: -1538102922
+      Toothless-Dancing_26: 580610412
+      Toothless-Dancing_27: -250212248
+      Toothless-Dancing_28: 1256849044
+      Toothless-Dancing_29: 561084834
+      Toothless-Dancing_3: 1072470954
+      Toothless-Dancing_30: -530139772
+      Toothless-Dancing_31: -298706336
+      Toothless-Dancing_32: 521795671
+      Toothless-Dancing_33: 1569967752
+      Toothless-Dancing_34: 1638445503
+      Toothless-Dancing_35: 1719510857
+      Toothless-Dancing_36: 1945016165
+      Toothless-Dancing_37: 941245972
+      Toothless-Dancing_38: -171456033
+      Toothless-Dancing_39: -1916529790
+      Toothless-Dancing_4: -1637725688
+      Toothless-Dancing_40: 294999011
+      Toothless-Dancing_41: -1689291524
+      Toothless-Dancing_42: 212407153
+      Toothless-Dancing_43: 39945486
+      Toothless-Dancing_44: 1984560291
+      Toothless-Dancing_45: -1460693224
+      Toothless-Dancing_46: 1017339552
+      Toothless-Dancing_47: 2044438721
+      Toothless-Dancing_48: 1547492560
+      Toothless-Dancing_49: 979848878
+      Toothless-Dancing_5: -342953409
+      Toothless-Dancing_50: 51159235
+      Toothless-Dancing_51: -485151294
+      Toothless-Dancing_52: 732104127
+      Toothless-Dancing_53: 405012368
+      Toothless-Dancing_54: -1578498557
+      Toothless-Dancing_55: 1919648045
+      Toothless-Dancing_56: 2058534408
+      Toothless-Dancing_57: -2046879417
+      Toothless-Dancing_58: 341806177
+      Toothless-Dancing_59: -1347660503
+      Toothless-Dancing_6: 114622794
+      Toothless-Dancing_60: -824664575
+      Toothless-Dancing_61: 982077806
+      Toothless-Dancing_62: 881049483
+      Toothless-Dancing_63: -391838465
+      Toothless-Dancing_64: 420259601
+      Toothless-Dancing_65: -1620633424
+      Toothless-Dancing_66: -1883816497
+      Toothless-Dancing_67: -108885329
+      Toothless-Dancing_68: 932903840
+      Toothless-Dancing_69: -1940781510
+      Toothless-Dancing_7: -985524887
+      Toothless-Dancing_70: -1653862878
+      Toothless-Dancing_71: 584898576
+      Toothless-Dancing_72: 175835129
+      Toothless-Dancing_73: -2106254113
+      Toothless-Dancing_74: 260484335
+      Toothless-Dancing_75: 2084693561
+      Toothless-Dancing_76: 1162272669
+      Toothless-Dancing_77: -1676321818
+      Toothless-Dancing_78: 1604678076
+      Toothless-Dancing_79: -1454175049
+      Toothless-Dancing_8: 958540380
+      Toothless-Dancing_80: 1192505030
+      Toothless-Dancing_81: -1910611429
+      Toothless-Dancing_82: 33299214
+      Toothless-Dancing_83: 1910794243
+      Toothless-Dancing_84: -1387895154
+      Toothless-Dancing_85: -529911202
+      Toothless-Dancing_86: -1911413474
+      Toothless-Dancing_87: 968904056
+      Toothless-Dancing_88: -447806400
+      Toothless-Dancing_89: 1326569677
+      Toothless-Dancing_9: -1377914372
+      Toothless-Dancing_90: 1928812263
+      Toothless-Dancing_91: 410487255
+      Toothless-Dancing_92: 1903012305
+      Toothless-Dancing_93: -1466844994
+      Toothless-Dancing_94: -1013538194
+      Toothless-Dancing_95: -1405126065
+      Toothless-Dancing_96: -2100157928
+      Toothless-Dancing_97: 2117089416
+      Toothless-Dancing_98: -118227612
+      Toothless-Dancing_99: -1694023200
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -40,6 +40,16 @@ public class Car_Core : MonoBehaviour, I_Interface
         RandomColor();
         start_materials = GetComponent<MeshRenderer>().materials;
 
+        if (isKamikaze)
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+
+            //for (int i = 0; i < wheels.Count; i++)
+            //{
+            //    wheels[i].GetComponent<MeshRenderer>().enabled = false;
+            //}
+
+        }
     }
     private void RandomModel(CarInfo data)
     {
@@ -50,7 +60,11 @@ public class Car_Core : MonoBehaviour, I_Interface
             {
                 scocca.GetComponent<MeshFilter>().sharedMesh = data.CarRef[random_index].transform.GetChild(i).GetComponent<MeshFilter>().sharedMesh;
                 scocca.GetComponent<MeshRenderer>().sharedMaterials = data.CarRef[random_index].transform.GetChild(i).GetComponent<MeshRenderer>().sharedMaterials;
-                scocca.GetComponent<Outline>().enabled = true;
+                if (!isKamikaze)
+                {
+                    scocca.GetComponent<Outline>().enabled = true;
+
+                }
                 return;
             }
         }
@@ -218,7 +232,7 @@ public class Car_Core : MonoBehaviour, I_Interface
         if (carAnimation != null)
         {
             carAnimation.Play();
-            AudioCallBack.self.PlayAudio(AudioType.PopCar,1f);
+            AudioCallBack.self.PlayAudio(AudioType.PopCar, 1f);
         }
         StopCoroutine(CarClickerAnimation());
     }
@@ -276,7 +290,11 @@ public class Car_Core : MonoBehaviour, I_Interface
 
     public void ChangeColorGreen()
     {
-        StartCoroutine(ToogleWaitSize());
+        if (GetComponentInChildren<Outline>())
+        {
+
+            StartCoroutine(ToogleWaitSize());
+        }
     }
     IEnumerator ToogleWaitSize()
     {

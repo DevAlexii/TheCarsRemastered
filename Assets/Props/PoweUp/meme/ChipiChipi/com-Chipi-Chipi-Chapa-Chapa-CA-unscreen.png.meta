@@ -1,0 +1,3560 @@
+fileFormatVersion: 2
+guid: c8c41c413094fc64f92e9380e141d085
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92a3037059021d44b63c7da9adbb637
+      internalID: -1849125474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f9af1b76949c44ca162fcb86737c93
+      internalID: 1672452142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f77b26ee559c8b42b2991f632a717fb
+      internalID: -1119131619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0a85c05facdeb4bbce0e81415c5b02
+      internalID: 1790522513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbe089554fd4d9499db10cdbc665974
+      internalID: 1823685958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead94520991bb14c9b98af76b667f43
+      internalID: 403160382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c4d9871d4f0724e9a33f85271e2a41
+      internalID: 1863188409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c013401358f80e47950e10115263909
+      internalID: 98381191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53372a03afbed742a2ffe5078726ad8
+      internalID: 1912511594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b70a2c6d5e68748a0e70825ccab379
+      internalID: 218048429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0e52ffe4bb32e4fa31d9cdda88678d
+      internalID: -370029391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6744aa77f64a7c4db14eb002a5642be
+      internalID: -1138398414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b8b30d7f5ccd1449c610b672bf8f39
+      internalID: -1456514574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568d5ce0fb9029e4da464fbbb63e7420
+      internalID: -1269544252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87739afd56b20049be0d12cddb53d36
+      internalID: 233612202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80efe4f02e499542888dd7228011959
+      internalID: -1434080076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190ff548f1b3cc94b920b00e9059db14
+      internalID: 1495366852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe51fde5bb01b44390f39fd1b666e9e
+      internalID: -350350375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c14a8c45e710f24aad4df612760aca1
+      internalID: -976080963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdcb37f96541db4a972a7f8c5136472
+      internalID: 395837927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc47b5a944562f245b0cffebf4552a0d
+      internalID: -704801917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9175d208f0e5c48a617139d41a06f8
+      internalID: -1687996691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f67fdaeec100e446a781895d9db3f52
+      internalID: 1245710624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f0c0661cb0b884f98e110722721fb3
+      internalID: 1454873296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c9cbab3c7d43443ba1572509127f09
+      internalID: -289076409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c5a3b826a3e543a652e4ad106c752
+      internalID: 1519956620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88acf2cb6417407458c56e76562be5b1
+      internalID: 1316321490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_27
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14834269377d5994fa25975ab6a50f52
+      internalID: 241627806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20af83a7dbc71d45a26df3e46b0df11
+      internalID: -626345492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586eb4881317e54bae422f61b0ae0f1
+      internalID: -715439021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_30
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83811a173c231649bf322c1448715cf
+      internalID: 1405884413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_31
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c2b2c590d786545a9d2b02f928bb95
+      internalID: 115928353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6b96f92b69b3d418752d043da88903
+      internalID: 450348573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7c87763fbe1ae479dcbb4c89a83eae
+      internalID: 1374032251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_34
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfa97fa6750025418decf50062afc66
+      internalID: 1477314219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ff095642895c14db787258c8b7cb98
+      internalID: -1341526368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6db71dccf2bd641a58baaaff87b342
+      internalID: -380088877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c944453c5ca0c44ea6b53daa3977564
+      internalID: -1159170604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_38
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fc6ffd0f9ed5a4d8cda91cb43035ab
+      internalID: 1849006791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_39
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a973feabd946b14f8cafb17490d70bf
+      internalID: 689095601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13172f1661d03f34596a9ffb99bed135
+      internalID: 2072475947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_41
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641190170492acb47a836dc2562f76c8
+      internalID: 343199096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874f6a5994a85e54a9cea23c35e0a642
+      internalID: 731749768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e514567941bc103438c728da5c7a9011
+      internalID: -1593326000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148f4dbcc6893ab478e7b0bcc55f2c67
+      internalID: 35417470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3ced7a48776ae46b2a5a98997884d1
+      internalID: -602086022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b9a4fdce88c7e4e91548f02807fd29
+      internalID: -2117304284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaade4b11b9d094eaed3245b3bd06fa
+      internalID: 1131013018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_48
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73221fb93189c8b488d69cc16bb6f090
+      internalID: 881971590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca2088208f673a43a2de52655f728c9
+      internalID: 1604716971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_50
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f472798ec159b44815214f0b6171b4
+      internalID: 1983908808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_51
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7b4fb3620aa6841a4b4c937a1d8dba
+      internalID: -356420792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_52
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b37c357274621b4db6ed4f514aaebf6
+      internalID: 1657559891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_53
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11efc7af46357e946a5172bbf7d9c481
+      internalID: -748544744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_54
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910809ba88b2f64983ffd3dfbe3ab90
+      internalID: 1685561533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_55
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c5abde75782a47a1a55556750e513
+      internalID: 1858267776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f276fd734e70b848a8c0774a8987aea
+      internalID: -2136627644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b931c2d3bf2ae841bf67b556cde4c16
+      internalID: 1692239744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e6d0ed23926c94e85ccfa18721c10e
+      internalID: -1678856802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987e1322800f26d42a47a7f9b4320f6a
+      internalID: 158588404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_60
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00b3ced3033b7944ae1f646ced6a9c7
+      internalID: -1526557191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_61
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9789dfe8f46864e4db623ca37f4d4fab
+      internalID: 822720676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_62
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672cd2b12ab5941469f9b28d08257893
+      internalID: -1263967886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b1a8416cc45074e9c16d648858203a
+      internalID: -1053374959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab82cd21035da944da749015a2d5dac3
+      internalID: 250825249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c86afb54614d434a834a72647a20ec0
+      internalID: -845804709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_66
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2743a47bafaa647bd8db0d2b6da14a
+      internalID: 810123920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_67
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca385de282f66e94c8f3bf970409001a
+      internalID: 1191641128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_68
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ae1c29a69f2e843943775aa3b916f9
+      internalID: -1722952424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_69
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8deeaee0ff3bc4ca49d121278070fb
+      internalID: 124364994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4ac01bf1f51949a4d58aa4fca3e42
+      internalID: 2138395745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81576e1d0c0696c4f8668f20038331fe
+      internalID: 764470171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_72
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c987ca51c703f94c9cf9829235c0779
+      internalID: -149272200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_73
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069054297beeb264fa752f1bdc07dc6a
+      internalID: 1933440953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_74
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9de25d615a69a4bb63e9648ad5c461
+      internalID: 2031116308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_75
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3d5ed5d89b0b140ae3aeb16a81ddb0
+      internalID: 1200409246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_76
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce8c782f979e14c81e694881c6fe7c
+      internalID: 104624585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d583138b8e90d7348b4a45b635da7a6f
+      internalID: 2090745266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_78
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33ccc8ddc4906140bc751c9c54abda0
+      internalID: -655792510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdabafe7bfbd816478d63050e88cdc29
+      internalID: -855476359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_80
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae181a1d1333484f93ddfdd01f48d19
+      internalID: 1912518712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_81
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555fdd29e77d2034a918a1c7c9f5022f
+      internalID: 1620193977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_82
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf7684821152246b3b804acb30b51d
+      internalID: -392791429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_83
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdedcd2e0d2145647a8a73cb6ddd12b5
+      internalID: -1259987754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3576eb61c993a4442a61ccaa96977d87
+      internalID: -889278656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_85
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b206fd21406f6b94795786e9e657a7e6
+      internalID: -1121779658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_86
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c72d24ab08c8e4ab80c4f04c3c4db0
+      internalID: 2084155200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_87
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e050bbd1884a16049b69da506ce14b01
+      internalID: -1899652011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_88
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e58537f203fbbf448b1861982be7ca2
+      internalID: 1849907283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_89
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c8fd274d14c5241a9f63a45c922d45
+      internalID: 20238900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_90
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555ba389ef0894f4089868796943e4be
+      internalID: -551514607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c184defdd6efdd640a7b24b6ce30f57c
+      internalID: 1997085989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf813321c4df5e2409dadca40ec67e6c
+      internalID: -1680479365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_93
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed50d946fd4bfb84a900c0acf17719fd
+      internalID: -798596916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_94
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f5046199395594d8458716ce9151fb
+      internalID: -966872968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_95
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710db58e5c9aa134d94d73296ba5a0ba
+      internalID: 1355039673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_96
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13586d38a25a5e468a7cd3f6f8f8d11
+      internalID: -1922717380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_97
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a722ce6e26799a498822b32ec923146
+      internalID: 742808240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9019893175016845a7cbdada86a9f6d
+      internalID: -1348330147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_99
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24ae4cf765a6f049a40c73de81c4c55
+      internalID: -523816246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a940a24ddc0e1842b6c91fa31a6280f
+      internalID: -714430084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_101
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241bcf3d788d2c3498fb8ff1eb57cbda
+      internalID: 128506318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_102
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d4b083b6e12514e8881190a99a1618
+      internalID: -550331707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_103
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59b2e626c148424086f845bf22d9214
+      internalID: -2031800328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_104
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adffc332ffda8404d9d5ec6c5fffa05f
+      internalID: 926809841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3fc261e98411542bb9a24501231a10
+      internalID: -1290326838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c801750b285e4f1419334f266371cead
+      internalID: 1248162589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_107
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7766b22c9d4ea9d42b66d0c04b83af3b
+      internalID: -1947638260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_108
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c682fa8656dfd6043ba134e8f82442b1
+      internalID: -636536207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_109
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904440491e9fe3a42a4f8cc1d19c1141
+      internalID: 192258419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_110
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d508f93daeab4146b7232f52c781ebc
+      internalID: 419038052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_111
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28faafa7e98c8914e8b82af778d311bf
+      internalID: -1096204043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f984946b34b38e4683d5f60aec79722
+      internalID: 1882920664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b38a513a8ea7e642bab038ce6e9dcc8
+      internalID: -326809209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_114
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb50280df5b8ca4eb145332d418b2eb
+      internalID: 547048562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_115
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdc0392d5018ee4a92319506cc4f662
+      internalID: 1048160230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_116
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bda205655201b74c945571e0dcc7c09
+      internalID: 1835699335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_117
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daa39f2d6060e641b09107bf9d17401
+      internalID: 1655990150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_118
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dda73b2aca287e40b4c5671e895d8ee
+      internalID: 1950678442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7ca1cabbd2dc94fa17369a71d812f9
+      internalID: 703556194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_120
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2d9724f12102c49a5e64e4417cb621
+      internalID: 288947601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_121
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e0433966056d94fa289249559b5713
+      internalID: -1174664159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_122
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebf072bb373b664585a7c9405c7366b
+      internalID: 151956753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_123
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dd635e54e5480499b0823548637a26
+      internalID: -248473118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_124
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa89b456d5656d04db864555141ac83d
+      internalID: -1320974793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_125
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad39585b0fc4714bb6b93d7ca9728e2
+      internalID: 1288708093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661846b7191aab54d980cd57d5aef02d
+      internalID: -2122732149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_127
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4da2c6563ed8142989c60a1c6f8914
+      internalID: 426552645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_128
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b0019a7a15f434aafd8d290db5e6d8
+      internalID: -89410593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_129
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c991631d409a5f449ba0c563c69bb8a
+      internalID: -1461523617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_130
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070799917eb4a644d9aa630685b4db8f
+      internalID: 1947084710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_131
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f53176be78ec6341918c0be0819202a
+      internalID: 750695005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_132
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606c9cf91da5cf249be327b734ec5360
+      internalID: -1082564511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecd542e73c5de24981ead8648fcdb9a
+      internalID: 234776886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_134
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3726d710a0d25144882878532344ee5
+      internalID: 1127134177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_135
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6301e232eedc14db809200ebabccf6
+      internalID: 1450617909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_136
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b50cc0223097246af99e3208f99650
+      internalID: -387104341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_137
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986dc17ab7a08c348a69dab22aeee907
+      internalID: -1678015708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_138
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64ccf16b35ebc7408638f9a5c5401fc
+      internalID: 868844359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_139
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38233911fa54fe489b517d53bca0c97
+      internalID: -1054493079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356c313815f08734f9da6e324a2afa15
+      internalID: -490089127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_141
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab675484f0040247b670c18a4897bfa
+      internalID: -1934594148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_142
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f752f9256f9155f4e8f6fa9794681bc5
+      internalID: 1132675274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_143
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 365
+        width: 640
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad741be746848149aa4ea98a356de08
+      internalID: -1721221238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_144
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 365
+        width: 640
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5502ef5e7bf259b47bee49ac4bb73cf7
+      internalID: 278055665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_145
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581ec73c0cd21e0469eea9d83d26ff84
+      internalID: 169720460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_146
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c0fc522f8e6ae4b9260f2c91f5b8f2
+      internalID: -1300517192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5444f4a1f5298ad4a93243cb0db538f1
+      internalID: -2102966148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_148
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286026e7b151b8a48b23f96bc354d06d
+      internalID: -2142900851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_149
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 638
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aa33f96bc278844989568bd484871e
+      internalID: -567665579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_150
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaab25e9c63186f47b9d52c3a1bae867
+      internalID: -704714665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_151
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941f954e9c39e044b98a6572d24a3688
+      internalID: -37653050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_152
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc437102ca665e6498e8b39ea99e9a3e
+      internalID: -1109139156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_153
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ff5125c26b4c94fb8fd7edd8d60d44
+      internalID: -1429531272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_0: -1849125474
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_1: 1672452142
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_10: -370029391
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_100: -714430084
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_101: 128506318
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_102: -550331707
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_103: -2031800328
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_104: 926809841
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_105: -1290326838
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_106: 1248162589
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_107: -1947638260
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_108: -636536207
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_109: 192258419
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_11: -1138398414
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_110: 419038052
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_111: -1096204043
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_112: 1882920664
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_113: -326809209
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_114: 547048562
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_115: 1048160230
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_116: 1835699335
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_117: 1655990150
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_118: 1950678442
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_119: 703556194
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_12: -1456514574
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_120: 288947601
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_121: -1174664159
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_122: 151956753
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_123: -248473118
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_124: -1320974793
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_125: 1288708093
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_126: -2122732149
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_127: 426552645
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_128: -89410593
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_129: -1461523617
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_13: -1269544252
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_130: 1947084710
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_131: 750695005
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_132: -1082564511
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_133: 234776886
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_134: 1127134177
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_135: 1450617909
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_136: -387104341
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_137: -1678015708
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_138: 868844359
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_139: -1054493079
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_14: 233612202
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_140: -490089127
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_141: -1934594148
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_142: 1132675274
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_143: -1721221238
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_144: 278055665
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_145: 169720460
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_146: -1300517192
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_147: -2102966148
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_148: -2142900851
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_149: -567665579
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_15: -1434080076
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_150: -704714665
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_151: -37653050
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_152: -1109139156
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_153: -1429531272
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_16: 1495366852
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_17: -350350375
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_18: -976080963
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_19: 395837927
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_2: -1119131619
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_20: -704801917
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_21: -1687996691
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_22: 1245710624
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_23: 1454873296
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_24: -289076409
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_25: 1519956620
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_26: 1316321490
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_27: 241627806
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_28: -626345492
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_29: -715439021
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_3: 1790522513
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_30: 1405884413
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_31: 115928353
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_32: 450348573
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_33: 1374032251
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_34: 1477314219
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_35: -1341526368
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_36: -380088877
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_37: -1159170604
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_38: 1849006791
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_39: 689095601
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_4: 1823685958
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_40: 2072475947
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_41: 343199096
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_42: 731749768
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_43: -1593326000
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_44: 35417470
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_45: -602086022
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_46: -2117304284
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_47: 1131013018
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_48: 881971590
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_49: 1604716971
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_5: 403160382
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_50: 1983908808
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_51: -356420792
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_52: 1657559891
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_53: -748544744
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_54: 1685561533
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_55: 1858267776
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_56: -2136627644
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_57: 1692239744
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_58: -1678856802
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_59: 158588404
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_6: 1863188409
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_60: -1526557191
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_61: 822720676
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_62: -1263967886
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_63: -1053374959
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_64: 250825249
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_65: -845804709
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_66: 810123920
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_67: 1191641128
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_68: -1722952424
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_69: 124364994
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_7: 98381191
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_70: 2138395745
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_71: 764470171
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_72: -149272200
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_73: 1933440953
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_74: 2031116308
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_75: 1200409246
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_76: 104624585
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_77: 2090745266
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_78: -655792510
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_79: -855476359
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_8: 1912511594
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_80: 1912518712
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_81: 1620193977
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_82: -392791429
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_83: -1259987754
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_84: -889278656
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_85: -1121779658
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_86: 2084155200
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_87: -1899652011
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_88: 1849907283
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_89: 20238900
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_9: 218048429
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_90: -551514607
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_91: 1997085989
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_92: -1680479365
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_93: -798596916
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_94: -966872968
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_95: 1355039673
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_96: -1922717380
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_97: 742808240
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_98: -1348330147
+      com-Chipi-Chipi-Chapa-Chapa-CA-unscreen_99: -523816246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

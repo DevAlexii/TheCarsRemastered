@@ -9,7 +9,6 @@ public class AudioCallBack : Singleton<AudioCallBack>
 {
     [Header("Clip and Types")]
     [SerializeField] public List<AudioClip> audioClips;
-    [SerializeField] public AudioClip[] audioClip = new AudioClip[7];
     [SerializeField] public List<AudioType> audioTypes;
 
     [SerializeField] public AudioSource SFX_audioSource;
