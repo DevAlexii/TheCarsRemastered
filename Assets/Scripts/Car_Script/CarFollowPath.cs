@@ -350,4 +350,7 @@ public class CarFollowPath : MonoBehaviour
             rb.excludeLayers = GameManager.self.layer_to_exclude_default;
         }
     }
+
+
+ 
 }

@@ -1056,7 +1056,6 @@ MonoBehaviour:
   shrink_on: 0
   collision_effect: {fileID: 8973038319322124794}
   carAnimation: {fileID: 6347147435420817895}
-  clip: {fileID: 8300000, guid: 90522a80d46daf8419dccb43dbb7f7b0, type: 3}
 --- !u!1001 &6078236600924972473
 PrefabInstance:
   m_ObjectHideFlags: 0

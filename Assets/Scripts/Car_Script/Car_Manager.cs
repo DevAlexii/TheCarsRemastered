@@ -54,6 +54,15 @@ public class Car_Manager : Singleton<Car_Manager>
 
     public int ComboCount => comboCount;
     private GameObject lastComboCarSpawned;
+
+
+    public GameObject baseCarPrefab;
+    public GameObject tirPrefab;
+    public GameObject specialPrefab;
+    public GameObject bigVanPrefab;
+    public GameObject vanPrefab;
+    public GameObject kamikazePrefab;
+
     private void Start()
     {
         spawned_car = new List<GameObject>();
@@ -68,7 +77,14 @@ public class Car_Manager : Singleton<Car_Manager>
             }
         }
         CarInfos = CarInfosRef.self.DefaultCarInfoData;
+        ObjectPoolManager.instance.CreateObjectPool(baseCarPrefab, 10);
+        ObjectPoolManager.instance.CreateObjectPool(tirPrefab, 5);
+        ObjectPoolManager.instance.CreateObjectPool(specialPrefab, 5);
+        ObjectPoolManager.instance.CreateObjectPool(bigVanPrefab, 5);
+        ObjectPoolManager.instance.CreateObjectPool(vanPrefab, 5);
+        ObjectPoolManager.instance.CreateObjectPool(kamikazePrefab, 5);
     }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -122,8 +138,6 @@ public class Car_Manager : Singleton<Car_Manager>
         Path pathRef = paths_dictionary[randomDirection][randomPoint][random_path];
         bool isKamikaze = true;
         int arrow_index = -1;
-
-
 
         if (spawn_combo)
         {
@@ -181,23 +195,14 @@ public class Car_Manager : Singleton<Car_Manager>
 
         }
 
-        if (comboCount > 0 && spawn_combo)
+
+        GameObject car = ObjectPoolManager.instance.GetObjectFromPool(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity);
+        car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
+        spawned_car.Add(car);
+        if (isKamikaze)
         {
-            HandleComboSpawn();
+            AudioCallBack.self.PlayAudio(AudioType.ToothMeme, 1f);
         }
-        else
-        {
-            GameObject car = Instantiate(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity, this.transform);
-            car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
-            spawned_car.Add(car);
-            if (isKamikaze)
-            {
-                AudioCallBack.self.PlayAudio(AudioType.ToothMeme, 1f);
-            }
-        }
-
-
-
     }
     public void HandleComboSpawn()
     {

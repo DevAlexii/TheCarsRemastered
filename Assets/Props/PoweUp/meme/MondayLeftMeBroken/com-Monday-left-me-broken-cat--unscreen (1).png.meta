@@ -1,0 +1,3560 @@
+fileFormatVersion: 2
+guid: 31fa71e9fd167414a9e1da5d1654cf23
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645ef51a165ccb546988151b789dbff2
+      internalID: 1776772534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0370bfbf4af1a49aa28ce01e1a0aae
+      internalID: -1846221916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32c886bca47ed34bae4376830abdc2c
+      internalID: -224915828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356d87af4f7fd5f4f8a14f59ce91cda2
+      internalID: -269625692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5959ac023f0244b98b94ac31a0d99c
+      internalID: -1394398410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be485ecb6b881540b04a4a3d145cf1d
+      internalID: -1120073308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 7560
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcddd3a1a906aa428e965fac973ea5f
+      internalID: -582536152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae83c5d0ae2cf484db76751d4bf68540
+      internalID: 1335875301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effeb2e2178145145aba59cb4bc2b3dc
+      internalID: 760484226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab509c87b8726f40b184e5f759d8cd7
+      internalID: -335069397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05295c3a5f509348afac2723119c496
+      internalID: 1121784579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6566bfcfdfd6a428e0103ac95f4fd7
+      internalID: 1424833411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbb6d3f4590753468c758b10ae717d8
+      internalID: -836442182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 7200
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77aa4c9a5aab21e4d83916f2152915a5
+      internalID: -1250925106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c7085e26ac4fa4c90a81c4dc9155a7
+      internalID: 360932183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8aac2c4c2c35b48a72baf562a2ff74
+      internalID: -1185497601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c9c1dbb240e3346b68bd4563e77ffc
+      internalID: -1109025554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47ac8969bad26e49989465bc0afa0d4
+      internalID: 1816674004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a4bfb98f4916c4bb3690ddb5eda2b1
+      internalID: -1053996959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6373bb52b139fdc44b71704d45cee165
+      internalID: -449324411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6840
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935eb911e03e0544d892926cb58d7ad2
+      internalID: 1491436961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07c5a93e7335f24a8a4b10038858ed8
+      internalID: 2037457165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91e546b5cb1a374f8e268cf60d399dc
+      internalID: 2105073057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb33a63f1baf5e448143caf3941dce8
+      internalID: 1935870250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f972aa37efba442bda07108e044333
+      internalID: -1042260781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fe59b24fcf3674f8f9e561667f3760
+      internalID: 993579026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346933286807d1243b5640030bad5687
+      internalID: 850233590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_27
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6480
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56460d71212a7641bab935329127e4e
+      internalID: 1320156074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71914451bd88d654da66f14d25bc8416
+      internalID: 920080555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7863735b7f0ea4e428f759a39684d7a7
+      internalID: -1273773489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42798233cd26d840a138be2786dd57a
+      internalID: 1059291738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b220842bfca76204cbb19e8a0fdd9b17
+      internalID: 833556060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea924fd6eccd2e428490272f377ab26
+      internalID: 192837882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2a27e5c6e460f49b66e4d2073e707e
+      internalID: 131125874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_34
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6120
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f562d0eff6c295a46a84c79e671dd4c3
+      internalID: -2084909868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9811c74eb7cafc499ba5e088af4752d
+      internalID: -1375946676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f6d41fe5081e542b297dc23aeafb07
+      internalID: -2926885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb47899e9c1f0e49919d8de6b9392ce
+      internalID: -408032418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_38
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ca774581b3cc4ea3d69ed2e56e8ca
+      internalID: 1116778455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_39
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df965fead4cb2cb44985955083983fb7
+      internalID: -1189893528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a621162b738d0514da5d9d13900057d4
+      internalID: -939695035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_41
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5760
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cb61933c56c7641865a0ef46618044
+      internalID: -549938021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18eebe271323fc440a985ec18c6bab29
+      internalID: -1545786252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986bf3d9f8f75841a8d3c10c2294b84
+      internalID: -983852059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340dac0a41c72743a0a939c9bad88ff
+      internalID: 2070353928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d4b3c95b508e4f810751eac580d57
+      internalID: 362843892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b089dec82464b2428b8d419e7355b08
+      internalID: 1307252031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4662b5857ad056049b8995fc02e862e7
+      internalID: 1931766390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_48
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5400
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e2a3c27890e684daf8b46328ba0a57
+      internalID: -564634487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bf3099c2daafa4c9e617eb4c74f796
+      internalID: 1372411991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_50
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0d73502ce67f840bf435b6816d3a62
+      internalID: 1084955848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_51
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1e9fcc041e47649a24c2fc115dfb7f
+      internalID: 401009777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_52
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b345270f64c155344b9f9e31e1758319
+      internalID: 391005443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_53
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b432180fc21f4c99fce921e2b0244
+      internalID: 835972587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_54
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e50f1e072ff484438a519225571d2c4
+      internalID: -946875097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_55
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5040
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02e5eaefeb3a0f4e99f93178ebdeb07
+      internalID: 1438253239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62bbbea719f59e4d9e53aa0cc382ac7
+      internalID: 921207465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a055c44b0ae5ac4e89816980cd42a62
+      internalID: -1092774955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d2ddadb85668b41bcc061691ed43ab
+      internalID: -1560725685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976a215bbc5a1ec4888f8b6b87e291d9
+      internalID: 969636606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_60
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673862faf83287742866f8746dc1fd9f
+      internalID: -30481435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_61
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c24fddef381d14090bc7250d272668
+      internalID: 934286873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_62
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4680
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151b55e799bb0a9459fb56f3b738fe52
+      internalID: 840038102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72406d53e3edbda4b855465e6ccfe9c8
+      internalID: 228468420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022ea2d690d1a8844ba1c78b607def68
+      internalID: 646015147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0ff0a3b17fe60439bffb9ce0bfedc0
+      internalID: 1572748252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_66
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229f853f0b6bcb14fa4f81adfe638ff7
+      internalID: -1923291866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_67
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c772426e053bb4d828db553dbcce40
+      internalID: 2136503558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_68
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6013c443adf8c449951df68bb85e506
+      internalID: 533176703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_69
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4320
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a22d773fca532488473853164b0151
+      internalID: 1240317153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a7b2d1994142a4ebf18420ffeea677
+      internalID: -837606172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2948d29da40b0748a352648c0e7e3b2
+      internalID: -805045814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_72
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fed844ba3ead3b4eb3c3a3e5f0bcbb2
+      internalID: 1123747272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_73
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3b91d93df162b4b9091af594de7d2b
+      internalID: 1268284512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_74
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308507c24ee094349a202016976ee3c4
+      internalID: 58026383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_75
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c49828ed4d2f4845a3383b5b2fa547e
+      internalID: -121200277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_76
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3960
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf516db9f9cab641afe3b47e73ce907
+      internalID: 1161779339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb08ec833195a9e499e186b62974916c
+      internalID: -1366095718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_78
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feb41c6f8d23d04383163cc93923997
+      internalID: 1311767316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9868cb973c48240a0fc43cd0fac691
+      internalID: 703047449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_80
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9288eefabbe0d41b76a0ab05be3174
+      internalID: 1923840973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_81
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5b3d8b17eee240932f75918f5f168
+      internalID: 370052025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_82
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d0d5fa5c79f8442abac05eaa8674d8
+      internalID: -1042094319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_83
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3600
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f953fbfb089180a48aaf3005669a0720
+      internalID: -1086220363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6d8c8f06007074b8035682fc9bc499
+      internalID: 1533622160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_85
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643e045c545447c45a076f375cb3a5ef
+      internalID: -994855001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_86
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d51a641665d90248bc71d5eeabf9f63
+      internalID: -1288958150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_87
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f358e133620a94f9eb30d4e9fe2697
+      internalID: 1991292599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_88
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68785add1ec8f34dbf162928f1ab7c8
+      internalID: 201801203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_89
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73375719f9b32444888546eabfa127e
+      internalID: 1921645166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_90
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3240
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a4f5afb4064f14886a034e31ff5693
+      internalID: 631775105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb1564b4425d8d4a85c726592b4865c
+      internalID: -1504177273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f1b3a94b58a054abc9a8cee4079dd4
+      internalID: -242906978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_93
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be217b7f8503a047a23cf20355b77a9
+      internalID: 335253348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_94
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7748f89c434c740922089f6e4b6a91
+      internalID: -1603658155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_95
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fe5dbf6de04654bb7309eb842942aa
+      internalID: 732971308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_96
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8374479e5588e43911e2d5017ab72b
+      internalID: -109791428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_97
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2880
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6c700720d26b34ead8de17ba225809
+      internalID: -394278517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0ab5d94db10e045b772ac54e36b04b
+      internalID: -1791834264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_99
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a77a56f9114f34b9cd85726ddf49ca
+      internalID: 1078800525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537b14095f6f60c4f9207a27b556d177
+      internalID: -56560460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_101
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee96846cd3e6dd84898d6873b03dc62d
+      internalID: -1372099520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_102
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92455ee77c1435c40956eb61722ced03
+      internalID: -1329861035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_103
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec569cff467c9547aed57b993964e73
+      internalID: 575882718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_104
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2520
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003da0f44bb24cf478996d76b790738f
+      internalID: -1100527684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997d26283135b914d9288bb188590e2a
+      internalID: 1421072879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636889e4402bdac4991775c8b3253a72
+      internalID: 559925332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_107
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7d1fdd35c9c80449ca814aeec375a5
+      internalID: 1847850182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_108
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db99a2b85a7ffc14fad4825b9961d96f
+      internalID: 1887061470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_109
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895bac770789d634e8f0d99b9cd17e5a
+      internalID: -453853273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_110
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d2420eec612484692bf88bdb893472
+      internalID: -2057902360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_111
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2160
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365d15897d2104041a1c2466c153358d
+      internalID: -1390258591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae080b3eccbfc9459662471b7172c09
+      internalID: -314379062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7909b5c02af44428e0c1db760a8df1
+      internalID: 423246723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_114
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684591f2142f30a4b8dd37a05c359cf0
+      internalID: -2093069971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_115
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8cbd5e05c0bd34c89f16c3be01c957
+      internalID: 822959326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_116
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721532cbebd8008489e3211898102a1d
+      internalID: -440961972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_117
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7a785c24928194ab68425a9914dd0a
+      internalID: -549769636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_118
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1800
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10edb6d7fee30f4d8f6377de195f271
+      internalID: 1111239150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116febe4612522a458a9107dcc92fcb6
+      internalID: 2049924238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_120
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b19f69a9e1dae048b5eb9c336006b3a
+      internalID: 834160976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_121
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e432959fe5d68514388c5c27cfbfca9e
+      internalID: 246072563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_122
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54202ed683a8a9c47acb5e2b7a945d3d
+      internalID: -992088451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_123
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23edda95d884a7f40bb3241d31ea9d1b
+      internalID: 202023420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_124
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac9a11536fcb2349a4d82a7fe0a10f0
+      internalID: -797116267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_125
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1440
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6359f75b2b26bba49a8d1ff3bbfe79a9
+      internalID: -772848246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059ef58be52d0ae4cba840d1591697c3
+      internalID: -232660393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_127
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb0a0980190b7a468e31723d509f33c
+      internalID: 879764828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_128
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b7236d2fd395e498b6c7df5103574a
+      internalID: -86568576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_129
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c15a191fb5977498762bc38722db17
+      internalID: -1600821162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_130
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a991996148b1c4bb1fc373e7471e80
+      internalID: 2004353162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_131
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45981c6e51a7d44a97086c14fa1f396
+      internalID: -2113705974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_132
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1080
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971709c1b7568664c8ae9d501a39470f
+      internalID: 1612590051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9ae2505399adf43a61be921ffa985d
+      internalID: -140907241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_134
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba71e1f59abac7429b34ad3f9202edd
+      internalID: 641437832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_135
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b391ea430f7234db0c94d673b21669
+      internalID: 276233562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_136
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cda78ec6e07cdc49943f0bdda0ad0ae
+      internalID: 1245646862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_137
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3b1cc8610fa81409a21f13dd1cac51
+      internalID: 1913897211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_138
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6bba2e5228a5e4cb3dc44003969f52
+      internalID: 1798225214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_139
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 720
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8784e8e9c2495148a3fdd9affc1a950
+      internalID: -1225024038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7870ce7847a44d9542036ace2a641
+      internalID: 200107569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_141
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb9546d41a2e2b43a8fc553ddc78880
+      internalID: -1570192382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_142
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eb7b21342632b40b8820c1404247df
+      internalID: 348019682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_143
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac875fb9eb645b4abe2298da8a23c06
+      internalID: -548415314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_144
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564bbc6612a26f24fb86e3b400ace37b
+      internalID: 366341043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_145
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20aef50fe70f5645b0e439195acaa1d
+      internalID: 2072812358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_146
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 360
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faee51ddd34a99d478516457df308cd5
+      internalID: -1278480336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e758b4de6c40874c85893ad4cba7a54
+      internalID: 1796995051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_148
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a57846e6a61f744d88fab6572ea27c3
+      internalID: -1717935613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_149
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492837e0eaf112840b9840befebc8994
+      internalID: -1501912699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_150
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102291c050bef7e4ba3a3cfdd8c36a14
+      internalID: -1434711958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_151
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31977c47745714143a962fb46f025be2
+      internalID: -1824017471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_152
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa1068f45b4b9147a207b38948dbaa5
+      internalID: -1322700199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: com-Monday-left-me-broken-cat--unscreen (1)_153
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 640
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5363537f61e474eab5d2317148f0bf
+      internalID: 2040191716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      com-Monday-left-me-broken-cat--unscreen (1)_0: 1776772534
+      com-Monday-left-me-broken-cat--unscreen (1)_1: -1846221916
+      com-Monday-left-me-broken-cat--unscreen (1)_10: 1121784579
+      com-Monday-left-me-broken-cat--unscreen (1)_100: -56560460
+      com-Monday-left-me-broken-cat--unscreen (1)_101: -1372099520
+      com-Monday-left-me-broken-cat--unscreen (1)_102: -1329861035
+      com-Monday-left-me-broken-cat--unscreen (1)_103: 575882718
+      com-Monday-left-me-broken-cat--unscreen (1)_104: -1100527684
+      com-Monday-left-me-broken-cat--unscreen (1)_105: 1421072879
+      com-Monday-left-me-broken-cat--unscreen (1)_106: 559925332
+      com-Monday-left-me-broken-cat--unscreen (1)_107: 1847850182
+      com-Monday-left-me-broken-cat--unscreen (1)_108: 1887061470
+      com-Monday-left-me-broken-cat--unscreen (1)_109: -453853273
+      com-Monday-left-me-broken-cat--unscreen (1)_11: 1424833411
+      com-Monday-left-me-broken-cat--unscreen (1)_110: -2057902360
+      com-Monday-left-me-broken-cat--unscreen (1)_111: -1390258591
+      com-Monday-left-me-broken-cat--unscreen (1)_112: -314379062
+      com-Monday-left-me-broken-cat--unscreen (1)_113: 423246723
+      com-Monday-left-me-broken-cat--unscreen (1)_114: -2093069971
+      com-Monday-left-me-broken-cat--unscreen (1)_115: 822959326
+      com-Monday-left-me-broken-cat--unscreen (1)_116: -440961972
+      com-Monday-left-me-broken-cat--unscreen (1)_117: -549769636
+      com-Monday-left-me-broken-cat--unscreen (1)_118: 1111239150
+      com-Monday-left-me-broken-cat--unscreen (1)_119: 2049924238
+      com-Monday-left-me-broken-cat--unscreen (1)_12: -836442182
+      com-Monday-left-me-broken-cat--unscreen (1)_120: 834160976
+      com-Monday-left-me-broken-cat--unscreen (1)_121: 246072563
+      com-Monday-left-me-broken-cat--unscreen (1)_122: -992088451
+      com-Monday-left-me-broken-cat--unscreen (1)_123: 202023420
+      com-Monday-left-me-broken-cat--unscreen (1)_124: -797116267
+      com-Monday-left-me-broken-cat--unscreen (1)_125: -772848246
+      com-Monday-left-me-broken-cat--unscreen (1)_126: -232660393
+      com-Monday-left-me-broken-cat--unscreen (1)_127: 879764828
+      com-Monday-left-me-broken-cat--unscreen (1)_128: -86568576
+      com-Monday-left-me-broken-cat--unscreen (1)_129: -1600821162
+      com-Monday-left-me-broken-cat--unscreen (1)_13: -1250925106
+      com-Monday-left-me-broken-cat--unscreen (1)_130: 2004353162
+      com-Monday-left-me-broken-cat--unscreen (1)_131: -2113705974
+      com-Monday-left-me-broken-cat--unscreen (1)_132: 1612590051
+      com-Monday-left-me-broken-cat--unscreen (1)_133: -140907241
+      com-Monday-left-me-broken-cat--unscreen (1)_134: 641437832
+      com-Monday-left-me-broken-cat--unscreen (1)_135: 276233562
+      com-Monday-left-me-broken-cat--unscreen (1)_136: 1245646862
+      com-Monday-left-me-broken-cat--unscreen (1)_137: 1913897211
+      com-Monday-left-me-broken-cat--unscreen (1)_138: 1798225214
+      com-Monday-left-me-broken-cat--unscreen (1)_139: -1225024038
+      com-Monday-left-me-broken-cat--unscreen (1)_14: 360932183
+      com-Monday-left-me-broken-cat--unscreen (1)_140: 200107569
+      com-Monday-left-me-broken-cat--unscreen (1)_141: -1570192382
+      com-Monday-left-me-broken-cat--unscreen (1)_142: 348019682
+      com-Monday-left-me-broken-cat--unscreen (1)_143: -548415314
+      com-Monday-left-me-broken-cat--unscreen (1)_144: 366341043
+      com-Monday-left-me-broken-cat--unscreen (1)_145: 2072812358
+      com-Monday-left-me-broken-cat--unscreen (1)_146: -1278480336
+      com-Monday-left-me-broken-cat--unscreen (1)_147: 1796995051
+      com-Monday-left-me-broken-cat--unscreen (1)_148: -1717935613
+      com-Monday-left-me-broken-cat--unscreen (1)_149: -1501912699
+      com-Monday-left-me-broken-cat--unscreen (1)_15: -1185497601
+      com-Monday-left-me-broken-cat--unscreen (1)_150: -1434711958
+      com-Monday-left-me-broken-cat--unscreen (1)_151: -1824017471
+      com-Monday-left-me-broken-cat--unscreen (1)_152: -1322700199
+      com-Monday-left-me-broken-cat--unscreen (1)_153: 2040191716
+      com-Monday-left-me-broken-cat--unscreen (1)_16: -1109025554
+      com-Monday-left-me-broken-cat--unscreen (1)_17: 1816674004
+      com-Monday-left-me-broken-cat--unscreen (1)_18: -1053996959
+      com-Monday-left-me-broken-cat--unscreen (1)_19: -449324411
+      com-Monday-left-me-broken-cat--unscreen (1)_2: -224915828
+      com-Monday-left-me-broken-cat--unscreen (1)_20: 1491436961
+      com-Monday-left-me-broken-cat--unscreen (1)_21: 2037457165
+      com-Monday-left-me-broken-cat--unscreen (1)_22: 2105073057
+      com-Monday-left-me-broken-cat--unscreen (1)_23: 1935870250
+      com-Monday-left-me-broken-cat--unscreen (1)_24: -1042260781
+      com-Monday-left-me-broken-cat--unscreen (1)_25: 993579026
+      com-Monday-left-me-broken-cat--unscreen (1)_26: 850233590
+      com-Monday-left-me-broken-cat--unscreen (1)_27: 1320156074
+      com-Monday-left-me-broken-cat--unscreen (1)_28: 920080555
+      com-Monday-left-me-broken-cat--unscreen (1)_29: -1273773489
+      com-Monday-left-me-broken-cat--unscreen (1)_3: -269625692
+      com-Monday-left-me-broken-cat--unscreen (1)_30: 1059291738
+      com-Monday-left-me-broken-cat--unscreen (1)_31: 833556060
+      com-Monday-left-me-broken-cat--unscreen (1)_32: 192837882
+      com-Monday-left-me-broken-cat--unscreen (1)_33: 131125874
+      com-Monday-left-me-broken-cat--unscreen (1)_34: -2084909868
+      com-Monday-left-me-broken-cat--unscreen (1)_35: -1375946676
+      com-Monday-left-me-broken-cat--unscreen (1)_36: -2926885
+      com-Monday-left-me-broken-cat--unscreen (1)_37: -408032418
+      com-Monday-left-me-broken-cat--unscreen (1)_38: 1116778455
+      com-Monday-left-me-broken-cat--unscreen (1)_39: -1189893528
+      com-Monday-left-me-broken-cat--unscreen (1)_4: -1394398410
+      com-Monday-left-me-broken-cat--unscreen (1)_40: -939695035
+      com-Monday-left-me-broken-cat--unscreen (1)_41: -549938021
+      com-Monday-left-me-broken-cat--unscreen (1)_42: -1545786252
+      com-Monday-left-me-broken-cat--unscreen (1)_43: -983852059
+      com-Monday-left-me-broken-cat--unscreen (1)_44: 2070353928
+      com-Monday-left-me-broken-cat--unscreen (1)_45: 362843892
+      com-Monday-left-me-broken-cat--unscreen (1)_46: 1307252031
+      com-Monday-left-me-broken-cat--unscreen (1)_47: 1931766390
+      com-Monday-left-me-broken-cat--unscreen (1)_48: -564634487
+      com-Monday-left-me-broken-cat--unscreen (1)_49: 1372411991
+      com-Monday-left-me-broken-cat--unscreen (1)_5: -1120073308
+      com-Monday-left-me-broken-cat--unscreen (1)_50: 1084955848
+      com-Monday-left-me-broken-cat--unscreen (1)_51: 401009777
+      com-Monday-left-me-broken-cat--unscreen (1)_52: 391005443
+      com-Monday-left-me-broken-cat--unscreen (1)_53: 835972587
+      com-Monday-left-me-broken-cat--unscreen (1)_54: -946875097
+      com-Monday-left-me-broken-cat--unscreen (1)_55: 1438253239
+      com-Monday-left-me-broken-cat--unscreen (1)_56: 921207465
+      com-Monday-left-me-broken-cat--unscreen (1)_57: -1092774955
+      com-Monday-left-me-broken-cat--unscreen (1)_58: -1560725685
+      com-Monday-left-me-broken-cat--unscreen (1)_59: 969636606
+      com-Monday-left-me-broken-cat--unscreen (1)_6: -582536152
+      com-Monday-left-me-broken-cat--unscreen (1)_60: -30481435
+      com-Monday-left-me-broken-cat--unscreen (1)_61: 934286873
+      com-Monday-left-me-broken-cat--unscreen (1)_62: 840038102
+      com-Monday-left-me-broken-cat--unscreen (1)_63: 228468420
+      com-Monday-left-me-broken-cat--unscreen (1)_64: 646015147
+      com-Monday-left-me-broken-cat--unscreen (1)_65: 1572748252
+      com-Monday-left-me-broken-cat--unscreen (1)_66: -1923291866
+      com-Monday-left-me-broken-cat--unscreen (1)_67: 2136503558
+      com-Monday-left-me-broken-cat--unscreen (1)_68: 533176703
+      com-Monday-left-me-broken-cat--unscreen (1)_69: 1240317153
+      com-Monday-left-me-broken-cat--unscreen (1)_7: 1335875301
+      com-Monday-left-me-broken-cat--unscreen (1)_70: -837606172
+      com-Monday-left-me-broken-cat--unscreen (1)_71: -805045814
+      com-Monday-left-me-broken-cat--unscreen (1)_72: 1123747272
+      com-Monday-left-me-broken-cat--unscreen (1)_73: 1268284512
+      com-Monday-left-me-broken-cat--unscreen (1)_74: 58026383
+      com-Monday-left-me-broken-cat--unscreen (1)_75: -121200277
+      com-Monday-left-me-broken-cat--unscreen (1)_76: 1161779339
+      com-Monday-left-me-broken-cat--unscreen (1)_77: -1366095718
+      com-Monday-left-me-broken-cat--unscreen (1)_78: 1311767316
+      com-Monday-left-me-broken-cat--unscreen (1)_79: 703047449
+      com-Monday-left-me-broken-cat--unscreen (1)_8: 760484226
+      com-Monday-left-me-broken-cat--unscreen (1)_80: 1923840973
+      com-Monday-left-me-broken-cat--unscreen (1)_81: 370052025
+      com-Monday-left-me-broken-cat--unscreen (1)_82: -1042094319
+      com-Monday-left-me-broken-cat--unscreen (1)_83: -1086220363
+      com-Monday-left-me-broken-cat--unscreen (1)_84: 1533622160
+      com-Monday-left-me-broken-cat--unscreen (1)_85: -994855001
+      com-Monday-left-me-broken-cat--unscreen (1)_86: -1288958150
+      com-Monday-left-me-broken-cat--unscreen (1)_87: 1991292599
+      com-Monday-left-me-broken-cat--unscreen (1)_88: 201801203
+      com-Monday-left-me-broken-cat--unscreen (1)_89: 1921645166
+      com-Monday-left-me-broken-cat--unscreen (1)_9: -335069397
+      com-Monday-left-me-broken-cat--unscreen (1)_90: 631775105
+      com-Monday-left-me-broken-cat--unscreen (1)_91: -1504177273
+      com-Monday-left-me-broken-cat--unscreen (1)_92: -242906978
+      com-Monday-left-me-broken-cat--unscreen (1)_93: 335253348
+      com-Monday-left-me-broken-cat--unscreen (1)_94: -1603658155
+      com-Monday-left-me-broken-cat--unscreen (1)_95: 732971308
+      com-Monday-left-me-broken-cat--unscreen (1)_96: -109791428
+      com-Monday-left-me-broken-cat--unscreen (1)_97: -394278517
+      com-Monday-left-me-broken-cat--unscreen (1)_98: -1791834264
+      com-Monday-left-me-broken-cat--unscreen (1)_99: 1078800525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

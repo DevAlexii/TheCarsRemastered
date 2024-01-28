@@ -3019,7 +3019,6 @@ MonoBehaviour:
   shrink_on: 0
   collision_effect: {fileID: 67986472050160416}
   carAnimation: {fileID: 0}
-  clip: {fileID: 0}
 --- !u!1 &5950046246915766734
 GameObject:
   m_ObjectHideFlags: 0

@@ -10881,6 +10881,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 943359118}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2095518300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095518302}
+  - component: {fileID: 2095518301}
+  m_Layer: 0
+  m_Name: ObjectPoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2095518301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095518300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0009404f23382f43a85c6e436cb9a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2095518302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095518300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.033197, y: 0.513474, z: 1.3841941}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118383964
 GameObject:
   m_ObjectHideFlags: 0
@@ -11147,7 +11191,7 @@ MonoBehaviour:
       - {fileID: 1209747632}
   timer_to_spawn_car: 1
   max_car_in_scene: 20
-  percentage_to_be_kamikaze: 100
+  percentage_to_be_kamikaze: 2
   timer_curve:
     serializedVersion: 2
     m_Curve:
@@ -11237,6 +11281,18 @@ MonoBehaviour:
   combo_num: 5
   spawn_combo: 0
   cameraShake: {fileID: 7920548446412522380}
+  baseCarPrefab: {fileID: 7104449171590673071, guid: bb2deeabd97b5cd44872c2f13dc34090,
+    type: 3}
+  tirPrefab: {fileID: 8098404169660802738, guid: 2c8c0555d9feedd4aa46b400d74a18e1,
+    type: 3}
+  specialPrefab: {fileID: 7104449171590673071, guid: f89b2d76bb1e4bb41a6c7fdb4e9c9766,
+    type: 3}
+  bigVanPrefab: {fileID: 1511708710891363274, guid: 0bb0b746177137e4b9d7d41526934874,
+    type: 3}
+  vanPrefab: {fileID: 2637713564822990630, guid: a7b98f1c0acc0eb4b9e47a533b9722d0,
+    type: 3}
+  kamikazePrefab: {fileID: 7104449171590673071, guid: 5646ea7fe629a234bb023c3250b96ae9,
+    type: 3}
   percentage_tir: 5
   percentage_special: 25
   percentage_big_van: 30
@@ -11965,7 +12021,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 26.138, y: -226.71, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.117, y: -183.134, z: -2.811}
 --- !u!114 &7920548446412522380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12087,3 +12143,4 @@ SceneRoots:
   - {fileID: 1794881633}
   - {fileID: 762659127}
   - {fileID: 1580012538}
+  - {fileID: 2095518302}
