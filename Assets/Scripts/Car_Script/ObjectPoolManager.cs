@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ObjectPoolManager : MonoBehaviour
 {
@@ -44,7 +45,6 @@ public class ObjectPoolManager : MonoBehaviour
         }
     }
 
-
     public GameObject GetObjectFromPool(GameObject prefab, Vector3 position, Quaternion rotation)
     {
         if (objectPools.TryGetValue(prefab, out Queue<GameObject> pool))
@@ -55,11 +55,11 @@ public class ObjectPoolManager : MonoBehaviour
                 obj.transform.position = position;
                 obj.transform.rotation = rotation;
 
-                Outline outlineComponent = obj.GetComponentInChildren<Outline>();
-                if (outlineComponent != null)
-                {
-                    outlineComponent.enabled = true;
-                }
+                //Outline outlineComponent = obj.GetComponentInChildren<Outline>();
+                //if (outlineComponent != null)
+                //{
+                //    outlineComponent.enabled = true;
+                //}
 
                 obj.SetActive(true);
                 return obj;
@@ -74,6 +74,25 @@ public class ObjectPoolManager : MonoBehaviour
         {
             Debug.LogWarning("Pool not found for prefab: " + prefab.name);
             return null;
+        }
+    }
+    public void Enqueque(GameObject car)
+    {
+        if (objectPools.TryGetValue(car, out Queue<GameObject> pool))
+        {
+            if (pool.Count > 0)
+            {
+                pool.Enqueue(car);
+
+                car.SetActive(false);
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
         }
     }
 }

@@ -158,16 +158,19 @@ public class Outline : MonoBehaviour
 
     void OnDisable()
     {
-        foreach (var renderer in renderers)
+        if (renderers is not  null)
         {
+            foreach (var renderer in renderers)
+            {
 
-            // Remove outline shaders
-            var materials = renderer.sharedMaterials.ToList();
-            if (materials.Count == 0) return;
-            materials.Remove(outlineMaskMaterial);
-            materials.Remove(outlineFillMaterial);
+                // Remove outline shaders
+                var materials = renderer.sharedMaterials.ToList();
+                if (materials.Count == 0) return;
+                materials.Remove(outlineMaskMaterial);
+                materials.Remove(outlineFillMaterial);
 
-            renderer.materials = materials.ToArray();
+                renderer.materials = materials.ToArray();
+            }
         }
     }
 
