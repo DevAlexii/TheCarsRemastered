@@ -191,7 +191,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
         }
 
-        GameObject car = ObjectPoolManager.SpawnObject(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity);
+        GameObject car = ObjectPoolManager.SpawnObject(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity,ObjectPoolManager.ObjectType.Car);
         car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
         spawned_car.Add(car);
         if (isKamikaze)

@@ -52,6 +52,7 @@ public class CarFollowPath : MonoBehaviour
     #region Initialize
     public void InitilizedPath(Path newPath, Car_Core Owner, bool Kamikaze, CarInfo data, float wait_time = 0, int score = 1)
     {
+        Debug.Log("TESTYTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT" + gameObject.name);
         owner = Owner;//SetReference
         queque_ray = new Ray();//GenerateQuequeRay
         queque_distance = data.QuequeRange;//maxDistanceForQuequeRay
@@ -64,6 +65,7 @@ public class CarFollowPath : MonoBehaviour
         outlineScript = GetComponentInChildren<Outline>();
         this.wait_time = wait_time;
         amount_score = score;
+        ToogleCollision(true);
     }
 
     private void MovementVarSetup(CarInfo data)
@@ -130,14 +132,6 @@ public class CarFollowPath : MonoBehaviour
                 target_max_move_speed = max_move_speed;
                 owner.HideDirectionalArrow();
             }
-            else if (path.Nodes[node_index].name.StartsWith("End"))
-            {
-                Car_Manager.self.RemoveCar(this.gameObject);
-                if (this.gameObject != null)
-                {
-                    ObjectPoolManager.ReturnObjectToPool(this.gameObject);
-                }
-            }
             else if (path.Nodes[node_index].name.StartsWith("GivePoint"))
             {
                 ToogleCollision();
@@ -145,6 +139,15 @@ public class CarFollowPath : MonoBehaviour
                 if (amount_score > 1)
                 {
                     Car_Manager.self.Increment_score_count(false);
+                }
+            }
+            else if (path.Nodes[node_index].name.StartsWith("End"))
+            {
+                Car_Manager.self.RemoveCar(this.gameObject);
+                if (this.gameObject != null)
+                {
+                    Debug.Log("Returning the obj to Pool");
+                    ObjectPoolManager.ReturnObjectToPool(this.gameObject);
                 }
             }
             node_index++;

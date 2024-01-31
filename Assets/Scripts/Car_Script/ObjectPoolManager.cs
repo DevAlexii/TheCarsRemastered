@@ -7,7 +7,33 @@ public class ObjectPoolManager : MonoBehaviour
 {
     public static List<PooledObjectData> _ObjectPool = new List<PooledObjectData>();
 
-    public static GameObject SpawnObject(GameObject objectToSpawn, Vector3 spawnPosition, Quaternion spawnToration)
+    private GameObject emptyTransform;
+
+    private static GameObject cars; 
+    private static GameObject vfx;
+
+
+    public enum ObjectType
+    {
+        Car,
+        VFX,
+        None
+    }
+    public static ObjectType PoolingType;
+
+
+    private void Awake()
+    {
+        emptyTransform = new GameObject("Pooled Object in Scene");
+
+        cars = new GameObject("Cars pooled");
+        cars.transform.SetParent(emptyTransform.transform);
+
+        vfx = new GameObject("VFX pooled");
+        vfx.transform.SetParent(emptyTransform.transform);
+    }
+
+    public static GameObject SpawnObject(GameObject objectToSpawn, Vector3 spawnPosition, Quaternion spawnToration,ObjectType type = ObjectType.None)
     {
         PooledObjectData pool = null;
         foreach (PooledObjectData obj in _ObjectPool)
@@ -18,7 +44,6 @@ public class ObjectPoolManager : MonoBehaviour
                 break;
             }
         }
-
         if (pool == null)
         {
             pool = new PooledObjectData() { LookUpString = objectToSpawn.name };
@@ -30,14 +55,20 @@ public class ObjectPoolManager : MonoBehaviour
 
         if (spawnableObject == null)
         {
+            GameObject parentObj = SetParentObject(type);
             spawnableObject = Instantiate(objectToSpawn, spawnPosition, spawnToration);
+
+            if (parentObj != null)
+            {
+                spawnableObject.transform.SetParent(parentObj.transform);
+            }
         }
         else
         {
             spawnableObject.transform.position = spawnPosition;
             spawnableObject.transform.rotation = spawnToration;
             pool.InactiveObject.Remove(spawnableObject);
-            spawnableObject.gameObject.SetActive(false);
+            spawnableObject.gameObject.SetActive(true);
         }
         return spawnableObject;
     }
@@ -55,11 +86,27 @@ public class ObjectPoolManager : MonoBehaviour
         }
         else
         {
-            obj.SetActive(true);
+            obj.SetActive(false);
             pool.InactiveObject.Add(obj);
         }
 
     }
+
+    private static GameObject SetParentObject(ObjectType type)
+    {
+        switch (type)
+        {
+            case ObjectType.Car:
+                return cars;
+            case ObjectType.VFX:
+                return vfx;
+            case ObjectType.None:
+                return null;
+                default:
+                return null;
+        }
+    }
+
 }
 
 public class PooledObjectData

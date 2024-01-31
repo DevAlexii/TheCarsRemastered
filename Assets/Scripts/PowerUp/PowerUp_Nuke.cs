@@ -7,9 +7,9 @@ public class PowerUp_Nuke : PowerUpBase
     public override void OnClicked()
     {
         AudioCallBack.self.PlayAudio(AudioType.Bomb, 1f);
-        Instantiate(nuke_prefab, Vector3.up * 10f, Quaternion.Euler(180, 0, 0));
-        GameObject effect = Instantiate(this.effect, transform.position, Quaternion.identity);
-        Destroy(effect, 1f);
+        ObjectPoolManager.SpawnObject(nuke_prefab, Vector3.up * 10f, Quaternion.Euler(180, 0, 0),ObjectPoolManager.ObjectType.VFX);
+        GameObject effect = ObjectPoolManager.SpawnObject(this.effect, Vector3.up * 10f, Quaternion.Euler(180, 0, 0), ObjectPoolManager.ObjectType.VFX);
+        ObjectPoolManager.ReturnObjectToPool(this.effect);
         nuke_prefab.transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
         base.OnClicked();
     }
