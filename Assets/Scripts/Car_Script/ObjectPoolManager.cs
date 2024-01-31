@@ -1,98 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using PlasticPipe.PlasticProtocol.Client.Proxies;
+using Unity.Collections;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.UIElements;
 
 public class ObjectPoolManager : MonoBehaviour
 {
-    public static ObjectPoolManager instance;
+    public static List<PooledObjectData> _ObjectPool = new List<PooledObjectData>();
 
-    private Dictionary<GameObject, Queue<GameObject>> objectPools = new Dictionary<GameObject, Queue<GameObject>>();
-
-
-
-    private void Awake()
+    public static GameObject SpawnObject(GameObject objectToSpawn, Vector3 spawnPosition, Quaternion spawnToration)
     {
-        if (instance == null)
+        PooledObjectData pool = null;
+        foreach (PooledObjectData obj in _ObjectPool)
         {
-            instance = this;
+            if (obj.LookUpString == objectToSpawn.name)
+            {
+                pool = obj;
+                break;
+            }
+        }
+
+        if (pool == null)
+        {
+            pool = new PooledObjectData() { LookUpString = objectToSpawn.name };
+            _ObjectPool.Add(pool);
+        }
+
+        GameObject spawnableObject = pool.InactiveObject.FirstOrDefault();
+
+
+        if (spawnableObject == null)
+        {
+            spawnableObject = Instantiate(objectToSpawn, spawnPosition, spawnToration);
         }
         else
         {
-            Destroy(gameObject);
+            spawnableObject.transform.position = spawnPosition;
+            spawnableObject.transform.rotation = spawnToration;
+            pool.InactiveObject.Remove(spawnableObject);
+            spawnableObject.gameObject.SetActive(false);
         }
+        return spawnableObject;
     }
 
-    public void CreateObjectPool(GameObject prefab, int poolSize)
+    //Destroy
+    public static void ReturnObjectToPool(GameObject obj)
     {
-        if (!objectPools.ContainsKey(prefab))
+        string name = obj.name.Substring(0, obj.name.Length - 7);
+
+        PooledObjectData pool = _ObjectPool.Find(p => p.LookUpString == name);
+
+        if (pool == null)
         {
-            objectPools[prefab] = new Queue<GameObject>();
 
-            for (int i = 0; i < poolSize; i++)
-            {
-                GameObject obj = Instantiate(prefab, transform);
-
-                Outline outlineComponent = obj.GetComponentInChildren<Outline>();
-                if (outlineComponent != null)
-                {
-                    outlineComponent.enabled = false;
-                }
-
-                obj.SetActive(false);
-                objectPools[prefab].Enqueue(obj);
-            }
-        }
-    }
-
-    public GameObject GetObjectFromPool(GameObject prefab, Vector3 position, Quaternion rotation)
-    {
-        if (objectPools.TryGetValue(prefab, out Queue<GameObject> pool))
-        {
-            if (pool.Count > 0)
-            {
-                GameObject obj = pool.Dequeue();
-                obj.transform.position = position;
-                obj.transform.rotation = rotation;
-
-                //Outline outlineComponent = obj.GetComponentInChildren<Outline>();
-                //if (outlineComponent != null)
-                //{
-                //    outlineComponent.enabled = true;
-                //}
-
-                obj.SetActive(true);
-                return obj;
-            }
-            else
-            {
-                Debug.LogWarning("Pool is empty for prefab: " + prefab.name);
-                return null;
-            }
         }
         else
         {
-            Debug.LogWarning("Pool not found for prefab: " + prefab.name);
-            return null;
+            obj.SetActive(true);
+            pool.InactiveObject.Add(obj);
         }
-    }
-    public void Enqueque(GameObject car)
-    {
-        if (objectPools.TryGetValue(car, out Queue<GameObject> pool))
-        {
-            if (pool.Count > 0)
-            {
-                pool.Enqueue(car);
 
-                car.SetActive(false);
-            }
-            else
-            {
-
-            }
-        }
-        else
-        {
-        }
     }
+}
+
+public class PooledObjectData
+{
+    public string LookUpString;
+    public List<GameObject> InactiveObject = new List<GameObject>();
 }

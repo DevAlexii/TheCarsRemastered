@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.Pool;
+
 
 public class Car_Manager : Singleton<Car_Manager>
 {
@@ -77,12 +79,6 @@ public class Car_Manager : Singleton<Car_Manager>
             }
         }
         CarInfos = CarInfosRef.self.DefaultCarInfoData;
-        ObjectPoolManager.instance.CreateObjectPool(baseCarPrefab, 10);
-        ObjectPoolManager.instance.CreateObjectPool(tirPrefab, 5);
-        ObjectPoolManager.instance.CreateObjectPool(specialPrefab, 5);
-        ObjectPoolManager.instance.CreateObjectPool(bigVanPrefab, 5);
-        ObjectPoolManager.instance.CreateObjectPool(vanPrefab, 5);
-        ObjectPoolManager.instance.CreateObjectPool(kamikazePrefab, 5);
     }
 
     void Update()
@@ -195,8 +191,7 @@ public class Car_Manager : Singleton<Car_Manager>
 
         }
 
-
-        GameObject car = ObjectPoolManager.instance.GetObjectFromPool(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity);
+        GameObject car = ObjectPoolManager.SpawnObject(data.BasePrefab, pathRef.Nodes[0].position, Quaternion.identity);
         car.GetComponentInChildren<Car_Core>().OnInitializedCar(pathRef, arrow_index, data, isKamikaze, invisibility_on, car_wait_timer_curve.Evaluate(start_count));
         spawned_car.Add(car);
         if (isKamikaze)

@@ -135,9 +135,7 @@ public class CarFollowPath : MonoBehaviour
                 Car_Manager.self.RemoveCar(this.gameObject);
                 if (this.gameObject != null)
                 {
-                    // Destroy(this.gameObject);
-                    //this.gameObject.SetActive(false);
-                    ObjectPoolManager.instance.Enqueque(this.gameObject);
+                    ObjectPoolManager.ReturnObjectToPool(this.gameObject);
                 }
             }
             else if (path.Nodes[node_index].name.StartsWith("GivePoint"))
