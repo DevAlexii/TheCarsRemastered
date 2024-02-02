@@ -233,13 +233,12 @@ public class CarFollowPath : MonoBehaviour
                 StartCoroutine(ToogleWaitSize());
             }
             float transitionProgress = Mathf.InverseLerp(wait_time - 2f, wait_time, wait_timer);
-
             float widthTransition = Mathf.SmoothStep(1.2f, 3f, transitionProgress);
 
-            Outline outlineScript = GetComponentInChildren<Outline>();
+            //Outline outlineScript = GetComponentInChildren<Outline>();
 
-            outlineScript.OutlineColor = Color.Lerp(GameManager.self.Get_Start_Outline_Color, GameManager.self.GetWaitingColor, transitionProgress);
-            outlineScript.OutlineWidth = widthTransition;
+            //outlineScript.OutlineColor = Color.Lerp(GameManager.self.Get_Start_Outline_Color, GameManager.self.GetWaitingColor, transitionProgress);
+            //outlineScript.OutlineWidth = widthTransition;
         }
         if (wait_timer >= wait_time)
         {
@@ -249,9 +248,9 @@ public class CarFollowPath : MonoBehaviour
             Car_Manager.self.comboCount = 0;
             On_Waiting = null;
             transform.localScale = originalScale;
-            Outline outlineScript = GetComponentInChildren<Outline>();
-            outlineScript.OutlineColor = GameManager.self.Get_Start_Outline_Color;
-            outlineScript.OutlineWidth = 1.2f;
+            //Outline outlineScript = GetComponentInChildren<Outline>();
+            //outlineScript.OutlineColor = GameManager.self.Get_Start_Outline_Color;
+            //outlineScript.OutlineWidth = 1.2f;
             startWaitSize = false;
         }
     }

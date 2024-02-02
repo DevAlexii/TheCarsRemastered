@@ -18,7 +18,6 @@ public class Car_Manager : Singleton<Car_Manager>
     [SerializeField]
     private AnimationCurve car_wait_timer_curve;
 
-
     public List<GameObject> spawned_car;
     public List<GameObject> car_crashed { get; private set; }
     private Dictionary<Direction, Dictionary<Point, List<Path>>> paths_dictionary;

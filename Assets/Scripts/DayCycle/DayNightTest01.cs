@@ -32,7 +32,6 @@ public class DayNightTest01 : MonoBehaviour
     private Material originalMaterial;
 
     [Header("EmissiveCity")]
-    [SerializeField] List<GameObject> glassObj;
     private bool lightsAreOn = false;
 
     public bool time_cycle_activate = true;
@@ -72,7 +71,6 @@ public class DayNightTest01 : MonoBehaviour
             SetLighting();
             SetSunAmbientintensity();
             ToogleLamps();
-            ToggleGlassObj();
             do_once = false;
         }
         else
@@ -84,7 +82,6 @@ public class DayNightTest01 : MonoBehaviour
                 SetLighting();
                 SetSunAmbientintensity();
                 ToogleLamps();
-                ToggleGlassObj();
             }
         }
     }
@@ -145,39 +142,5 @@ public class DayNightTest01 : MonoBehaviour
                 }
             }
         }
-    }
-
-    void ToggleGlassObj()
-    {
-        if (time >= turnOn || time < turnOff)
-        {
-            if (!lightsAreOn)
-            {
-                lightsAreOn = true;
-                if (glassObj.Count > 0)
-                {
-                    foreach (GameObject obj in glassObj)
-                    {
-                        obj.SetActive(true);
-                    }
-                }
-            }
-        }
-        else
-        {
-            if (lightsAreOn)
-            {
-                lightsAreOn = false;
-                if (glassObj.Count > 0)
-                {
-                    foreach (GameObject obj in glassObj)
-                    {
-                        obj.SetActive(false);
-                    }
-                }
-            }
-        }
-
-
     }
 }
